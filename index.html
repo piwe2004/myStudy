@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>방통대 CS 문제은행</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+        
+        <div id="home-screen">
+            <h1 class="main-title">방통대 CS<br>문제은행 🎓</h1>
+            <p class="sub-title">총 600문제 (랜덤 출제)</p>
+            <div id="subject-list" class="grid-box">
+                </div>
+        </div>
+
+        <div id="quiz-screen" style="display: none;">
+            <div class="header">
+                <button onclick="goHome()" class="back-btn">← 나가기</button>
+                <span id="current-subject-title">과목명</span>
+                <span id="progress-text">1 / 100</span>
+            </div>
+            
+            <div class="quiz-content">
+                <div class="question-box">
+                    <p id="question-text">문제가 여기에 나옵니다.</p>
+                </div>
+
+                <div id="options-box" class="options-list">
+                    </div>
+
+                <div id="result-box" style="display: none;"></div>
+
+                <button id="next-btn" onclick="nextQuestion()">다음 문제 ▶</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

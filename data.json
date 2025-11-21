@@ -1,0 +1,7556 @@
+[
+  {
+    "id": 1,
+    "subject": "Java프로그래밍",
+    "question": "Java 언어의 주요 특징으로 올바르지 않은 것은?",
+    "options": [
+      "플랫폼 독립적이다 (Write Once, Run Anywhere).",
+      "객체 지향 언어이다.",
+      "메모리를 개발자가 직접 해제해야 한다 (Garbage Collection 없음).",
+      "멀티스레드를 지원한다."
+    ],
+    "answer": 2,
+    "explanation": "Java는 가비지 컬렉터(Garbage Collector)가 메모리를 자동으로 관리하므로 개발자가 직접 해제할 필요가 없습니다."
+  },
+  {
+    "id": 2,
+    "subject": "Java프로그래밍",
+    "question": "다음 중 자바의 기본 데이터 타입(Primitive Type)이 아닌 것은?",
+    "options": [
+      "int",
+      "boolean",
+      "String",
+      "char"
+    ],
+    "answer": 2,
+    "explanation": "String은 기본 데이터 타입이 아니라 '클래스(참조 타입)'입니다."
+  },
+  {
+    "id": 3,
+    "subject": "Java프로그래밍",
+    "question": "자바 프로그램의 진입점(Entry Point)이 되는 메소드의 올바른 시그니처는?",
+    "options": [
+      "public void main(String[] args)",
+      "static void main(String args)",
+      "public static void main(String[] args)",
+      "public static int main(String[] args)"
+    ],
+    "answer": 2,
+    "explanation": "main 메소드는 반드시 'public static void main(String[] args)' 형식을 따라야 JVM이 실행할 수 있습니다."
+  },
+  {
+    "id": 4,
+    "subject": "Java프로그래밍",
+    "question": "객체 지향 프로그래밍의 특징 중, 불필요한 정보를 숨기고 중요한 정보만 드러내는 기법은?",
+    "options": [
+      "상속 (Inheritance)",
+      "다형성 (Polymorphism)",
+      "캡슐화 (Encapsulation)",
+      "추상화 (Abstraction)"
+    ],
+    "answer": 2,
+    "explanation": "캡슐화는 데이터(필드)를 감추고 메소드를 통해서만 접근하게 하여 정보를 보호하는 기법입니다."
+  },
+  {
+    "id": 5,
+    "subject": "Java프로그래밍",
+    "question": "다음 코드의 실행 결과는? int a = 10; int b = a++; System.out.println(b);",
+    "options": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "answer": 1,
+    "explanation": "후위 연산자(a++)는 값을 먼저 대입(b=10)한 후에 a를 증가시키므로 출력되는 b의 값은 10입니다."
+  },
+  {
+    "id": 6,
+    "subject": "Java프로그래밍",
+    "question": "클래스 내에서 객체 자신을 가리키는 참조 변수는?",
+    "options": [
+      "self",
+      "super",
+      "this",
+      "me"
+    ],
+    "answer": 2,
+    "explanation": "자바에서는 객체 자신을 가리킬 때 'this' 키워드를 사용합니다."
+  },
+  {
+    "id": 7,
+    "subject": "Java프로그래밍",
+    "question": "상속 관계에서 부모 클래스의 생성자를 호출하는 키워드는?",
+    "options": [
+      "this()",
+      "super()",
+      "parent()",
+      "new()"
+    ],
+    "answer": 1,
+    "explanation": "super()는 부모 클래스의 생성자를 호출할 때 사용합니다."
+  },
+  {
+    "id": 8,
+    "subject": "Java프로그래밍",
+    "question": "메소드 오버로딩(Overloading)의 조건으로 틀린 것은?",
+    "options": [
+      "메소드 이름이 같아야 한다.",
+      "매개변수의 개수나 타입이 달라야 한다.",
+      "리턴 타입만 다르면 오버로딩이 성립한다.",
+      "같은 클래스 내에 존재해야 한다."
+    ],
+    "answer": 2,
+    "explanation": "리턴 타입만 다르고 매개변수가 똑같으면 컴파일러가 구분을 못 하므로 오버로딩이 성립하지 않습니다."
+  },
+  {
+    "id": 9,
+    "subject": "Java프로그래밍",
+    "question": "인터페이스(Interface)에 대한 설명으로 틀린 것은?",
+    "options": [
+      "다중 상속을 구현하는 효과를 낼 수 있다.",
+      "모든 메소드는 기본적으로 추상 메소드이다(Java 8 이전).",
+      "생성자를 가질 수 있다.",
+      "implements 키워드를 사용하여 구현한다."
+    ],
+    "answer": 2,
+    "explanation": "인터페이스는 객체를 생성할 수 없으므로 '생성자'를 가질 수 없습니다."
+  },
+  {
+    "id": 10,
+    "subject": "Java프로그래밍",
+    "question": "Java의 예외 처리 구문이 아닌 것은?",
+    "options": [
+      "try",
+      "catch",
+      "finally",
+      "check"
+    ],
+    "answer": 3,
+    "explanation": "예외 처리는 try-catch-finally 블록과 throw, throws를 사용합니다. check라는 키워드는 없습니다."
+  },
+  {
+    "id": 11,
+    "subject": "Java프로그래밍",
+    "question": "ArrayList와 같은 가변 배열 클래스가 속한 패키지는?",
+    "options": [
+      "java.lang",
+      "java.util",
+      "java.io",
+      "java.net"
+    ],
+    "answer": 1,
+    "explanation": "컬렉션 프레임워크(ArrayList, HashMap 등)는 java.util 패키지에 있습니다."
+  },
+  {
+    "id": 12,
+    "subject": "Java프로그래밍",
+    "question": "쓰레드(Thread)를 생성하는 방법이 아닌 것은?",
+    "options": [
+      "Thread 클래스 상속",
+      "Runnable 인터페이스 구현",
+      "Process 클래스 상속",
+      "익명 내부 클래스로 구현"
+    ],
+    "answer": 2,
+    "explanation": "자바에서 쓰레드는 Thread 상속이나 Runnable 구현으로 만듭니다. Process 상속 방식은 쓰지 않습니다."
+  },
+  {
+    "id": 13,
+    "subject": "Java프로그래밍",
+    "question": "제네릭(Generic)을 사용하는 주된 이유는?",
+    "options": [
+      "실행 속도를 높이기 위해",
+      "코드의 길이를 줄이기 위해",
+      "타입 안정성을 높이고 형변환을 줄이기 위해",
+      "메모리 사용량을 줄이기 위해"
+    ],
+    "answer": 2,
+    "explanation": "제네릭은 컴파일 타임에 타입을 체크하여 런타임 오류를 방지(타입 안정성)하고 불필요한 캐스팅을 없애줍니다."
+  },
+  {
+    "id": 14,
+    "subject": "Java프로그래밍",
+    "question": "다음 중 Map 인터페이스를 구현한 클래스는?",
+    "options": [
+      "ArrayList",
+      "HashSet",
+      "HashMap",
+      "LinkedList"
+    ],
+    "answer": 2,
+    "explanation": "HashMap은 Key-Value 쌍으로 데이터를 관리하는 Map 인터페이스의 구현체입니다."
+  },
+  {
+    "id": 15,
+    "subject": "Java프로그래밍",
+    "question": "final 키워드에 대한 설명으로 틀린 것은?",
+    "options": [
+      "변수에 붙으면 상수가 된다.",
+      "메소드에 붙으면 오버라이딩을 금지한다.",
+      "클래스에 붙으면 상속을 금지한다.",
+      "abstract 키워드와 함께 사용할 수 있다."
+    ],
+    "answer": 3,
+    "explanation": "final(변경 불가)과 abstract(구현 강제/상속 필수)는 서로 모순되는 개념이라 함께 쓸 수 없습니다."
+  },
+  {
+    "id": 16,
+    "subject": "Java프로그래밍",
+    "question": "Java 소스 파일(.java)을 컴파일하면 생성되는 파일의 확장자는?",
+    "options": [
+      ".exe",
+      ".obj",
+      ".class",
+      ".jar"
+    ],
+    "answer": 2,
+    "explanation": "자바 컴파일러(javac)는 바이트코드 형태인 .class 파일을 생성합니다."
+  },
+  {
+    "id": 17,
+    "subject": "Java프로그래밍",
+    "question": "접근 제어자(Access Modifier) 중 접근 범위가 가장 넓은 것은?",
+    "options": [
+      "private",
+      "default",
+      "protected",
+      "public"
+    ],
+    "answer": 3,
+    "explanation": "public(전체) > protected(상속+패키지) > default(패키지) > private(클래스 내부) 순서입니다."
+  },
+  {
+    "id": 18,
+    "subject": "Java프로그래밍",
+    "question": "문자열 비교 시 등호(==) 대신 equals()를 써야 하는 이유는?",
+    "options": [
+      "속도가 더 빨라서",
+      "주소값이 아닌 실제 문자열 내용을 비교하기 위해",
+      "컴파일 오류를 막기 위해",
+      "메모리를 절약하기 위해"
+    ],
+    "answer": 1,
+    "explanation": "==는 객체의 메모리 주소를 비교하고, equals()는 문자열의 내용 자체를 비교합니다."
+  },
+  {
+    "id": 19,
+    "subject": "Java프로그래밍",
+    "question": "자바의 모든 클래스가 상속받는 최상위 부모 클래스는?",
+    "options": [
+      "java.lang.Main",
+      "java.lang.Master",
+      "java.lang.String",
+      "java.lang.Object"
+    ],
+    "answer": 3,
+    "explanation": "자바의 모든 클래스는 암시적으로 java.lang.Object 클래스를 상속받습니다."
+  },
+  {
+    "id": 20,
+    "subject": "Java프로그래밍",
+    "question": "Scanner 클래스에서 정수를 입력받을 때 사용하는 메소드는?",
+    "options": [
+      "next()",
+      "nextLine()",
+      "nextInt()",
+      "nextInteger()"
+    ],
+    "answer": 2,
+    "explanation": "정수 입력은 nextInt(), 문자열 입력은 next() 또는 nextLine()을 사용합니다."
+  },
+  {
+    "id": 41,
+    "subject": "Java프로그래밍",
+    "question": "인터페이스(Interface) 내에 선언된 변수(필드)의 기본 속성은?",
+    "options": [
+      "private final",
+      "public static final",
+      "protected static",
+      "default"
+    ],
+    "answer": 1,
+    "explanation": "인터페이스에 정의된 모든 멤버 변수는 자동으로 'public static final'(상수)로 간주됩니다."
+  },
+  {
+    "id": 42,
+    "subject": "Java프로그래밍",
+    "question": "Set 컬렉션의 가장 큰 특징은?",
+    "options": [
+      "순서가 유지된다(Ordered).",
+      "키(Key)와 값(Value)으로 저장된다.",
+      "중복된 요소를 허용하지 않는다(Unique).",
+      "인덱스로 접근이 가능하다."
+    ],
+    "answer": 2,
+    "explanation": "Set(HashSet 등)은 주머니와 같아서 순서가 없고, 중복된 값을 허용하지 않습니다."
+  },
+  {
+    "id": 43,
+    "subject": "Java프로그래밍",
+    "question": "Java IO에서 바이트 단위가 아닌 '문자(Character)' 단위로 입출력을 수행하는 클래스는?",
+    "options": [
+      "InputStream",
+      "OutputStream",
+      "Reader / Writer",
+      "FileStream"
+    ],
+    "answer": 2,
+    "explanation": "InputStream/OutputStream은 바이트 단위이고, Reader/Writer는 문자 단위(2byte char) 처리를 위해 사용합니다."
+  },
+  {
+    "id": 44,
+    "subject": "Java프로그래밍",
+    "question": "생성자에서 부모 생성자 super()를 호출할 때의 규칙으로 옳은 것은?",
+    "options": [
+      "생성자의 마지막 줄에 작성해야 한다.",
+      "생성자의 첫 번째 줄에 작성해야 한다.",
+      "어디든 상관없다.",
+      "static 메소드 내에서 호출해야 한다."
+    ],
+    "answer": 1,
+    "explanation": "부모 객체가 먼저 초기화되어야 자식 객체가 생성될 수 있으므로 super()는 반드시 생성자의 첫 줄에 와야 합니다."
+  },
+  {
+    "id": 45,
+    "subject": "Java프로그래밍",
+    "question": "멀티스레드 환경에서 여러 스레드가 하나의 객체에 동시에 접근하는 것을 막기 위해 사용하는 키워드는?",
+    "options": [
+      "serialization",
+      "synchronized",
+      "transient",
+      "volatile"
+    ],
+    "answer": 1,
+    "explanation": "synchronized(동기화) 키워드를 사용하면 한 번에 하나의 스레드만 해당 코드 블록이나 메소드에 접근할 수 있습니다."
+  },
+  {
+    "id": 46,
+    "subject": "Java프로그래밍",
+    "question": "다음 중 Checked Exception(예외 처리가 필수인 예외)이 아닌 것은?",
+    "options": [
+      "IOException",
+      "SQLException",
+      "FileNotFoundException",
+      "NullPointerException"
+    ],
+    "answer": 3,
+    "explanation": "NullPointerException, ArrayIndexOutOfBoundsException 등은 RuntimeException의 자식들이며, 컴파일러가 예외 처리를 강제하지 않는 Unchecked Exception입니다."
+  },
+  {
+    "id": 47,
+    "subject": "Java프로그래밍",
+    "question": "객체 직렬화(Serialization)를 가능하게 하기 위해 구현해야 하는 인터페이스는?",
+    "options": [
+      "Runnable",
+      "Serializable",
+      "Comparable",
+      "Cloneable"
+    ],
+    "answer": 1,
+    "explanation": "객체를 스트림으로 전송하거나 파일로 저장하려면 java.io.Serializable 인터페이스를 구현(마킹)해야 합니다."
+  },
+  {
+    "id": 48,
+    "subject": "Java프로그래밍",
+    "question": "JDBC 프로그래밍에서 SQL문을 실행하고 결과를 받아오는 객체는?",
+    "options": [
+      "Connection",
+      "DriverManager",
+      "Statement / PreparedStatement",
+      "ResultSet"
+    ],
+    "answer": 2,
+    "explanation": "Statement나 PreparedStatement 객체를 사용하여 쿼리를 실행합니다. (ResultSet은 결과를 담는 객체)"
+  },
+  {
+    "id": 49,
+    "subject": "Java프로그래밍",
+    "question": "두 문자열 s1, s2가 같은 객체를 가리키고 있는지 주소값을 비교하는 연산은?",
+    "options": [
+      "s1.equals(s2)",
+      "s1 == s2",
+      "s1.compareTo(s2)",
+      "s1.contains(s2)"
+    ],
+    "answer": 1,
+    "explanation": "== 연산자는 참조 타입 변수의 메모리 주소값을 비교합니다. (내용 비교는 equals)"
+  },
+  {
+    "id": 50,
+    "subject": "Java프로그래밍",
+    "question": "제네릭 타입 파라미터에서 <?> (와일드카드)의 의미는?",
+    "options": [
+      "모든 타입이 가능하다.",
+      "타입을 지정하지 않겠다(Object).",
+      "알 수 없는 타입이다(Unknown Type).",
+      "null만 허용한다."
+    ],
+    "answer": 2,
+    "explanation": "<?>는 Unbounded Wildcard로, 구체적인 타입은 모르지만 어쨌든 제네릭 타입을 사용하겠다는 의미입니다."
+  },
+  {
+    "id": 51,
+    "subject": "Java프로그래밍",
+    "question": "Java 8에서 도입된 기능으로, 함수형 프로그래밍을 지원하며 코드를 간결하게 만드는 것은?",
+    "options": [
+      "Annotation",
+      "Lambda Expression (람다식)",
+      "Generics",
+      "Reflection"
+    ],
+    "answer": 1,
+    "explanation": "람다식(->)을 사용하면 익명 클래스를 대체하여 코드를 매우 간결하게 작성할 수 있습니다."
+  },
+  {
+    "id": 52,
+    "subject": "Java프로그래밍",
+    "question": "Object 클래스의 메소드가 아닌 것은?",
+    "options": [
+      "toString()",
+      "equals()",
+      "hashCode()",
+      "compareTo()"
+    ],
+    "answer": 3,
+    "explanation": "compareTo()는 Comparable 인터페이스의 추상 메소드입니다."
+  },
+  {
+    "id": 53,
+    "subject": "Java프로그래밍",
+    "question": "다음 코드의 실행 결과는? String a = \"Hello\"; a.concat(\" World\"); System.out.println(a);",
+    "options": [
+      "Hello",
+      "Hello World",
+      "World",
+      "컴파일 에러"
+    ],
+    "answer": 0,
+    "explanation": "String은 불변 객체입니다. concat()을 해도 원래 객체 a는 변하지 않고 새로운 객체가 반환됩니다. 결과를 a에 다시 대입하지 않았으므로 출력은 그대로 \"Hello\"입니다."
+  },
+  {
+    "id": 54,
+    "subject": "Java프로그래밍",
+    "question": "가비지 컬렉터(Garbage Collector)를 개발자가 강제로 즉시 실행시키는 명령어는?",
+    "options": [
+      "System.gc()",
+      "System.exit()",
+      "Memory.clean()",
+      "없음 (요청만 가능)"
+    ],
+    "answer": 3,
+    "explanation": "System.gc() 메소드가 있긴 하지만, 이는 JVM에게 '실행해 줬으면 좋겠다'고 요청하는 것일 뿐, 즉시 실행을 보장하지는 않습니다."
+  },
+  {
+    "id": 55,
+    "subject": "Java프로그래밍",
+    "question": "TCP/IP 소켓 프로그래밍에서 서버 소켓을 생성하는 클래스는?",
+    "options": [
+      "Socket",
+      "ServerSocket",
+      "DatagramSocket",
+      "MulticastSocket"
+    ],
+    "answer": 1,
+    "explanation": "서버는 ServerSocket을 열어두고 클라이언트의 연결 요청(accept)을 기다립니다."
+  },
+  {
+    "id": 56,
+    "subject": "Java프로그래밍",
+    "question": "추상 클래스와 인터페이스의 공통점은?",
+    "options": [
+      "다중 상속이 가능하다.",
+      "생성자를 가질 수 있다.",
+      "인스턴스(객체)를 직접 생성할 수 없다.",
+      "모든 변수가 상수이다."
+    ],
+    "answer": 2,
+    "explanation": "둘 다 구현체가 없는 추상 메소드를 포함할 수 있어(또는 설계도 역할이라) new 키워드로 직접 객체를 만들 수 없습니다."
+  },
+  {
+    "id": 57,
+    "subject": "Java프로그래밍",
+    "question": "기본형 int와 래퍼 클래스 Integer 사이의 자동 변환 기능을 무엇이라 하는가?",
+    "options": [
+      "Casting",
+      "Autoboxing / Unboxing",
+      "Cloning",
+      "Parsing"
+    ],
+    "answer": 1,
+    "explanation": "JDK 1.5부터 기본형을 객체로(Autoboxing), 객체를 기본형으로(Unboxing) 컴파일러가 자동으로 변환해 줍니다."
+  },
+  {
+    "id": 58,
+    "subject": "Java프로그래밍",
+    "question": "Map 인터페이스에서 Key 집합만을 Set 형태로 반환하는 메소드는?",
+    "options": [
+      "values()",
+      "entrySet()",
+      "keySet()",
+      "get()"
+    ],
+    "answer": 2,
+    "explanation": "keySet()은 Map에 있는 모든 키를 Set 컬렉션에 담아 반환합니다."
+  },
+  {
+    "id": 59,
+    "subject": "Java프로그래밍",
+    "question": "자바에서 지원하지 않는 접근 제어자는?",
+    "options": [
+      "public",
+      "private",
+      "friend",
+      "protected"
+    ],
+    "answer": 2,
+    "explanation": "friend는 C++에 존재하는 개념이며, 자바에는 없습니다."
+  },
+  {
+    "id": 60,
+    "subject": "Java프로그래밍",
+    "question": "enum(열거형) 타입의 모든 상수를 배열로 반환하는 메소드는?",
+    "options": [
+      "list()",
+      "values()",
+      "keys()",
+      "ordinal()"
+    ],
+    "answer": 1,
+    "explanation": "컴파일러가 enum 생성 시 자동으로 values()라는 정적 메소드를 추가해 주며, 이를 통해 열거된 모든 상수를 배열로 얻을 수 있습니다."
+  },
+  {
+    "id": 61,
+    "subject": "Java프로그래밍",
+    "question": "Java 8부터 인터페이스에 구현된 메소드를 포함할 수 있게 해주는 키워드는?",
+    "options": [
+      "static",
+      "final",
+      "default",
+      "abstract"
+    ],
+    "answer": 2,
+    "explanation": "Java 8부터 'default' 키워드를 사용하면 인터페이스 내부에서도 구현부를 가진 메소드(디폴트 메소드)를 정의할 수 있습니다."
+  },
+  {
+    "id": 62,
+    "subject": "Java프로그래밍",
+    "question": "클래스 로딩 시 단 한 번만 실행되는 초기화 블록은?",
+    "options": [
+      "인스턴스 초기화 블록 { ... }",
+      "static 초기화 블록 static { ... }",
+      "생성자",
+      "동기화 블록 synchronized { ... }"
+    ],
+    "answer": 1,
+    "explanation": "static { ... } 블록은 클래스가 메모리에 처음 로딩될 때 딱 한 번만 수행됩니다."
+  },
+  {
+    "id": 63,
+    "subject": "Java프로그래밍",
+    "question": "더 이상 상속할 수 없는 클래스를 만들 때 사용하는 키워드는?",
+    "options": [
+      "static",
+      "abstract",
+      "void",
+      "final"
+    ],
+    "answer": 3,
+    "explanation": "클래스 앞에 final을 붙이면(예: final class String) 다른 클래스가 이를 상속(extends)받을 수 없습니다."
+  },
+  {
+    "id": 64,
+    "subject": "Java프로그래밍",
+    "question": "외부 클래스의 인스턴스 없이도 생성할 수 있는 내부 클래스(Nested Class)는?",
+    "options": [
+      "Inner Class",
+      "Local Class",
+      "Anonymous Class",
+      "Static Nested Class"
+    ],
+    "answer": 3,
+    "explanation": "내부 클래스 중 static이 붙은 '정적 중첩 클래스'만이 외부 클래스의 객체 생성 없이 단독으로 생성 가능합니다."
+  },
+  {
+    "id": 65,
+    "subject": "Java프로그래밍",
+    "question": "try-with-resources 구문에서 자동으로 자원을 해제하기 위해 구현해야 하는 인터페이스는?",
+    "options": [
+      "Closeable",
+      "AutoCloseable",
+      "Readable",
+      "Disposable"
+    ],
+    "answer": 1,
+    "explanation": "Java 7부터 도입된 AutoCloseable 인터페이스를 구현한 객체는 try(...) 문이 끝날 때 자동으로 close()가 호출됩니다."
+  },
+  {
+    "id": 66,
+    "subject": "Java프로그래밍",
+    "question": "NullPointerException을 방지하기 위해 Java 8에서 도입된 래퍼 클래스는?",
+    "options": [
+      "Optional",
+      "Nullable",
+      "Wrapper",
+      "Void"
+    ],
+    "answer": 0,
+    "explanation": "Optional<T> 클래스는 null이 될 수도 있는 객체를 감싸서 NPE를 안전하게 처리할 수 있도록 도와줍니다."
+  },
+  {
+    "id": 67,
+    "subject": "Java프로그래밍",
+    "question": "Stream API 중 요소를 특정 조건에 맞는 것만 걸러내는 중간 연산은?",
+    "options": [
+      "map()",
+      "filter()",
+      "sorted()",
+      "collect()"
+    ],
+    "answer": 1,
+    "explanation": "filter()는 조건(Predicate)이 참인 요소만 남기고 나머지는 제외합니다."
+  },
+  {
+    "id": 68,
+    "subject": "Java프로그래밍",
+    "question": "객체의 정렬 기준을 정의하기 위해 compareTo() 메소드를 구현해야 하는 인터페이스는?",
+    "options": [
+      "Comparator",
+      "Comparable",
+      "Sortable",
+      "Runnable"
+    ],
+    "answer": 1,
+    "explanation": "객체 자신(this)과 다른 객체를 비교하는 기본 정렬 기준은 Comparable 인터페이스의 compareTo()로 정의합니다."
+  },
+  {
+    "id": 69,
+    "subject": "Java프로그래밍",
+    "question": "ArrayList와 LinkedList의 차이점에 대한 설명으로 틀린 것은?",
+    "options": [
+      "ArrayList는 검색(get) 속도가 빠르다.",
+      "LinkedList는 데이터의 삽입/삭제가 빠르다.",
+      "ArrayList는 배열 기반, LinkedList는 노드 연결 기반이다.",
+      "LinkedList는 메모리를 덜 차지하며 연속된 공간에 저장된다."
+    ],
+    "answer": 3,
+    "explanation": "LinkedList는 각 노드가 데이터와 주소값을 모두 가져야 하므로 메모리를 더 많이 쓰며, 불연속적인 공간에 저장됩니다."
+  },
+  {
+    "id": 70,
+    "subject": "Java프로그래밍",
+    "question": "스레드를 일시 정지 상태로 만들었다가 다른 스레드가 깨워줄 때까지 기다리게 하는 메소드는?",
+    "options": [
+      "sleep()",
+      "wait()",
+      "yield()",
+      "stop()"
+    ],
+    "answer": 1,
+    "explanation": "wait()는 스레드를 대기실(Wait Set)로 보내고, notify()나 notifyAll()이 호출될 때까지 기다립니다."
+  },
+  {
+    "id": 71,
+    "subject": "Java프로그래밍",
+    "question": "메인 스레드가 종료되면 강제로 함께 종료되는 보조 스레드를 무엇이라 하는가?",
+    "options": [
+      "User Thread",
+      "Daemon Thread",
+      "Main Thread",
+      "Worker Thread"
+    ],
+    "answer": 1,
+    "explanation": "데몬 스레드(Daemon Thread)는 가비지 컬렉터나 자동 저장처럼 주 스레드를 보조하는 역할을 하며, 주 스레드가 끝나면 자동 소멸합니다."
+  },
+  {
+    "id": 72,
+    "subject": "Java프로그래밍",
+    "question": "런타임에 클래스의 정보(메소드, 필드 등)를 분석하고 조작할 수 있게 해주는 API는?",
+    "options": [
+      "Reflection",
+      "Collection",
+      "Introspection",
+      "Serialization"
+    ],
+    "answer": 0,
+    "explanation": "리플렉션(Reflection)을 사용하면 구체적인 클래스 타입을 알지 못해도 해당 클래스의 메소드, 타입, 변수들에 접근할 수 있습니다."
+  },
+  {
+    "id": 73,
+    "subject": "Java프로그래밍",
+    "question": "어노테이션(Annotation)을 정의할 때 사용하는 키워드는?",
+    "options": [
+      "class",
+      "interface",
+      "@interface",
+      "@class"
+    ],
+    "answer": 2,
+    "explanation": "어노테이션 타입은 '@interface' 키워드를 사용하여 정의합니다."
+  },
+  {
+    "id": 74,
+    "subject": "Java프로그래밍",
+    "question": "JVM 메모리 영역 중, 메소드 호출 시 생성되는 지역 변수와 매개변수가 저장되는 곳은?",
+    "options": [
+      "Heap Area",
+      "Stack Area",
+      "Method Area",
+      "PC Register"
+    ],
+    "answer": 1,
+    "explanation": "객체는 Heap에 생성되지만, 메소드 내의 지역 변수나 매개변수 등은 Stack 영역에 쌓였다가 메소드가 끝나면 사라집니다."
+  },
+  {
+    "id": 75,
+    "subject": "Java프로그래밍",
+    "question": "디자인 패턴 중, 클래스의 인스턴스가 오직 하나만 생성되도록 보장하는 패턴은?",
+    "options": [
+      "Factory Pattern",
+      "Observer Pattern",
+      "Singleton Pattern",
+      "Adapter Pattern"
+    ],
+    "answer": 2,
+    "explanation": "싱글톤(Singleton) 패턴은 전역에서 하나의 인스턴스만 공유하여 사용하기 위해 생성자를 private으로 막고 static 인스턴스를 반환합니다."
+  },
+  {
+    "id": 76,
+    "subject": "Java프로그래밍",
+    "question": "Vector와 ArrayList의 가장 큰 차이점은?",
+    "options": [
+      "Vector는 동기화(Synchronized)가 되어 있어 스레드에 안전하다.",
+      "ArrayList는 크기가 고정되어 있다.",
+      "Vector는 List 인터페이스를 구현하지 않는다.",
+      "ArrayList가 더 느리다."
+    ],
+    "answer": 0,
+    "explanation": "Vector는 구버전 클래스로 모든 메소드가 동기화처리 되어 있어 멀티스레드에 안전하지만 속도가 느립니다. ArrayList는 동기화가 없습니다."
+  },
+  {
+    "id": 77,
+    "subject": "Java프로그래밍",
+    "question": "HashMap에서 Key나 Value에 null을 허용하지 않는 클래스는?",
+    "options": [
+      "Hashtable",
+      "LinkedHashMap",
+      "TreeMap",
+      "HashSet"
+    ],
+    "answer": 0,
+    "explanation": "HashMap은 null 키/값을 허용하지만, 구버전인 Hashtable은 null을 입력하면 NullPointerException이 발생합니다."
+  },
+  {
+    "id": 78,
+    "subject": "Java프로그래밍",
+    "question": "컬렉션의 요소들을 순차적으로 접근하기 위해 사용하는 인터페이스는?",
+    "options": [
+      "Iterator",
+      "Enumerator",
+      "Cursor",
+      "Pointer"
+    ],
+    "answer": 0,
+    "explanation": "Iterator(반복자)는 hasNext(), next() 메소드를 통해 컬렉션 내부 요소를 순회하는 표준 방법을 제공합니다."
+  },
+  {
+    "id": 79,
+    "subject": "Java프로그래밍",
+    "question": "객체 직렬화 시, 직렬화 대상에서 제외하고 싶은 필드 앞에 붙이는 키워드는?",
+    "options": [
+      "static",
+      "transient",
+      "volatile",
+      "synchronous"
+    ],
+    "answer": 1,
+    "explanation": "transient 키워드가 붙은 멤버 변수는 직렬화 과정에서 제외되어 파일에 저장되거나 전송되지 않습니다."
+  },
+  {
+    "id": 80,
+    "subject": "Java프로그래밍",
+    "question": "SOLID 원칙 중 'L'에 해당하는 리스코프 치환 원칙(LSP)의 의미는?",
+    "options": [
+      "클래스는 하나의 책임만 가져야 한다.",
+      "확장에는 열려 있고 변경에는 닫혀 있어야 한다.",
+      "자식 클래스는 언제나 부모 클래스를 대체할 수 있어야 한다.",
+      "클라이언트가 사용하지 않는 인터페이스에 의존하지 않아야 한다."
+    ],
+    "answer": 2,
+    "explanation": "LSP는 서브 타입(자식)이 언제나 기반 타입(부모)으로 교체되어도 프로그램이 정상 작동해야 한다는 원칙입니다."
+  },
+  {
+    "id": 81,
+    "subject": "Java프로그래밍",
+    "question": "Stream API에서 2차원 배열이나 리스트의 리스트를 단일 스트림으로 평탄화(flattening)할 때 사용하는 메소드는?",
+    "options": [
+      "map()",
+      "flatMap()",
+      "reduce()",
+      "filter()"
+    ],
+    "answer": 1,
+    "explanation": "flatMap()은 중첩된 구조를 한 단계 제거하여 평평하게(flat) 만들어주는 매핑 연산입니다."
+  },
+  {
+    "id": 82,
+    "subject": "Java프로그래밍",
+    "question": "함수형 인터페이스(Functional Interface)임을 명시하여 컴파일러가 체크하게 하는 어노테이션은?",
+    "options": [
+      "@Override",
+      "@FunctionalInterface",
+      "@Deprecated",
+      "@SuppressWarnings"
+    ],
+    "answer": 1,
+    "explanation": "@FunctionalInterface를 붙이면 해당 인터페이스가 추상 메소드를 딱 하나만 가지고 있는지 컴파일러가 검사해 줍니다."
+  },
+  {
+    "id": 83,
+    "subject": "Java프로그래밍",
+    "question": "Java 8 날짜/시간 API에서 '날짜(연-월-일)' 정보만 표현하는 클래스는?",
+    "options": [
+      "LocalTime",
+      "LocalDateTime",
+      "LocalDate",
+      "ZonedDateTime"
+    ],
+    "answer": 2,
+    "explanation": "시간 정보 없이 날짜만 다룰 때는 LocalDate, 시간만 다룰 때는 LocalTime, 둘 다는 LocalDateTime을 사용합니다."
+  },
+  {
+    "id": 84,
+    "subject": "Java프로그래밍",
+    "question": "두 객체가 equals() 메소드로 true를 반환한다면, 반드시 같아야 하는 것은?",
+    "options": [
+      "hashCode() 값",
+      "toString() 값",
+      "객체의 메모리 주소",
+      "클래스 이름"
+    ],
+    "answer": 0,
+    "explanation": "Java 규약상 equals()가 true인 두 객체는 반드시 같은 hashCode() 값을 반환해야 합니다. (역은 성립하지 않을 수 있음)"
+  },
+  {
+    "id": 85,
+    "subject": "Java프로그래밍",
+    "question": "멀티스레드 환경에서 원자성(Atomicity)을 보장하며, 동기화 없이도 안전하게 값을 변경할 수 있는 변수 타입은?",
+    "options": [
+      "int",
+      "volatile int",
+      "AtomicInteger",
+      "synchronized int"
+    ],
+    "answer": 2,
+    "explanation": "AtomicInteger와 같은 Atomic 클래스들은 CAS(Compare-And-Swap) 알고리즘을 이용해 락 없이도 스레드 안전(Thread-safe)한 연산을 지원합니다."
+  },
+  {
+    "id": 86,
+    "subject": "Java프로그래밍",
+    "question": "Java의 제네릭(Generics)에서 'Type Erasure(타입 소거)'란?",
+    "options": [
+      "런타임 시 제네릭 타입 정보를 제거하는 프로세스",
+      "컴파일 시 제네릭 타입을 강제로 지정하는 것",
+      "제네릭 타입을 Object로 변환하지 않는 것",
+      "타입 캐스팅을 생략하는 기능"
+    ],
+    "answer": 0,
+    "explanation": "호환성 유지를 위해 컴파일러는 제네릭 타입 정보를 검사한 후, 컴파일된 바이트코드(.class)에서는 해당 정보를 지우고(Object 등으로 변환) 실행합니다."
+  },
+  {
+    "id": 87,
+    "subject": "Java프로그래밍",
+    "question": "다음 중 비동기 프로그래밍을 지원하기 위해 Java 8에서 도입된 클래스는?",
+    "options": [
+      "Future",
+      "CompletableFuture",
+      "Promise",
+      "Callback"
+    ],
+    "answer": 1,
+    "explanation": "기존 Future의 단점을 보완하여, 결과에 대한 콜백 등록이나 조합 등이 가능한 CompletableFuture가 도입되었습니다."
+  },
+  {
+    "id": 88,
+    "subject": "Java프로그래밍",
+    "question": "메소드 참조(Method Reference)를 표현하는 기호는?",
+    "options": [
+      "->",
+      "::",
+      "=>",
+      ".."
+    ],
+    "answer": 1,
+    "explanation": "람다식이 단 하나의 메소드만 호출할 때 '클래스명::메소드명' 형태로 줄여 쓸 수 있습니다. (예: System.out::println)"
+  },
+  {
+    "id": 89,
+    "subject": "Java프로그래밍",
+    "question": "Optional 객체에서 값이 존재하면 반환하고, 없으면 대체값을 생성하는(함수를 실행하는) 메소드는?",
+    "options": [
+      "orElse()",
+      "orElseGet()",
+      "orElseThrow()",
+      "ifPresent()"
+    ],
+    "answer": 1,
+    "explanation": "orElse()는 값이 있든 없든 무조건 인자를 실행하지만, orElseGet()은 값이 없을 때만 Supplier 함수를 실행하므로 성능상 유리할 수 있습니다."
+  },
+  {
+    "id": 90,
+    "subject": "Java프로그래밍",
+    "question": "디자인 패턴 중, 객체의 상태 변화를 관찰하고 있다가 변화가 생기면 의존하는 객체들에게 알리는 패턴은?",
+    "options": [
+      "Strategy Pattern",
+      "Observer Pattern",
+      "Decorator Pattern",
+      "Builder Pattern"
+    ],
+    "answer": 1,
+    "explanation": "옵저버(Observer) 패턴은 한 객체의 상태가 바뀌면 그 객체에 등록된 모든 관찰자 객체들에게 자동으로 내용을 통지합니다."
+  },
+  {
+    "id": 91,
+    "subject": "Java프로그래밍",
+    "question": "Java 14부터 표준화된 기능으로, 불변 데이터(DTO 등)를 간결하게 생성하기 위한 키워드는?",
+    "options": [
+      "record",
+      "data",
+      "struct",
+      "class"
+    ],
+    "answer": 0,
+    "explanation": "record 키워드를 사용하면 생성자, getter, equals, hashCode, toString 등을 컴파일러가 자동으로 생성해 줍니다."
+  },
+  {
+    "id": 92,
+    "subject": "Java프로그래밍",
+    "question": "스레드 풀(Thread Pool)을 생성하고 관리하기 위한 최상위 인터페이스는?",
+    "options": [
+      "ThreadManager",
+      "Executor",
+      "ExecutorService",
+      "ThreadPool"
+    ],
+    "answer": 2,
+    "explanation": "ExecutorService는 스레드 풀을 생성하여 작업을 제출하고 관리하며, 종료 처리 등을 담당하는 주요 인터페이스입니다."
+  },
+  {
+    "id": 93,
+    "subject": "Java프로그래밍",
+    "question": "String s = new String(\"Java\"); String s2 = \"Java\"; 의 관계에 대한 설명으로 옳은 것은?",
+    "options": [
+      "s == s2는 true이다.",
+      "s는 Heap 영역, s2는 String Constant Pool에 생성된다.",
+      "두 변수는 완전히 같은 메모리 주소를 가리킨다.",
+      "s2가 더 많은 메모리를 사용한다."
+    ],
+    "answer": 1,
+    "explanation": "new 키워드는 항상 힙 메모리에 새 객체를 만들고, 리터럴(\"\")은 상수 풀(String Constant Pool)을 사용하여 메모리를 절약합니다."
+  },
+  {
+    "id": 94,
+    "subject": "Java프로그래밍",
+    "question": "다음 중 JVM의 Garbage Collection 대상이 되는 객체는?",
+    "options": [
+      "참조 변수가 null로 설정되어 어디서도 참조되지 않는 객체",
+      "static 변수가 참조하고 있는 객체",
+      "현재 실행 중인 스레드의 스택에 있는 변수",
+      "String Constant Pool에 있는 문자열"
+    ],
+    "answer": 0,
+    "explanation": "GC는 힙 영역에서 그 어떤 루트(Root)로부터도 참조(Reachability)되지 않는 'Unreachable' 객체를 수거합니다."
+  },
+  {
+    "id": 95,
+    "subject": "Java프로그래밍",
+    "question": "추상 팩토리(Abstract Factory) 패턴의 주된 목적은?",
+    "options": [
+      "알고리즘을 캡슐화하여 교체 가능하게 한다.",
+      "관련성 있는 객체들의 군(Family)을 생성하기 위한 인터페이스를 제공한다.",
+      "객체의 생성 비용이 비쌀 때 복사를 통해 생성한다.",
+      "복잡한 객체의 생성 과정을 단계별로 분리한다."
+    ],
+    "answer": 1,
+    "explanation": "추상 팩토리 패턴은 서로 관련된 객체들(예: 윈도우 버튼, 윈도우 스크롤바)을 구체적인 클래스에 의존하지 않고 생성할 수 있게 해줍니다."
+  },
+  {
+    "id": 96,
+    "subject": "Java프로그래밍",
+    "question": "Java의 volatile 키워드의 주된 역할은?",
+    "options": [
+      "변수를 상수화시킨다.",
+      "변수의 값을 CPU 캐시가 아닌 메인 메모리에서 직접 읽고 쓰게 한다.",
+      "메소드의 동기화를 보장한다.",
+      "직렬화 대상에서 제외한다."
+    ],
+    "answer": 1,
+    "explanation": "volatile은 변수의 가시성(Visibility)을 보장하여, 한 스레드에서 변경한 값이 다른 스레드에게 즉시 보이도록(메인 메모리 사용) 합니다."
+  },
+  {
+    "id": 97,
+    "subject": "Java프로그래밍",
+    "question": "클래스 로더(Class Loader)가 클래스 파일을 찾아서 메모리에 로딩하는 시점은?",
+    "options": [
+      "프로그램 시작 시 모든 클래스를 한꺼번에 로딩",
+      "해당 클래스가 프로그램에서 처음 사용될 때(동적 로딩)",
+      "컴파일 시점",
+      "GC가 발생할 때"
+    ],
+    "answer": 1,
+    "explanation": "Java는 런타임 시점에 필요한 클래스만 그때그때 메모리에 올리는 동적 로딩(Dynamic Loading) 방식을 사용합니다."
+  },
+  {
+    "id": 98,
+    "subject": "Java프로그래밍",
+    "question": "교착 상태(Deadlock)의 발생 조건이 아닌 것은?",
+    "options": [
+      "상호 배제 (Mutual Exclusion)",
+      "점유와 대기 (Hold and Wait)",
+      "비선점 (No Preemption)",
+      "선점 가능 (Preemption)"
+    ],
+    "answer": 3,
+    "explanation": "데드락은 '환형 대기', '상호 배제', '점유 대기', '비선점' 4가지 조건이 동시에 만족될 때 발생합니다. 자원을 뺏을 수 있다면(선점 가능) 데드락은 발생하지 않습니다."
+  },
+  {
+    "id": 99,
+    "subject": "Java프로그래밍",
+    "question": "자바에서 상속받은 부모 클래스의 메소드를 자식 클래스에서 재정의하지 못하게 막으려면?",
+    "options": [
+      "메소드에 static 키워드를 붙인다.",
+      "메소드에 final 키워드를 붙인다.",
+      "메소드를 private으로 선언한다.",
+      "메소드에 abstract 키워드를 붙인다."
+    ],
+    "answer": 1,
+    "explanation": "메소드 선언부에 final을 붙이면(예: public final void stop()) 자식 클래스에서 오버라이딩(재정의)할 수 없습니다."
+  },
+  {
+    "id": 100,
+    "subject": "Java프로그래밍",
+    "question": "Java 8의 Predicate<T> 인터페이스가 가진 추상 메소드와 반환 타입은?",
+    "options": [
+      "void accept(T t)",
+      "R apply(T t)",
+      "boolean test(T t)",
+      "T get()"
+    ],
+    "answer": 2,
+    "explanation": "Predicate는 인자 하나를 받아서 조건 검사 후 boolean(참/거짓)을 반환하는 test() 메소드를 가집니다."
+  },
+    {
+    "id": 101,
+    "subject": "C프로그래밍",
+    "question": "C언어의 특징으로 올바르지 않은 것은?",
+    "options": [
+      "시스템 프로그래밍에 적합하다.",
+      "이식성이 높다.",
+      "객체 지향 언어이다.",
+      "하드웨어를 직접 제어할 수 있다."
+    ],
+    "answer": 2,
+    "explanation": "C언어는 '절차 지향' 언어입니다. 객체 지향 언어는 C++, Java 등이 있습니다."
+  },
+  {
+    "id": 102,
+    "subject": "C프로그래밍",
+    "question": "C 프로그램의 실행 시작점이 되는 필수 함수는?",
+    "options": [
+      "start()",
+      "main()",
+      "begin()",
+      "init()"
+    ],
+    "answer": 1,
+    "explanation": "모든 C 프로그램은 main() 함수에서 실행을 시작하고 종료합니다."
+  },
+  {
+    "id": 103,
+    "subject": "C프로그래밍",
+    "question": "printf 함수에서 정수(10진수)를 출력하기 위해 사용하는 변환 명세는?",
+    "options": [
+      "%d",
+      "%f",
+      "%c",
+      "%s"
+    ],
+    "answer": 0,
+    "explanation": "%d는 10진 정수(Decimal), %f는 실수, %c는 문자, %s는 문자열을 출력합니다."
+  },
+  {
+    "id": 104,
+    "subject": "C프로그래밍",
+    "question": "변수 이름(식별자)을 지을 때 허용되지 않는 것은?",
+    "options": [
+      "영문 대소문자 사용",
+      "숫자로 시작하는 이름",
+      "밑줄(_) 사용",
+      "길이 제한 없음(컴파일러에 따라 다름)"
+    ],
+    "answer": 1,
+    "explanation": "변수명은 숫자로 시작할 수 없습니다. (예: 1st_number는 불가능)"
+  },
+  {
+    "id": 105,
+    "subject": "C프로그래밍",
+    "question": "전처리리기(Preprocessor) 지시어는 무엇으로 시작하는가?",
+    "options": [
+      "&",
+      "*",
+      "#",
+      "@"
+    ],
+    "answer": 2,
+    "explanation": "#include, #define 등 전처리기 지시어는 항상 '#' 기호로 시작합니다."
+  },
+  {
+    "id": 106,
+    "subject": "C프로그래밍",
+    "question": "scanf 함수에서 변수에 값을 입력받을 때, 변수의 주소를 넘겨주기 위해 사용하는 연산자는?",
+    "options": [
+      "*",
+      "&",
+      "->",
+      "."
+    ],
+    "answer": 1,
+    "explanation": "scanf(\"%d\", &num); 과 같이 주소 연산자(&)를 사용해야 입력된 값이 해당 메모리 위치에 저장됩니다."
+  },
+  {
+    "id": 107,
+    "subject": "C프로그래밍",
+    "question": "다음 중 나눗셈의 나머지 값을 구하는 연산자는?",
+    "options": [
+      "/",
+      "%",
+      "^",
+      "mod"
+    ],
+    "answer": 1,
+    "explanation": "'/'는 몫을 구하고, '%'는 나머지를 구하는 모듈러 연산자입니다."
+  },
+  {
+    "id": 108,
+    "subject": "C프로그래밍",
+    "question": "변수의 값을 1 증가시키는 증감 연산자는?",
+    "options": [
+      "++",
+      "--",
+      "**",
+      "+="
+    ],
+    "answer": 0,
+    "explanation": "++ 연산자는 피연산자의 값을 1 증가시킵니다."
+  },
+  {
+    "id": 109,
+    "subject": "C프로그래밍",
+    "question": "C언어에서 여러 줄 주석(Comment)을 작성할 때 사용하는 기호는?",
+    "options": [
+      "// ...",
+      "/* ... */",
+      "# ... #",
+      ""
+    ],
+    "answer": 1,
+    "explanation": "//는 한 줄 주석, /* ... */는 여러 줄 주석에 사용됩니다."
+  },
+  {
+    "id": 110,
+    "subject": "C프로그래밍",
+    "question": "switch 문에서 각 case의 실행을 마치고 switch 블록을 빠져나가기 위해 사용하는 키워드는?",
+    "options": [
+      "exit",
+      "stop",
+      "break",
+      "return"
+    ],
+    "answer": 2,
+    "explanation": "break 문이 없으면 아래쪽 case의 코드까지 연속으로 실행(Fall-through)됩니다."
+  },
+  {
+    "id": 111,
+    "subject": "C프로그래밍",
+    "question": "do-while 반복문의 특징으로 옳은 것은?",
+    "options": [
+      "조건이 거짓이면 한 번도 실행되지 않는다.",
+      "무조건 최소 한 번은 실행된다.",
+      "무한 루프를 만들 수 없다.",
+      "조건 검사를 반복문 시작 전에 한다."
+    ],
+    "answer": 1,
+    "explanation": "do-while 문은 코드 블록을 먼저 실행한 후 조건을 검사하므로 최소 1회 실행을 보장합니다."
+  },
+  {
+    "id": 112,
+    "subject": "C프로그래밍",
+    "question": "int arr[5]; 로 선언된 배열의 마지막 요소 인덱스는?",
+    "options": [
+      "4",
+      "5",
+      "1",
+      "0"
+    ],
+    "answer": 0,
+    "explanation": "배열 인덱스는 0부터 시작하므로, 크기가 5인 배열의 인덱스는 0, 1, 2, 3, 4입니다."
+  },
+  {
+    "id": 113,
+    "subject": "C프로그래밍",
+    "question": "C언어에서 문자열의 끝을 알리는 특수 문자는?",
+    "options": [
+      "NULL",
+      "\\n",
+      "\\0 (Null Character)",
+      "EOF"
+    ],
+    "answer": 2,
+    "explanation": "C언어 문자열은 항상 널 문자('\\0')로 끝나야 합니다."
+  },
+  {
+    "id": 114,
+    "subject": "C프로그래밍",
+    "question": "변수의 메모리 주소를 저장하는 특수한 변수를 무엇이라 하는가?",
+    "options": [
+      "배열",
+      "구조체",
+      "포인터",
+      "유니온"
+    ],
+    "answer": 2,
+    "explanation": "포인터(Pointer)는 다른 변수의 주소값을 값으로 가지는 변수입니다."
+  },
+  {
+    "id": 115,
+    "subject": "C프로그래밍",
+    "question": "함수에서 값을 반환하지 않을 때 사용하는 리턴 타입은?",
+    "options": [
+      "int",
+      "null",
+      "void",
+      "empty"
+    ],
+    "answer": 2,
+    "explanation": "반환값이 없는 함수는 리턴 타입으로 void를 명시합니다."
+  },
+  {
+    "id": 116,
+    "subject": "C프로그래밍",
+    "question": "지역 변수(Local Variable)의 특징이 아닌 것은?",
+    "options": [
+      "함수 내부에서 선언된다.",
+      "스택(Stack) 영역에 생성된다.",
+      "함수가 종료되면 소멸한다.",
+      "프로그램 전체에서 접근 가능하다."
+    ],
+    "answer": 3,
+    "explanation": "지역 변수는 선언된 블록({}) 내부에서만 접근 가능합니다. 프로그램 전체에서 접근 가능한 것은 전역 변수입니다."
+  },
+  {
+    "id": 117,
+    "subject": "C프로그래밍",
+    "question": "표준 입출력 함수(printf, scanf 등)를 사용하기 위해 포함해야 하는 헤더 파일은?",
+    "options": [
+      "stdlib.h",
+      "stdio.h",
+      "string.h",
+      "math.h"
+    ],
+    "answer": 1,
+    "explanation": "Standard Input/Output의 약자인 stdio.h를 include 해야 합니다."
+  },
+  {
+    "id": 118,
+    "subject": "C프로그래밍",
+    "question": "다음 코드의 실행 결과는? int x=10; int *p=&x; *p=20; printf(\"%d\", x);",
+    "options": [
+      "10",
+      "20",
+      "주소값",
+      "에러 발생"
+    ],
+    "answer": 1,
+    "explanation": "포인터 p가 x의 주소를 가리키고 있고, *p = 20을 통해 그 주소의 값(x)을 20으로 변경했으므로 x는 20이 됩니다."
+  },
+  {
+    "id": 119,
+    "subject": "C프로그래밍",
+    "question": "서로 다른 자료형의 변수들을 하나로 묶어서 새로운 자료형을 정의하는 문법은?",
+    "options": [
+      "배열 (Array)",
+      "구조체 (Structure)",
+      "열거형 (Enum)",
+      "매크로 (Macro)"
+    ],
+    "answer": 1,
+    "explanation": "배열은 '같은' 자료형의 모임이고, 구조체(struct)는 '다른' 자료형들을 하나로 묶는 것입니다."
+  },
+  {
+    "id": 120,
+    "subject": "C프로그래밍",
+    "question": "소스 코드(.c)를 기계어(.obj)로 변환하는 과정을 무엇이라 하는가?",
+    "options": [
+      "링킹 (Linking)",
+      "로딩 (Loading)",
+      "컴파일 (Compile)",
+      "디버깅 (Debugging)"
+    ],
+    "answer": 2,
+    "explanation": "사람이 작성한 코드를 컴퓨터가 이해하는 기계어로 바꾸는 과정을 컴파일이라고 합니다."
+  },
+  {
+    "id": 121,
+    "subject": "C프로그래밍",
+    "question": "포인터 변수의 크기(byte)는 무엇에 의해 결정되는가?",
+    "options": [
+      "가리키는 변수의 자료형 크기",
+      "운영체제와 컴파일러의 비트 수 (32bit/64bit)",
+      "포인터 변수의 이름 길이",
+      "항상 4바이트로 고정"
+    ],
+    "answer": 1,
+    "explanation": "포인터는 '주소값'을 저장하므로, 32비트 시스템에선 4바이트, 64비트 시스템에선 8바이트를 차지합니다. (자료형과 무관)"
+  },
+  {
+    "id": 122,
+    "subject": "C프로그래밍",
+    "question": "배열의 이름(예: int arr[10]; 에서 'arr')이 의미하는 값은?",
+    "options": [
+      "배열 전체의 크기",
+      "배열의 첫 번째 요소의 주소값",
+      "배열의 마지막 요소의 값",
+      "배열 요소의 개수"
+    ],
+    "answer": 1,
+    "explanation": "배열의 이름은 식 안에서 사용될 때, 배열의 첫 번째 요소(&arr[0])를 가리키는 포인터 상수(상수 주소)로 취급됩니다."
+  },
+  {
+    "id": 123,
+    "subject": "C프로그래밍",
+    "question": "문자열 복사를 위해 사용하는 표준 라이브러리 함수는?",
+    "options": [
+      "strcat()",
+      "strcmp()",
+      "strcpy()",
+      "strlen()"
+    ],
+    "answer": 2,
+    "explanation": "strcpy(dest, src)는 문자열을 복사(String Copy)하는 함수입니다."
+  },
+  {
+    "id": 124,
+    "subject": "C프로그래밍",
+    "question": "동적 메모리 할당을 위해 사용하는 함수가 아닌 것은?",
+    "options": [
+      "malloc()",
+      "calloc()",
+      "realloc()",
+      "alloc()"
+    ],
+    "answer": 3,
+    "explanation": "C 표준 라이브러리에는 alloc()이라는 함수는 없습니다. (malloc, calloc, realloc 사용)"
+  },
+  {
+    "id": 125,
+    "subject": "C프로그래밍",
+    "question": "구조체(struct) 멤버에 접근할 때, 구조체 포인터를 이용해 접근하는 연산자는?",
+    "options": [
+      ".",
+      "->",
+      "::",
+      "*"
+    ],
+    "answer": 1,
+    "explanation": "일반 구조체 변수는 점(.)으로 접근하지만, 구조체 '포인터'는 화살표(->) 연산자를 사용하여 멤버에 접근합니다."
+  },
+  {
+    "id": 126,
+    "subject": "C프로그래밍",
+    "question": "다음 중 조건부 컴파일을 위한 전처리 지시어가 아닌 것은?",
+    "options": [
+      "#ifdef",
+      "#else",
+      "#endif",
+      "#while"
+    ],
+    "answer": 3,
+    "explanation": "#while은 존재하지 않습니다. 반복문은 전처리기가 아닌 컴파일러가 처리하는 while을 씁니다."
+  },
+  {
+    "id": 127,
+    "subject": "C프로그래밍",
+    "question": "지역 변수와 달리, 함수 호출이 끝나도 메모리에 값이 남아있는 변수(기억 부류)는?",
+    "options": [
+      "auto",
+      "register",
+      "static",
+      "extern"
+    ],
+    "answer": 2,
+    "explanation": "static(정적) 변수는 프로그램 시작 시 생성되어 종료 시까지 메모리(데이터 영역)에 유지되며 값을 보존합니다."
+  },
+  {
+    "id": 128,
+    "subject": "C프로그래밍",
+    "question": "함수의 매개변수 전달 방식 중, 원본 변수의 값을 함수 내부에서 변경할 수 있는 방식은?",
+    "options": [
+      "Call by Value (값에 의한 호출)",
+      "Call by Reference (주소에 의한 호출)",
+      "Call by Name",
+      "Call by Copy"
+    ],
+    "answer": 1,
+    "explanation": "주소값을 전달(Call by Reference)해야 함수 내부에서 포인터를 통해 원본 데이터를 수정할 수 있습니다."
+  },
+  {
+    "id": 129,
+    "subject": "C프로그래밍",
+    "question": "다음 코드의 출력값은? char *str = \"Hello\"; printf(\"%c\", *(str+1));",
+    "options": [
+      "H",
+      "e",
+      "l",
+      "o"
+    ],
+    "answer": 1,
+    "explanation": "str은 'H'의 주소입니다. (str+1)은 'e'의 주소이고, *(참조) 연산자를 썼으므로 문자 'e'가 출력됩니다."
+  },
+  {
+    "id": 130,
+    "subject": "C프로그래밍",
+    "question": "파일 입출력 시, 파일의 끝(End Of File)을 확인하는 함수는?",
+    "options": [
+      "fclose()",
+      "feof()",
+      "fseek()",
+      "fopen()"
+    ],
+    "answer": 1,
+    "explanation": "feof() 함수는 파일 포인터가 파일의 끝에 도달했는지 검사합니다."
+  },
+  {
+    "id": 131,
+    "subject": "C프로그래밍",
+    "question": "malloc() 함수로 할당받은 메모리를 해제하지 않으면 발생하는 문제는?",
+    "options": [
+      "컴파일 에러",
+      "런타임 에러",
+      "메모리 누수 (Memory Leak)",
+      "세그멘테이션 폴트"
+    ],
+    "answer": 2,
+    "explanation": "사용하지 않는 힙 메모리를 free() 하지 않으면 메모리가 계속 점유된 상태로 남아 시스템 리소스를 낭비하게 됩니다."
+  },
+  {
+    "id": 132,
+    "subject": "C프로그래밍",
+    "question": "매크로 함수(Macro Function) 사용 시 주의할 점으로 가장 적절한 것은?",
+    "options": [
+      "타입 검사를 엄격하게 한다.",
+      "디버깅이 매우 쉽다.",
+      "연산자 우선순위 문제를 막기 위해 괄호()를 충분히 사용해야 한다.",
+      "함수 호출 오버헤드가 발생한다."
+    ],
+    "answer": 2,
+    "explanation": "매크로는 단순 치환이므로, #define SQUARE(x) (x)*(x) 처럼 괄호를 잘 써야 의도치 않은 연산 순서 오류를 막을 수 있습니다."
+  },
+  {
+    "id": 133,
+    "subject": "C프로그래밍",
+    "question": "C언어에서 참(True)과 거짓(False)을 숫자로 표현할 때, '거짓'에 해당하는 값은?",
+    "options": [
+      "1",
+      "-1",
+      "0",
+      "null"
+    ],
+    "answer": 2,
+    "explanation": "C99 이전 표준 C에서는 0은 거짓, 0이 아닌 모든 값(보통 1)은 참으로 간주합니다."
+  },
+  {
+    "id": 134,
+    "subject": "C프로그래밍",
+    "question": "다음 선언 중 '정수형 포인터의 배열'을 의미하는 것은?",
+    "options": [
+      "int *ptr[10];",
+      "int (*ptr)[10];",
+      "int ptr[10];",
+      "int &ptr[10];"
+    ],
+    "answer": 0,
+    "explanation": "int *ptr[10]은 포인터(*) 10개를 담는 배열([])입니다. 반면 int (*ptr)[10]은 배열을 가리키는 포인터입니다."
+  },
+  {
+    "id": 135,
+    "subject": "C프로그래밍",
+    "question": "이미 정의된 자료형에 새로운 이름을 붙여주는 키워드는?",
+    "options": [
+      "newtype",
+      "typedef",
+      "struct",
+      "union"
+    ],
+    "answer": 1,
+    "explanation": "typedef(Type Definition)를 사용하면 unsigned long int 처럼 긴 타입을 ulong 처럼 별칭으로 정의할 수 있습니다."
+  },
+  {
+    "id": 136,
+    "subject": "C프로그래밍",
+    "question": "반복문 while(1) { ... } 의 의미는?",
+    "options": [
+      "1번만 실행",
+      "실행되지 않음",
+      "무한 루프",
+      "컴파일 에러"
+    ],
+    "answer": 2,
+    "explanation": "조건식에 1(참)이 들어가 있으므로 break를 만나지 않는 한 영원히 반복됩니다."
+  },
+  {
+    "id": 137,
+    "subject": "C프로그래밍",
+    "question": "main 함수에 전달되는 인자 중, 명령행 인자의 개수를 저장하는 매개변수는?",
+    "options": [
+      "argc",
+      "argv",
+      "envp",
+      "argn"
+    ],
+    "answer": 0,
+    "explanation": "main(int argc, char *argv[])에서 argc(Argument Count)는 인자의 개수를 담습니다."
+  },
+  {
+    "id": 138,
+    "subject": "C프로그래밍",
+    "question": "비트 연산자 중, 두 비트가 서로 다를 때만 1을 반환하는 XOR 연산자는?",
+    "options": [
+      "&",
+      "|",
+      "^",
+      "~"
+    ],
+    "answer": 2,
+    "explanation": "^ (Caret) 기호가 XOR(Exclusive OR) 연산을 수행합니다."
+  },
+  {
+    "id": 139,
+    "subject": "C프로그래밍",
+    "question": "헤더 파일 중복 포함을 방지하기 위해 사용하는 전처리 기법은?",
+    "options": [
+      "#include_once",
+      "#ifndef ~ #define ~ #endif",
+      "#import",
+      "#duplicate"
+    ],
+    "answer": 1,
+    "explanation": "전통적인 C에서는 #ifndef(If Not Defined) 가드를 사용해 중복 포함을 막습니다. (#pragma once도 많이 쓰입니다)"
+  },
+  {
+    "id": 140,
+    "subject": "C프로그래밍",
+    "question": "2차원 배열 int arr[3][4]의 전체 요소 개수는?",
+    "options": [
+      "7",
+      "12",
+      "34",
+      "4"
+    ],
+    "answer": 1,
+    "explanation": "3행 4열이므로 3 * 4 = 12개의 요소를 가집니다."
+  },
+  {
+    "id": 141,
+    "subject": "C프로그래밍",
+    "question": "재귀 함수(Recursive Function) 사용 시 반드시 필요한 것은?",
+    "options": [
+      "전역 변수 사용",
+      "종료 조건 (Base Case)",
+      "포인터 연산",
+      "동적 메모리 할당"
+    ],
+    "answer": 1,
+    "explanation": "재귀 함수는 자신을 계속 호출하므로, 무한 루프(스택 오버플로우)에 빠지지 않으려면 반드시 멈추는 조건이 있어야 합니다."
+  },
+  {
+    "id": 142,
+    "subject": "C프로그래밍",
+    "question": "다음 중 C언어의 표준 자료형(Data Type)이 아닌 것은?",
+    "options": [
+      "short",
+      "long",
+      "byte",
+      "double"
+    ],
+    "answer": 2,
+    "explanation": "byte는 C언어 표준 자료형이 아닙니다(Java에는 있음). C에서는 보통 char나 unsigned char를 바이트 대용으로 씁니다."
+  },
+  {
+    "id": 143,
+    "subject": "C프로그래밍",
+    "question": "배열 a[5]의 주소값이 1000번지일 때, a+1의 주소값은? (int형은 4바이트 가정)",
+    "options": [
+      "1001",
+      "1002",
+      "1004",
+      "1008"
+    ],
+    "answer": 2,
+    "explanation": "포인터 연산에서 +1은 '자료형의 크기'만큼 이동합니다. int형(4바이트)이므로 1000 + 4 = 1004가 됩니다."
+  },
+  {
+    "id": 144,
+    "subject": "C프로그래밍",
+    "question": "문자열을 입력받을 때 공백(Space)도 포함해서 입력받을 수 있는 함수는?",
+    "options": [
+      "scanf(\"%s\", ...)",
+      "gets() 또는 fgets()",
+      "getchar()",
+      "puts()"
+    ],
+    "answer": 1,
+    "explanation": "scanf의 %s는 공백을 만나면 입력을 종료하지만, fgets() 등은 줄바꿈 전까지의 공백 포함 문자열을 입력받습니다."
+  },
+  {
+    "id": 145,
+    "subject": "C프로그래밍",
+    "question": "변수 선언 시 초기화를 하지 않았을 때, 쓰레기 값(Garbage Value)이 들어가는 변수는?",
+    "options": [
+      "전역 변수",
+      "정적 변수 (static)",
+      "지역 변수 (auto)",
+      "외부 변수 (extern)"
+    ],
+    "answer": 2,
+    "explanation": "전역 변수와 static 변수는 자동으로 0으로 초기화되지만, 지역 변수는 초기화하지 않으면 쓰레기 값을 가집니다."
+  },
+  {
+    "id": 146,
+    "subject": "C프로그래밍",
+    "question": "구조체 변수의 크기는?",
+    "options": [
+      "멤버 중 가장 큰 자료형의 크기",
+      "모든 멤버 변수 크기의 합 (패딩 바이트 제외)",
+      "모든 멤버 변수 크기의 합 + 패딩 바이트",
+      "항상 4바이트"
+    ],
+    "answer": 2,
+    "explanation": "구조체는 메모리 정렬(Alignment) 때문에 멤버들의 단순 합보다 클 수 있으며, 이를 패딩(Padding)이라 합니다."
+  },
+  {
+    "id": 147,
+    "subject": "C프로그래밍",
+    "question": "다음 코드의 실행 결과는? int a=5, b=2; printf(\"%f\", (float)a/b);",
+    "options": [
+      "2",
+      "2.000000",
+      "2.500000",
+      "3.000000"
+    ],
+    "answer": 2,
+    "explanation": "a를 float로 형변환(Casting)했으므로 5.0 / 2가 되어 실수 나눗셈 2.5가 수행됩니다."
+  },
+  {
+    "id": 148,
+    "subject": "C프로그래밍",
+    "question": "C 프로그램에서 main 함수에 인자를 전달할 때, 인자들의 문자열 배열을 가리키는 매개변수는?",
+    "options": [
+      "int argc",
+      "char *argv[]",
+      "char *env[]",
+      "int arg[]"
+    ],
+    "answer": 1,
+    "explanation": "argv(Argument Vector)는 문자열 포인터 배열로, 입력된 각 명령행 인자 문자열을 가리킵니다."
+  },
+  {
+    "id": 149,
+    "subject": "C프로그래밍",
+    "question": "const 키워드의 의미로 가장 적절한 것은?",
+    "options": [
+      "변수의 자료형을 변경한다.",
+      "변수를 상수로 만들어 값을 변경할 수 없게 한다.",
+      "변수의 유효 범위를 확장한다.",
+      "최적화를 수행하지 않는다."
+    ],
+    "answer": 1,
+    "explanation": "const int x = 10; 처럼 선언하면 x는 읽기 전용 변수(상수)가 되어 값을 바꿀 수 없습니다."
+  },
+  {
+    "id": 150,
+    "subject": "C프로그래밍",
+    "question": "파일을 열 때 사용하는 fopen 함수의 모드 중, '추가 모드(기존 내용 유지)'를 의미하는 것은?",
+    "options": [
+      "\"r\"",
+      "\"w\"",
+      "\"a\"",
+      "\"r+\""
+    ],
+    "answer": 2,
+    "explanation": "\"a\"(append) 모드는 파일 끝에 데이터를 덧붙이며, 기존 내용은 지워지지 않습니다. (\"w\"는 덮어씀)"
+  },
+  {
+    "id": 151,
+    "subject": "C프로그래밍",
+    "question": "다음 중 비트 이동(Shift) 연산자는?",
+    "options": [
+      "<<",
+      "<>",
+      "**",
+      "%%"
+    ],
+    "answer": 0,
+    "explanation": "<<(Left Shift), >>(Right Shift) 연산자는 비트를 좌우로 이동시킵니다."
+  },
+  {
+    "id": 152,
+    "subject": "C프로그래밍",
+    "question": "함수 포인터(Function Pointer)를 사용하는 이유로 적절하지 않은 것은?",
+    "options": [
+      "콜백 함수(Callback Function) 구현",
+      "함수를 배열에 담아서 관리",
+      "동적 메모리 할당을 위해",
+      "런타임에 호출할 함수를 결정하기 위해"
+    ],
+    "answer": 2,
+    "explanation": "동적 메모리 할당은 malloc 등을 쓰며, 함수 포인터와는 직접적인 관련이 없습니다."
+  },
+  {
+    "id": 153,
+    "subject": "C프로그래밍",
+    "question": "C언어에서 참(True)으로 간주되는 값이 아닌 것은?",
+    "options": [
+      "1",
+      "-1",
+      "0",
+      "100"
+    ],
+    "answer": 2,
+    "explanation": "C언어에서 '0'은 거짓(False)이고, 0이 아닌 모든 수(음수 포함)는 참(True)입니다."
+  },
+  {
+    "id": 154,
+    "subject": "C프로그래밍",
+    "question": "int (*p)[3]; 이 선언하는 것은?",
+    "options": [
+      "크기가 3인 int형 배열",
+      "int형 포인터 3개를 저장하는 배열",
+      "크기가 3인 int형 배열을 가리키는 포인터",
+      "함수 포인터"
+    ],
+    "answer": 2,
+    "explanation": "(*p)로 묶여 있으면 포인터가 우선입니다. 즉, 'int형 3개짜리 배열'을 가리키는 포인터 변수 하나입니다."
+  },
+  {
+    "id": 155,
+    "subject": "C프로그래밍",
+    "question": "문자형 변수 char c = 'A'; 일 때, c + 1의 정수값은? (ASCII 코드 A=65)",
+    "options": [
+      "65",
+      "66",
+      "B",
+      "Error"
+    ],
+    "answer": 1,
+    "explanation": "문자 'A'는 내부적으로 정수 65로 저장되므로, 65 + 1 = 66이 됩니다."
+  },
+  {
+    "id": 156,
+    "subject": "C프로그래밍",
+    "question": "다음 중 논리 연산의 결과가 다른 하나는? (x=1, y=0 가정)",
+    "options": [
+      "x && y",
+      "x & y",
+      "x * y",
+      "x || y"
+    ],
+    "answer": 3,
+    "explanation": "x && y(1 AND 0) = 0, x & y = 0, x * y = 0 이지만, x || y(1 OR 0) = 1(참)입니다."
+  },
+  {
+    "id": 157,
+    "subject": "C프로그래밍",
+    "question": "헤더 파일(.h)을 직접 만들어서 포함시킬 때 사용하는 include 문법은?",
+    "options": [
+      "#include <myfile.h>",
+      "#include \"myfile.h\"",
+      "#import [myfile.h]",
+      "#include {myfile.h}"
+    ],
+    "answer": 1,
+    "explanation": "표준 라이브러리는 <>를 쓰고, 사용자가 만든 헤더 파일은 큰따옴표(\"\")를 사용합니다."
+  },
+  {
+    "id": 158,
+    "subject": "C프로그래밍",
+    "question": "다음 중 '공용체(union)'의 특징은?",
+    "options": [
+      "모든 멤버가 각자의 메모리 공간을 가진다.",
+      "가장 큰 멤버의 크기만큼 메모리를 공유한다.",
+      "멤버들을 동시에 사용할 수 있다.",
+      "구조체보다 메모리를 많이 차지한다."
+    ],
+    "answer": 1,
+    "explanation": "공용체는 모든 멤버가 하나의 메모리 공간(가장 큰 멤버 크기)을 공유하므로 한 번에 하나의 멤버만 값을 가질 수 있습니다."
+  },
+  {
+    "id": 159,
+    "subject": "C프로그래밍",
+    "question": "컴파일러가 코드를 기계어로 번역하기 전에 수행하는 작업은?",
+    "options": [
+      "링킹 (Linking)",
+      "로딩 (Loading)",
+      "전처리 (Preprocessing)",
+      "실행 (Execution)"
+    ],
+    "answer": 2,
+    "explanation": "#include나 #define 같은 지시어를 처리하는 전처리 과정이 컴파일 이전에 먼저 수행됩니다."
+  },
+  {
+    "id": 160,
+    "subject": "C프로그래밍",
+    "question": "3항 연산자의 올바른 형식은?",
+    "options": [
+      "조건 ? 참값 : 거짓값",
+      "조건 : 참값 ? 거짓값",
+      "조건 !! 참값 ?? 거짓값",
+      "조건 -> 참값 : 거짓값"
+    ],
+    "answer": 0,
+    "explanation": "(a > b) ? a : b 처럼 사용하는 조건 연산자입니다."
+  },
+  {
+    "id": 161,
+    "subject": "C프로그래밍",
+    "question": "포인터 변수 자체의 주소값을 저장하기 위해 사용하는 것은?",
+    "options": [
+      "void 포인터",
+      "이중 포인터 (Double Pointer)",
+      "배열 포인터",
+      "함수 포인터"
+    ],
+    "answer": 1,
+    "explanation": "변수의 주소는 싱글 포인터(*), 포인터의 주소는 이중 포인터(**)에 저장합니다."
+  },
+  {
+    "id": 162,
+    "subject": "C프로그래밍",
+    "question": "배열 이름과 포인터의 가장 큰 차이점은?",
+    "options": [
+      "접근 속도가 다르다.",
+      "배열 이름은 주소값을 변경할 수 없는 '상수 포인터'이다.",
+      "포인터는 인덱스 표기법([])을 사용할 수 없다.",
+      "배열은 함수의 인자로 전달할 수 없다."
+    ],
+    "answer": 1,
+    "explanation": "포인터 변수(int *p)는 다른 주소를 대입할 수 있지만, 배열 이름(int arr[])은 메모리에 고정된 주소라 바꿀 수 없습니다(arr++ 불가능)."
+  },
+  {
+    "id": 163,
+    "subject": "C프로그래밍",
+    "question": "파일 입출력 시, 파일 위치 지시자(Cursor)를 임의의 위치로 이동시키는 함수는?",
+    "options": [
+      "ftell()",
+      "fseek()",
+      "rewind()",
+      "fmove()"
+    ],
+    "answer": 1,
+    "explanation": "fseek(FILE *stream, long offset, int origin) 함수를 사용하여 파일 내 위치를 이동합니다."
+  },
+  {
+    "id": 164,
+    "subject": "C프로그래밍",
+    "question": "정수 x에 대해 'x << 1' (왼쪽 시프트) 연산을 수행한 결과와 같은 것은?",
+    "options": [
+      "x / 2",
+      "x * 2",
+      "x + 1",
+      "x - 1"
+    ],
+    "answer": 1,
+    "explanation": "비트를 왼쪽으로 한 칸 밀면 값은 2배가 되고, 오른쪽으로 밀면(>>) 1/2배가 됩니다."
+  },
+  {
+    "id": 165,
+    "subject": "C프로그래밍",
+    "question": "구조체 멤버들의 비트(bit) 수를 지정하여 메모리를 절약하는 기법은?",
+    "options": [
+      "비트 마스크",
+      "비트 필드 (Bit Field)",
+      "비트 연산",
+      "패킹 (Packing)"
+    ],
+    "answer": 1,
+    "explanation": "struct { unsigned int a : 1; } 처럼 콜론(:) 뒤에 비트 수를 명시하는 것을 비트 필드라고 합니다."
+  },
+  {
+    "id": 166,
+    "subject": "C프로그래밍",
+    "question": "이미 할당된 동적 메모리의 크기를 조절(재할당)하는 함수는?",
+    "options": [
+      "malloc()",
+      "calloc()",
+      "realloc()",
+      "resize()"
+    ],
+    "answer": 2,
+    "explanation": "realloc(ptr, new_size)은 기존 데이터를 유지하면서 메모리 크기를 늘리거나 줄입니다."
+  },
+  {
+    "id": 167,
+    "subject": "C프로그래밍",
+    "question": "두 문자열 s1, s2의 내용이 완전히 같은지 비교하는 올바른 코드는?",
+    "options": [
+      "if (s1 == s2)",
+      "if (strcmp(s1, s2) == 0)",
+      "if (s1.equals(s2))",
+      "if (strcpy(s1, s2))"
+    ],
+    "answer": 1,
+    "explanation": "==는 주소값을 비교합니다. 내용은 strcmp() 함수를 써야 하며, 같으면 0을 반환합니다."
+  },
+  {
+    "id": 168,
+    "subject": "C프로그래밍",
+    "question": "연산자 우선순위에 따를 때, *p++ 의 실행 순서는?",
+    "options": [
+      "(*p) 값을 먼저 참조한 후, 주소 p를 증가시킨다.",
+      "주소 p를 먼저 증가시킨 후, 그 값을 참조한다.",
+      "(*p) 값을 증가시킨다.",
+      "컴파일 에러"
+    ],
+    "answer": 0,
+    "explanation": "후위 증감(++)이 *보다 우선순위가 높지만 효과는 나중에 나타나므로, '현재 값 참조' -> '주소 증가' 순으로 동작합니다."
+  },
+  {
+    "id": 169,
+    "subject": "C프로그래밍",
+    "question": "매크로 함수 #define SQUARE(x) x*x 사용 시 SQUARE(a+b)의 전처리 결과는?",
+    "options": [
+      "(a+b) * (a+b)",
+      "a+b * a+b",
+      "(a+b)^2",
+      "Error"
+    ],
+    "answer": 1,
+    "explanation": "매크로는 단순 텍스트 치환입니다. 괄호를 안 썼으므로 a + b * a + b가 되어 연산 순서가 꼬입니다. (a+b)*(a+b)로 정의해야 합니다."
+  },
+  {
+    "id": 170,
+    "subject": "C프로그래밍",
+    "question": "메모리 블록을 특정 값으로 채울 때(초기화 등) 사용하는 함수는?",
+    "options": [
+      "memcpy()",
+      "memset()",
+      "memcmp()",
+      "memmove()"
+    ],
+    "answer": 1,
+    "explanation": "memset(ptr, value, size) 함수는 메모리 영역을 지정한 값(주로 0)으로 한 번에 채웁니다."
+  },
+  {
+    "id": 171,
+    "subject": "C프로그래밍",
+    "question": "열거형(enum) 선언 시 초기값을 지정하지 않으면 첫 번째 멤버의 값은?",
+    "options": [
+      "0",
+      "1",
+      "-1",
+      "쓰레기값"
+    ],
+    "answer": 0,
+    "explanation": "enum Color { RED, BLUE }; 에서 RED는 자동으로 0, BLUE는 1이 됩니다."
+  },
+  {
+    "id": 172,
+    "subject": "C프로그래밍",
+    "question": "명령행 인자 argv[0]에 들어가는 값은 보통 무엇인가?",
+    "options": [
+      "첫 번째 옵션",
+      "실행 파일의 경로 및 이름",
+      "입력된 인자의 개수",
+      "NULL"
+    ],
+    "answer": 1,
+    "explanation": "argv[0]에는 실행된 프로그램 자신의 이름(경로 포함)이 저장됩니다. 실제 인자는 argv[1]부터입니다."
+  },
+  {
+    "id": 173,
+    "subject": "C프로그래밍",
+    "question": "sizeof 연산자의 반환 타입이자, 메모리 크기를 나타내는 표준 타입은?",
+    "options": [
+      "int",
+      "long",
+      "size_t",
+      "float"
+    ],
+    "answer": 2,
+    "explanation": "size_t는 'unsigned int' 또는 'unsigned long'으로 정의된 표준 타입으로, 음수가 없는 크기를 나타냅니다."
+  },
+  {
+    "id": 174,
+    "subject": "C프로그래밍",
+    "question": "어떠한 타입의 주소든 모두 저장할 수 있는 '범용 포인터'는?",
+    "options": [
+      "null pointer",
+      "void pointer (void*)",
+      "wild pointer",
+      "smart pointer"
+    ],
+    "answer": 1,
+    "explanation": "void*는 타입을 명시하지 않은 포인터로, 주소 저장은 가능하지만 역참조(*)하려면 캐스팅을 해야 합니다."
+  },
+  {
+    "id": 175,
+    "subject": "C프로그래밍",
+    "question": "다른 소스 파일(.c)에 정의된 전역 변수를 참조하기 위해 사용하는 키워드는?",
+    "options": [
+      "static",
+      "extern",
+      "auto",
+      "register"
+    ],
+    "answer": 1,
+    "explanation": "extern int count; 처럼 선언하면 링커가 다른 파일에 있는 count 변수를 찾아 연결해 줍니다."
+  },
+  {
+    "id": 176,
+    "subject": "C프로그래밍",
+    "question": "스택(Stack) 영역과 힙(Heap) 영역의 설명으로 틀린 것은?",
+    "options": [
+      "지역 변수는 스택에 할당된다.",
+      "동적 할당(malloc)은 힙을 사용한다.",
+      "스택은 높은 주소에서 낮은 주소로 자란다.",
+      "힙 메모리는 함수 종료 시 자동으로 해제된다."
+    ],
+    "answer": 3,
+    "explanation": "스택은 자동 해제되지만, 힙 영역은 개발자가 free()를 호출하지 않으면 해제되지 않습니다."
+  },
+  {
+    "id": 177,
+    "subject": "C프로그래밍",
+    "question": "sizeof는 함수가 아니라 ( ? ) 이다. 빈칸에 알맞은 말은?",
+    "options": [
+      "전처리기",
+      "연산자 (Operator)",
+      "매크로",
+      "변수"
+    ],
+    "answer": 1,
+    "explanation": "sizeof는 컴파일 타임에 크기를 계산하는 단항 연산자입니다."
+  },
+  {
+    "id": 178,
+    "subject": "C프로그래밍",
+    "question": "다음 중 메모리 누수(Memory Leak)를 탐지하는 도구가 아닌 것은?",
+    "options": [
+      "Valgrind",
+      "GDB (Debugger)",
+      "AddressSanitizer",
+      "GCC (Compiler)"
+    ],
+    "answer": 3,
+    "explanation": "GCC는 컴파일러입니다. Valgrind 같은 도구가 메모리 누수 검사에 특화되어 있습니다."
+  },
+  {
+    "id": 179,
+    "subject": "C프로그래밍",
+    "question": "printf 함수에서 포인터의 주소값을 16진수로 출력하는 서식 문자는?",
+    "options": [
+      "%d",
+      "%x",
+      "%p",
+      "%addr"
+    ],
+    "answer": 2,
+    "explanation": "%p (pointer) 서식 지정자는 주소값을 시스템에 맞는 16진수 형식으로 출력합니다."
+  },
+  {
+    "id": 180,
+    "subject": "C프로그래밍",
+    "question": "이스케이프 시퀀스 중 캐리지 리턴(Carriage Return)을 의미하는 것은?",
+    "options": [
+      "\\n",
+      "\\t",
+      "\\r",
+      "\\b"
+    ],
+    "answer": 2,
+    "explanation": "\\r은 커서를 줄의 맨 앞으로 이동시킵니다. (\\n은 줄바꿈)"
+  },
+  {
+    "id": 181,
+    "subject": "C프로그래밍",
+    "question": "매크로 함수와 일반 함수의 차이점으로 올바른 것은?",
+    "options": [
+      "매크로 함수는 컴파일 타임에 코드가 치환되므로 실행 속도가 빠르다.",
+      "매크로 함수는 타입 검사를 엄격하게 수행한다.",
+      "일반 함수는 코드 크기가 매크로보다 더 커지는 경향이 있다.",
+      "매크로 함수는 디버깅이 일반 함수보다 쉽다."
+    ],
+    "answer": 0,
+    "explanation": "매크로는 호출 오버헤드가 없어 빠르지만, 코드가 복사되므로 실행 파일 크기가 커질 수 있고 타입 검사를 하지 않습니다."
+  },
+  {
+    "id": 182,
+    "subject": "C프로그래밍",
+    "question": "포인터 선언 'const int *p;'의 의미는?",
+    "options": [
+      "p가 가리키는 주소를 변경할 수 없다.",
+      "p가 가리키는 대상의 값(*p)을 변경할 수 없다.",
+      "p와 *p 모두 변경할 수 없다.",
+      "p는 상수 포인터이다."
+    ],
+    "answer": 1,
+    "explanation": "const가 * 앞에 있으면 '내용물(Value)'을 보호합니다. (참고: 'int * const p'가 주소를 보호함)"
+  },
+  {
+    "id": 183,
+    "subject": "C프로그래밍",
+    "question": "문자열을 토큰(Token) 단위로 자를 때 사용하는 함수로, 원본 문자열을 변경(파괴)하는 특징이 있는 것은?",
+    "options": [
+      "strstr()",
+      "strtok()",
+      "strcat()",
+      "strchr()"
+    ],
+    "answer": 1,
+    "explanation": "strtok() 함수는 구분자 위치에 NULL 문자를 삽입하여 문자열을 자르므로 원본 데이터가 변경됩니다."
+  },
+  {
+    "id": 184,
+    "subject": "C프로그래밍",
+    "question": "메모리 영역 중, 초기화되지 않은 전역 변수와 정적 변수(static)가 저장되는 곳은?",
+    "options": [
+      "Text Segment",
+      "Data Segment",
+      "BSS Segment",
+      "Heap"
+    ],
+    "answer": 2,
+    "explanation": "초기화된 전역 변수는 Data 영역, 초기화되지 않은 변수는 BSS(Block Started by Symbol) 영역에 저장되며 0으로 자동 초기화됩니다."
+  },
+  {
+    "id": 185,
+    "subject": "C프로그래밍",
+    "question": "다음 중 '댕글링 포인터(Dangling Pointer)'가 발생하는 원인은?",
+    "options": [
+      "메모리를 할당하지 않고 포인터를 사용할 때",
+      "해제(free)된 메모리 주소를 계속 가리키고 있을 때",
+      "NULL 포인터를 역참조할 때",
+      "스택 오버플로우가 발생했을 때"
+    ],
+    "answer": 1,
+    "explanation": "이미 해제된 메모리를 가리키는 포인터를 댕글링 포인터라 하며, 접근 시 정의되지 않은 동작(오류)을 유발합니다."
+  },
+  {
+    "id": 186,
+    "subject": "C프로그래밍",
+    "question": "구조체 멤버 정렬(Alignment) 단위를 변경하여 패딩을 없애거나 조절하는 전처리 지시어는?",
+    "options": [
+      "#pragma once",
+      "#pragma pack",
+      "#define ALIGN",
+      "#include <align.h>"
+    ],
+    "answer": 1,
+    "explanation": "#pragma pack(1) 등을 사용하면 구조체 멤버 사이에 패딩 바이트를 넣지 않고 빽빽하게 채울 수 있습니다."
+  },
+  {
+    "id": 187,
+    "subject": "C프로그래밍",
+    "question": "C언어에서 함수 내부에 선언된 static 변수의 유효 범위(Scope)와 수명(Lifetime)은?",
+    "options": [
+      "범위: 전역, 수명: 프로그램 종료 시까지",
+      "범위: 함수 내부, 수명: 함수 종료 시까지",
+      "범위: 함수 내부, 수명: 프로그램 종료 시까지",
+      "범위: 파일 전체, 수명: 함수 종료 시까지"
+    ],
+    "answer": 2,
+    "explanation": "static 지역 변수는 접근은 해당 함수 내에서만 가능하지만(Scope), 메모리는 프로그램 시작부터 종료까지 유지됩니다(Lifetime)."
+  },
+  {
+    "id": 188,
+    "subject": "C프로그래밍",
+    "question": "표준 입출력 라이브러리에서 버퍼를 비우는 역할을 하는 함수는?",
+    "options": [
+      "fflush()",
+      "fempty()",
+      "fclear()",
+      "fclose()"
+    ],
+    "answer": 0,
+    "explanation": "fflush(stdout) 처럼 사용하며, 출력 버퍼에 남아있는 데이터를 즉시 목적지로 내보냅니다."
+  },
+  {
+    "id": 189,
+    "subject": "C프로그래밍",
+    "question": "다음 중 콤마(,) 연산자의 특징으로 옳은 것은?",
+    "options": [
+      "가장 높은 우선순위를 가진다.",
+      "왼쪽에서 오른쪽으로 순차적으로 평가되며, 마지막 식의 값이 전체 결과가 된다.",
+      "오른쪽에서 왼쪽으로 평가된다.",
+      "함수 인자 전달 시의 콤마와 동일한 연산자이다."
+    ],
+    "answer": 1,
+    "explanation": "a = (x=1, y=2, x+y); 에서 1, 2가 순서대로 실행되고 마지막 x+y(3) 값이 a에 대입됩니다."
+  },
+  {
+    "id": 190,
+    "subject": "C프로그래밍",
+    "question": "포인터 연산 시 'void *' (보이드 포인터)에 대한 덧셈/뺄셈 연산은 표준 C에서 어떻게 처리되는가?",
+    "options": [
+      "1바이트 단위로 계산된다.",
+      "4바이트 단위로 계산된다.",
+      "허용되지 않는다 (컴파일 에러).",
+      "자동으로 int*로 변환된다."
+    ],
+    "answer": 2,
+    "explanation": "표준 C(ISO C)에서는 대상의 크기를 알 수 없는 void 포인터의 산술 연산을 금지합니다. (단, GCC 등 일부 컴파일러는 1바이트 단위로 허용하기도 함)"
+  },
+  {
+    "id": 191,
+    "subject": "C프로그래밍",
+    "question": "배열을 함수의 인자로 전달할 때, 실제로 전달되는 것은?",
+    "options": [
+      "배열의 모든 요소 복사본",
+      "배열의 첫 번째 요소의 주소값",
+      "배열의 크기 정보",
+      "배열 구조체"
+    ],
+    "answer": 1,
+    "explanation": "배열 전체가 복사되는 것이 아니라, 배열의 시작 주소(포인터)만 전달됩니다(Array Decay)."
+  },
+  {
+    "id": 192,
+    "subject": "C프로그래밍",
+    "question": "volatile 키워드가 주로 사용되는 곳은?",
+    "options": [
+      "반복문 최적화",
+      "메모리 맵 입출력(MMIO) 하드웨어 제어",
+      "상수 정의",
+      "문자열 처리"
+    ],
+    "answer": 1,
+    "explanation": "컴파일러의 최적화를 막고 항상 실제 메모리 주소를 읽어야 하는 하드웨어 제어 레지스터나 인터럽트 서비스 루틴 등에서 사용합니다."
+  },
+  {
+    "id": 193,
+    "subject": "C프로그래밍",
+    "question": "다음 중 C99 표준에서 도입된 기능이 아닌 것은?",
+    "options": [
+      "// 한 줄 주석",
+      "가변 길이 배열 (VLA)",
+      "long long int 자료형",
+      "클래스 (class) 문법"
+    ],
+    "answer": 3,
+    "explanation": "클래스(class)는 C++의 기능이며 C언어에는 없습니다. (구조체 struct만 존재)"
+  },
+  {
+    "id": 194,
+    "subject": "C프로그래밍",
+    "question": "함수 호출 규약(Calling Convention)이 정의하는 내용이 아닌 것은?",
+    "options": [
+      "인자 전달 순서 (왼쪽->오른쪽 또는 오른쪽->왼쪽)",
+      "인자를 전달하는 매체 (스택 또는 레지스터)",
+      "스택 정리 주체 (호출자 또는 피호출자)",
+      "함수의 리턴 타입 결정"
+    ],
+    "answer": 3,
+    "explanation": "함수의 리턴 타입은 언어 문법의 영역이고, 호출 규약(__cdecl, __stdcall 등)은 인자 전달 및 스택 정리 방식을 정의합니다."
+  },
+  {
+    "id": 195,
+    "subject": "C프로그래밍",
+    "question": "size_t 타입이 정의되어 있는 표준 헤더 파일은?",
+    "options": [
+      "stddef.h 또는 stdlib.h",
+      "math.h",
+      "ctype.h",
+      "assert.h"
+    ],
+    "answer": 0,
+    "explanation": "size_t는 stddef.h, stdlib.h, stdio.h 등 여러 표준 헤더에 정의되어 있습니다."
+  },
+  {
+    "id": 196,
+    "subject": "C프로그래밍",
+    "question": "inline 함수의 주된 목적은?",
+    "options": [
+      "재귀 호출을 가능하게 하기 위해",
+      "함수 호출 오버헤드를 줄여 실행 속도를 높이기 위해",
+      "함수의 가시성을 제한하기 위해",
+      "동적 바인딩을 지원하기 위해"
+    ],
+    "answer": 1,
+    "explanation": "inline을 요청하면 컴파일러가 함수 호출 대신 코드를 그 자리에 직접 삽입하여 호출 비용을 아낍니다."
+  },
+  {
+    "id": 197,
+    "subject": "C프로그래밍",
+    "question": "다음 중 식별자(변수명)의 유효 범위(Linkage)를 파일 내부로 제한하는 키워드는?",
+    "options": [
+      "extern",
+      "static",
+      "auto",
+      "register"
+    ],
+    "answer": 1,
+    "explanation": "전역 변수나 함수 앞에 static을 붙이면 외부 파일에서 접근할 수 없는 '내부 연결(Internal Linkage)'을 갖게 됩니다."
+  },
+  {
+    "id": 198,
+    "subject": "C프로그래밍",
+    "question": "main 함수의 리턴값 0이 운영체제에게 전달하는 의미는?",
+    "options": [
+      "프로그램이 비정상 종료됨",
+      "프로그램이 정상적으로 종료됨",
+      "메모리 부족",
+      "입출력 오류 발생"
+    ],
+    "answer": 1,
+    "explanation": "관례적으로 return 0;은 성공(Success)을, 0이 아닌 값은 에러 코드(Failure)를 의미합니다."
+  },
+  {
+    "id": 199,
+    "subject": "C프로그래밍",
+    "question": "다음 중 단항 연산자(Operand가 1개)인 것은?",
+    "options": [
+      "/",
+      "&&",
+      "!",
+      "=="
+    ],
+    "answer": 2,
+    "explanation": "!(NOT), ~(Bitwise NOT), ++, --, sizeof 등은 피연산자가 하나인 단항 연산자입니다."
+  },
+  {
+    "id": 200,
+    "subject": "C프로그래밍",
+    "question": "C언어에서 문자열 리터럴(예: \"Hello\")이 저장되는 메모리 영역은?",
+    "options": [
+      "스택 (Stack)",
+      "힙 (Heap)",
+      "읽기 전용 데이터 영역 (Text/Rodata)",
+      "레지스터"
+    ],
+    "answer": 2,
+    "explanation": "문자열 리터럴은 보통 수정할 수 없는 읽기 전용 데이터 영역(Read-only Data Segment)에 저장됩니다."
+  },
+  {
+    "id": 201,
+    "subject": "대학수학",
+    "question": "집합 A = {1, 2, 3}의 부분집합의 개수는?",
+    "options": [
+      "3",
+      "6",
+      "8",
+      "9"
+    ],
+    "answer": 2,
+    "explanation": "부분집합의 개수는 2^n개입니다. 원소가 3개이므로 2^3 = 8개입니다."
+  },
+  {
+    "id": 202,
+    "subject": "대학수학",
+    "question": "명제 p -> q (p이면 q이다)와 논리적으로 동치인 명제는?",
+    "options": [
+      "q -> p (역)",
+      "~p -> ~q (이)",
+      "~q -> ~p (대우)",
+      "~p OR q"
+    ],
+    "answer": 2,
+    "explanation": "어떤 명제와 그 대우(Contrapositive) 명제는 항상 참/거짓을 함께하므로 논리적으로 동치입니다."
+  },
+  {
+    "id": 203,
+    "subject": "대학수학",
+    "question": "함수 f(x) = x^2의 도함수 f'(x)는?",
+    "options": [
+      "x",
+      "2x",
+      "x^3/3",
+      "1"
+    ],
+    "answer": 1,
+    "explanation": "x^n의 미분은 n*x^(n-1)입니다. 따라서 2*x^(2-1) = 2x입니다."
+  },
+  {
+    "id": 204,
+    "subject": "대학수학",
+    "question": "행렬 A의 행(Row)과 열(Column)을 바꾼 행렬을 무엇이라 하는가?",
+    "options": [
+      "역행렬 (Inverse Matrix)",
+      "전치행렬 (Transpose Matrix)",
+      "대각행렬 (Diagonal Matrix)",
+      "단위행렬 (Identity Matrix)"
+    ],
+    "answer": 1,
+    "explanation": "행과 열을 뒤바꾼 행렬을 전치행렬이라 하며, 보통 A^T로 표기합니다."
+  },
+  {
+    "id": 205,
+    "subject": "대학수학",
+    "question": "극한값 lim(x->infinity) 1/x 의 값은?",
+    "options": [
+      "0",
+      "1",
+      "무한대",
+      "존재하지 않음"
+    ],
+    "answer": 0,
+    "explanation": "분모가 무한히 커지면 전체 값은 0에 수렴합니다."
+  },
+  {
+    "id": 206,
+    "subject": "대학수학",
+    "question": "두 벡터 a=(1, 0), b=(0, 1)의 내적(Dot Product) 값은?",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "(1, 1)"
+    ],
+    "answer": 0,
+    "explanation": "내적은 각 성분의 곱의 합입니다. (1*0) + (0*1) = 0. 내적이 0이면 두 벡터는 직교(수직)합니다."
+  },
+  {
+    "id": 207,
+    "subject": "대학수학",
+    "question": "이산수학에서, 그래프의 모든 꼭짓점(Vertex)을 한 번씩만 지나는 경로를 무엇이라 하는가?",
+    "options": [
+      "오일러 경로",
+      "해밀턴 경로",
+      "최단 경로",
+      "트리 순회"
+    ],
+    "answer": 1,
+    "explanation": "모든 '변(Edge)'을 한 번씩 지나는 것은 오일러 경로, 모든 '꼭짓점(Vertex)'을 한 번씩 지나는 것은 해밀턴 경로입니다."
+  },
+  {
+    "id": 208,
+    "subject": "대학수학",
+    "question": "로그함수 y = log_a(x)의 역함수는?",
+    "options": [
+      "y = x^a",
+      "y = a^x",
+      "y = 1/x",
+      "y = -log_a(x)"
+    ],
+    "answer": 1,
+    "explanation": "로그함수와 지수함수는 서로 역함수 관계입니다."
+  },
+  {
+    "id": 209,
+    "subject": "대학수학",
+    "question": "다음 중 무리수(Irrational Number)인 것은?",
+    "options": [
+      "3.14",
+      "22/7",
+      "루트 2",
+      "0"
+    ],
+    "answer": 2,
+    "explanation": "루트 2는 순환하지 않는 무한소수로 분수(유리수) 형태로 나타낼 수 없는 무리수입니다."
+  },
+  {
+    "id": 210,
+    "subject": "대학수학",
+    "question": "행렬의 곱셈 AB가 정의되려면 만족해야 하는 조건은?",
+    "options": [
+      "A의 열의 개수와 B의 행의 개수가 같아야 한다.",
+      "A의 행의 개수와 B의 열의 개수가 같아야 한다.",
+      "A와 B의 크기가 완전히 같아야 한다.",
+      "조건이 없다."
+    ],
+    "answer": 0,
+    "explanation": "(m x n) 행렬과 (n x k) 행렬처럼, 앞 행렬의 열(n)과 뒤 행렬의 행(n) 개수가 일치해야 곱셈이 가능합니다."
+  },
+  {
+    "id": 211,
+    "subject": "대학수학",
+    "question": "미분가능한 함수 f(x)가 x=a에서 극값을 가질 때의 조건은?",
+    "options": [
+      "f'(a) > 0",
+      "f'(a) < 0",
+      "f'(a) = 0",
+      "f''(a) = 0"
+    ],
+    "answer": 2,
+    "explanation": "극대값이나 극소값을 가질 때 접선의 기울기(도함수 값)는 0이 됩니다."
+  },
+  {
+    "id": 212,
+    "subject": "대학수학",
+    "question": "적분 상수(C)는 어떤 적분에서 나타나는가?",
+    "options": [
+      "정적분",
+      "부정적분",
+      "중적분",
+      "선적분"
+    ],
+    "answer": 1,
+    "explanation": "부정적분은 도함수가 되기 전의 원시 함수를 찾는 것이므로, 상수항의 차이를 보정하기 위해 적분 상수 C를 붙입니다."
+  },
+  {
+    "id": 213,
+    "subject": "대학수학",
+    "question": "복소수 i의 제곱 (i^2)의 값은?",
+    "options": [
+      "1",
+      "-1",
+      "0",
+      "i"
+    ],
+    "answer": 1,
+    "explanation": "허수 단위 i는 제곱해서 -1이 되는 수로 정의됩니다."
+  },
+  {
+    "id": 214,
+    "subject": "대학수학",
+    "question": "수열 {1, 3, 5, 7, ...} (등차수열)의 일반항 a_n은?",
+    "options": [
+      "n",
+      "2n",
+      "2n - 1",
+      "2n + 1"
+    ],
+    "answer": 2,
+    "explanation": "첫째항이 1이고 공차가 2인 등차수열이므로 a_n = 1 + (n-1)2 = 2n - 1 입니다."
+  },
+  {
+    "id": 215,
+    "subject": "대학수학",
+    "question": "확률에서 사건 A와 B가 독립일 때, P(A ∩ B)를 구하는 식은?",
+    "options": [
+      "P(A) + P(B)",
+      "P(A) * P(B)",
+      "P(A) - P(B)",
+      "P(A) / P(B)"
+    ],
+    "answer": 1,
+    "explanation": "두 사건이 독립이면 교집합의 확률은 두 확률의 곱과 같습니다."
+  },
+  {
+    "id": 216,
+    "subject": "대학수학",
+    "question": "다음 중 선형(Linear) 방정식이 아닌 것은?",
+    "options": [
+      "2x + 3y = 5",
+      "x = y",
+      "x + y + z = 0",
+      "x^2 + y = 1"
+    ],
+    "answer": 3,
+    "explanation": "변수에 제곱(x^2)이나 곱하기(xy) 등이 들어가면 비선형 방정식입니다."
+  },
+  {
+    "id": 217,
+    "subject": "대학수학",
+    "question": "함수 f(x)가 x=a에서 연속이기 위한 조건이 아닌 것은?",
+    "options": [
+      "함숫값 f(a)가 정의되어야 한다.",
+      "극한값 lim(x->a) f(x)가 존재해야 한다.",
+      "함숫값과 극한값이 같아야 한다.",
+      "f'(a)가 존재해야 한다."
+    ],
+    "answer": 3,
+    "explanation": "미분가능성(f'(a) 존재)은 연속보다 더 엄격한 조건입니다. 뾰족한 점에서는 연속이지만 미분 불가능할 수 있습니다."
+  },
+  {
+    "id": 218,
+    "subject": "대학수학",
+    "question": "집합 A = {1, 2}, B = {2, 3}일 때, 합집합 A ∪ B는?",
+    "options": [
+      "{2}",
+      "{1, 3}",
+      "{1, 2, 3}",
+      "{1, 2, 2, 3}"
+    ],
+    "answer": 2,
+    "explanation": "합집합은 두 집합의 원소를 모두 포함하며, 중복된 원소는 한 번만 씁니다."
+  },
+  {
+    "id": 219,
+    "subject": "대학수학",
+    "question": "삼각함수 sin^2(x) + cos^2(x)의 값은?",
+    "options": [
+      "0",
+      "1",
+      "-1",
+      "2"
+    ],
+    "answer": 1,
+    "explanation": "피타고라스의 정리에 의해 사인 제곱과 코사인 제곱의 합은 항상 1입니다."
+  },
+  {
+    "id": 220,
+    "subject": "대학수학",
+    "question": "크기가 1인 벡터를 무엇이라 하는가?",
+    "options": [
+      "영벡터",
+      "단위벡터 (Unit Vector)",
+      "위치벡터",
+      "방향벡터"
+    ],
+    "answer": 1,
+    "explanation": "크기(Norm)가 1인 벡터를 단위벡터라고 합니다."
+  },
+  {
+    "id": 221,
+    "subject": "대학수학",
+    "question": "행렬식(Determinant)의 값이 0인 행렬의 특징은?",
+    "options": [
+      "역행렬이 존재한다.",
+      "역행렬이 존재하지 않는다.",
+      "단위행렬이다.",
+      "모든 성분이 0이다."
+    ],
+    "answer": 1,
+    "explanation": "행렬식(det A)이 0이면 특이행렬(Singular Matrix)이며 역행렬을 갖지 않습니다."
+  },
+  {
+    "id": 222,
+    "subject": "대학수학",
+    "question": "다음 중 '모든 자연수 n에 대하여...'를 증명할 때 주로 사용하는 방법은?",
+    "options": [
+      "귀류법",
+      "수학적 귀납법",
+      "대우법",
+      "직접 증명법"
+    ],
+    "answer": 1,
+    "explanation": "초기값(n=1)일 때 성립함을 보이고, n=k일 때 성립하면 n=k+1도 성립함을 보여 모든 자연수에 대해 증명하는 방식입니다."
+  },
+  {
+    "id": 223,
+    "subject": "대학수학",
+    "question": "함수 f(x) = e^x (지수함수)를 미분하면?",
+    "options": [
+      "x * e^(x-1)",
+      "e^x",
+      "ln(x)",
+      "1/x"
+    ],
+    "answer": 1,
+    "explanation": "자연상수 e를 밑으로 하는 지수함수는 미분해도 자기 자신(e^x)이 됩니다."
+  },
+  {
+    "id": 224,
+    "subject": "대학수학",
+    "question": "두 집합의 교집합이 공집합일 때, 두 집합을 무엇이라 하는가?",
+    "options": [
+      "부분집합",
+      "상등",
+      "서로소 (Disjoint)",
+      "독립"
+    ],
+    "answer": 2,
+    "explanation": "공통된 원소가 하나도 없는 두 집합의 관계를 '서로소'라고 합니다."
+  },
+  {
+    "id": 225,
+    "subject": "대학수학",
+    "question": "이진수 1011을 10진수로 변환하면?",
+    "options": [
+      "9",
+      "10",
+      "11",
+      "13"
+    ],
+    "answer": 2,
+    "explanation": "8(1) + 0 + 2(1) + 1(1) = 11 입니다."
+  },
+  {
+    "id": 226,
+    "subject": "대학수학",
+    "question": "정적분의 정의와 관련 깊은 급수는?",
+    "options": [
+      "테일러 급수",
+      "리만 합 (Riemann Sum)",
+      "기하 급수",
+      "조화 급수"
+    ],
+    "answer": 1,
+    "explanation": "구간을 잘게 나누어 직사각형 넓이의 합으로 면적을 구하는 리만 합의 극한이 정적분입니다."
+  },
+  {
+    "id": 227,
+    "subject": "대학수학",
+    "question": "f(x, y)와 같이 변수가 2개 이상인 함수를 미분하는 것을 무엇이라 하는가?",
+    "options": [
+      "전미분",
+      "편미분 (Partial Differentiation)",
+      "음함수 미분",
+      "역함수 미분"
+    ],
+    "answer": 1,
+    "explanation": "특정 변수 하나만 변수로 보고 나머지는 상수로 취급하여 미분하는 것을 편미분이라 합니다."
+  },
+  {
+    "id": 228,
+    "subject": "대학수학",
+    "question": "가우스 소거법은 주로 무엇을 구하기 위해 사용되는가?",
+    "options": [
+      "미분방정식의 해",
+      "연립일차방정식의 해",
+      "적분값",
+      "극한값"
+    ],
+    "answer": 1,
+    "explanation": "행렬을 이용해 연립방정식을 체계적으로 푸는 알고리즘입니다."
+  },
+  {
+    "id": 229,
+    "subject": "대학수학",
+    "question": "극한값 0/0 꼴이나 무한대/무한대 꼴의 극한을 구할 때 유용한 정리는?",
+    "options": [
+      "피타고라스 정리",
+      "로피탈의 정리 (L'Hospital's Rule)",
+      "샌드위치 정리",
+      "평균값 정리"
+    ],
+    "answer": 1,
+    "explanation": "부정형 극한에서 분모와 분자를 각각 미분하여 극한을 구하는 방법을 로피탈의 정리라고 합니다."
+  },
+  {
+    "id": 230,
+    "subject": "대학수학",
+    "question": "벡터 (1, 2, 3)과 (4, 5, 6)의 외적(Cross Product) 결과는?",
+    "options": [
+      "스칼라 값이다.",
+      "벡터이다.",
+      "항상 0이다.",
+      "정의되지 않는다."
+    ],
+    "answer": 1,
+    "explanation": "내적의 결과는 스칼라이지만, 외적의 결과는 두 벡터에 모두 수직인 새로운 '벡터'가 됩니다."
+  },
+  {
+    "id": 231,
+    "subject": "대학수학",
+    "question": "함수 f(x, y)의 그라디언트(Gradient, ∇f) 벡터가 의미하는 방향은?",
+    "options": [
+      "함수값이 가장 빠르게 감소하는 방향",
+      "함수값이 가장 빠르게 증가하는 방향",
+      "함수값이 변하지 않는 방향 (등고선 방향)",
+      "접평면에 수직인 방향"
+    ],
+    "answer": 1,
+    "explanation": "그라디언트 벡터는 해당 지점에서 함수값이 최대 변화율로 증가하는 방향을 가리킵니다."
+  },
+  {
+    "id": 232,
+    "subject": "대학수학",
+    "question": "행렬 A에 대해 Av = λv (v는 0이 아닌 벡터)를 만족할 때, λ(람다)를 무엇이라 하는가?",
+    "options": [
+      "고유벡터 (Eigenvector)",
+      "고유값 (Eigenvalue)",
+      "특이값 (Singular Value)",
+      "행렬식 (Determinant)"
+    ],
+    "answer": 1,
+    "explanation": "선형 변환 후에도 방향이 변하지 않고 크기만 변하는 축의 크기 변화율을 고유값(Eigenvalue)이라 합니다."
+  },
+  {
+    "id": 233,
+    "subject": "대학수학",
+    "question": "부분적분법(Integration by Parts)의 기본 공식은?",
+    "options": [
+      "∫ u dv = uv - ∫ v du",
+      "∫ u dv = u'v - ∫ v du",
+      "∫ u dv = uv + ∫ v du",
+      "∫ u dv = u/v"
+    ],
+    "answer": 0,
+    "explanation": "곱의 미분법의 역연산으로 유도되는 공식으로, 복잡한 함수의 적분을 구할 때 사용합니다."
+  },
+  {
+    "id": 234,
+    "subject": "대학수학",
+    "question": "모든 정사각행렬은 자신의 특성방정식을 만족한다는 정리는?",
+    "options": [
+      "피타고라스 정리",
+      "케일리-해밀턴 정리 (Cayley-Hamilton Theorem)",
+      "가우스 정리",
+      "그린 정리"
+    ],
+    "answer": 1,
+    "explanation": "행렬 A의 특성방정식이 p(λ)=0일 때, p(A)=0(영행렬)이 성립한다는 정리입니다."
+  },
+  {
+    "id": 235,
+    "subject": "대학수학",
+    "question": "함수 f: X -> Y에서 집합 X 전체를 가리키는 용어는?",
+    "options": [
+      "공역 (Codomain)",
+      "치역 (Range)",
+      "정의역 (Domain)",
+      "핵 (Kernel)"
+    ],
+    "answer": 2,
+    "explanation": "함수에 입력되는 값들의 집합 전체를 정의역이라고 합니다."
+  },
+  {
+    "id": 236,
+    "subject": "대학수학",
+    "question": "무한등비급수 a + ar + ar^2 + ... (|r| < 1)의 합은?",
+    "options": [
+      "a(1-r)",
+      "a / (1-r)",
+      "a / (1+r)",
+      "무한대"
+    ],
+    "answer": 1,
+    "explanation": "공비 r의 절댓값이 1보다 작을 때 급수는 수렴하며 그 합은 첫째항/(1-공비) 입니다."
+  },
+  {
+    "id": 237,
+    "subject": "대학수학",
+    "question": "정규분포(Normal Distribution) 곡선의 모양은?",
+    "options": [
+      "U자형",
+      "종 모양 (Bell Curve)",
+      "계단형",
+      "직선형"
+    ],
+    "answer": 1,
+    "explanation": "평균을 중심으로 대칭인 종 모양의 확률밀도함수 그래프를 가집니다."
+  },
+  {
+    "id": 238,
+    "subject": "대학수학",
+    "question": "순서에 상관없이 n개 중에서 r개를 선택하는 경우의 수(조합)를 나타내는 기호는?",
+    "options": [
+      "nPr",
+      "nCr",
+      "n!",
+      "nHr"
+    ],
+    "answer": 1,
+    "explanation": "Combination(조합)의 C를 사용하여 nCr로 표기합니다."
+  },
+  {
+    "id": 239,
+    "subject": "대학수학",
+    "question": "오일러 공식 e^(ix) 와 같은 것은?",
+    "options": [
+      "sin(x) + i cos(x)",
+      "cos(x) + i sin(x)",
+      "tan(x)",
+      "1"
+    ],
+    "answer": 1,
+    "explanation": "복소지수함수와 삼각함수의 관계를 나타내는 가장 아름다운 공식 중 하나입니다."
+  },
+  {
+    "id": 240,
+    "subject": "대학수학",
+    "question": "행렬의 랭크(Rank)의 정의로 옳은 것은?",
+    "options": [
+      "행렬의 모든 성분의 합",
+      "선형 독립인 행(또는 열)의 최대 개수",
+      "행렬의 행의 개수",
+      "행렬식이 0이 아닌 경우"
+    ],
+    "answer": 1,
+    "explanation": "랭크는 행렬이 가지는 정보의 차원 수, 즉 서로 독립적인 벡터의 개수를 의미합니다."
+  },
+  {
+    "id": 241,
+    "subject": "대학수학",
+    "question": "무한급수의 수렴 여부를 판정하는 방법이 아닌 것은?",
+    "options": [
+      "비율 판정법 (Ratio Test)",
+      "근 판정법 (Root Test)",
+      "비교 판정법 (Comparison Test)",
+      "대입 판정법"
+    ],
+    "answer": 3,
+    "explanation": "대입 판정법이라는 공식적인 용어는 없습니다. (n항 판정법 등은 존재)"
+  },
+  {
+    "id": 242,
+    "subject": "대학수학",
+    "question": "미분방정식에서 가장 많이 미분된 횟수를 무엇이라 하는가?",
+    "options": [
+      "차수 (Degree)",
+      "계수 (Order)",
+      "해 (Solution)",
+      "상수"
+    ],
+    "answer": 1,
+    "explanation": "가장 높은 미분계수의 미분 횟수를 그 미분방정식의 계수(Order)라고 합니다."
+  },
+  {
+    "id": 243,
+    "subject": "대학수학",
+    "question": "비둘기집 원리(Pigeonhole Principle)의 설명으로 옳은 것은?",
+    "options": [
+      "n개의 비둘기집에 n+1마리의 비둘기가 들어가면, 적어도 한 집에는 2마리 이상이 있다.",
+      "모든 비둘기는 집에 들어간다.",
+      "비둘기집의 개수는 비둘기보다 많아야 한다.",
+      "확률은 1/n이다."
+    ],
+    "answer": 0,
+    "explanation": "n개의 공간에 n+1개의 물건을 넣으려면 반드시 충돌(중복)이 발생한다는 원리입니다."
+  },
+  {
+    "id": 244,
+    "subject": "대학수학",
+    "question": "직교 좌표계(x, y)를 극좌표계(r, θ)로 변환할 때 x의 값은?",
+    "options": [
+      "r sin(θ)",
+      "r cos(θ)",
+      "r tan(θ)",
+      "r^2"
+    ],
+    "answer": 1,
+    "explanation": "빗변이 r일 때 밑변(x)은 r cos(θ), 높이(y)는 r sin(θ)입니다."
+  },
+  {
+    "id": 245,
+    "subject": "대학수학",
+    "question": "다변수 함수에서 미분값이 0이지만 극대값도 극소값도 아닌 점을 무엇이라 하는가?",
+    "options": [
+      "임계점",
+      "안장점 (Saddle Point)",
+      "변곡점",
+      "특이점"
+    ],
+    "answer": 1,
+    "explanation": "마치 말안장처럼 한 방향으로는 증가하고 다른 방향으로는 감소하는 점입니다."
+  },
+  {
+    "id": 246,
+    "subject": "대학수학",
+    "question": "벡터장의 발산(Divergence)을 구하는 연산자는?",
+    "options": [
+      "∇ (Del)",
+      "∇• (Dot Product with Del)",
+      "∇x (Cross Product with Del)",
+      "Δ (Laplacian)"
+    ],
+    "answer": 1,
+    "explanation": "발산은 벡터장과 델 연산자의 내적(div F = ∇•F)으로 정의됩니다."
+  },
+  {
+    "id": 247,
+    "subject": "대학수학",
+    "question": "벡터 공간의 기저(Basis)가 되기 위한 조건 두 가지는?",
+    "options": [
+      "직교성과 단위 크기",
+      "선형 독립성과 생성(Spanning)",
+      "교환 법칙과 결합 법칙",
+      "행렬식과 역행렬"
+    ],
+    "answer": 1,
+    "explanation": "기저는 공간 전체를 생성할 수 있어야 하며(Span), 서로 선형 독립이어야 합니다."
+  },
+  {
+    "id": 248,
+    "subject": "대학수학",
+    "question": "n개의 명제 변수가 있을 때, 진리표(Truth Table)의 전체 행의 개수는?",
+    "options": [
+      "n",
+      "n^2",
+      "2^n",
+      "2n"
+    ],
+    "answer": 2,
+    "explanation": "각 변수가 T/F 두 가지 값을 가지므로 2의 n제곱만큼의 경우의 수가 생깁니다."
+  },
+  {
+    "id": 249,
+    "subject": "대학수학",
+    "question": "자료가 평균으로부터 얼마나 퍼져 있는지를 나타내는 대표적인 척도는?",
+    "options": [
+      "중앙값",
+      "최빈값",
+      "표준편차",
+      "기대값"
+    ],
+    "answer": 2,
+    "explanation": "분산의 제곱근인 표준편차(Standard Deviation)가 산포도를 나타내는 가장 많이 쓰이는 지표입니다."
+  },
+  {
+    "id": 250,
+    "subject": "대학수학",
+    "question": "테일러 급수(Taylor Series)에서 중심이 a=0일 때를 특별히 무엇이라 부르는가?",
+    "options": [
+      "푸리에 급수",
+      "매클로린 급수 (Maclaurin Series)",
+      "로랑 급수",
+      "기하 급수"
+    ],
+    "answer": 1,
+    "explanation": "0 근처에서의 근사식인 매클로린 급수는 테일러 급수의 특수한 형태입니다."
+  },
+  {
+    "id": 251,
+    "subject": "대학수학",
+    "question": "Ax = 0 (제차 연립방정식)은 항상 적어도 하나의 해를 갖는데, 이 해는?",
+    "options": [
+      "자명해 (Trivial Solution, x=0)",
+      "무한해",
+      "특이해",
+      "기저해"
+    ],
+    "answer": 0,
+    "explanation": "모든 변수가 0이면 식은 항상 성립하므로 x=0(영벡터)은 항상 해가 됩니다."
+  },
+  {
+    "id": 252,
+    "subject": "대학수학",
+    "question": "조건부 확률 P(B|A)를 구하는 공식은?",
+    "options": [
+      "P(A ∩ B) / P(A)",
+      "P(A ∩ B) / P(B)",
+      "P(A) / P(B)",
+      "P(A) * P(B)"
+    ],
+    "answer": 0,
+    "explanation": "A가 일어났다는 가정하에 B가 일어날 확률이므로 분모가 P(A)가 됩니다."
+  },
+  {
+    "id": 253,
+    "subject": "대학수학",
+    "question": "2x2 행렬 [[a, b], [c, d]]의 역행렬이 존재하기 위한 조건은?",
+    "options": [
+      "a + d = 0",
+      "ad - bc ≠ 0",
+      "ab - cd = 0",
+      "a = d, b = c"
+    ],
+    "answer": 1,
+    "explanation": "행렬식(Determinant)인 ad-bc가 0이 아니어야 역행렬이 존재합니다."
+  },
+  {
+    "id": 254,
+    "subject": "대학수학",
+    "question": "합성함수의 미분법을 부르는 명칭은?",
+    "options": [
+      "곱의 법칙",
+      "몫의 법칙",
+      "연쇄 법칙 (Chain Rule)",
+      "평균값 정리"
+    ],
+    "answer": 2,
+    "explanation": "겉미분 곱하기 속미분 형태로 계산하는 것을 연쇄 법칙이라고 합니다."
+  },
+  {
+    "id": 255,
+    "subject": "대학수학",
+    "question": "미분과 적분이 서로 역연산 관계임을 설명하는 정리는?",
+    "options": [
+      "미적분학의 기본 정리 (Fundamental Theorem of Calculus)",
+      "중간값 정리",
+      "최대최소 정리",
+      "롤의 정리"
+    ],
+    "answer": 0,
+    "explanation": "정적분을 원시함수의 차로 계산할 수 있게 해주는 미적분학의 핵심 정리입니다."
+  },
+  {
+    "id": 256,
+    "subject": "대학수학",
+    "question": "그래프 이론에서 한 꼭짓점(Vertex)에 연결된 변(Edge)의 개수를 무엇이라 하는가?",
+    "options": [
+      "차수 (Degree)",
+      "경로 (Path)",
+      "사이클 (Cycle)",
+      "가중치 (Weight)"
+    ],
+    "answer": 0,
+    "explanation": "차수(Degree)는 해당 정점에 인접한 간선의 수를 의미합니다."
+  },
+  {
+    "id": 257,
+    "subject": "대학수학",
+    "question": "나머지 연산(Modular Arithmetic)에서 7 mod 3의 값은?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "0"
+    ],
+    "answer": 0,
+    "explanation": "7을 3으로 나누면 몫은 2이고 나머지는 1입니다."
+  },
+  {
+    "id": 258,
+    "subject": "대학수학",
+    "question": "벡터 a를 벡터 b 위로 수직으로 내린 그림자 벡터를 무엇이라 하는가?",
+    "options": [
+      "단위 벡터",
+      "정사영 (Projection)",
+      "법선 벡터",
+      "외적 벡터"
+    ],
+    "answer": 1,
+    "explanation": "한 벡터를 다른 벡터 방향 성분으로 분해하는 것을 투영 또는 정사영이라고 합니다."
+  },
+  {
+    "id": 259,
+    "subject": "대학수학",
+    "question": "벡터 집합에서 어떤 벡터도 다른 벡터들의 선형 결합으로 표현될 수 없을 때, 이 벡터들은 ( ? ) 하다고 한다.",
+    "options": [
+      "선형 종속",
+      "선형 독립 (Linearly Independent)",
+      "직교",
+      "평행"
+    ],
+    "answer": 1,
+    "explanation": "서로가 서로를 만들어낼 수 없는 상태를 선형 독립이라고 합니다."
+  },
+  {
+    "id": 260,
+    "subject": "대학수학",
+    "question": "라플라스 변환(Laplace Transform)은 주로 어떤 문제를 풀 때 유용한가?",
+    "options": [
+      "행렬의 곱셈",
+      "미분방정식의 해 구하기",
+      "집합의 연산",
+      "벡터의 외적"
+    ],
+    "answer": 1,
+    "explanation": "미분방정식을 대수방정식(s에 대한 식)으로 변환하여 쉽게 풀 수 있게 해주는 도구입니다."
+  },
+  {
+    "id": 261,
+    "subject": "대학수학",
+    "question": "벡터장 F = (P, Q, R)의 회전(Curl)을 구하는 연산자는?",
+    "options": [
+      "∇ • F (Divergence)",
+      "∇ x F (Curl)",
+      "∇F (Gradient)",
+      "∇^2 F (Laplacian)"
+    ],
+    "answer": 1,
+    "explanation": "Curl(회전)은 델 연산자와 벡터장의 외적(Cross Product)으로 정의됩니다."
+  },
+  {
+    "id": 262,
+    "subject": "대학수학",
+    "question": "행렬 A가 직교행렬(Orthogonal Matrix)일 때 성립하는 성질은?",
+    "options": [
+      "A의 역행렬이 A의 전치행렬(A^T)과 같다.",
+      "행렬식이 항상 0이다.",
+      "대칭행렬이다.",
+      "모든 성분이 정수이다."
+    ],
+    "answer": 0,
+    "explanation": "직교행렬은 A^T * A = I 를 만족하므로, A의 역행렬은 A^T입니다."
+  },
+  {
+    "id": 263,
+    "subject": "대학수학",
+    "question": "무한급수 Σ(1/n) (조화급수)의 수렴 여부는?",
+    "options": [
+      "0으로 수렴한다.",
+      "1로 수렴한다.",
+      "발산한다.",
+      "진동한다."
+    ],
+    "answer": 2,
+    "explanation": "조화급수는 항이 0으로 가지만 그 합은 무한대로 발산하는 대표적인 급수입니다."
+  },
+  {
+    "id": 264,
+    "subject": "대학수학",
+    "question": "선형변환 T: V -> W 에서 T(v) = 0 을 만족하는 모든 벡터 v의 집합을 무엇이라 하는가?",
+    "options": [
+      "상 (Image)",
+      "핵 (Kernel)",
+      "차원 (Dimension)",
+      "기저 (Basis)"
+    ],
+    "answer": 1,
+    "explanation": "0으로 매핑되는 정의역의 부분공간을 핵(Kernel) 또는 영공간(Null Space)이라 합니다."
+  },
+  {
+    "id": 265,
+    "subject": "대학수학",
+    "question": "이산수학에서 p -> q (조건문)가 거짓(False)이 되는 유일한 경우는?",
+    "options": [
+      "p는 참이고 q는 거짓일 때",
+      "p는 거짓이고 q는 참일 때",
+      "둘 다 참일 때",
+      "둘 다 거짓일 때"
+    ],
+    "answer": 0,
+    "explanation": "가정(p)이 참인데 결론(q)이 거짓일 때만 조건문 전체가 거짓이 됩니다."
+  },
+  {
+    "id": 266,
+    "subject": "대학수학",
+    "question": "다음 중 '이상적분(Improper Integral)'에 해당하는 것은?",
+    "options": [
+      "적분 구간이 무한대이거나 피적분함수가 불연속인 경우",
+      "적분 결과가 0인 경우",
+      "다항함수의 적분",
+      "부정적분"
+    ],
+    "answer": 0,
+    "explanation": "적분 구간이 닫혀있지 않거나(무한대), 함수가 발산하는 점을 포함할 때 이상적분이라 합니다."
+  },
+  {
+    "id": 267,
+    "subject": "대학수학",
+    "question": "확률변수 X, Y가 서로 독립일 때, 분산 Var(X + Y)는?",
+    "options": [
+      "Var(X) + Var(Y)",
+      "Var(X) - Var(Y)",
+      "Var(X) * Var(Y)",
+      "Var(X) + Var(Y) + 2Cov(X, Y)"
+    ],
+    "answer": 0,
+    "explanation": "독립이면 공분산 Cov(X, Y)가 0이므로, 합의 분산은 분산의 합과 같습니다."
+  },
+  {
+    "id": 268,
+    "subject": "대학수학",
+    "question": "복소평면에서 z = x + iy를 극형식으로 표현했을 때 옳은 것은? (r=|z|, θ=arg(z))",
+    "options": [
+      "r(cosθ + i sinθ)",
+      "r(sinθ + i cosθ)",
+      "r(tanθ + i)",
+      "r + iθ"
+    ],
+    "answer": 0,
+    "explanation": "오일러 공식을 이용한 복소수의 극형식 표현입니다."
+  },
+  {
+    "id": 269,
+    "subject": "대학수학",
+    "question": "행렬 A의 고유값이 λ일 때, A^2의 고유값은?",
+    "options": [
+      "λ",
+      "2λ",
+      "λ^2",
+      "√λ"
+    ],
+    "answer": 2,
+    "explanation": "A^2 * x = A(Ax) = A(λx) = λ(Ax) = λ(λx) = λ^2 * x 이므로 고유값은 제곱이 됩니다."
+  },
+  {
+    "id": 270,
+    "subject": "대학수학",
+    "question": "미분방정식 y'' + y = 0 의 일반해는?",
+    "options": [
+      "y = e^x",
+      "y = c1 sin(x) + c2 cos(x)",
+      "y = x^2",
+      "y = ln(x)"
+    ],
+    "answer": 1,
+    "explanation": "두 번 미분해서 부호가 바뀌는 함수는 삼각함수(sin, cos)입니다."
+  },
+  {
+    "id": 271,
+    "subject": "대학수학",
+    "question": "벡터의 외적(Cross Product) a x b 의 크기(|a x b|)와 같은 것은?",
+    "options": [
+      "|a||b|cosθ",
+      "|a||b|sinθ",
+      "|a| + |b|",
+      "a • b"
+    ],
+    "answer": 1,
+    "explanation": "외적의 크기는 두 벡터가 만드는 평행사변형의 넓이와 같으며, 사인(sin) 값을 사용합니다. (내적은 코사인)"
+  },
+  {
+    "id": 272,
+    "subject": "대학수학",
+    "question": "함수 f(x)가 우함수(Even Function)일 때 성립하는 식은?",
+    "options": [
+      "f(-x) = f(x)",
+      "f(-x) = -f(x)",
+      "f(x) = 0",
+      "f(x+y) = f(x) + f(y)"
+    ],
+    "answer": 0,
+    "explanation": "y축 대칭인 우함수는 f(-x) = f(x)를 만족합니다. (기함수는 원점 대칭, f(-x) = -f(x))"
+  },
+  {
+    "id": 273,
+    "subject": "대학수학",
+    "question": "폐구간 [a, b]에서 연속인 함수는 반드시 최댓값과 최솟값을 갖는다는 정리는?",
+    "options": [
+      "중간값 정리",
+      "최대최소 정리",
+      "평균값 정리",
+      "롤의 정리"
+    ],
+    "answer": 1,
+    "explanation": "콤팩트 집합(유계이고 닫힌 구간)에서의 연속 함수 성질입니다."
+  },
+  {
+    "id": 274,
+    "subject": "대학수학",
+    "question": "행렬의 대각합(Trace)이란?",
+    "options": [
+      "모든 성분의 합",
+      "주대각 성분들의 합",
+      "행렬식의 값",
+      "고유값들의 곱"
+    ],
+    "answer": 1,
+    "explanation": "tr(A)는 행렬의 왼쪽 위에서 오른쪽 아래로 이어지는 주대각 성분들을 모두 더한 값입니다."
+  },
+  {
+    "id": 275,
+    "subject": "대학수학",
+    "question": "중심극한정리(CLT)에 따르면, 표본의 크기가 커질수록 표본평균의 분포는 무엇에 근사하는가?",
+    "options": [
+      "이항분포",
+      "포아송분포",
+      "정규분포",
+      "균등분포"
+    ],
+    "answer": 2,
+    "explanation": "모집단의 분포와 상관없이 표본 크기가 충분히 크면(n≥30), 표본평균의 분포는 정규분포를 따릅니다."
+  },
+  {
+    "id": 276,
+    "subject": "대학수학",
+    "question": "다음 중 논리적으로 모순(Contradiction)인 명제는?",
+    "options": [
+      "p OR ~p",
+      "p AND ~p",
+      "p -> q",
+      "~p"
+    ],
+    "answer": 1,
+    "explanation": "p이면서 동시에 p가 아닐 수는 없으므로 항상 거짓(모순)입니다."
+  },
+  {
+    "id": 277,
+    "subject": "대학수학",
+    "question": "선적분(Line Integral)이 경로에 의존하지 않을 조건은?",
+    "options": [
+      "벡터장이 보존장(Conservative Vector Field)일 때",
+      "경로가 닫혀있을 때",
+      "벡터장이 상수일 때",
+      "항상 경로에 의존한다."
+    ],
+    "answer": 0,
+    "explanation": "벡터장이 어떤 스칼라 함수의 그라디언트(F = ∇f)로 표현될 때(보존장), 선적분은 시점과 종점에만 의존합니다."
+  },
+  {
+    "id": 278,
+    "subject": "대학수학",
+    "question": "크래머 공식(Cramer's Rule)은 무엇을 구할 때 사용하는가?",
+    "options": [
+      "행렬의 고유값",
+      "연립일차방정식의 해",
+      "벡터의 내적",
+      "함수의 극한"
+    ],
+    "answer": 1,
+    "explanation": "행렬식을 이용하여 연립방정식의 해를 구하는 공식입니다."
+  },
+  {
+    "id": 279,
+    "subject": "대학수학",
+    "question": "쌍곡선함수 cosh^2(x) - sinh^2(x)의 값은?",
+    "options": [
+      "0",
+      "1",
+      "-1",
+      "e^x"
+    ],
+    "answer": 1,
+    "explanation": "삼각함수와 유사하지만 부호가 다릅니다. 쌍곡선함수의 기본 항등식입니다."
+  },
+  {
+    "id": 280,
+    "subject": "대학수학",
+    "question": "어떤 시행에서 성공 확률이 p일 때, n번 시행 중 k번 성공할 확률분포는?",
+    "options": [
+      "정규분포",
+      "이항분포 (Binomial Distribution)",
+      "기하분포",
+      "지수분포"
+    ],
+    "answer": 1,
+    "explanation": "베르누이 시행을 n번 반복했을 때 성공 횟수의 분포입니다."
+  },
+  {
+    "id": 281,
+    "subject": "대학수학",
+    "question": "행렬 A가 가역(Invertible)이기 위한 필요충분조건은?",
+    "options": [
+      "det(A) = 0",
+      "det(A) ≠ 0",
+      "tr(A) = 0",
+      "A = A^T"
+    ],
+    "answer": 1,
+    "explanation": "행렬식이 0이 아니어야 역행렬이 존재합니다."
+  },
+  {
+    "id": 282,
+    "subject": "대학수학",
+    "question": "함수 f(x, y)의 (a, b)에서의 접평면의 방정식은?",
+    "options": [
+      "z = f(a,b) + fx(a,b)(x-a) + fy(a,b)(y-b)",
+      "z = ax + by + c",
+      "z = f(a,b)",
+      "z = x^2 + y^2"
+    ],
+    "answer": 0,
+    "explanation": "편미분계수를 기울기로 하는 평면의 방정식입니다."
+  },
+  {
+    "id": 283,
+    "subject": "대학수학",
+    "question": "그래프 이론에서 사이클(Cycle)이 없는 연결 그래프를 무엇이라 하는가?",
+    "options": [
+      "트리 (Tree)",
+      "완전 그래프",
+      "이분 그래프",
+      "평면 그래프"
+    ],
+    "answer": 0,
+    "explanation": "트리는 회로(Cycle)가 존재하지 않는 계층적 구조의 그래프입니다."
+  },
+  {
+    "id": 284,
+    "subject": "대학수학",
+    "question": "f(x) = ln(x)의 도함수는?",
+    "options": [
+      "e^x",
+      "1/x",
+      "x ln(x)",
+      "1"
+    ],
+    "answer": 1,
+    "explanation": "자연로그 함수의 미분 결과는 1/x 입니다."
+  },
+  {
+    "id": 285,
+    "subject": "대학수학",
+    "question": "두 벡터가 평행할 조건은?",
+    "options": [
+      "내적이 0이다.",
+      "외적이 0이다(영벡터).",
+      "크기가 같다.",
+      "합이 0이다."
+    ],
+    "answer": 1,
+    "explanation": "두 벡터가 평행하면 사이각이 0도 또는 180도이므로 sinθ=0이 되어 외적이 0이 됩니다."
+  },
+  {
+    "id": 286,
+    "subject": "대학수학",
+    "question": "다변수 함수에서 이계 편도함수가 연속일 때, fxy = fyx 가 성립한다는 정리는?",
+    "options": [
+      "클레로의 정리 (Clairaut's Theorem)",
+      "그린 정리",
+      "스토크스 정리",
+      "가우스 정리"
+    ],
+    "answer": 0,
+    "explanation": "편미분 순서를 바꾸어도 결과가 같다는 정리입니다."
+  },
+  {
+    "id": 287,
+    "subject": "대학수학",
+    "question": "행렬 A의 고유값들의 합은 무엇과 같은가?",
+    "options": [
+      "행렬식 (det A)",
+      "대각합 (Trace A)",
+      "랭크 (Rank A)",
+      "0"
+    ],
+    "answer": 1,
+    "explanation": "모든 고유값의 합은 주대각 성분의 합(Trace)과 같고, 모든 고유값의 곱은 행렬식(Determinant)과 같습니다."
+  },
+  {
+    "id": 288,
+    "subject": "대학수학",
+    "question": "집합 A의 원소의 개수가 n개일 때, A에서 A로 가는 일대일 대응(전단사) 함수의 개수는?",
+    "options": [
+      "n^2",
+      "n^n",
+      "n!",
+      "2^n"
+    ],
+    "answer": 2,
+    "explanation": "첫 번째 원소는 n개, 두 번째는 n-1개... 순으로 선택하므로 n!(팩토리얼)입니다."
+  },
+  {
+    "id": 289,
+    "subject": "대학수학",
+    "question": "이계 상미분방정식이 '선형(Linear)'이라는 것의 의미는?",
+    "options": [
+      "미지 함수 y와 그 도함수들이 1차로만 등장한다.",
+      "계수가 모두 상수이다.",
+      "우변이 0이다.",
+      "해를 구할 수 있다."
+    ],
+    "answer": 0,
+    "explanation": "종속변수 y나 y', y'' 등이 곱해지거나 제곱되지 않고 선형 결합으로만 이루어진 형태입니다."
+  },
+  {
+    "id": 290,
+    "subject": "대학수학",
+    "question": "표본공간 S의 부분집합인 사건 A에 대하여 P(A) + P(A^c)의 값은? (A^c는 여사건)",
+    "options": [
+      "0",
+      "0.5",
+      "1",
+      "무한대"
+    ],
+    "answer": 2,
+    "explanation": "사건이 일어날 확률과 일어나지 않을 확률의 합은 항상 전체 확률인 1입니다."
+  },
+  {
+    "id": 291,
+    "subject": "대학수학",
+    "question": "선형변환 T(x) = Ax 에서 행렬 A가 대칭행렬(Symmetric Matrix)일 때 성립하는 것은?",
+    "options": [
+      "A = -A",
+      "A = A^T",
+      "det(A) = 0",
+      "A는 역행렬이 없다."
+    ],
+    "answer": 1,
+    "explanation": "대칭행렬은 전치(Transpose)를 해도 자기 자신과 같은 행렬입니다. (A_ij = A_ji)"
+  },
+  {
+    "id": 292,
+    "subject": "대학수학",
+    "question": "이산수학에서 드 모르간의 법칙(De Morgan's Laws)으로 옳은 것은?",
+    "options": [
+      "~(p AND q) <=> ~p OR ~q",
+      "~(p AND q) <=> ~p AND ~q",
+      "~(p OR q) <=> ~p OR ~q",
+      "p -> q <=> ~p -> ~q"
+    ],
+    "answer": 0,
+    "explanation": "논리곱(AND)의 부정은 각각의 부정의 논리합(OR)과 같습니다."
+  },
+  {
+    "id": 293,
+    "subject": "대학수학",
+    "question": "확률변수 X의 기댓값(Expectation) E(X)의 성질로 틀린 것은? (a, b는 상수)",
+    "options": [
+      "E(a) = a",
+      "E(aX) = aE(X)",
+      "E(X + Y) = E(X) + E(Y)",
+      "E(XY) = E(X)E(Y) (항상 성립)"
+    ],
+    "answer": 3,
+    "explanation": "E(XY) = E(X)E(Y)는 두 확률변수 X, Y가 '독립'일 때만 성립합니다."
+  },
+  {
+    "id": 294,
+    "subject": "대학수학",
+    "question": "정적분 ∫(a to b) f(x) dx 의 기하학적 의미는?",
+    "options": [
+      "함수 f(x)의 기울기",
+      "x=a에서 x=b까지 곡선과 x축 사이의 부호 있는 넓이",
+      "곡선의 길이",
+      "함수의 최댓값"
+    ],
+    "answer": 1,
+    "explanation": "x축 위쪽은 양의 넓이, 아래쪽은 음의 넓이로 계산된 총합입니다."
+  },
+  {
+    "id": 295,
+    "subject": "대학수학",
+    "question": "함수 f가 일대일 대응(전단사 함수)이기 위한 필요충분조건은?",
+    "options": [
+      "역함수가 존재한다.",
+      "함수가 연속이다.",
+      "미분 가능하다.",
+      "f(0) = 0 이다."
+    ],
+    "answer": 0,
+    "explanation": "역함수가 존재하려면 함수는 반드시 일대일 대응이어야 합니다."
+  },
+  {
+    "id": 296,
+    "subject": "대학수학",
+    "question": "통계적 가설 검정에서 '귀무가설(H0)이 참인데도 이를 기각하는 오류'는?",
+    "options": [
+      "제1종 오류 (Type I Error)",
+      "제2종 오류 (Type II Error)",
+      "표준 오차",
+      "편향 (Bias)"
+    ],
+    "answer": 0,
+    "explanation": "맞는데 틀렸다고 하는 오류(알파)를 제1종 오류라고 합니다."
+  },
+  {
+    "id": 297,
+    "subject": "대학수학",
+    "question": "벡터 공간 V의 부분공간(Subspace) W가 반드시 포함해야 하는 벡터는?",
+    "options": [
+      "단위 벡터",
+      "영 벡터 (Zero Vector)",
+      "기저 벡터",
+      "모든 정수 벡터"
+    ],
+    "answer": 1,
+    "explanation": "부분공간은 덧셈과 스칼라 곱에 닫혀 있어야 하므로 반드시 영 벡터(0)를 포함해야 합니다."
+  },
+  {
+    "id": 298,
+    "subject": "대학수학",
+    "question": "논리식에서 항상 참인 명제를 무엇이라 하는가?",
+    "options": [
+      "모순 (Contradiction)",
+      "항진 명제 (Tautology)",
+      "조건 명제",
+      "역설 (Paradox)"
+    ],
+    "answer": 1,
+    "explanation": "변수의 진리값에 상관없이 결과가 항상 True인 명제를 토폴로지(항진 명제)라 합니다."
+  },
+  {
+    "id": 299,
+    "subject": "대학수학",
+    "question": "미분방정식 dy/dx = y 의 해는?",
+    "options": [
+      "y = x",
+      "y = e^x",
+      "y = sin(x)",
+      "y = 1/x"
+    ],
+    "answer": 1,
+    "explanation": "미분했을 때 자기 자신이 되는 함수는 지수함수(Ce^x)입니다."
+  },
+  {
+    "id": 300,
+    "subject": "대학수학",
+    "question": "행렬 A의 행렬식이 0이면(det A = 0), 연립방정식 Ax = 0 은?",
+    "options": [
+      "오직 자명해(x=0)만 갖는다.",
+      "자명해 이외의 무수히 많은 해를 갖는다.",
+      "해가 없다.",
+      "알 수 없다."
+    ],
+    "answer": 1,
+    "explanation": "역행렬이 존재하지 않으므로(특이행렬), 영공간의 차원이 1 이상이 되어 무수히 많은 해를 가집니다."
+  },
+  {
+    "id": 301,
+    "subject": "대학영어",
+    "question": "She is responsible _____ designing the entire project.",
+    "options": [
+      "at",
+      "on",
+      "for",
+      "in"
+    ],
+    "answer": 2,
+    "explanation": "'be responsible for'는 '~에 책임이 있다'라는 숙어입니다."
+  },
+  {
+    "id": 302,
+    "subject": "대학영어",
+    "question": "Choose the correct word: 'Although it was raining, _____ we went out.'",
+    "options": [
+      "but",
+      "however",
+      "(blank)",
+      "despite"
+    ],
+    "answer": 2,
+    "explanation": "접속사 Although가 이미 절을 이끌고 있으므로, 주절 앞에 접속사(but)를 또 쓰지 않습니다. (빈칸이 정답)"
+  },
+  {
+    "id": 303,
+    "subject": "대학영어",
+    "question": "The number of students in the class _____ increasing every year.",
+    "options": [
+      "is",
+      "are",
+      "have",
+      "were"
+    ],
+    "answer": 0,
+    "explanation": "'The number of (~의 수)'는 단수 취급합니다. ('A number of'는 복수 취급)"
+  },
+  {
+    "id": 304,
+    "subject": "대학영어",
+    "question": "I look forward to _____ from you soon.",
+    "options": [
+      "hear",
+      "heard",
+      "hearing",
+      "have heard"
+    ],
+    "answer": 2,
+    "explanation": "'look forward to'의 to는 전치사이므로 뒤에 명사나 동명사(-ing)가 와야 합니다."
+  },
+  {
+    "id": 305,
+    "subject": "대학영어",
+    "question": "If I _____ you, I would accept the offer.",
+    "options": [
+      "am",
+      "was",
+      "were",
+      "have been"
+    ],
+    "answer": 2,
+    "explanation": "가정법 과거에서 be동사는 인칭에 상관없이 'were'를 쓰는 것이 원칙입니다."
+  },
+  {
+    "id": 306,
+    "subject": "대학영어",
+    "question": "This is the building _____ I used to work.",
+    "options": [
+      "which",
+      "that",
+      "where",
+      "what"
+    ],
+    "answer": 2,
+    "explanation": "뒤에 완벽한 문장(I used to work)이 왔고 선행사가 장소이므로 관계부사 'where'가 적절합니다."
+  },
+  {
+    "id": 307,
+    "subject": "대학영어",
+    "question": "He _____ the decision to study abroad last year.",
+    "options": [
+      "did",
+      "made",
+      "took",
+      "got"
+    ],
+    "answer": 1,
+    "explanation": "'결정하다'는 'make a decision'이라는 연어(Collocation)를 사용합니다."
+  },
+  {
+    "id": 308,
+    "subject": "대학영어",
+    "question": "The meeting has been _____ until next Monday.",
+    "options": [
+      "put off",
+      "put on",
+      "put out",
+      "put in"
+    ],
+    "answer": 0,
+    "explanation": "'put off'는 '연기하다(postpone)'라는 뜻입니다."
+  },
+  {
+    "id": 309,
+    "subject": "대학영어",
+    "question": "Identify the part of speech: She sings 'beautifully'.",
+    "options": [
+      "Noun",
+      "Verb",
+      "Adjective",
+      "Adverb"
+    ],
+    "answer": 3,
+    "explanation": "동사(sings)를 수식하고 있으므로 부사(Adverb)입니다."
+  },
+  {
+    "id": 310,
+    "subject": "대학영어",
+    "question": "Please let me know if you have _____ to the files.",
+    "options": [
+      "excess",
+      "assess",
+      "access",
+      "axis"
+    ],
+    "answer": 2,
+    "explanation": "문맥상 파일에 대한 '접근 권한'을 의미하므로 'access'가 맞습니다. (excess는 과잉)"
+  },
+  {
+    "id": 311,
+    "subject": "대학영어",
+    "question": "By the time you arrive, the movie _____.",
+    "options": [
+      "starts",
+      "will start",
+      "will have started",
+      "had started"
+    ],
+    "answer": 2,
+    "explanation": "미래의 특정 시점(도착할 때) 이전에 이미 완료된 일을 나타내므로 '미래완료(will have p.p)'를 씁니다."
+  },
+  {
+    "id": 312,
+    "subject": "대학영어",
+    "question": "It is important that he _____ the truth.",
+    "options": [
+      "know",
+      "knows",
+      "knew",
+      "knowing"
+    ],
+    "answer": 0,
+    "explanation": "주요명제(주장, 요구, 명령, 제안) 동사나 형용사 뒤의 that절에는 '(should) + 동사원형'을 씁니다."
+  },
+  {
+    "id": 313,
+    "subject": "대학영어",
+    "question": "Not only _____ smart, but he is also diligent.",
+    "options": [
+      "he is",
+      "is he",
+      "he was",
+      "was he"
+    ],
+    "answer": 1,
+    "explanation": "부정어(Not only)가 문두에 나오면 주어와 동사가 도치(Inversion)됩니다."
+  },
+  {
+    "id": 314,
+    "subject": "대학영어",
+    "question": "I enjoyed _____ the movie with my friends.",
+    "options": [
+      "watch",
+      "to watch",
+      "watching",
+      "watched"
+    ],
+    "answer": 2,
+    "explanation": "enjoy 동사는 목적어로 동명사(-ing)만을 취합니다."
+  },
+  {
+    "id": 315,
+    "subject": "대학영어",
+    "question": "She is _____ interesting person I have ever met.",
+    "options": [
+      "more",
+      "the most",
+      "most",
+      "very"
+    ],
+    "answer": 1,
+    "explanation": "범위(I have ever met)가 주어졌을 때 최상급(the most) 표현을 사용합니다."
+  },
+  {
+    "id": 316,
+    "subject": "대학영어",
+    "question": "Despite _____ tired, he finished his homework.",
+    "options": [
+      "he is",
+      "of being",
+      "being",
+      "be"
+    ],
+    "answer": 2,
+    "explanation": "Despite은 전치사이므로 뒤에 명사나 동명사(being)가 와야 합니다. (of는 안 붙임)"
+  },
+  {
+    "id": 317,
+    "subject": "대학영어",
+    "question": "Could you tell me where _____?",
+    "options": [
+      "is the bank",
+      "the bank is",
+      "the bank be",
+      "is bank"
+    ],
+    "answer": 1,
+    "explanation": "간접의문문의 어순은 '의문사 + 주어 + 동사' 입니다."
+  },
+  {
+    "id": 318,
+    "subject": "대학영어",
+    "question": "He stopped smoking means:",
+    "options": [
+      "He paused to smoke.",
+      "He quit smoking.",
+      "He enjoys smoking.",
+      "He started smoking."
+    ],
+    "answer": 1,
+    "explanation": "stop + -ing는 '~하던 것을 멈추다(끊다)'이고, stop + to부정사는 '~하기 위해 멈추다'입니다."
+  },
+  {
+    "id": 319,
+    "subject": "대학영어",
+    "question": "_____ information is available on the website.",
+    "options": [
+      "Many",
+      "An",
+      "Few",
+      "Much"
+    ],
+    "answer": 3,
+    "explanation": "information은 셀 수 없는 명사이므로 Many나 An을 쓸 수 없고, 양을 나타내는 Much를 씁니다."
+  },
+  {
+    "id": 320,
+    "subject": "대학영어",
+    "question": "I helped him _____ his homework.",
+    "options": [
+      "finish",
+      "finishing",
+      "finished",
+      "for finish"
+    ],
+    "answer": 0,
+    "explanation": "help 동사는 목적격 보어로 동사원형(finish)이나 to부정사(to finish)를 모두 취할 수 있습니다."
+  },
+  {
+    "id": 321,
+    "subject": "대학영어",
+    "question": "The new policy will be _____ next month.",
+    "options": [
+      "implemented",
+      "implanted",
+      "implicated",
+      "imported"
+    ],
+    "answer": 0,
+    "explanation": "정책이나 계획 등을 '실행하다, 시행하다'라는 뜻으로는 implement가 적절합니다."
+  },
+  {
+    "id": 322,
+    "subject": "대학영어",
+    "question": "I haven't seen him _____ we graduated from high school.",
+    "options": [
+      "for",
+      "during",
+      "since",
+      "from"
+    ],
+    "answer": 2,
+    "explanation": "'~한 이래로 쭉'이라는 의미로 완료 시제와 함께 쓰이는 접속사는 since입니다."
+  },
+  {
+    "id": 323,
+    "subject": "대학영어",
+    "question": "_____ from the top of the building, the cars looked like toys.",
+    "options": [
+      "Seeing",
+      "Seen",
+      "To see",
+      "Saw"
+    ],
+    "answer": 1,
+    "explanation": "분사구문의 주어(the cars)가 '보여지는(수동)' 대상이므로 과거분사 Seen으로 시작해야 합니다. (As they were seen...)"
+  },
+  {
+    "id": 324,
+    "subject": "대학영어",
+    "question": "The hotel offers a _____ breakfast to all guests.",
+    "options": [
+      "complimentary",
+      "complementary",
+      "compliment",
+      "completion"
+    ],
+    "answer": 0,
+    "explanation": "complimentary는 '무료의' 또는 '칭찬하는' 뜻이고, complementary는 '상호 보완적인' 뜻입니다. 문맥상 무료 조식이 맞습니다."
+  },
+  {
+    "id": 325,
+    "subject": "대학영어",
+    "question": "Hardly had I entered the room _____ the phone rang.",
+    "options": [
+      "than",
+      "when",
+      "as",
+      "after"
+    ],
+    "answer": 1,
+    "explanation": "'Hardly/Scarcely had S p.p ... when/before ...' 구문은 '~하자마자 ...했다'라는 뜻입니다."
+  },
+  {
+    "id": 326,
+    "subject": "대학영어",
+    "question": "I suggest that he _____ a doctor immediately.",
+    "options": [
+      "sees",
+      "see",
+      "saw",
+      "has seen"
+    ],
+    "answer": 1,
+    "explanation": "제안(suggest), 주장, 명령 동사 뒤의 that절에는 '(should) + 동사원형'을 씁니다. (see)"
+  },
+  {
+    "id": 327,
+    "subject": "대학영어",
+    "question": "The cold weather will _____ the crops.",
+    "options": [
+      "effect",
+      "affect",
+      "affection",
+      "effective"
+    ],
+    "answer": 1,
+    "explanation": "affect는 동사로 '영향을 미치다', effect는 주로 명사로 '효과/결과'로 쓰입니다."
+  },
+  {
+    "id": 328,
+    "subject": "대학영어",
+    "question": "He is the man _____ car was stolen yesterday.",
+    "options": [
+      "who",
+      "whom",
+      "which",
+      "whose"
+    ],
+    "answer": 3,
+    "explanation": "선행사(the man)의 소유격(그 남자의 차) 관계대명사가 필요하므로 whose가 정답입니다."
+  },
+  {
+    "id": 329,
+    "subject": "대학영어",
+    "question": "The letter _____ by the secretary yesterday.",
+    "options": [
+      "wrote",
+      "was wrote",
+      "was written",
+      "has written"
+    ],
+    "answer": 2,
+    "explanation": "편지는 쓰여지는 대상이므로 수동태(be + p.p)인 was written을 써야 합니다."
+  },
+  {
+    "id": 330,
+    "subject": "대학영어",
+    "question": "He studied hard; _____, he failed the exam.",
+    "options": [
+      "therefore",
+      "however",
+      "moreover",
+      "otherwise"
+    ],
+    "answer": 1,
+    "explanation": "앞뒤 문장이 역접(열심히 했다 vs 떨어졌다) 관계이므로 however가 적절합니다."
+  },
+  {
+    "id": 331,
+    "subject": "대학영어",
+    "question": "I regret _____ you that your application has been rejected.",
+    "options": [
+      "tell",
+      "to tell",
+      "telling",
+      "told"
+    ],
+    "answer": 1,
+    "explanation": "regret to V는 '(앞으로)~하게 되어 유감이다'이고, regret V-ing는 '(과거에)~한 것을 후회하다'입니다."
+  },
+  {
+    "id": 332,
+    "subject": "대학영어",
+    "question": "Please submit your _____ to the HR department.",
+    "options": [
+      "resume",
+      "consume",
+      "assume",
+      "presume"
+    ],
+    "answer": 0,
+    "explanation": "문맥상 인사과(HR)에 제출하는 것은 '이력서(resume)'입니다."
+  },
+  {
+    "id": 333,
+    "subject": "대학영어",
+    "question": "_____ you practice, the better you will become.",
+    "options": [
+      "More",
+      "The more",
+      "Most",
+      "The most"
+    ],
+    "answer": 1,
+    "explanation": "'The + 비교급, the + 비교급' 구문은 '~할수록 더 ...하다'라는 뜻입니다."
+  },
+  {
+    "id": 334,
+    "subject": "대학영어",
+    "question": "His opinion differs _____ mine.",
+    "options": [
+      "to",
+      "with",
+      "from",
+      "by"
+    ],
+    "answer": 2,
+    "explanation": "'~와 다르다'는 'differ from' 또는 'be different from'을 씁니다."
+  },
+  {
+    "id": 335,
+    "subject": "대학영어",
+    "question": "I _____ eat meat, but now I am a vegetarian.",
+    "options": [
+      "used to",
+      "was used to",
+      "am used to",
+      "use to"
+    ],
+    "answer": 0,
+    "explanation": "'used to'는 과거의 습관이나 상태(~하곤 했다)를 나타냅니다."
+  },
+  {
+    "id": 336,
+    "subject": "대학영어",
+    "question": "He is not _____ to lift the heavy box.",
+    "options": [
+      "strong enough",
+      "enough strong",
+      "too strong",
+      "so strong"
+    ],
+    "answer": 0,
+    "explanation": "enough가 형용사를 수식할 때는 반드시 뒤에서 수식(strong enough)해야 합니다."
+  },
+  {
+    "id": 337,
+    "subject": "대학영어",
+    "question": "This car is very _____ because it uses less fuel.",
+    "options": [
+      "economic",
+      "economical",
+      "economy",
+      "economics"
+    ],
+    "answer": 1,
+    "explanation": "economic은 '경제의(국가적)', economical은 '경제적인(절약하는)'이라는 뜻입니다."
+  },
+  {
+    "id": 338,
+    "subject": "대학영어",
+    "question": "If I had known the truth, I _____ told you.",
+    "options": [
+      "will have",
+      "would have",
+      "would",
+      "had"
+    ],
+    "answer": 1,
+    "explanation": "가정법 과거완료(If had p.p, S would have p.p) 구문입니다."
+  },
+  {
+    "id": 339,
+    "subject": "대학영어",
+    "question": "You are a student, _____?",
+    "options": [
+      "are you",
+      "aren't you",
+      "do you",
+      "don't you"
+    ],
+    "answer": 1,
+    "explanation": "앞 문장이 긍정문이면 부가의문문은 부정으로, be동사는 be동사 그대로 씁니다."
+  },
+  {
+    "id": 340,
+    "subject": "대학영어",
+    "question": "The conference will _____ in Seoul next week.",
+    "options": [
+      "take part",
+      "take place",
+      "take off",
+      "take over"
+    ],
+    "answer": 1,
+    "explanation": "'take place'는 '개최되다, 일어나다'라는 뜻입니다. (take part는 참가하다)"
+  },
+  {
+    "id": 341,
+    "subject": "대학영어",
+    "question": "_____ Tom nor his friends were present at the party.",
+    "options": [
+      "Either",
+      "Neither",
+      "Both",
+      "Not only"
+    ],
+    "answer": 1,
+    "explanation": "'Neither A nor B'는 'A도 B도 아닌'이라는 부정 상관접속사입니다."
+  },
+  {
+    "id": 342,
+    "subject": "대학영어",
+    "question": "I had my hair _____ yesterday.",
+    "options": [
+      "cut",
+      "to cut",
+      "cutting",
+      "cutted"
+    ],
+    "answer": 0,
+    "explanation": "사역동사 have + 목적어(my hair) + p.p(cut) 구조입니다. 머리카락은 잘리는 것이기 때문입니다."
+  },
+  {
+    "id": 343,
+    "subject": "대학영어",
+    "question": "Contrary to his _____ outlook, the results were negative.",
+    "options": [
+      "optimistic",
+      "pessimistic",
+      "realistic",
+      "passive"
+    ],
+    "answer": 0,
+    "explanation": "결과가 부정적(negative)이었고 '반대로(Contrary to)'라고 했으므로, 전망은 긍정적(optimistic)이었어야 합니다."
+  },
+  {
+    "id": 344,
+    "subject": "대학영어",
+    "question": "Rarely _____ such a beautiful sunset.",
+    "options": [
+      "I have seen",
+      "have I seen",
+      "I saw",
+      "saw I"
+    ],
+    "answer": 1,
+    "explanation": "부정부사(Rarely)가 문두로 나오면 주어와 동사가 도치됩니다. (완료시제에서는 have가 앞으로 나옴)"
+  },
+  {
+    "id": 345,
+    "subject": "대학영어",
+    "question": "Each of the students _____ given a task.",
+    "options": [
+      "was",
+      "were",
+      "have",
+      "are"
+    ],
+    "answer": 0,
+    "explanation": "Each of + 복수명사 뒤에는 반드시 '단수 동사'가 옵니다."
+  },
+  {
+    "id": 346,
+    "subject": "대학영어",
+    "question": "You are not _____ for this scholarship.",
+    "options": [
+      "legible",
+      "eligible",
+      "illegal",
+      "capable"
+    ],
+    "answer": 1,
+    "explanation": "'~할 자격이 있는'은 eligible입니다. (legible은 읽기 쉬운)"
+  },
+  {
+    "id": 347,
+    "subject": "대학영어",
+    "question": "It was _____ a nice day that we went for a picnic.",
+    "options": [
+      "so",
+      "such",
+      "very",
+      "too"
+    ],
+    "answer": 1,
+    "explanation": "'so + 형용사 + that' vs 'such + (a/an) + 형/명 + that'. 명사(day)가 있으므로 such가 맞습니다."
+  },
+  {
+    "id": 348,
+    "subject": "대학영어",
+    "question": "The prize was divided _____ the three winners.",
+    "options": [
+      "between",
+      "among",
+      "in",
+      "to"
+    ],
+    "answer": 1,
+    "explanation": "둘 사이는 between, 셋 이상 사이는 among을 사용합니다."
+  },
+  {
+    "id": 349,
+    "subject": "대학영어",
+    "question": "He managed to _____ a lot of wealth in a short time.",
+    "options": [
+      "acquire",
+      "inquire",
+      "require",
+      "request"
+    ],
+    "answer": 0,
+    "explanation": "부를 '얻다, 획득하다'는 acquire가 적절합니다."
+  },
+  {
+    "id": 350,
+    "subject": "대학영어",
+    "question": "It _____ me two hours to finish the report.",
+    "options": [
+      "spent",
+      "took",
+      "needed",
+      "got"
+    ],
+    "answer": 1,
+    "explanation": "시간이 걸리다를 표현할 때는 'It takes + 사람 + 시간 + to V' 구문을 씁니다."
+  },
+  {
+    "id": 351,
+    "subject": "대학영어",
+    "question": "I cannot help _____ at the funny scene.",
+    "options": [
+      "laugh",
+      "to laugh",
+      "laughing",
+      "laughed"
+    ],
+    "answer": 2,
+    "explanation": "'cannot help -ing'는 '~하지 않을 수 없다'라는 관용구입니다. (= cannot but 동사원형)"
+  },
+  {
+    "id": 352,
+    "subject": "대학영어",
+    "question": "The technology became _____ very quickly.",
+    "options": [
+      "obsolete",
+      "absolute",
+      "observant",
+      "obstinate"
+    ],
+    "answer": 0,
+    "explanation": "기술이 빠르게 '구식이 된, 쓸모없게 된'이라는 의미로는 obsolete이 적절합니다."
+  },
+  {
+    "id": 353,
+    "subject": "대학영어",
+    "question": "We should discuss _____ the problem.",
+    "options": [
+      "about",
+      "on",
+      "of",
+      "(blank)"
+    ],
+    "answer": 3,
+    "explanation": "discuss는 타동사이므로 뒤에 전치사(about 등)를 쓰지 않고 바로 목적어(the problem)를 취합니다."
+  },
+  {
+    "id": 354,
+    "subject": "대학영어",
+    "question": "You had better _____ a doctor.",
+    "options": [
+      "to see",
+      "seeing",
+      "see",
+      "saw"
+    ],
+    "answer": 2,
+    "explanation": "'had better'는 조동사처럼 쓰여 뒤에 동사원형이 옵니다. (~하는 게 낫다)"
+  },
+  {
+    "id": 355,
+    "subject": "대학영어",
+    "question": "The heavy rain prevented us _____ going out.",
+    "options": [
+      "to",
+      "from",
+      "by",
+      "of"
+    ],
+    "answer": 1,
+    "explanation": "'prevent A from -ing'는 'A가 ~하는 것을 막다'라는 필수 구문입니다."
+  },
+  {
+    "id": 356,
+    "subject": "대학영어",
+    "question": "This book is worth _____.",
+    "options": [
+      "read",
+      "to read",
+      "reading",
+      "to be read"
+    ],
+    "answer": 2,
+    "explanation": "'be worth -ing'는 '~할 가치가 있다'는 수동의 의미를 포함한 관용구입니다."
+  },
+  {
+    "id": 357,
+    "subject": "대학영어",
+    "question": "_____ you work hard, you will fail the exam.",
+    "options": [
+      "If",
+      "Unless",
+      "Because",
+      "As"
+    ],
+    "answer": 1,
+    "explanation": "문맥상 '열심히 공부하지 않는다면(If not)'이라는 의미의 접속사 Unless가 필요합니다."
+  },
+  {
+    "id": 358,
+    "subject": "대학영어",
+    "question": "He devoted his life to _____ the poor.",
+    "options": [
+      "help",
+      "helping",
+      "helped",
+      "helps"
+    ],
+    "answer": 1,
+    "explanation": "'devote oneself to'에서 to는 전치사이므로 뒤에 동명사(helping)가 와야 합니다."
+  },
+  {
+    "id": 359,
+    "subject": "대학영어",
+    "question": "The decision was _____ ; everyone agreed.",
+    "options": [
+      "unanimous",
+      "anonymous",
+      "ambiguous",
+      "animous"
+    ],
+    "answer": 0,
+    "explanation": "모두가 동의했으므로 '만장일치의(unanimous)'가 적절합니다. (anonymous는 익명의)"
+  },
+  {
+    "id": 360,
+    "subject": "대학영어",
+    "question": "She speaks French, _____?",
+    "options": [
+      "doesn't she",
+      "don't she",
+      "isn't she",
+      "won't she"
+    ],
+    "answer": 0,
+    "explanation": "일반동사(speaks)의 긍정문이므로, 부가의문문은 do동사의 부정형(doesn't)을 씁니다."
+  },
+  {
+    "id": 361,
+    "subject": "대학영어",
+    "question": "The principal _____ of the school is to educate students.",
+    "options": [
+      "principle",
+      "principal",
+      "principality",
+      "principled"
+    ],
+    "answer": 0,
+    "explanation": "여기서는 문맥이 모호할 수 있으나, 학교의 교장(principal)이 아니라 학교의 '주된 원칙/목표'라면 principle, '주된(형용사) 목표'라면 principal objective인데 명사 자리입니다. 하지만 일반적으로 'principal(교장/주요한)'과 'principle(원리/원칙)'을 구분하는 문제에서는 학교의 '설립 원칙(principle)'이 적절할 수 있으나, 보통 'school's objective'를 수식하는 형용사라면 principal입니다. *수정: 이 문제는 문맥상 '주요한 목적'을 묻는다면 principal function 등이 맞으나, 단순 어휘 문제로 '교장(principal)' vs '원리(principle)'을 묻는 경우가 많습니다. 여기서는 '주요한(principal)' 목적이 생략된 형태거나 오타일 수 있어, 가장 적절한 명사인 'principle(원칙)' 혹은 형용사 'principal(주요한)' 중 선택해야 합니다. 답을 명확히 하기 위해 문제를 수정: 'Honesty is his guiding _____.' -> principle."
+  },
+  {
+    "id": 361,
+    "subject": "대학영어",
+    "question": "Honesty is his guiding _____.",
+    "options": [
+      "principal",
+      "principle",
+      "principality",
+      "print"
+    ],
+    "answer": 1,
+    "explanation": "그의 행동 지침이 되는 '신조, 원칙'은 principle입니다. (principal은 교장 또는 주요한)"
+  },
+  {
+    "id": 362,
+    "subject": "대학영어",
+    "question": "Please _____ the lights before you leave.",
+    "options": [
+      "turn out",
+      "turn off",
+      "turn in",
+      "turn over"
+    ],
+    "answer": 1,
+    "explanation": "불을 끄다는 'turn off'입니다. (turn out은 판명되다, turn in은 제출하다/잠자리에 들다)"
+  },
+  {
+    "id": 363,
+    "subject": "대학영어",
+    "question": "I wish I _____ the answer now.",
+    "options": [
+      "know",
+      "knew",
+      "have known",
+      "will know"
+    ],
+    "answer": 1,
+    "explanation": "가정법 과거(I wish + 과거동사)는 현재 사실의 반대나 실현 불가능한 소망을 나타냅니다."
+  },
+  {
+    "id": 364,
+    "subject": "대학영어",
+    "question": "Make sure to keep your passport _____ a safe place.",
+    "options": [
+      "at",
+      "on",
+      "in",
+      "to"
+    ],
+    "answer": 2,
+    "explanation": "공간의 내부를 나타낼 때는 전치사 in을 사용합니다. (in a safe place)"
+  },
+  {
+    "id": 365,
+    "subject": "대학영어",
+    "question": "_____ I admit that he is smart, I don't like his attitude.",
+    "options": [
+      "Despite",
+      "While",
+      "However",
+      "Nevertheless"
+    ],
+    "answer": 1,
+    "explanation": "While은 '비록 ~일지라도(Although)'의 의미로 양보절을 이끌 수 있습니다."
+  },
+  {
+    "id": 366,
+    "subject": "대학영어",
+    "question": "The stock market prices _____ wildly yesterday.",
+    "options": [
+      "fluctuated",
+      "flattened",
+      "flagged",
+      "flattered"
+    ],
+    "answer": 0,
+    "explanation": "주가가 심하게 '변동하다, 오르내리다'는 fluctuate입니다."
+  },
+  {
+    "id": 367,
+    "subject": "대학영어",
+    "question": "There is no _____ what will happen next.",
+    "options": [
+      "know",
+      "to know",
+      "knowing",
+      "known"
+    ],
+    "answer": 2,
+    "explanation": "'There is no -ing'는 '~하는 것은 불가능하다(It is impossible to...)'라는 관용구입니다."
+  },
+  {
+    "id": 368,
+    "subject": "대학영어",
+    "question": "This theory is based _____ extensive research.",
+    "options": [
+      "in",
+      "at",
+      "to",
+      "on"
+    ],
+    "answer": 3,
+    "explanation": "'~에 기초하다/기반하다'는 'be based on'입니다."
+  },
+  {
+    "id": 369,
+    "subject": "대학영어",
+    "question": "He speaks English fluently, not to _____ French.",
+    "options": [
+      "say",
+      "speak",
+      "mention",
+      "tell"
+    ],
+    "answer": 2,
+    "explanation": "'not to mention'은 '~은 말할 것도 없이'라는 뜻입니다."
+  },
+  {
+    "id": 370,
+    "subject": "대학영어",
+    "question": "They arrived _____ the airport just in time.",
+    "options": [
+      "to",
+      "on",
+      "at",
+      "in"
+    ],
+    "answer": 2,
+    "explanation": "arrive 뒤에 좁은 장소(지점)가 올 때는 전치사 at을 씁니다. (도시나 국가는 in)"
+  },
+  {
+    "id": 371,
+    "subject": "대학영어",
+    "question": "I would rather stay home than _____ out.",
+    "options": [
+      "go",
+      "to go",
+      "going",
+      "went"
+    ],
+    "answer": 0,
+    "explanation": "'would rather A(동사원형) than B(동사원형)' 구문입니다."
+  },
+  {
+    "id": 372,
+    "subject": "대학영어",
+    "question": "The company is looking _____ new ways to expand.",
+    "options": [
+      "after",
+      "into",
+      "up",
+      "over"
+    ],
+    "answer": 1,
+    "explanation": "새로운 방법을 '조사하다, 모색하다'는 look into(investigate)가 적절합니다."
+  },
+  {
+    "id": 373,
+    "subject": "대학영어",
+    "question": "_____ tired, he went to bed early.",
+    "options": [
+      "Being",
+      "Be",
+      "To be",
+      "Been"
+    ],
+    "answer": 0,
+    "explanation": "분사구문에서 이유를 나타내는 접속사와 주어가 생략되고 동사(was/were)가 Being으로 바뀐 형태입니다."
+  },
+  {
+    "id": 374,
+    "subject": "대학영어",
+    "question": "Choose the word with the opposite meaning of 'artificial'.",
+    "options": [
+      "fake",
+      "synthetic",
+      "natural",
+      "constructed"
+    ],
+    "answer": 2,
+    "explanation": "artificial(인공의)의 반대말은 natural(자연의)입니다."
+  },
+  {
+    "id": 375,
+    "subject": "대학영어",
+    "question": "He _____ to be a great musician.",
+    "options": [
+      "turned out",
+      "turned in",
+      "turned off",
+      "turned down"
+    ],
+    "answer": 0,
+    "explanation": "'~임이 판명되다, 드러나다'는 turn out입니다."
+  },
+  {
+    "id": 376,
+    "subject": "대학영어",
+    "question": "The scholarship enabled him _____ abroad.",
+    "options": [
+      "study",
+      "to study",
+      "studying",
+      "studied"
+    ],
+    "answer": 1,
+    "explanation": "enable + 목적어 + to부정사 구문입니다. (목적어가 ~할 수 있게 하다)"
+  },
+  {
+    "id": 377,
+    "subject": "대학영어",
+    "question": "He insisted on _____ for the dinner.",
+    "options": [
+      "pay",
+      "to pay",
+      "paying",
+      "paid"
+    ],
+    "answer": 2,
+    "explanation": "insist on에서 on은 전치사이므로 뒤에 동명사(paying)가 옵니다."
+  },
+  {
+    "id": 378,
+    "subject": "대학영어",
+    "question": "The paragraph contains some _____ sentences that repeat the same idea.",
+    "options": [
+      "redundant",
+      "concise",
+      "essential",
+      "unique"
+    ],
+    "answer": 0,
+    "explanation": "같은 내용을 반복하는 '불필요한, 중복되는' 문장은 redundant하다고 합니다."
+  },
+  {
+    "id": 379,
+    "subject": "대학영어",
+    "question": "He walked quietly so as _____ wake the baby.",
+    "options": [
+      "to not",
+      "not to",
+      "to",
+      "not"
+    ],
+    "answer": 1,
+    "explanation": "'~하지 않기 위해서'는 'so as not to V' 또는 'in order not to V' 어순을 씁니다."
+  },
+  {
+    "id": 380,
+    "subject": "대학영어",
+    "question": "We have run _____ sugar.",
+    "options": [
+      "out of",
+      "into",
+      "away",
+      "over"
+    ],
+    "answer": 0,
+    "explanation": "'~이 다 떨어지다, 고갈되다'는 'run out of'입니다."
+  },
+  {
+    "id": 381,
+    "subject": "대학영어",
+    "question": "_____ for your help, I would have failed the project.",
+    "options": [
+      "If it were not",
+      "Had it not been",
+      "Were it not",
+      "Has it not been"
+    ],
+    "answer": 1,
+    "explanation": "주절이 가정법 과거완료(would have p.p)이므로 if절도 과거완료여야 합니다. If it had not been for에서 If가 생략되어 도치된 형태입니다."
+  },
+  {
+    "id": 382,
+    "subject": "대학영어",
+    "question": "The government took measures to _____ the effects of the crisis.",
+    "options": [
+      "mitigate",
+      "aggravate",
+      "instigate",
+      "litigate"
+    ],
+    "answer": 0,
+    "explanation": "위기의 영향을 '완화시키다, 경감하다'는 mitigate가 적절합니다. (aggravate는 악화시키다)"
+  },
+  {
+    "id": 383,
+    "subject": "대학영어",
+    "question": "We are tired. Let's _____.",
+    "options": [
+      "call it a day",
+      "call it a night",
+      "call it off",
+      "call on"
+    ],
+    "answer": 0,
+    "explanation": "'오늘은 이만 하자(일과를 마치다)'라는 관용구는 'call it a day'입니다."
+  },
+  {
+    "id": 384,
+    "subject": "대학영어",
+    "question": "He sat on the chair with his legs _____.",
+    "options": [
+      "cross",
+      "crossing",
+      "crossed",
+      "to cross"
+    ],
+    "answer": 2,
+    "explanation": "'with + 명사 + 분사' 구문에서 다리는 꼬아지는(수동) 대상이므로 과거분사 crossed를 씁니다."
+  },
+  {
+    "id": 385,
+    "subject": "대학영어",
+    "question": "Smartphones have become _____ in modern society.",
+    "options": [
+      "ubiquitous",
+      "unique",
+      "obsolete",
+      "rare"
+    ],
+    "answer": 0,
+    "explanation": "어디에나 있는, 아주 흔한 것을 나타내는 단어는 ubiquitous입니다."
+  },
+  {
+    "id": 386,
+    "subject": "대학영어",
+    "question": "He hurried lest he _____ miss the train.",
+    "options": [
+      "would",
+      "should",
+      "could",
+      "might"
+    ],
+    "answer": 1,
+    "explanation": "'~하지 않도록'을 뜻하는 'lest ... should' 구문입니다. (should는 생략 가능)"
+  },
+  {
+    "id": 387,
+    "subject": "대학영어",
+    "question": "Fame is _____ ; it does not last forever.",
+    "options": [
+      "ephemeral",
+      "eternal",
+      "enduring",
+      "ethereal"
+    ],
+    "answer": 0,
+    "explanation": "영원하지 않다고 했으므로 '일시적인, 덧없는'을 뜻하는 ephemeral이 정답입니다."
+  },
+  {
+    "id": 388,
+    "subject": "대학영어",
+    "question": "It is high time that we _____ home.",
+    "options": [
+      "go",
+      "went",
+      "have gone",
+      "will go"
+    ],
+    "answer": 1,
+    "explanation": "'It is (high) time (that) + 가정법 과거(과거동사)' 구문은 '~해야 할 시간이다(그런데 아직 안 했다)'라는 뜻입니다."
+  },
+  {
+    "id": 389,
+    "subject": "대학영어",
+    "question": "When asked about the issue, he decided to _____.",
+    "options": [
+      "sit on the fence",
+      "hit the ceiling",
+      "bite the bullet",
+      "spill the beans"
+    ],
+    "answer": 0,
+    "explanation": "어느 편도 들지 않고 '중립을 지키다, 관망하다'는 sit on the fence입니다."
+  },
+  {
+    "id": 390,
+    "subject": "대학영어",
+    "question": "Scarcely had he seen me _____ he ran away.",
+    "options": [
+      "than",
+      "when",
+      "as",
+      "after"
+    ],
+    "answer": 1,
+    "explanation": "Scarcely/Hardly ... when/before 구문입니다. (~하자마자 ...했다)"
+  },
+  {
+    "id": 391,
+    "subject": "대학영어",
+    "question": "His _____ actions helped many people in need.",
+    "options": [
+      "altruistic",
+      "egocentric",
+      "hostile",
+      "apathetic"
+    ],
+    "answer": 0,
+    "explanation": "어려운 사람을 도왔으므로 '이타적인(altruistic)' 행동이 맞습니다."
+  },
+  {
+    "id": 392,
+    "subject": "대학영어",
+    "question": "No sooner _____ arrived than it started to rain.",
+    "options": [
+      "he had",
+      "had he",
+      "he has",
+      "has he"
+    ],
+    "answer": 1,
+    "explanation": "부정어 No sooner가 문두에 오면 도치가 일어나며, 시제는 과거완료(had p.p)를 씁니다."
+  },
+  {
+    "id": 393,
+    "subject": "대학영어",
+    "question": "He is very _____ about his food and clothes.",
+    "options": [
+      "fastidious",
+      "furious",
+      "generous",
+      "careless"
+    ],
+    "answer": 0,
+    "explanation": "음식이나 옷에 대해 까다로운 것은 fastidious(세심한, 꼼꼼한, 까다로운)입니다."
+  },
+  {
+    "id": 394,
+    "subject": "대학영어",
+    "question": "Your comment really _____ ; that's exactly the problem.",
+    "options": [
+      "hit the nail on the head",
+      "beat around the bush",
+      "missed the boat",
+      "barking up the wrong tree"
+    ],
+    "answer": 0,
+    "explanation": "정곡을 찌르다, 핵심을 정확히 짚다는 'hit the nail on the head'입니다."
+  },
+  {
+    "id": 395,
+    "subject": "대학영어",
+    "question": "The man _____ the piano over there is my brother.",
+    "options": [
+      "play",
+      "plays",
+      "playing",
+      "played"
+    ],
+    "answer": 2,
+    "explanation": "능동적으로 피아노를 '치고 있는' 중이므로 현재분사 playing이 명사(The man)를 수식합니다."
+  },
+  {
+    "id": 396,
+    "subject": "대학영어",
+    "question": "We need a _____ solution, not a theoretical one.",
+    "options": [
+      "pragmatic",
+      "problematic",
+      "poetic",
+      "pathetic"
+    ],
+    "answer": 0,
+    "explanation": "이론적인(theoretical) 것과 대조되는 '실용적인' 해결책은 pragmatic solution입니다."
+  },
+  {
+    "id": 397,
+    "subject": "대학영어",
+    "question": "He talks as if he _____ everything.",
+    "options": [
+      "know",
+      "knows",
+      "knew",
+      "has known"
+    ],
+    "answer": 2,
+    "explanation": "as if 가정법 과거(마치 ~인 것처럼) 구문에서는 현재 사실의 반대를 나타낼 때 과거 동사를 씁니다."
+  },
+  {
+    "id": 398,
+    "subject": "대학영어",
+    "question": "Don't _____ about the surprise party.",
+    "options": [
+      "spill the beans",
+      "break the ice",
+      "kick the bucket",
+      "burn the bridge"
+    ],
+    "answer": 0,
+    "explanation": "비밀을 누설하다는 'spill the beans'입니다."
+  },
+  {
+    "id": 399,
+    "subject": "대학영어",
+    "question": "Please give me your _____ opinion.",
+    "options": [
+      "candid",
+      "clandestine",
+      "cryptic",
+      "covert"
+    ],
+    "answer": 0,
+    "explanation": "솔직한 의견을 달라고 할 때는 candid가 적절합니다."
+  },
+  {
+    "id": 400,
+    "subject": "대학영어",
+    "question": "Perseverance is the key _____ success.",
+    "options": [
+      "of",
+      "for",
+      "to",
+      "at"
+    ],
+    "answer": 2,
+    "explanation": "열쇠, 해결책, 대답 등을 나타낼 때 key, solution, answer 뒤에는 전치사 to를 씁니다."
+  },
+    {
+    "id": 401,
+    "subject": "데이터베이스",
+    "question": "데이터베이스(DB)의 정의에 포함되지 않는 개념은?",
+    "options": [
+      "통합된 데이터 (Integrated Data)",
+      "저장된 데이터 (Stored Data)",
+      "공용 데이터 (Shared Data)",
+      "독점적 데이터 (Exclusive Data)"
+    ],
+    "answer": 3,
+    "explanation": "데이터베이스는 여러 사용자가 공유하는 '공용 데이터'이며, 독점적으로 사용하지 않습니다. (운영 데이터도 포함됨)"
+  },
+  {
+    "id": 402,
+    "subject": "데이터베이스",
+    "question": "DBMS(데이터베이스 관리 시스템)의 필수 기능 3가지가 아닌 것은?",
+    "options": [
+      "정의 기능 (Definition)",
+      "조작 기능 (Manipulation)",
+      "제어 기능 (Control)",
+      "해킹 기능 (Hacking)"
+    ],
+    "answer": 3,
+    "explanation": "DBMS는 데이터의 구조를 정의하고, 데이터를 조작(입력/수정/삭제)하며, 무결성을 제어하는 기능을 갖춥니다."
+  },
+  {
+    "id": 403,
+    "subject": "데이터베이스",
+    "question": "다음 중 SQL의 DML(데이터 조작어)에 해당하는 명령어는?",
+    "options": [
+      "CREATE",
+      "SELECT",
+      "DROP",
+      "GRANT"
+    ],
+    "answer": 1,
+    "explanation": "SELECT, INSERT, UPDATE, DELETE는 데이터를 실질적으로 다루는 조작어(DML)입니다. (나머지는 DDL, DCL)"
+  },
+  {
+    "id": 404,
+    "subject": "데이터베이스",
+    "question": "기본키(Primary Key)가 가져야 할 특징으로 옳은 것은?",
+    "options": [
+      "중복된 값을 가질 수 있다.",
+      "NULL 값을 가질 수 있다.",
+      "유일성(Uniqueness)과 최소성을 만족해야 한다.",
+      "반드시 숫자로만 구성되어야 한다."
+    ],
+    "answer": 2,
+    "explanation": "기본키는 튜플을 식별할 수 있는 유일한 값이어야 하며, 비어있는 값(NULL)을 허용하지 않습니다."
+  },
+  {
+    "id": 405,
+    "subject": "데이터베이스",
+    "question": "릴레이션(테이블)에서 '행(Row)'을 가리키는 용어는?",
+    "options": [
+      "속성 (Attribute)",
+      "튜플 (Tuple)",
+      "도메인 (Domain)",
+      "스키마 (Schema)"
+    ],
+    "answer": 1,
+    "explanation": "테이블의 가로줄(행)은 튜플(Tuple), 세로줄(열)은 속성(Attribute)이라고 합니다."
+  },
+  {
+    "id": 406,
+    "subject": "데이터베이스",
+    "question": "데이터의 중복을 제거하여 테이블을 무손실 분해하는 과정을 무엇이라 하는가?",
+    "options": [
+      "정규화 (Normalization)",
+      "역정규화 (De-normalization)",
+      "인덱싱 (Indexing)",
+      "트랜잭션 (Transaction)"
+    ],
+    "answer": 0,
+    "explanation": "정규화는 이상 현상(Anomaly)을 방지하기 위해 테이블을 쪼개는 과정입니다."
+  },
+  {
+    "id": 407,
+    "subject": "데이터베이스",
+    "question": "SQL에서 중복된 결과를 제거하고 하나만 조회하고 싶을 때 사용하는 키워드는?",
+    "options": [
+      "UNIQUE",
+      "DISTINCT",
+      "ONLY",
+      "SINGLE"
+    ],
+    "answer": 1,
+    "explanation": "SELECT DISTINCT column_name FROM ... 형태로 사용합니다."
+  },
+  {
+    "id": 408,
+    "subject": "데이터베이스",
+    "question": "데이터베이스 스키마(Schema)의 3단계 구조에 속하지 않는 것은?",
+    "options": [
+      "외부 스키마 (External)",
+      "개념 스키마 (Conceptual)",
+      "내부 스키마 (Internal)",
+      "논리 스키마 (Logical)"
+    ],
+    "answer": 3,
+    "explanation": "ANSI/SPARC 표준 3단계 구조는 외부-개념-내부 스키마입니다."
+  },
+  {
+    "id": 409,
+    "subject": "데이터베이스",
+    "question": "트랜잭션의 특성(ACID) 중 '모두 수행되거나 아예 수행되지 않아야 한다'는 성질은?",
+    "options": [
+      "원자성 (Atomicity)",
+      "일관성 (Consistency)",
+      "격리성 (Isolation)",
+      "지속성 (Durability)"
+    ],
+    "answer": 0,
+    "explanation": "All or Nothing. 트랜잭션은 쪼개질 수 없는 작업 단위임을 의미하는 원자성입니다."
+  },
+  {
+    "id": 410,
+    "subject": "데이터베이스",
+    "question": "ER 다이어그램(개체-관계 모델)에서 '개체(Entity)'를 표현하는 기호는?",
+    "options": [
+      "직사각형 (사각형)",
+      "타원",
+      "마름모",
+      "선"
+    ],
+    "answer": 0,
+    "explanation": "개체는 사각형, 속성은 타원, 관계는 마름모로 표현합니다."
+  },
+  {
+    "id": 411,
+    "subject": "데이터베이스",
+    "question": "다음 SQL 문장의 빈칸에 알맞은 것은? UPDATE users _____ age = 30 WHERE id = 'user1';",
+    "options": [
+      "INTO",
+      "FROM",
+      "SET",
+      "VALUES"
+    ],
+    "answer": 2,
+    "explanation": "데이터 수정 구문은 UPDATE 테이블명 SET 컬럼=값 WHERE 조건; 입니다."
+  },
+  {
+    "id": 412,
+    "subject": "데이터베이스",
+    "question": "참조 무결성 제약조건과 관련이 깊은 키(Key)는?",
+    "options": [
+      "기본키 (Primary Key)",
+      "외래키 (Foreign Key)",
+      "후보키 (Candidate Key)",
+      "슈퍼키 (Super Key)"
+    ],
+    "answer": 1,
+    "explanation": "외래키는 다른 테이블의 기본키를 참조하며, 참조 무결성을 유지하는 역할을 합니다."
+  },
+  {
+    "id": 413,
+    "subject": "데이터베이스",
+    "question": "테이블 자체를 데이터베이스에서 완전히 삭제하는 명령어는?",
+    "options": [
+      "DELETE",
+      "TRUNCATE",
+      "DROP",
+      "REMOVE"
+    ],
+    "answer": 2,
+    "explanation": "DELETE는 데이터만 지우고 테이블 틀은 남기지만, DROP TABLE은 테이블 구조까지 통째로 날려버립니다."
+  },
+  {
+    "id": 414,
+    "subject": "데이터베이스",
+    "question": "데이터 검색 속도를 향상시키기 위해 사용하는 자료구조는?",
+    "options": [
+      "뷰 (View)",
+      "인덱스 (Index)",
+      "트리거 (Trigger)",
+      "프로시저 (Procedure)"
+    ],
+    "answer": 1,
+    "explanation": "인덱스(색인)를 생성하면 조회 속도(SELECT)는 빨라지지만, 입력/수정/삭제 속도는 느려질 수 있습니다."
+  },
+  {
+    "id": 415,
+    "subject": "데이터베이스",
+    "question": "SELECT 문에서 데이터를 특정 컬럼 기준으로 그룹화할 때 사용하는 절은?",
+    "options": [
+      "ORDER BY",
+      "GROUP BY",
+      "HAVING",
+      "SORT BY"
+    ],
+    "answer": 1,
+    "explanation": "GROUP BY 절을 사용하여 데이터를 그룹으로 묶고, SUM이나 COUNT 같은 집계 함수를 사용합니다."
+  },
+  {
+    "id": 416,
+    "subject": "데이터베이스",
+    "question": "물리적 데이터 독립성이란?",
+    "options": [
+      "응용 프로그램과 데이터베이스를 독립시키는 것",
+      "보조기억장치의 저장 장치가 바뀌어도 응용 프로그램이나 개념 스키마에 영향을 주지 않는 것",
+      "논리적 구조가 바뀌어도 응용 프로그램이 영향을 받지 않는 것",
+      "데이터베이스를 네트워크에서 분리하는 것"
+    ],
+    "answer": 1,
+    "explanation": "디스크 등 물리적 저장 구조가 변경되어도 상위 레벨(논리적 구조)에는 영향을 주지 않는 성질입니다."
+  },
+  {
+    "id": 417,
+    "subject": "데이터베이스",
+    "question": "사용자에게 권한을 부여하는 DCL(데이터 제어어) 명령어는?",
+    "options": [
+      "COMMIT",
+      "ROLLBACK",
+      "GRANT",
+      "REVOKE"
+    ],
+    "answer": 2,
+    "explanation": "GRANT는 권한 부여, REVOKE는 권한 회수입니다."
+  },
+  {
+    "id": 418,
+    "subject": "데이터베이스",
+    "question": "SQL에서 패턴 매칭을 위해 사용하는 연산자로, '%'나 '_' 와일드카드를 사용하는 것은?",
+    "options": [
+      "=",
+      "IN",
+      "LIKE",
+      "BETWEEN"
+    ],
+    "answer": 2,
+    "explanation": "WHERE name LIKE 'Kim%' (Kim으로 시작하는 모든 문자열) 처럼 사용합니다."
+  },
+  {
+    "id": 419,
+    "subject": "데이터베이스",
+    "question": "정규화 과정 중, 도메인이 원자값(Atomic Value)으로만 구성되도록 하는 단계는?",
+    "options": [
+      "제1정규형 (1NF)",
+      "제2정규형 (2NF)",
+      "제3정규형 (3NF)",
+      "BCNF"
+    ],
+    "answer": 0,
+    "explanation": "하나의 칸(컬럼)에는 하나의 값만 들어가야 한다는 것이 제1정규형입니다."
+  },
+  {
+    "id": 420,
+    "subject": "데이터베이스",
+    "question": "가상 테이블로서 실제 데이터를 저장하지는 않지만 테이블처럼 사용할 수 있는 것은?",
+    "options": [
+      "Index",
+      "View",
+      "Stored Procedure",
+      "Trigger"
+    ],
+    "answer": 1,
+    "explanation": "뷰(View)는 SELECT문의 결과를 저장해 둔 가상 테이블로, 보안 및 사용자 편의성을 위해 사용합니다."
+  },
+  {
+    "id": 421,
+    "subject": "자료구조",
+    "question": "데이터를 쌓아 올리는 구조로, 가장 나중에 들어온 데이터가 가장 먼저 나가는(LIFO) 자료구조는?",
+    "options": [
+      "Queue (큐)",
+      "Stack (스택)",
+      "Tree (트리)",
+      "Graph (그래프)"
+    ],
+    "answer": 1,
+    "explanation": "LIFO(Last In First Out) 구조는 스택(Stack)입니다. 함수 호출 스택 등에 사용됩니다."
+  },
+  {
+    "id": 422,
+    "subject": "자료구조",
+    "question": "먼저 들어온 데이터가 먼저 나가는(FIFO) 구조로, 프린터 대기열 등에 사용되는 자료구조는?",
+    "options": [
+      "Stack",
+      "Queue",
+      "Heap",
+      "Hash"
+    ],
+    "answer": 1,
+    "explanation": "FIFO(First In First Out) 구조는 큐(Queue)입니다."
+  },
+  {
+    "id": 423,
+    "subject": "자료구조",
+    "question": "이진 탐색(Binary Search) 알고리즘의 평균 시간 복잡도는?",
+    "options": [
+      "O(1)",
+      "O(n)",
+      "O(log n)",
+      "O(n^2)"
+    ],
+    "answer": 2,
+    "explanation": "탐색 범위를 절반씩 줄여나가므로 O(log n)의 시간 복잡도를 가집니다."
+  },
+  {
+    "id": 424,
+    "subject": "자료구조",
+    "question": "배열(Array)과 비교했을 때 연결 리스트(Linked List)의 장점은?",
+    "options": [
+      "인덱스를 통한 임의 접근(Random Access)이 빠르다.",
+      "데이터의 삽입과 삭제가 용이하다.",
+      "메모리 공간을 더 적게 차지한다.",
+      "구현이 더 간단하다."
+    ],
+    "answer": 1,
+    "explanation": "연결 리스트는 포인터만 변경하면 되므로 중간 삽입/삭제가 빠릅니다. (배열은 데이터를 밀거나 당겨야 함)"
+  },
+  {
+    "id": 425,
+    "subject": "자료구조",
+    "question": "이진 트리 순회(Traversal) 방법 중 '왼쪽 자식 -> 루트 -> 오른쪽 자식' 순서로 방문하는 것은?",
+    "options": [
+      "전위 순회 (Preorder)",
+      "중위 순회 (Inorder)",
+      "후위 순회 (Postorder)",
+      "레벨 순회 (Level Order)"
+    ],
+    "answer": 1,
+    "explanation": "루트가 중간(In)에 방문되므로 중위 순회(Inorder)입니다."
+  },
+  {
+    "id": 426,
+    "subject": "자료구조",
+    "question": "그래프 탐색 방법 중, 시작 정점에서 가까운 정점부터 차례대로 방문하는(너비 우선) 방식은?",
+    "options": [
+      "DFS (깊이 우선 탐색)",
+      "BFS (너비 우선 탐색)",
+      "Dijkstra",
+      "Prim"
+    ],
+    "answer": 1,
+    "explanation": "BFS(Breadth First Search)는 큐를 이용하여 가까운 노드부터 탐색합니다."
+  },
+  {
+    "id": 427,
+    "subject": "자료구조",
+    "question": "해싱(Hashing)에서 서로 다른 키가 같은 해시 값을 가지는 현상을 무엇이라 하는가?",
+    "options": [
+      "Overflow",
+      "Collision (충돌)",
+      "Clustering",
+      "Chaining"
+    ],
+    "answer": 1,
+    "explanation": "해시 함수 결과가 겹치는 현상을 충돌(Collision)이라고 합니다."
+  },
+  {
+    "id": 428,
+    "subject": "자료구조",
+    "question": "퀵 정렬(Quick Sort)의 최악의 경우 시간 복잡도는?",
+    "options": [
+      "O(n)",
+      "O(n log n)",
+      "O(n^2)",
+      "O(log n)"
+    ],
+    "answer": 2,
+    "explanation": "퀵 정렬은 평균적으로 O(n log n)이지만, 이미 정렬된 상태 등 피벗(Pivot) 선정이 최악이면 O(n^2)이 됩니다."
+  },
+  {
+    "id": 429,
+    "subject": "자료구조",
+    "question": "최대 힙(Max Heap)에서 가장 큰 값이 위치하는 곳은?",
+    "options": [
+      "루트 노드",
+      "마지막 리프 노드",
+      "왼쪽 자식 노드",
+      "임의의 노드"
+    ],
+    "answer": 0,
+    "explanation": "최대 힙은 부모 노드가 자식 노드보다 크거나 같으므로, 루트 노드가 가장 큰 값을 가집니다."
+  },
+  {
+    "id": 430,
+    "subject": "자료구조",
+    "question": "알고리즘의 시간 복잡도를 나타낼 때, 최악의 경우를 표현하는 표기법은?",
+    "options": [
+      "빅오 (Big-O) 표기법",
+      "오메가 (Omega) 표기법",
+      "세타 (Theta) 표기법",
+      "리틀오 (Little-o) 표기법"
+    ],
+    "answer": 0,
+    "explanation": "빅오(Big-O)는 상한선(최악의 경우)을 나타냅니다. (오메가는 하한선/최선)"
+  },
+  {
+    "id": 431,
+    "subject": "자료구조",
+    "question": "스택이 꽉 찼는데 데이터를 더 넣으려고 할 때 발생하는 에러는?",
+    "options": [
+      "Stack Underflow",
+      "Stack Overflow",
+      "Segmentation Fault",
+      "Null Pointer"
+    ],
+    "answer": 1,
+    "explanation": "용량을 초과하여 넘치는 현상을 오버플로우(Overflow)라고 합니다."
+  },
+  {
+    "id": 432,
+    "subject": "자료구조",
+    "question": "수식 표기법 중 연산자를 피연산자 뒤에 쓰는 표기법(예: AB+)은?",
+    "options": [
+      "전위 표기법 (Prefix)",
+      "중위 표기법 (Infix)",
+      "후위 표기법 (Postfix)",
+      "역폴란드 표기법"
+    ],
+    "answer": 2,
+    "explanation": "연산자가 뒤(Post)에 오므로 후위 표기법입니다."
+  },
+  {
+    "id": 433,
+    "subject": "자료구조",
+    "question": "원형 큐(Circular Queue)에서 '큐가 비어있는 상태(Empty)'를 판별하는 조건은? (F: Front, R: Rear)",
+    "options": [
+      "F == R",
+      "(R + 1) % Size == F",
+      "F == 0",
+      "R == Size - 1"
+    ],
+    "answer": 0,
+    "explanation": "Front와 Rear가 같은 위치를 가리키면 큐가 비어있는 상태입니다."
+  },
+  {
+    "id": 434,
+    "subject": "자료구조",
+    "question": "그래프(Graph)를 구성하는 두 가지 기본 요소는?",
+    "options": [
+      "Stack, Queue",
+      "Vertex(정점), Edge(간선)",
+      "Root, Leaf",
+      "Field, Record"
+    ],
+    "answer": 1,
+    "explanation": "그래프는 정점(Vertex, Node)과 그들을 연결하는 간선(Edge, Link)으로 이루어집니다."
+  },
+  {
+    "id": 435,
+    "subject": "자료구조",
+    "question": "최소 신장 트리(MST)를 구하는 알고리즘인 크루스칼(Kruskal) 알고리즘의 핵심 원리는?",
+    "options": [
+      "가장 짧은 간선부터 선택하되 사이클을 만들지 않는다.",
+      "하나의 정점에서 시작해 가장 가까운 정점을 연결해 나간다.",
+      "모든 정점 사이의 최단 거리를 구한다.",
+      "깊이 우선 탐색을 사용한다."
+    ],
+    "answer": 0,
+    "explanation": "크루스칼 알고리즘은 간선들을 가중치 오름차순으로 정렬한 뒤, 사이클이 생기지 않는 간선을 하나씩 선택합니다."
+  },
+  {
+    "id": 436,
+    "subject": "자료구조",
+    "question": "정렬 알고리즘 중, 같은 값의 원소들이 정렬 후에도 원래의 순서를 유지하는 성질을 무엇이라 하는가?",
+    "options": [
+      "In-place Sort (제자리 정렬)",
+      "Stable Sort (안정 정렬)",
+      "Unstable Sort (불안정 정렬)",
+      "Quick Sort"
+    ],
+    "answer": 1,
+    "explanation": "안정 정렬(Stable Sort)은 키값이 같은 요소들의 상대적 순서가 유지됩니다."
+  },
+  {
+    "id": 437,
+    "subject": "자료구조",
+    "question": "이진 탐색 트리(BST)에서 노드를 삭제할 때 가장 복잡한 경우는?",
+    "options": [
+      "자식 노드가 없는 경우 (Leaf)",
+      "자식 노드가 1개인 경우",
+      "자식 노드가 2개인 경우",
+      "루트 노드를 삭제하는 경우"
+    ],
+    "answer": 2,
+    "explanation": "자식이 2개면 삭제된 자리를 메우기 위해 대체 노드(Successor 등)를 찾아야 하므로 가장 복잡합니다."
+  },
+  {
+    "id": 438,
+    "subject": "자료구조",
+    "question": "양쪽 방향으로 순회할 수 있도록 이전 노드와 다음 노드의 주소를 모두 저장하는 리스트는?",
+    "options": [
+      "단순 연결 리스트",
+      "원형 연결 리스트",
+      "이중 연결 리스트 (Doubly Linked List)",
+      "이중 원형 연결 리스트"
+    ],
+    "answer": 2,
+    "explanation": "이중 연결 리스트는 prev 포인터와 next 포인터를 모두 가집니다."
+  },
+  {
+    "id": 439,
+    "subject": "자료구조",
+    "question": "트리의 높이(Height) 균형을 스스로 맞추어 최악의 경우에도 O(log n) 탐색을 보장하는 트리는?",
+    "options": [
+      "Binary Search Tree",
+      "AVL Tree",
+      "Heap",
+      "Spanning Tree"
+    ],
+    "answer": 1,
+    "explanation": "AVL 트리(또는 Red-Black 트리)는 자가 균형 이진 탐색 트리로, 한쪽으로 치우치는 현상을 방지합니다."
+  },
+  {
+    "id": 440,
+    "subject": "자료구조",
+    "question": "선택 정렬(Selection Sort)의 작동 방식은?",
+    "options": [
+      "인접한 두 요소를 비교하여 교환한다.",
+      "전체 중 최솟값을 찾아 맨 앞의 값과 교환한다.",
+      "이미 정렬된 부분과 비교하여 적절한 위치에 삽입한다.",
+      "리스트를 반으로 나누어 재귀적으로 정렬한다."
+    ],
+    "answer": 1,
+    "explanation": "선택 정렬은 매 회전마다 남은 원소 중 가장 작은 값을 '선택'해서 정렬된 영역 뒤에 붙입니다."
+  },
+  {
+    "id": 441,
+    "subject": "운영체제",
+    "question": "운영체제의 목적 중, 시스템이 주어진 문제를 얼마나 빨리 처리하는가를 나타내는 척도는?",
+    "options": [
+      "신뢰도 (Reliability)",
+      "사용 가능도 (Availability)",
+      "처리 능력 (Throughput)",
+      "반환 시간 (Turnaround Time)"
+    ],
+    "answer": 2,
+    "explanation": "단위 시간당 처리하는 작업의 양을 처리 능력(Throughput)이라고 합니다."
+  },
+  {
+    "id": 442,
+    "subject": "운영체제",
+    "question": "프로세스(Process)의 상태 전이 중, 실행(Running) 상태에서 할당된 CPU 시간이 만료되어 다시 준비(Ready) 상태로 넘어가는 과정은?",
+    "options": [
+      "Dispatch",
+      "Block (Wait)",
+      "Wake-up",
+      "Timer Runout (Interrupt)"
+    ],
+    "answer": 3,
+    "explanation": "타임 슬라이스가 끝나면 타이머 인터럽트가 발생하여 프로세스는 CPU를 반납하고 준비 큐로 돌아갑니다."
+  },
+  {
+    "id": 443,
+    "subject": "운영체제",
+    "question": "다음 중 비선점(Non-preemptive) 스케줄링 알고리즘은?",
+    "options": [
+      "Round Robin (RR)",
+      "SRT (Shortest Remaining Time)",
+      "Multilevel Queue",
+      "FCFS (First-Come First-Served)"
+    ],
+    "answer": 3,
+    "explanation": "FCFS는 먼저 도착한 프로세스가 끝날 때까지 CPU를 뺏기지 않는 대표적인 비선점 방식입니다."
+  },
+  {
+    "id": 444,
+    "subject": "운영체제",
+    "question": "교착 상태(Deadlock)의 발생 필요충분조건 4가지가 아닌 것은?",
+    "options": [
+      "상호 배제 (Mutual Exclusion)",
+      "점유와 대기 (Hold and Wait)",
+      "비선점 (No Preemption)",
+      "기아 상태 (Starvation)"
+    ],
+    "answer": 3,
+    "explanation": "교착 상태 4조건은 상호 배제, 점유 대기, 비선점, 환형 대기(Circular Wait)입니다. 기아 상태는 결과일 뿐 조건은 아닙니다."
+  },
+  {
+    "id": 445,
+    "subject": "운영체제",
+    "question": "가상 메모리 관리 기법 중, 프로그램을 고정된 크기의 블록으로 나누는 기법은?",
+    "options": [
+      "페이징 (Paging)",
+      "세그멘테이션 (Segmentation)",
+      "스와핑 (Swapping)",
+      "단편화 (Fragmentation)"
+    ],
+    "answer": 0,
+    "explanation": "고정 크기로 나누면 페이징, 논리적 의미 단위(가변 크기)로 나누면 세그멘테이션입니다."
+  },
+  {
+    "id": 446,
+    "subject": "운영체제",
+    "question": "페이지 교체 알고리즘 중, 가장 오랫동안 사용되지 않은 페이지를 교체하는 방식은?",
+    "options": [
+      "FIFO",
+      "LRU (Least Recently Used)",
+      "LFU (Least Frequently Used)",
+      "OPT (Optimal)"
+    ],
+    "answer": 1,
+    "explanation": "LRU는 '최근에 사용되지 않은(시간적으로 가장 멀리 떨어진)' 페이지를 교체 대상으로 선택합니다."
+  },
+  {
+    "id": 447,
+    "subject": "운영체제",
+    "question": "임계 구역(Critical Section) 문제를 해결하기 위한 동기화 도구로, 정수 변수와 P, V 연산을 사용하는 것은?",
+    "options": [
+      "세마포어 (Semaphore)",
+      "모니터 (Monitor)",
+      "스핀락 (Spinlock)",
+      "뮤텍스 (Mutex)"
+    ],
+    "answer": 0,
+    "explanation": "다익스트라가 제안한 세마포어는 공유 자원의 개수를 나타내는 변수와 원자적 연산을 통해 동기화를 구현합니다."
+  },
+  {
+    "id": 448,
+    "subject": "운영체제",
+    "question": "프로세스 제어 블록(PCB)에 저장되는 정보가 아닌 것은?",
+    "options": [
+      "프로세스 식별자 (PID)",
+      "프로세스 상태",
+      "프로그램 카운터 (PC)",
+      "파일의 내용"
+    ],
+    "answer": 3,
+    "explanation": "PCB는 프로세스 관리를 위한 메타데이터(레지스터 값, 스케줄링 정보 등)를 저장하며, 실제 파일 데이터는 저장하지 않습니다."
+  },
+  {
+    "id": 449,
+    "subject": "운영체제",
+    "question": "디스크 스케줄링 알고리즘 중, 현재 헤드 위치에서 가장 가까운 트랙의 요청을 먼저 처리하는 방식은?",
+    "options": [
+      "FCFS",
+      "SSTF (Shortest Seek Time First)",
+      "SCAN",
+      "C-SCAN"
+    ],
+    "answer": 1,
+    "explanation": "탐색 시간(Seek Time)이 가장 짧은 요청을 먼저 처리하므로 SSTF입니다. (기아 상태 발생 가능성 있음)"
+  },
+  {
+    "id": 450,
+    "subject": "운영체제",
+    "question": "운영체제 커널(Kernel)의 역할로 적절하지 않은 것은?",
+    "options": [
+      "하드웨어 제어",
+      "프로세스 스케줄링",
+      "메모리 할당",
+      "사용자 인터페이스(UI) 제공"
+    ],
+    "answer": 3,
+    "explanation": "UI(쉘, GUI 등)는 커널이 아닌 사용자 영역의 시스템 프로그램이 담당하는 경우가 많습니다."
+  },
+  {
+    "id": 451,
+    "subject": "운영체제",
+    "question": "스레싱(Thrashing) 현상이 발생하는 주된 원인은?",
+    "options": [
+      "CPU 속도가 너무 느려서",
+      "I/O 장치가 고장 나서",
+      "다중 프로그래밍 정도가 너무 높아 페이지 부재가 빈번하게 발생해서",
+      "프로세스 개수가 너무 적어서"
+    ],
+    "answer": 2,
+    "explanation": "메모리에 너무 많은 프로세스가 올라가면 각자 필요한 페이지를 충분히 갖지 못해 Page Fault가 폭증하고 시스템 성능이 급감합니다."
+  },
+  {
+    "id": 452,
+    "subject": "운영체제",
+    "question": "UNIX/Linux 파일 시스템에서 파일의 메타데이터(소유자, 크기, 권한 등)를 저장하는 구조체는?",
+    "options": [
+      "Super Block",
+      "I-node (Index Node)",
+      "Data Block",
+      "Directory Entry"
+    ],
+    "answer": 1,
+    "explanation": "I-node는 파일의 실제 데이터 위치와 속성 정보를 담고 있는 핵심 구조체입니다."
+  },
+  {
+    "id": 453,
+    "subject": "운영체제",
+    "question": "은행원 알고리즘(Banker's Algorithm)은 교착 상태의 어떤 해결 방법에 속하는가?",
+    "options": [
+      "예방 (Prevention)",
+      "회피 (Avoidance)",
+      "발견 (Detection)",
+      "복구 (Recovery)"
+    ],
+    "answer": 1,
+    "explanation": "시스템을 안전 상태(Safe State)로 유지할 수 있을 때만 자원을 할당하여 교착 상태를 '회피'합니다."
+  },
+  {
+    "id": 454,
+    "subject": "운영체제",
+    "question": "주기억장치 배치 전략 중, 들어갈 수 있는 공간 중에서 가장 작은 공간(딱 맞는 공간)에 할당하는 전략은?",
+    "options": [
+      "First Fit (최초 적합)",
+      "Best Fit (최적 적합)",
+      "Worst Fit (최악 적합)",
+      "Next Fit"
+    ],
+    "answer": 1,
+    "explanation": "남는 공간(내부 단편화)을 최소화하기 위해 크기가 가장 비슷한 공간을 찾는 Best Fit입니다."
+  },
+  {
+    "id": 455,
+    "subject": "운영체제",
+    "question": "Context Switching(문맥 교환)이 일어날 때 발생하는 오버헤드에 대한 설명으로 옳은 것은?",
+    "options": [
+      "오버헤드가 클수록 시스템 효율이 좋아진다.",
+      "스레드 간의 문맥 교환이 프로세스 간 문맥 교환보다 오버헤드가 크다.",
+      "문맥 교환 중에는 CPU가 유용한 작업을 수행하지 못한다.",
+      "타임 슬라이스를 짧게 할수록 오버헤드가 줄어든다."
+    ],
+    "answer": 2,
+    "explanation": "레지스터 저장 및 로드 등의 작업 때문에 문맥 교환 중에는 실제 작업을 할 수 없습니다. (타임 슬라이스가 짧으면 교환이 잦아져 오버헤드 증가)"
+  },
+  {
+    "id": 456,
+    "subject": "운영체제",
+    "question": "인터럽트(Interrupt) 발생 시 수행되는 과정이 아닌 것은?",
+    "options": [
+      "현재 작업 상태 저장",
+      "인터럽트 처리 루틴 실행",
+      "프로세스 강제 종료",
+      "원래 작업으로 복귀"
+    ],
+    "answer": 2,
+    "explanation": "인터럽트는 예외 상황이나 입출력 처리를 위한 것이지, 반드시 프로세스를 종료시키는 것은 아닙니다."
+  },
+  {
+    "id": 457,
+    "subject": "운영체제",
+    "question": "부모 프로세스가 자식 프로세스를 생성할 때 사용하는 시스템 호출(System Call)은?",
+    "options": [
+      "exec()",
+      "fork()",
+      "wait()",
+      "exit()"
+    ],
+    "answer": 1,
+    "explanation": "fork()는 현재 프로세스를 복제하여 자식 프로세스를 생성합니다. (exec는 새로운 프로그램으로 덮어씀)"
+  },
+  {
+    "id": 458,
+    "subject": "운영체제",
+    "question": "페이징 기법에서 가상 주소를 물리 주소로 변환할 때 사용하는 테이블은?",
+    "options": [
+      "세그먼트 테이블",
+      "페이지 테이블",
+      "해시 테이블",
+      "벡터 테이블"
+    ],
+    "answer": 1,
+    "explanation": "페이지 번호와 프레임 번호를 매핑해주는 역할을 하는 것이 페이지 테이블입니다."
+  },
+  {
+    "id": 459,
+    "subject": "운영체제",
+    "question": "스풀링(Spooling)의 주된 목적은?",
+    "options": [
+      "디스크 용량 늘리기",
+      "CPU와 입출력 장치 간의 속도 차이 해소",
+      "메모리 절약",
+      "네트워크 보안 강화"
+    ],
+    "answer": 1,
+    "explanation": "프린터 등 저속의 I/O 장치를 사용할 때 디스크를 버퍼처럼 사용하여 CPU가 대기하지 않도록 합니다."
+  },
+  {
+    "id": 460,
+    "subject": "운영체제",
+    "question": "다음 중 운영체제의 종류가 아닌 것은?",
+    "options": [
+      "Windows",
+      "Linux",
+      "Oracle",
+      "macOS"
+    ],
+    "answer": 2,
+    "explanation": "Oracle은 대표적인 DBMS(데이터베이스 관리 시스템) 제품명입니다."
+  },
+  {
+    "id": 461,
+    "subject": "컴퓨터구조",
+    "question": "폰 노이만(Von Neumann) 구조의 가장 핵심적인 특징은?",
+    "options": [
+      "프로그램 내장 방식 (Stored Program Concept)",
+      "병렬 처리",
+      "하버드 아키텍처",
+      "진공관 사용"
+    ],
+    "answer": 0,
+    "explanation": "프로그램과 데이터를 메모리에 함께 저장해두고 CPU가 이를 순차적으로 인출(Fetch)하여 실행하는 방식입니다."
+  },
+  {
+    "id": 462,
+    "subject": "컴퓨터구조",
+    "question": "CPU 내부에서 산술 연산(+, -)과 논리 연산(AND, OR)을 담당하는 장치는?",
+    "options": [
+      "Control Unit (제어장치)",
+      "ALU (산술논리장치)",
+      "Register (레지스터)",
+      "Bus (버스)"
+    ],
+    "answer": 1,
+    "explanation": "ALU(Arithmetic Logic Unit)가 실제 계산과 비교 판단을 수행합니다."
+  },
+  {
+    "id": 463,
+    "subject": "컴퓨터구조",
+    "question": "명령어 사이클(Instruction Cycle)의 순서로 옳은 것은?",
+    "options": [
+      "Fetch -> Execute -> Decode -> Store",
+      "Fetch -> Decode -> Execute -> Store",
+      "Decode -> Fetch -> Execute -> Store",
+      "Execute -> Fetch -> Decode -> Store"
+    ],
+    "answer": 1,
+    "explanation": "명령어를 가져오고(인출), 해석하고(해독), 실행하고, 결과를 저장하는 순서입니다."
+  },
+  {
+    "id": 464,
+    "subject": "컴퓨터구조",
+    "question": "다음 중 메모리 계층 구조에서 속도가 가장 빠른 것은?",
+    "options": [
+      "L1 캐시",
+      "메인 메모리 (RAM)",
+      "하드 디스크 (HDD)",
+      "레지스터 (Register)"
+    ],
+    "answer": 3,
+    "explanation": "CPU 내부에 있는 레지스터가 가장 빠르며, 그 다음 L1캐시, L2캐시, RAM, 보조기억장치 순입니다."
+  },
+  {
+    "id": 465,
+    "subject": "컴퓨터구조",
+    "question": "파이프라이닝(Pipelining) 기법을 사용하는 주된 목적은?",
+    "options": [
+      "명령어 처리량(Throughput)을 높이기 위해",
+      "개별 명령어의 실행 시간(Latency)을 줄이기 위해",
+      "메모리 용량을 늘리기 위해",
+      "전력 소모를 줄이기 위해"
+    ],
+    "answer": 0,
+    "explanation": "여러 명령어를 중첩하여 실행함으로써 단위 시간당 처리하는 명령어의 개수를 늘립니다."
+  },
+  {
+    "id": 466,
+    "subject": "컴퓨터구조",
+    "question": "컴퓨터 내부에서 음수를 표현하는 표준적인 방법으로, 0이 하나만 존재하고 덧셈 연산이 용이한 방식은?",
+    "options": [
+      "부호와 절대치 (Sign and Magnitude)",
+      "1의 보수 (1's Complement)",
+      "2의 보수 (2's Complement)",
+      "부동 소수점"
+    ],
+    "answer": 2,
+    "explanation": "2의 보수법은 -0 문제가 없고, 뺄셈을 덧셈 회로로 처리할 수 있어 컴퓨터 시스템의 표준으로 사용됩니다."
+  },
+  {
+    "id": 467,
+    "subject": "컴퓨터구조",
+    "question": "캐시 메모리의 적중률(Hit Ratio)을 높이기 위해 활용하는 성질인 '참조의 지역성(Locality)'에 해당하지 않는 것은?",
+    "options": [
+      "시간적 지역성 (Temporal Locality)",
+      "공간적 지역성 (Spatial Locality)",
+      "순차적 지역성 (Sequential Locality)",
+      "무작위 지역성 (Random Locality)"
+    ],
+    "answer": 3,
+    "explanation": "지역성은 최근 사용한 데이터(시간)나 그 인접한 데이터(공간)가 다시 사용될 확률이 높다는 원리입니다. 무작위 지역성은 없습니다."
+  },
+  {
+    "id": 468,
+    "subject": "컴퓨터구조",
+    "question": "RISC(Reduced Instruction Set Computer) 프로세서의 특징으로 옳은 것은?",
+    "options": [
+      "명령어의 길이가 가변적이다.",
+      "복잡하고 많은 종류의 명령어를 가진다.",
+      "주로 하드와이어드(Hardwired) 제어 방식을 사용하여 속도가 빠르다.",
+      "메모리 참조 연산이 많다."
+    ],
+    "answer": 2,
+    "explanation": "RISC는 명령어 수를 줄이고 길이를 고정하여 파이프라이닝 효율을 높인 구조입니다. (반대는 CISC)"
+  },
+  {
+    "id": 469,
+    "subject": "컴퓨터구조",
+    "question": "인터럽트(Interrupt) 발생 시 CPU가 현재 작업 상태(Context)를 저장하는 곳은?",
+    "options": [
+      "하드 디스크",
+      "스택 (Stack)",
+      "ROM",
+      "ALU"
+    ],
+    "answer": 1,
+    "explanation": "복귀 주소와 레지스터 값 등은 시스템 스택(Stack)에 저장되었다가 인터럽트 처리가 끝나면 복구됩니다."
+  },
+  {
+    "id": 470,
+    "subject": "컴퓨터구조",
+    "question": "다음 중 휘발성(Volatile) 메모리는?",
+    "options": [
+      "ROM",
+      "Flash Memory",
+      "RAM",
+      "Magnetic Tape"
+    ],
+    "answer": 2,
+    "explanation": "RAM(Random Access Memory)은 전원이 꺼지면 저장된 데이터가 사라집니다."
+  },
+  {
+    "id": 471,
+    "subject": "컴퓨터구조",
+    "question": "명령어의 주소지정방식(Addressing Mode) 중, 오퍼랜드 필드에 실제 데이터 값이 직접 들어있는 방식은?",
+    "options": [
+      "즉치 주소지정 (Immediate Addressing)",
+      "직접 주소지정 (Direct Addressing)",
+      "간접 주소지정 (Indirect Addressing)",
+      "레지스터 주소지정"
+    ],
+    "answer": 0,
+    "explanation": "메모리 참조 없이 명령어 자체에 데이터(상수 등)가 포함된 방식입니다."
+  },
+  {
+    "id": 472,
+    "subject": "컴퓨터구조",
+    "question": "불 대수(Boolean Algebra)에서 A + A' (A OR NOT A)의 결과는?",
+    "options": [
+      "0",
+      "1",
+      "A",
+      "A'"
+    ],
+    "answer": 1,
+    "explanation": "어떤 변수와 그 부정의 합(OR)은 항상 참(1)입니다."
+  },
+  {
+    "id": 473,
+    "subject": "컴퓨터구조",
+    "question": "PC(Program Counter) 레지스터의 역할은?",
+    "options": [
+      "현재 실행 중인 명령어를 저장한다.",
+      "다음에 실행할 명령어의 주소를 저장한다.",
+      "연산 결과를 임시 저장한다.",
+      "상태 플래그를 저장한다."
+    ],
+    "answer": 1,
+    "explanation": "PC는 Next Instruction의 주소를 가리키고 있으며, 인출(Fetch) 후에는 자동으로 증가합니다."
+  },
+  {
+    "id": 474,
+    "subject": "컴퓨터구조",
+    "question": "서로 다른 입력일 때만 1을 출력하는 논리 게이트는? (이진 덧셈의 합과 동일)",
+    "options": [
+      "AND",
+      "OR",
+      "XOR (Exclusive OR)",
+      "NAND"
+    ],
+    "answer": 2,
+    "explanation": "XOR 게이트는 입력이 서로 다를 때(0,1 또는 1,0) 1을 출력합니다."
+  },
+  {
+    "id": 475,
+    "subject": "컴퓨터구조",
+    "question": "DMA(Direct Memory Access) 제어기의 주된 기능은?",
+    "options": [
+      "CPU의 개입 없이 메모리와 입출력 장치 간에 데이터를 전송한다.",
+      "가상 메모리 주소를 변환한다.",
+      "명령어를 해독한다.",
+      "캐시 일관성을 유지한다."
+    ],
+    "answer": 0,
+    "explanation": "대용량 데이터 전송 시 CPU 부하를 줄이기 위해 DMA 컨트롤러가 버스를 제어하여 데이터를 나릅니다."
+  },
+  {
+    "id": 476,
+    "subject": "컴퓨터구조",
+    "question": "해저드(Hazard) 중, 피연산자(데이터)가 준비되지 않아 파이프라인이 멈추는 현상은?",
+    "options": [
+      "구조적 해저드 (Structural Hazard)",
+      "데이터 해저드 (Data Hazard)",
+      "제어 해저드 (Control Hazard)",
+      "분기 해저드"
+    ],
+    "answer": 1,
+    "explanation": "이전 명령어의 실행 결과가 아직 나오지 않았는데 다음 명령어가 그 값을 필요로 할 때 발생합니다."
+  },
+  {
+    "id": 477,
+    "subject": "컴퓨터구조",
+    "question": "IEEE 754 표준은 무엇을 표현하기 위한 규약인가?",
+    "options": [
+      "부호 있는 정수",
+      "문자열 (Unicode)",
+      "부동 소수점 (Floating Point)",
+      "네트워크 패킷"
+    ],
+    "answer": 2,
+    "explanation": "실수를 컴퓨터에서 표현하기 위한 부동 소수점 표준입니다."
+  },
+  {
+    "id": 478,
+    "subject": "컴퓨터구조",
+    "question": "시스템 버스(System Bus)를 구성하는 3가지 버스가 아닌 것은?",
+    "options": [
+      "데이터 버스 (Data Bus)",
+      "주소 버스 (Address Bus)",
+      "제어 버스 (Control Bus)",
+      "인터넷 버스 (Internet Bus)"
+    ],
+    "answer": 3,
+    "explanation": "컴퓨터 내부 버스는 데이터, 주소, 제어 신호를 전달하는 3가지로 구성됩니다."
+  },
+  {
+    "id": 479,
+    "subject": "컴퓨터구조",
+    "question": "SRAM(Static RAM)과 DRAM(Dynamic RAM)의 차이점으로 옳은 것은?",
+    "options": [
+      "SRAM은 재충전(Refresh)이 필요 없다.",
+      "DRAM이 SRAM보다 속도가 빠르다.",
+      "SRAM이 DRAM보다 집적도가 높아 대용량화에 유리하다.",
+      "주기억장치(메인 메모리)는 주로 SRAM을 쓴다."
+    ],
+    "answer": 0,
+    "explanation": "SRAM은 플립플롭 기반이라 재충전이 필요 없고 빠르지만(캐시용), DRAM은 커패시터 기반이라 재충전이 필요하고 느리지만 용량이 큽니다(메인 메모리용)."
+  },
+  {
+    "id": 480,
+    "subject": "컴퓨터구조",
+    "question": "마이크로프로그래밍(Micro-programming) 기법을 사용하는 제어 장치의 특징은?",
+    "options": [
+      "속도가 매우 빠르다.",
+      "회로가 복잡하다.",
+      "제어 신호를 펌웨어(Firmware) 형태로 저장하여 유연성이 높다.",
+      "RISC 프로세서에서 주로 사용한다."
+    ],
+    "answer": 2,
+    "explanation": "제어 신호 발생 규칙을 메모리(Control Memory)에 마이크로 명령어 형태로 저장해두는 방식입니다."
+  },
+  {
+    "id": 481,
+    "subject": "컴퓨터 네트워크",
+    "question": "OSI 7계층 중, 물리적인 연결 설정 및 전송 매체를 통해 비트(Bit) 단위의 데이터를 전송하는 계층은?",
+    "options": [
+      "물리 계층 (Physical Layer)",
+      "데이터 링크 계층 (Data Link Layer)",
+      "네트워크 계층 (Network Layer)",
+      "전송 계층 (Transport Layer)"
+    ],
+    "answer": 0,
+    "explanation": "1계층인 물리 계층은 케이블, 리피터, 허브 등을 이용해 전기적 신호(Bit)를 전송합니다."
+  },
+  {
+    "id": 482,
+    "subject": "컴퓨터 네트워크",
+    "question": "TCP와 UDP의 차이점에 대한 설명으로 틀린 것은?",
+    "options": [
+      "TCP는 연결 지향형(Connection-oriented) 프로토콜이다.",
+      "UDP는 비연결형(Connectionless) 프로토콜이다.",
+      "TCP는 신뢰성 있는 데이터 전송을 보장한다.",
+      "UDP는 3-way Handshake 과정을 거쳐 연결을 설정한다."
+    ],
+    "answer": 3,
+    "explanation": "3-way Handshake는 TCP의 연결 설정 과정입니다. UDP는 연결 설정 없이 데이터를 바로 보냅니다."
+  },
+  {
+    "id": 483,
+    "subject": "컴퓨터 네트워크",
+    "question": "IP 주소 부족 문제를 해결하기 위해 고안된 차세대 인터넷 주소 체계로, 128비트 주소 길이를 가지는 것은?",
+    "options": [
+      "IPv4",
+      "IPv5",
+      "IPv6",
+      "MAC Address"
+    ],
+    "answer": 2,
+    "explanation": "IPv4는 32비트, IPv6는 128비트 주소 체계를 사용하여 거의 무한대에 가까운 주소를 제공합니다."
+  },
+  {
+    "id": 484,
+    "subject": "컴퓨터 네트워크",
+    "question": "HTTP 상태 코드(Status Code) 중, '요청한 페이지를 찾을 수 없음(Not Found)'을 의미하는 것은?",
+    "options": [
+      "200",
+      "403",
+      "404",
+      "500"
+    ],
+    "answer": 2,
+    "explanation": "200은 성공(OK), 403은 권한 없음(Forbidden), 500은 서버 내부 오류, 404는 찾을 수 없음(Not Found)입니다."
+  },
+  {
+    "id": 485,
+    "subject": "컴퓨터 네트워크",
+    "question": "도메인 이름(www.knou.ac.kr)을 IP 주소로 변환해주는 시스템은?",
+    "options": [
+      "DHCP",
+      "DNS (Domain Name System)",
+      "ARP",
+      "NAT"
+    ],
+    "answer": 1,
+    "explanation": "DNS 서버는 사람이 읽을 수 있는 도메인 이름을 컴퓨터가 이해하는 IP 주소로 매핑해줍니다."
+  },
+  {
+    "id": 486,
+    "subject": "컴퓨터 네트워크",
+    "question": "네트워크 계층(L3)에서 데이터 전송 경로를 설정(Routing)하고 패킷을 중계하는 장비는?",
+    "options": [
+      "Hub (허브)",
+      "Switch (스위치)",
+      "Router (라우터)",
+      "Repeater (리피터)"
+    ],
+    "answer": 2,
+    "explanation": "라우터는 IP 주소를 기반으로 최적의 경로를 찾아 패킷을 목적지까지 전달합니다."
+  },
+  {
+    "id": 487,
+    "subject": "컴퓨터 네트워크",
+    "question": "TCP 연결 설정 과정인 '3-way Handshake'의 순서로 옳은 것은?",
+    "options": [
+      "SYN -> SYN-ACK -> ACK",
+      "ACK -> SYN -> SYN-ACK",
+      "SYN -> ACK -> FIN",
+      "FIN -> ACK -> SYN"
+    ],
+    "answer": 0,
+    "explanation": "클라이언트가 SYN을 보내고, 서버가 SYN-ACK로 응답하고, 클라이언트가 다시 ACK를 보내 연결을 수립합니다."
+  },
+  {
+    "id": 488,
+    "subject": "컴퓨터 네트워크",
+    "question": "논리적 주소(IP)를 물리적 주소(MAC)로 변환하는 프로토콜은?",
+    "options": [
+      "RARP",
+      "ARP (Address Resolution Protocol)",
+      "ICMP",
+      "IGMP"
+    ],
+    "answer": 1,
+    "explanation": "ARP는 '이 IP 가진 사람 누구야?'라고 브로드캐스팅하여 해당 장비의 MAC 주소를 알아냅니다."
+  },
+  {
+    "id": 489,
+    "subject": "컴퓨터 네트워크",
+    "question": "서브넷 마스크(Subnet Mask)의 주된 용도는?",
+    "options": [
+      "IP 주소를 네트워크 부분과 호스트 부분으로 구분하기 위해",
+      "데이터 전송 속도를 높이기 위해",
+      "데이터 암호화를 위해",
+      "도메인 이름을 변환하기 위해"
+    ],
+    "answer": 0,
+    "explanation": "255.255.255.0 같은 서브넷 마스크를 AND 연산하여 네트워크 ID를 추출합니다."
+  },
+  {
+    "id": 490,
+    "subject": "컴퓨터 네트워크",
+    "question": "오류 제어 방식 중, 데이터를 전송할 때 오류 검출을 위한 여분의 비트(체크섬 등)를 함께 보내, 수신 측에서 재전송(ARQ)을 요청하는 방식은?",
+    "options": [
+      "FEC (Forward Error Correction)",
+      "BEC (Backward Error Correction)",
+      "Hamming Code",
+      "Parity Bit"
+    ],
+    "answer": 1,
+    "explanation": "오류가 발견되면 송신 측에 다시 보내달라고 요청하는 방식(ARQ)을 후진 오류 수정(BEC)이라고 합니다."
+  },
+  {
+    "id": 491,
+    "subject": "컴퓨터 네트워크",
+    "question": "OSI 7계층 중, 종단 간(End-to-End) 신뢰성 있는 데이터 전송을 담당하며, 포트(Port) 번호를 사용하여 프로세스를 식별하는 계층은?",
+    "options": [
+      "네트워크 계층",
+      "전송 계층 (Transport Layer)",
+      "세션 계층",
+      "표현 계층"
+    ],
+    "answer": 1,
+    "explanation": "4계층 전송 계층(TCP/UDP)은 포트 번호를 통해 어떤 프로그램(서비스)으로 데이터를 보낼지 결정합니다."
+  },
+  {
+    "id": 492,
+    "subject": "컴퓨터 네트워크",
+    "question": "다음 중 사설 IP(Private IP) 대역이 아닌 것은?",
+    "options": [
+      "10.0.0.0 ~ 10.255.255.255",
+      "172.16.0.0 ~ 172.31.255.255",
+      "192.168.0.0 ~ 192.168.255.255",
+      "8.8.8.8"
+    ],
+    "answer": 3,
+    "explanation": "8.8.8.8은 구글의 DNS 서버로 사용되는 공인 IP(Public IP)입니다."
+  },
+  {
+    "id": 493,
+    "subject": "컴퓨터 네트워크",
+    "question": "웹 브라우저와 웹 서버 간에 데이터를 암호화하여 전송하는 보안 프로토콜은?",
+    "options": [
+      "HTTP",
+      "FTP",
+      "HTTPS (SSL/TLS)",
+      "SMTP"
+    ],
+    "answer": 2,
+    "explanation": "HTTPS는 HTTP에 SSL/TLS 암호화 계층을 추가하여 보안을 강화한 프로토콜입니다."
+  },
+  {
+    "id": 494,
+    "subject": "컴퓨터 네트워크",
+    "question": "패킷 교환 방식(Packet Switching)의 특징이 아닌 것은?",
+    "options": [
+      "데이터를 작은 패킷 단위로 나누어 전송한다.",
+      "전송 대역폭을 효율적으로 이용할 수 있다.",
+      "전용 회선을 독점하여 사용한다.",
+      "저장 후 전송(Store and Forward) 방식을 사용한다."
+    ],
+    "answer": 2,
+    "explanation": "전용 회선을 독점하는 것은 '회선 교환(Circuit Switching)' 방식(예: 전화)입니다. 패킷 교환은 회선을 공유합니다."
+  },
+  {
+    "id": 495,
+    "subject": "컴퓨터 네트워크",
+    "question": "이메일을 보낼 때(송신) 사용하는 프로토콜은?",
+    "options": [
+      "POP3",
+      "IMAP",
+      "SMTP (Simple Mail Transfer Protocol)",
+      "SNMP"
+    ],
+    "answer": 2,
+    "explanation": "메일 전송은 SMTP, 메일 수신(읽기)은 POP3나 IMAP을 사용합니다."
+  },
+  {
+    "id": 496,
+    "subject": "컴퓨터 네트워크",
+    "question": "자기 자신을 가리키는 루프백(Loopback) IP 주소는?",
+    "options": [
+      "0.0.0.0",
+      "127.0.0.1",
+      "255.255.255.0",
+      "192.168.0.1"
+    ],
+    "answer": 1,
+    "explanation": "localhost라고도 불리는 127.0.0.1은 자기 자신의 컴퓨터를 가리키는 특수 주소입니다."
+  },
+  {
+    "id": 497,
+    "subject": "컴퓨터 네트워크",
+    "question": "라우팅 프로토콜 중, 거리 벡터(Distance Vector) 알고리즘을 사용하며 홉(Hop) 수 제한이 있는 것은?",
+    "options": [
+      "RIP (Routing Information Protocol)",
+      "OSPF",
+      "BGP",
+      "ISIS"
+    ],
+    "answer": 0,
+    "explanation": "RIP는 최대 홉 수를 15로 제한하며, 경로 설정 시 거리(Hop count)만을 고려합니다."
+  },
+  {
+    "id": 498,
+    "subject": "컴퓨터 네트워크",
+    "question": "흐름 제어(Flow Control) 기법 중, 수신 측의 윈도우 크기만큼 송신 측이 확인 응답(ACK) 없이 데이터를 연속해서 보내는 방식은?",
+    "options": [
+      "Stop and Wait",
+      "Sliding Window",
+      "Go-Back-N",
+      "Selective Repeat"
+    ],
+    "answer": 1,
+    "explanation": "슬라이딩 윈도우는 수신 버퍼의 여유 공간만큼 윈도우를 밀면서(Sliding) 효율적으로 전송하는 기법입니다."
+  },
+  {
+    "id": 499,
+    "subject": "컴퓨터 네트워크",
+    "question": "MAC 주소(물리 주소)의 비트 길이는?",
+    "options": [
+      "32비트",
+      "48비트",
+      "64비트",
+      "128비트"
+    ],
+    "answer": 1,
+    "explanation": "MAC 주소는 16진수 12자리로 표현되며, 총 48비트(6바이트) 길이입니다."
+  },
+  {
+    "id": 500,
+    "subject": "컴퓨터 네트워크",
+    "question": "well-known 포트 번호 연결이 올바르지 않은 것은?",
+    "options": [
+      "HTTP : 80",
+      "HTTPS : 443",
+      "FTP : 21",
+      "SSH : 23"
+    ],
+    "answer": 3,
+    "explanation": "SSH는 22번 포트를 사용합니다. 23번은 Telnet입니다."
+  },
+  {
+    "id": 501,
+    "subject": "소프트웨어 공학",
+    "question": "소프트웨어 생명주기(SDLC) 모델 중, 가장 오래된 모델로 각 단계를 순차적으로 진행하며 이전 단계가 완료되어야 다음 단계로 넘어가는 방식은?",
+    "options": [
+      "폭포수 모델 (Waterfall Model)",
+      "프로토타입 모델 (Prototype Model)",
+      "나선형 모델 (Spiral Model)",
+      "애자일 모델 (Agile Model)"
+    ],
+    "answer": 0,
+    "explanation": "물이 위에서 아래로 떨어지듯 순차적으로 진행되는 고전적 모델입니다. 요구사항 변경이 어렵다는 단점이 있습니다."
+  },
+  {
+    "id": 502,
+    "subject": "소프트웨어 공학",
+    "question": "애자일(Agile) 방법론의 핵심 가치가 아닌 것은?",
+    "options": [
+      "프로세스와 도구보다 개인과 상호작용을 중시한다.",
+      "포괄적인 문서보다 작동하는 소프트웨어를 중시한다.",
+      "계약 협상보다 고객과의 협력을 중시한다.",
+      "변화에 대응하기보다 계획을 따르는 것을 중시한다."
+    ],
+    "answer": 3,
+    "explanation": "애자일 선언문은 '계획을 따르기보다 변화에 대응하는 것'을 더 가치 있게 여깁니다."
+  },
+  {
+    "id": 503,
+    "subject": "소프트웨어 공학",
+    "question": "모듈의 독립성을 높이기 위한 설계 원칙으로 올바른 것은?",
+    "options": [
+      "결합도(Coupling)는 높게, 응집도(Cohesion)는 낮게",
+      "결합도와 응집도 모두 높게",
+      "결합도는 낮게, 응집도는 높게",
+      "결합도와 응집도 모두 낮게"
+    ],
+    "answer": 2,
+    "explanation": "좋은 설계는 모듈 내부의 기능은 똘똘 뭉치고(응집도 높음), 모듈 간의 의존성은 최소화(결합도 낮음)해야 합니다."
+  },
+  {
+    "id": 504,
+    "subject": "소프트웨어 공학",
+    "question": "다음 중 화이트박스 테스트(White Box Test) 기법에 해당하는 것은?",
+    "options": [
+      "동치 분할 검사",
+      "경계값 분석",
+      "기초 경로 검사 (Basic Path Testing)",
+      "원인-효과 그래프 검사"
+    ],
+    "answer": 2,
+    "explanation": "화이트박스 테스트는 소스 코드의 내부 논리 경로를 직접 보면서 테스트하는 기법입니다. (나머지는 블랙박스)"
+  },
+  {
+    "id": 505,
+    "subject": "소프트웨어 공학",
+    "question": "UML(Unified Modeling Language) 다이어그램 중, 시스템의 구조(Structure)를 표현하는 정적 다이어그램은?",
+    "options": [
+      "클래스 다이어그램 (Class Diagram)",
+      "유스케이스 다이어그램 (Use Case Diagram)",
+      "시퀀스 다이어그램 (Sequence Diagram)",
+      "상태 다이어그램 (State Diagram)"
+    ],
+    "answer": 0,
+    "explanation": "클래스 다이어그램은 시스템의 클래스, 속성, 메서드 및 관계를 정적으로 보여줍니다. (나머지는 동적/행위 다이어그램)"
+  },
+  {
+    "id": 506,
+    "subject": "소프트웨어 공학",
+    "question": "소프트웨어 재공학(Re-engineering)의 주된 목적은?",
+    "options": [
+      "새로운 기능을 추가하여 제품을 판매하기 위해",
+      "기존 시스템을 유지보수하기 쉽게 개선하여 수명을 연장하기 위해",
+      "개발 인력을 감축하기 위해",
+      "문서화를 생략하기 위해"
+    ],
+    "answer": 1,
+    "explanation": "레거시 시스템을 분석하고 재구성하여 유지보수성을 높이고 소프트웨어 위기를 해결하는 활동입니다."
+  },
+  {
+    "id": 507,
+    "subject": "소프트웨어 공학",
+    "question": "객체지향 기법에서 상위 클래스의 속성과 메소드를 하위 클래스가 물려받는 것을 무엇이라 하는가?",
+    "options": [
+      "캡슐화 (Encapsulation)",
+      "추상화 (Abstraction)",
+      "다형성 (Polymorphism)",
+      "상속 (Inheritance)"
+    ],
+    "answer": 3,
+    "explanation": "상속을 통해 코드의 재사용성을 높일 수 있습니다."
+  },
+  {
+    "id": 508,
+    "subject": "소프트웨어 공학",
+    "question": "테스트 드리븐 개발(TDD)의 진행 순서로 옳은 것은?",
+    "options": [
+      "코드 작성 -> 테스트 코드 작성 -> 리팩토링",
+      "테스트 코드 작성(실패) -> 코드 작성(성공) -> 리팩토링",
+      "설계 -> 코드 작성 -> 테스트",
+      "요구사항 분석 -> 테스트 -> 코드 작성"
+    ],
+    "answer": 1,
+    "explanation": "TDD는 실패하는 테스트를 먼저 작성하고(Red), 이를 통과하는 코드를 짠 뒤(Green), 코드를 개선(Refactor)하는 순환 과정을 거칩니다."
+  },
+  {
+    "id": 509,
+    "subject": "소프트웨어 공학",
+    "question": "다음 중 형상 관리(Configuration Management) 도구가 아닌 것은?",
+    "options": [
+      "Git",
+      "SVN (Subversion)",
+      "CVS",
+      "Jenkins"
+    ],
+    "answer": 3,
+    "explanation": "Jenkins는 CI/CD(지속적 통합/배포) 도구입니다. (Git, SVN, CVS는 버전 관리 시스템)"
+  },
+  {
+    "id": 510,
+    "subject": "소프트웨어 공학",
+    "question": "시스템이 사용자의 요구사항을 만족하는지 확인하기 위해, 실제 환경에서 사용자가 직접 수행하는 테스트는?",
+    "options": [
+      "단위 테스트",
+      "통합 테스트",
+      "시스템 테스트",
+      "인수 테스트 (Acceptance Test)"
+    ],
+    "answer": 3,
+    "explanation": "인수 테스트(알파/베타 테스트 등)는 최종 사용자가 시스템을 승인하기 위해 수행합니다."
+  },
+  {
+    "id": 511,
+    "subject": "소프트웨어 공학",
+    "question": "디자인 패턴(Design Pattern) 중, 객체의 생성 과정을 캡슐화하여 객체 생성을 서브 클래스에 위임하는 패턴은?",
+    "options": [
+      "싱글톤 (Singleton)",
+      "팩토리 메서드 (Factory Method)",
+      "옵저버 (Observer)",
+      "어댑터 (Adapter)"
+    ],
+    "answer": 1,
+    "explanation": "팩토리 메서드 패턴은 객체 생성 인터페이스는 정의하되, 실제 생성은 자식 클래스에서 결정하게 합니다."
+  },
+  {
+    "id": 512,
+    "subject": "소프트웨어 공학",
+    "question": "소프트웨어 품질 목표 중, 사용자가 시스템을 얼마나 쉽게 배우고 사용할 수 있는지를 나타내는 특성은?",
+    "options": [
+      "신뢰성 (Reliability)",
+      "효율성 (Efficiency)",
+      "사용성 (Usability)",
+      "이식성 (Portability)"
+    ],
+    "answer": 2,
+    "explanation": "UI/UX와 관련 깊은 품질 특성은 사용성(Usability)입니다."
+  },
+  {
+    "id": 513,
+    "subject": "소프트웨어 공학",
+    "question": "럼바우(Rumbaugh)의 객체지향 분석 기법에서 가장 먼저 수행하며, ER 다이어그램과 유사한 것은?",
+    "options": [
+      "객체 모델링 (Object Modeling)",
+      "동적 모델링 (Dynamic Modeling)",
+      "기능 모델링 (Functional Modeling)",
+      "제어 모델링"
+    ],
+    "answer": 0,
+    "explanation": "럼바우 분석은 객체(Object) -> 동적(Dynamic) -> 기능(Functional) 순서로 진행합니다."
+  },
+  {
+    "id": 514,
+    "subject": "소프트웨어 공학",
+    "question": "소프트웨어 위기(Software Crisis)의 원인이 아닌 것은?",
+    "options": [
+      "하드웨어 비용의 하락과 소프트웨어 개발 비용의 증가",
+      "소프트웨어 규모의 대형화 및 복잡화",
+      "개발 기간의 지연",
+      "완벽한 요구사항 정의와 변경 없는 프로젝트 진행"
+    ],
+    "answer": 3,
+    "explanation": "요구사항이 불명확하고 자주 변경되는 것이 소프트웨어 위기의 주된 원인 중 하나입니다."
+  },
+  {
+    "id": 515,
+    "subject": "소프트웨어 공학",
+    "question": "결합도(Coupling)의 종류 중, 모듈 간에 단순한 데이터(파라미터)만 주고받는 가장 이상적이고 낮은 결합도는?",
+    "options": [
+      "자료 결합도 (Data Coupling)",
+      "스탬프 결합도 (Stamp Coupling)",
+      "제어 결합도 (Control Coupling)",
+      "내용 결합도 (Content Coupling)"
+    ],
+    "answer": 0,
+    "explanation": "자료 결합도가 가장 결합도가 낮고(좋음), 내용 결합도가 가장 높습니다(나쁨)."
+  },
+  {
+    "id": 516,
+    "subject": "소프트웨어 공학",
+    "question": "UML 관계(Relationship) 중, '전체와 부분'의 관계를 나타내며, 전체가 사라져도 부분은 독자적으로 생존할 수 있는 관계는?",
+    "options": [
+      "연관 (Association)",
+      "의존 (Dependency)",
+      "집약 (Aggregation)",
+      "합성 (Composition)"
+    ],
+    "answer": 2,
+    "explanation": "집약(Aggregation, 빈 마름모)은 약한 결합의 전체-부분 관계입니다. (합성은 강한 결합으로 라이프사이클을 공유함)"
+  },
+  {
+    "id": 517,
+    "subject": "소프트웨어 공학",
+    "question": "소프트웨어 유지보수 유형 중, 환경 변화(OS 업그레이드 등)에 대응하여 소프트웨어를 변경하는 것은?",
+    "options": [
+      "수정 보수 (Corrective)",
+      "적응 보수 (Adaptive)",
+      "완전 보수 (Perfective)",
+      "예방 보수 (Preventive)"
+    ],
+    "answer": 1,
+    "explanation": "환경 변화에 맞추는 것은 적응(Adaptive) 유지보수입니다."
+  },
+  {
+    "id": 518,
+    "subject": "소프트웨어 공학",
+    "question": "나선형 모델(Spiral Model)의 가장 큰 특징이자 장점은?",
+    "options": [
+      "문서화가 매우 간편하다.",
+      "위험 분석(Risk Analysis) 단계를 포함하여 위험을 최소화한다.",
+      "소규모 프로젝트에 적합하다.",
+      "개발 속도가 가장 빠르다."
+    ],
+    "answer": 1,
+    "explanation": "보힘(Boehm)이 제안한 나선형 모델은 반복적인 위험 분석을 통해 대규모 프로젝트의 실패 위험을 줄입니다."
+  },
+  {
+    "id": 519,
+    "subject": "소프트웨어 공학",
+    "question": "리팩토링(Refactoring)의 정의로 올바른 것은?",
+    "options": [
+      "소프트웨어의 기능을 추가하는 작업",
+      "버그를 수정하는 작업",
+      "외부 동작은 유지하되 내부 구조를 개선하여 가독성과 유지보수성을 높이는 작업",
+      "문서를 작성하는 작업"
+    ],
+    "answer": 2,
+    "explanation": "리팩토링은 '기능 변경 없이' 코드 품질을 높이는 활동입니다."
+  },
+  {
+    "id": 520,
+    "subject": "소프트웨어 공학",
+    "question": "블랙박스 테스트 기법 중, 입력 조건의 유효값과 무효값의 경계에서 오류가 발생할 확률이 높다는 점을 이용한 기법은?",
+    "options": [
+      "동치 분할 검사",
+      "경계값 분석 (Boundary Value Analysis)",
+      "오류 예측 검사",
+      "비교 검사"
+    ],
+    "answer": 1,
+    "explanation": "예를 들어 0~100 입력 시 -1, 0, 100, 101 등을 집중적으로 테스트하는 것이 경계값 분석입니다."
+  },
+  {
+    "id": 521,
+    "subject": "알고리즘",
+    "question": "알고리즘의 시간 복잡도를 분석할 때, 입력 크기 n이 무한대로 커질 때의 증가율을 나타내는 표기법은?",
+    "options": [
+      "빅오 (Big-O) 표기법",
+      "빅오메가 (Big-Ω) 표기법",
+      "빅세타 (Big-Θ) 표기법",
+      "스몰오 (Little-o) 표기법"
+    ],
+    "answer": 0,
+    "explanation": "빅오 표기법은 최악의 경우(상한선)를 나타내며, 알고리즘의 효율성을 판단하는 가장 보편적인 기준입니다."
+  },
+  {
+    "id": 522,
+    "subject": "알고리즘",
+    "question": "분할 정복(Divide and Conquer) 기법을 사용하는 대표적인 정렬 알고리즘은?",
+    "options": [
+      "버블 정렬 (Bubble Sort)",
+      "선택 정렬 (Selection Sort)",
+      "삽입 정렬 (Insertion Sort)",
+      "병합 정렬 (Merge Sort)"
+    ],
+    "answer": 3,
+    "explanation": "병합 정렬은 리스트를 반으로 나눈 뒤 재귀적으로 정렬하고 다시 합치는 분할 정복 방식을 사용합니다."
+  },
+  {
+    "id": 523,
+    "subject": "알고리즘",
+    "question": "동적 계획법(Dynamic Programming)의 핵심 조건 두 가지는?",
+    "options": [
+      "탐욕적 선택 속성과 최적 부분 구조",
+      "중복되는 부분 문제와 최적 부분 구조",
+      "분할 정복과 재귀 호출",
+      "백트래킹과 가지치기"
+    ],
+    "answer": 1,
+    "explanation": "DP는 큰 문제를 작은 문제로 나눌 때 '부분 문제가 중복'되고, '부분 문제의 최적해로 전체 최적해를 구할 수 있을 때' 사용합니다."
+  },
+  {
+    "id": 524,
+    "subject": "알고리즘",
+    "question": "다익스트라(Dijkstra) 알고리즘을 사용할 수 없는 경우는?",
+    "options": [
+      "가중치가 모두 양수일 때",
+      "방향 그래프일 때",
+      "음수 가중치를 가진 간선이 있을 때",
+      "사이클이 없을 때"
+    ],
+    "answer": 2,
+    "explanation": "음수 간선이 있으면 그리디하게 선택한 경로가 최단 경로가 아닐 수 있어 다익스트라를 쓸 수 없습니다. (이 경우 벨만-포드 사용)"
+  },
+  {
+    "id": 525,
+    "subject": "알고리즘",
+    "question": "탐욕 알고리즘(Greedy Algorithm)의 특징으로 옳은 것은?",
+    "options": [
+      "항상 전역 최적해(Global Optimum)를 보장한다.",
+      "매 순간 가장 좋아 보이는 것을 선택한다.",
+      "모든 경우의 수를 다 탐색한다.",
+      "과거의 선택을 번복하여 다시 탐색한다."
+    ],
+    "answer": 1,
+    "explanation": "그리디 알고리즘은 현재 상황에서 가장 최적이라고 생각되는 것을 선택해 나가는 방식이며, 항상 최적해를 보장하지는 않습니다."
+  },
+  {
+    "id": 526,
+    "subject": "알고리즘",
+    "question": "깊이 우선 탐색(DFS)을 구현할 때 주로 사용하는 자료구조는?",
+    "options": [
+      "Queue",
+      "Stack (또는 재귀)",
+      "Heap",
+      "Hash Table"
+    ],
+    "answer": 1,
+    "explanation": "DFS는 한 방향으로 끝까지 파고들다가 돌아와야 하므로 스택이나 재귀 함수를 이용합니다."
+  },
+  {
+    "id": 527,
+    "subject": "알고리즘",
+    "question": "P vs NP 문제에서 'NP'의 의미는?",
+    "options": [
+      "Not Polynomial (다항 시간에 풀 수 없음)",
+      "Non-deterministic Polynomial (비결정론적 튜링 기계로 다항 시간에 풀 수 있음)",
+      "No Problem (문제가 없음)",
+      "Natural Polynomial (자연 다항식)"
+    ],
+    "answer": 1,
+    "explanation": "NP는 '다항 시간 내에 정답을 검증할 수 있는 문제'의 집합을 의미합니다."
+  },
+  {
+    "id": 528,
+    "subject": "알고리즘",
+    "question": "모든 정점 쌍 사이의 최단 경로를 구하는 알고리즘으로, 시간 복잡도가 O(n^3)인 것은?",
+    "options": [
+      "다익스트라 알고리즘",
+      "플로이드-워셜 (Floyd-Warshall) 알고리즘",
+      "프림 알고리즘",
+      "KMP 알고리즘"
+    ],
+    "answer": 1,
+    "explanation": "플로이드-워셜은 3중 반복문을 사용하여 모든 노드 간의 최단 거리를 구하는 DP 기반 알고리즘입니다."
+  },
+  {
+    "id": 529,
+    "subject": "알고리즘",
+    "question": "문자열 검색 알고리즘 중, 접두사와 접미사의 일치하는 부분을 이용하여 불필요한 비교를 줄이는 방식은?",
+    "options": [
+      "브루트 포스 (Brute Force)",
+      "KMP (Knuth-Morris-Pratt) 알고리즘",
+      "라빈-카프 알고리즘",
+      "보이어-무어 알고리즘"
+    ],
+    "answer": 1,
+    "explanation": "KMP는 실패 함수(Failure Function, pi 배열)를 만들어 매칭 실패 시 얼마나 점프할지 결정합니다."
+  },
+  {
+    "id": 530,
+    "subject": "알고리즘",
+    "question": "백트래킹(Backtracking) 기법의 핵심 원리는?",
+    "options": [
+      "모든 노드를 방문한다.",
+      "조건을 만족하지 않으면 탐색을 중단하고 이전 단계로 돌아간다(Pruning).",
+      "데이터를 정렬하여 탐색한다.",
+      "최단 경로를 찾는다."
+    ],
+    "answer": 1,
+    "explanation": "가지치기(Pruning)를 통해 유망하지 않은 경로는 더 이상 탐색하지 않음으로써 효율을 높입니다. (예: N-Queen 문제)"
+  },
+  {
+    "id": 531,
+    "subject": "알고리즘",
+    "question": "최소 신장 트리(MST)를 구할 때, 간선(Edge)을 가중치 순으로 정렬한 후 사이클이 생기지 않도록 선택하는 알고리즘은?",
+    "options": [
+      "프림 (Prim) 알고리즘",
+      "크루스칼 (Kruskal) 알고리즘",
+      "위상 정렬 (Topological Sort)",
+      "BFS"
+    ],
+    "answer": 1,
+    "explanation": "크루스칼 알고리즘은 간선 중심의 그리디 알고리즘으로, 유니온-파인드(Union-Find) 자료구조를 사용해 사이클을 판별합니다."
+  },
+  {
+    "id": 532,
+    "subject": "알고리즘",
+    "question": "정렬된 배열에서 특정 값을 찾을 때 가장 효율적인 탐색 방법은?",
+    "options": [
+      "순차 탐색 (Linear Search)",
+      "이진 탐색 (Binary Search)",
+      "해시 탐색",
+      "깊이 우선 탐색"
+    ],
+    "answer": 1,
+    "explanation": "정렬되어 있다는 전제가 있다면, 중간값과 비교하며 범위를 반으로 줄이는 이진 탐색(O(log n))이 효율적입니다."
+  },
+  {
+    "id": 533,
+    "subject": "알고리즘",
+    "question": "다음 중 NP-Complete 문제에 해당하는 것은?",
+    "options": [
+      "정렬 문제",
+      "최단 경로 문제",
+      "외판원 순회 문제 (TSP)의 결정 문제 버전",
+      "최소 신장 트리 문제"
+    ],
+    "answer": 2,
+    "explanation": "TSP, 배낭 채우기(Knapsack) 문제 등은 다항 시간 내에 풀 수 있는 알고리즘이 발견되지 않은 대표적인 NP-완전 문제입니다."
+  },
+  {
+    "id": 534,
+    "subject": "알고리즘",
+    "question": "동적 계획법에서 이미 계산한 결과를 저장해 두었다가 재사용하는 기법을 무엇이라 하는가?",
+    "options": [
+      "Recursion",
+      "Memoization (메모이제이션)",
+      "Iteration",
+      "Simulation"
+    ],
+    "answer": 1,
+    "explanation": "메모이제이션을 사용하면 중복 계산을 피하여 시간 복잡도를 획기적으로 줄일 수 있습니다."
+  },
+  {
+    "id": 535,
+    "subject": "알고리즘",
+    "question": "위상 정렬(Topological Sort)을 수행할 수 있는 그래프의 조건은?",
+    "options": [
+      "무방향 그래프",
+      "사이클이 없는 방향 그래프 (DAG)",
+      "완전 그래프",
+      "트리"
+    ],
+    "answer": 1,
+    "explanation": "순서가 정해져 있는 작업(선수 과목 등)을 나열하는 위상 정렬은 사이클이 없어야 가능합니다."
+  },
+  {
+    "id": 536,
+    "subject": "알고리즘",
+    "question": "퀵 정렬(Quick Sort)에서 리스트를 분할하는 기준이 되는 원소를 무엇이라 하는가?",
+    "options": [
+      "Key",
+      "Pivot (피벗)",
+      "Index",
+      "Pointer"
+    ],
+    "answer": 1,
+    "explanation": "피벗을 기준으로 작은 값은 왼쪽, 큰 값은 오른쪽으로 보내는 과정을 반복합니다."
+  },
+  {
+    "id": 537,
+    "subject": "알고리즘",
+    "question": "해시 테이블에서 충돌(Collision) 해결 방법 중, 연결 리스트를 사용하여 충돌된 데이터를 계속 연결하는 방식은?",
+    "options": [
+      "선형 탐사법 (Linear Probing)",
+      "이중 해싱 (Double Hashing)",
+      "체이닝 (Chaining)",
+      "재해싱 (Rehashing)"
+    ],
+    "answer": 2,
+    "explanation": "체이닝은 버킷(Bucket) 내에 연결 리스트를 할당하여 충돌 데이터를 줄줄이 매다는 방식입니다."
+  },
+  {
+    "id": 538,
+    "subject": "알고리즘",
+    "question": "벨만-포드(Bellman-Ford) 알고리즘의 특징은?",
+    "options": [
+      "다익스트라보다 빠르다.",
+      "음수 가중치가 있어도 최단 경로를 구할 수 있다.",
+      "그리디 알고리즘이다.",
+      "모든 정점 간의 거리를 구한다."
+    ],
+    "answer": 1,
+    "explanation": "벨만-포드는 간선을 V-1번 반복 완화(Relaxation)하여 음수 가중치가 있어도 최단 경로를 계산할 수 있으며, 음수 사이클 존재 여부도 알 수 있습니다."
+  },
+  {
+    "id": 539,
+    "subject": "알고리즘",
+    "question": "0/1 배낭 문제(Knapsack Problem)는 어떤 알고리즘 기법으로 해결하는 것이 가장 적절한가?",
+    "options": [
+      "분할 정복",
+      "그리디 알고리즘",
+      "동적 계획법 (DP)",
+      "이진 탐색"
+    ],
+    "answer": 2,
+    "explanation": "물건을 쪼갤 수 없는 0/1 배낭 문제는 그리디로 풀 수 없고, DP를 사용해야 최적해를 구할 수 있습니다."
+  },
+  {
+    "id": 540,
+    "subject": "알고리즘",
+    "question": "안정 정렬(Stable Sort)에 해당하는 알고리즘은?",
+    "options": [
+      "퀵 정렬",
+      "힙 정렬",
+      "선택 정렬",
+      "병합 정렬 (Merge Sort)"
+    ],
+    "answer": 3,
+    "explanation": "병합 정렬은 같은 값의 순서가 뒤바뀌지 않는 안정 정렬입니다. (나머지는 일반적으로 불안정 정렬)"
+  },
+  {
+    "id": 541,
+    "subject": "인공지능",
+    "question": "기계가 인간과 얼마나 비슷하게 대화할 수 있는지를 판별하여 지능 유무를 판단하는 테스트는?",
+    "options": [
+      "IQ 테스트",
+      "튜링 테스트 (Turing Test)",
+      "AB 테스트",
+      "소프트웨어 테스트"
+    ],
+    "answer": 1,
+    "explanation": "앨런 튜링이 제안한 것으로, 질문자가 상대방이 사람인지 컴퓨터인지 구별할 수 없다면 지능이 있다고 간주합니다."
+  },
+  {
+    "id": 542,
+    "subject": "인공지능",
+    "question": "머신러닝의 학습 방법 중, 정답(Label)이 있는 데이터를 사용하여 학습하는 방식은?",
+    "options": [
+      "지도 학습 (Supervised Learning)",
+      "비지도 학습 (Unsupervised Learning)",
+      "강화 학습 (Reinforcement Learning)",
+      "전이 학습 (Transfer Learning)"
+    ],
+    "answer": 0,
+    "explanation": "문제와 정답을 함께 주면서 학습시키는 방식(예: 고양이 사진에 '고양이' 라벨링)입니다."
+  },
+  {
+    "id": 543,
+    "subject": "인공지능",
+    "question": "모델이 학습 데이터에는 너무 잘 맞지만, 새로운 데이터에는 성능이 떨어지는 현상은?",
+    "options": [
+      "Underfitting (과소적합)",
+      "Overfitting (과적합)",
+      "Regularization (정규화)",
+      "Bias (편향)"
+    ],
+    "answer": 1,
+    "explanation": "학습 데이터의 잡음(Noise)까지 암기해버려 일반화 성능이 떨어지는 상태를 과적합이라 합니다."
+  },
+  {
+    "id": 544,
+    "subject": "인공지능",
+    "question": "딥러닝의 핵심 모델인 인공신경망(ANN)에서 뉴런의 활성화 여부를 결정하는 함수는?",
+    "options": [
+      "손실 함수 (Loss Function)",
+      "활성화 함수 (Activation Function)",
+      "최적화 함수 (Optimizer)",
+      "목적 함수 (Objective Function)"
+    ],
+    "answer": 1,
+    "explanation": "Sigmoid, ReLU, Softmax 등 입력 신호의 총합을 출력 신호로 변환하는 함수입니다."
+  },
+  {
+    "id": 545,
+    "subject": "인공지능",
+    "question": "이미지 인식 및 처리에 특화된 딥러닝 신경망 구조는?",
+    "options": [
+      "RNN (Recurrent Neural Network)",
+      "CNN (Convolutional Neural Network)",
+      "GAN (Generative Adversarial Network)",
+      "LSTM"
+    ],
+    "answer": 1,
+    "explanation": "합성곱(Convolution) 연산을 통해 이미지의 특징을 추출하는 CNN이 주로 사용됩니다."
+  },
+  {
+    "id": 546,
+    "subject": "인공지능",
+    "question": "비지도 학습의 대표적인 예로, 유사한 데이터끼리 그룹으로 묶는 기법은?",
+    "options": [
+      "분류 (Classification)",
+      "회귀 (Regression)",
+      "군집화 (Clustering)",
+      "라벨링 (Labeling)"
+    ],
+    "answer": 2,
+    "explanation": "K-Means 알고리즘처럼 정답 없이 데이터의 특성만으로 그룹을 나누는 것을 군집화라고 합니다."
+  },
+  {
+    "id": 547,
+    "subject": "인공지능",
+    "question": "강화 학습(Reinforcement Learning)의 3요소가 아닌 것은?",
+    "options": [
+      "Agent (에이전트)",
+      "Environment (환경)",
+      "Reward (보상)",
+      "Supervisor (감독관)"
+    ],
+    "answer": 3,
+    "explanation": "강화 학습은 에이전트가 환경과 상호작용하며 보상을 최대화하는 방향으로 스스로 학습합니다. (감독관/정답 없음)"
+  },
+  {
+    "id": 548,
+    "subject": "인공지능",
+    "question": "신경망 학습 시 손실 함수(Loss Function)의 값을 최소화하기 위해 가중치를 업데이트하는 알고리즘은?",
+    "options": [
+      "경사 하강법 (Gradient Descent)",
+      "역전파 (Backpropagation)",
+      "피드 포워드 (Feed Forward)",
+      "드롭아웃 (Dropout)"
+    ],
+    "answer": 0,
+    "explanation": "기울기(Gradient)를 따라 손실이 낮아지는 방향으로 파라미터를 조금씩 이동시키는 최적화 방법입니다."
+  },
+  {
+    "id": 549,
+    "subject": "인공지능",
+    "question": "순차적인 데이터(시계열, 텍스트 등) 처리에 적합하며, 이전 단계의 출력이 다음 단계의 입력으로 들어가는 신경망은?",
+    "options": [
+      "CNN",
+      "RNN (순환 신경망)",
+      "MLP (다층 퍼셉트론)",
+      "Perceptron"
+    ],
+    "answer": 1,
+    "explanation": "과거의 정보를 기억(Memory)할 수 있는 구조를 가진 RNN이 자연어 처리 등에 적합합니다."
+  },
+  {
+    "id": 550,
+    "subject": "인공지능",
+    "question": "머신러닝 모델의 성능 평가 지표 중, 실제 True인 것 중 모델이 True라고 예측한 비율은?",
+    "options": [
+      "정확도 (Accuracy)",
+      "정밀도 (Precision)",
+      "재현율 (Recall)",
+      "F1 Score"
+    ],
+    "answer": 2,
+    "explanation": "놓치지 않고 얼마나 잘 찾아냈는지를 나타내는 지표로 민감도(Sensitivity)라고도 합니다."
+  },
+  {
+    "id": 551,
+    "subject": "인공지능",
+    "question": "여러 개의 결정 트리(Decision Tree)를 만들어 그 결과들을 투표를 통해 종합하는 앙상블 기법은?",
+    "options": [
+      "SVM",
+      "Random Forest (랜덤 포레스트)",
+      "Logistic Regression",
+      "K-NN"
+    ],
+    "answer": 1,
+    "explanation": "여러 그루의 나무(Tree)가 모여 숲(Forest)을 이룬다는 의미의 랜덤 포레스트입니다."
+  },
+  {
+    "id": 552,
+    "subject": "인공지능",
+    "question": "딥러닝 모델 학습 시, 전체 데이터셋을 한 번 다 학습하는 단위를 무엇이라 하는가?",
+    "options": [
+      "Batch",
+      "Epoch (에폭)",
+      "Iteration",
+      "Step"
+    ],
+    "answer": 1,
+    "explanation": "1 Epoch은 전체 트레이닝 데이터가 신경망을 한 번 통과했음을 의미합니다."
+  },
+  {
+    "id": 553,
+    "subject": "인공지능",
+    "question": "데이터를 두 개의 클래스로 분류하기 위해 가장 적절한 경계선(초평면)을 찾는 알고리즘은?",
+    "options": [
+      "K-Means",
+      "SVM (Support Vector Machine)",
+      "Apriori",
+      "PCA"
+    ],
+    "answer": 1,
+    "explanation": "SVM은 클래스 간의 여백(Margin)을 최대화하는 결정 경계를 찾습니다."
+  },
+  {
+    "id": 554,
+    "subject": "인공지능",
+    "question": "은닉층(Hidden Layer)이 깊게(많이) 쌓인 인공신경망을 학습시키는 기술을 통칭하는 말은?",
+    "options": [
+      "기계 학습",
+      "딥러닝 (Deep Learning)",
+      "데이터 마이닝",
+      "빅데이터"
+    ],
+    "answer": 1,
+    "explanation": "Deep Neural Network를 학습시킨다 하여 딥러닝이라고 부릅니다."
+  },
+  {
+    "id": 555,
+    "subject": "인공지능",
+    "question": "과적합(Overfitting)을 방지하기 위해 학습 과정에서 일부 뉴런을 무작위로 비활성화하는 기법은?",
+    "options": [
+      "Padding",
+      "Pooling",
+      "Dropout (드롭아웃)",
+      "Flatten"
+    ],
+    "answer": 2,
+    "explanation": "드롭아웃은 특정 뉴런에 의존하는 것을 막아 모델의 일반화 성능을 높여줍니다."
+  },
+  {
+    "id": 556,
+    "subject": "인공지능",
+    "question": "다음 중 범주형 데이터(예: 색상 - 빨강, 파랑)를 수치형 데이터(예: 1, 0)로 변환하는 기법은?",
+    "options": [
+      "정규화 (Normalization)",
+      "원-핫 인코딩 (One-Hot Encoding)",
+      "표준화 (Standardization)",
+      "클러스터링"
+    ],
+    "answer": 1,
+    "explanation": "해당하는 값만 1, 나머지는 0으로 만드는 벡터화 방식입니다."
+  },
+  {
+    "id": 557,
+    "subject": "인공지능",
+    "question": "인간의 뇌세포(뉴런)를 수학적으로 모델링한 초기의 인공 신경망 모델은?",
+    "options": [
+      "퍼셉트론 (Perceptron)",
+      "트랜스포머",
+      "오토인코더",
+      "볼츠만 머신"
+    ],
+    "answer": 0,
+    "explanation": "퍼셉트론은 입력값과 가중치의 합이 임계치를 넘으면 활성화되는 단순한 구조입니다."
+  },
+  {
+    "id": 558,
+    "subject": "인공지능",
+    "question": "학습률(Learning Rate)과 같이 모델이 학습하기 전에 사람이 미리 설정해줘야 하는 변수를 무엇이라 하는가?",
+    "options": [
+      "Parameter (파라미터)",
+      "Hyperparameter (하이퍼파라미터)",
+      "Weight (가중치)",
+      "Bias (편향)"
+    ],
+    "answer": 1,
+    "explanation": "가중치(Parameter)는 학습되지만, 학습률이나 은닉층 개수 등은 사람이 정해야 하는 하이퍼파라미터입니다."
+  },
+  {
+    "id": 559,
+    "subject": "인공지능",
+    "question": "자연어 처리(NLP) 분야에서 혁신을 일으킨 모델로, 'Attention' 메커니즘을 기반으로 하는 것은?",
+    "options": [
+      "LSTM",
+      "Transformer (트랜스포머)",
+      "Seq2Seq",
+      "Word2Vec"
+    ],
+    "answer": 1,
+    "explanation": "BERT, GPT 등 현대 NLP 모델의 기반이 되는 아키텍처입니다."
+  },
+  {
+    "id": 560,
+    "subject": "인공지능",
+    "question": "AI가 학습 데이터에 내재된 편견(인종, 성별 등)을 그대로 배우는 윤리적 문제를 무엇이라 하는가?",
+    "options": [
+      "AI Bias (인공지능 편향)",
+      "AI Hallucination (환각)",
+      "Singularity (특이점)",
+      "Explainability (설명 가능성)"
+    ],
+    "answer": 0,
+    "explanation": "데이터의 편향이 모델의 판단에도 영향을 미쳐 불공정한 결과를 낳는 문제입니다."
+  },
+    {
+    "id": 561,
+    "subject": "HTML/CSS",
+    "question": "HTML5에서 도입된 시맨틱(Semantic) 태그 중, 문서나 섹션의 '머리말'을 정의하는 태그는?",
+    "options": [
+      "<footer>",
+      "<nav>",
+      "<header>",
+      "<section>"
+    ],
+    "answer": 2,
+    "explanation": "로고, 제목, 검색창 등을 포함하는 상단 영역은 <header> 태그를 사용합니다."
+  },
+  {
+    "id": 562,
+    "subject": "HTML/CSS",
+    "question": "CSS 박스 모델(Box Model)의 구성 요소가 안쪽부터 바깥쪽 순서대로 올바른 것은?",
+    "options": [
+      "Content - Padding - Border - Margin",
+      "Content - Margin - Border - Padding",
+      "Border - Padding - Content - Margin",
+      "Margin - Border - Padding - Content"
+    ],
+    "answer": 0,
+    "explanation": "내용물(Content) > 안쪽 여백(Padding) > 테두리(Border) > 바깥 여백(Margin) 순서입니다."
+  },
+  {
+    "id": 563,
+    "subject": "HTML/CSS",
+    "question": "다음 중 인라인(Inline) 요소인 태그는?",
+    "options": [
+      "<div>",
+      "<span>",
+      "<p>",
+      "<ul>"
+    ],
+    "answer": 1,
+    "explanation": "div, p, ul은 블록(Block) 요소이며, span, a, img 등은 인라인(Inline) 요소입니다."
+  },
+  {
+    "id": 564,
+    "subject": "HTML/CSS",
+    "question": "CSS 우선순위(Specificity)가 가장 높은 것은?",
+    "options": [
+      "태그 선택자 (div)",
+      "클래스 선택자 (.class)",
+      "ID 선택자 (#id)",
+      "인라인 스타일 (style=\"...\")"
+    ],
+    "answer": 3,
+    "explanation": "!important를 제외하면 HTML 태그에 직접 적는 인라인 스타일이 가장 우선순위가 높습니다."
+  },
+  {
+    "id": 565,
+    "subject": "HTML/CSS",
+    "question": "반응형 웹 디자인을 위해 뷰포트(Viewport) 크기에 따라 스타일을 다르게 적용하는 CSS 기술은?",
+    "options": [
+      "Flexbox",
+      "Grid",
+      "Media Query (미디어 쿼리)",
+      "Animation"
+    ],
+    "answer": 2,
+    "explanation": "@media (max-width: 768px) { ... } 처럼 화면 크기에 따라 스타일을 분기 처리합니다."
+  },
+  {
+    "id": 566,
+    "subject": "HTML/CSS",
+    "question": "Flexbox 레이아웃에서 주축(Main Axis)의 정렬 방법을 설정하는 속성은?",
+    "options": [
+      "align-items",
+      "justify-content",
+      "flex-direction",
+      "flex-wrap"
+    ],
+    "answer": 1,
+    "explanation": "justify-content는 주축(가로), align-items는 교차축(세로) 정렬을 담당합니다."
+  },
+  {
+    "id": 567,
+    "subject": "HTML/CSS",
+    "question": "HTML 요소의 투명도를 조절하는 CSS 속성은?",
+    "options": [
+      "visibility",
+      "display",
+      "opacity",
+      "filter"
+    ],
+    "answer": 2,
+    "explanation": "opacity: 0.5; 처럼 사용하며 0은 투명, 1은 불투명입니다."
+  },
+  {
+    "id": 568,
+    "subject": "JavaScript",
+    "question": "ES6에서 추가된 변수 선언 키워드로, 재할당은 가능하지만 재선언은 불가능하며 블록 스코프를 가지는 것은?",
+    "options": [
+      "var",
+      "let",
+      "const",
+      "final"
+    ],
+    "answer": 1,
+    "explanation": "var는 함수 스코프/재선언 가능, const는 재할당 불가능, let은 재할당 가능/블록 스코프입니다."
+  },
+  {
+    "id": 569,
+    "subject": "JavaScript",
+    "question": "다음 코드의 실행 결과는? console.log('5' + 3);",
+    "options": [
+      "8",
+      "53",
+      "Error",
+      "NaN"
+    ],
+    "answer": 1,
+    "explanation": "문자열('5')과 숫자(3)를 더하면 숫자가 문자열로 변환되어 연결(Concatenation)됩니다."
+  },
+  {
+    "id": 570,
+    "subject": "JavaScript",
+    "question": "HTML 요소(DOM)를 선택할 때, ID가 'app'인 요소를 가져오는 메서드는?",
+    "options": [
+      "document.querySelector('.app')",
+      "document.getElementsByClassName('app')",
+      "document.getElementById('app')",
+      "document.getElementsByTagName('app')"
+    ],
+    "answer": 2,
+    "explanation": "ID 선택은 getElementById 혹은 querySelector('#app')을 사용합니다."
+  },
+  {
+    "id": 571,
+    "subject": "JavaScript",
+    "question": "비동기 작업을 처리하기 위해 ES6에서 도입된 객체로, 성공(resolve)과 실패(reject)를 다루는 것은?",
+    "options": [
+      "Callback",
+      "Promise",
+      "Async",
+      "Await"
+    ],
+    "answer": 1,
+    "explanation": "Promise 객체는 비동기 작업의 최종 완료 또는 실패를 나타냅니다."
+  },
+  {
+    "id": 572,
+    "subject": "JavaScript",
+    "question": "이벤트 버블링(Event Bubbling)이란?",
+    "options": [
+      "이벤트가 상위 요소에서 하위 요소로 전파되는 것",
+      "이벤트가 하위 요소에서 상위 요소로 전파되는 것",
+      "이벤트가 발생하지 않는 것",
+      "이벤트가 한 번만 실행되는 것"
+    ],
+    "answer": 1,
+    "explanation": "자식 요소에서 발생한 이벤트가 부모 요소를 거쳐 최상위 요소까지 전달되는 현상입니다. (반대는 캡처링)"
+  },
+  {
+    "id": 573,
+    "subject": "JavaScript",
+    "question": "배열의 각 요소에 대해 함수를 실행하고, 그 결과를 모아 새로운 배열을 반환하는 메서드는?",
+    "options": [
+      "forEach()",
+      "filter()",
+      "map()",
+      "reduce()"
+    ],
+    "answer": 2,
+    "explanation": "map()은 원본 배열과 1:1로 매핑된 새로운 배열을 리턴합니다."
+  },
+  {
+    "id": 574,
+    "subject": "JavaScript",
+    "question": "자바스크립트에서 함수가 선언될 당시의 렉시컬 환경(Lexical Environment)을 기억하여, 함수 밖에서도 그 변수에 접근할 수 있는 기능은?",
+    "options": [
+      "Hoisting (호이스팅)",
+      "Closure (클로저)",
+      "Prototype (프로토타입)",
+      "Scope Chain (스코프 체인)"
+    ],
+    "answer": 1,
+    "explanation": "클로저는 외부 함수가 종료되어도 내부 함수가 외부 함수의 변수를 참조할 수 있게 합니다."
+  },
+  {
+    "id": 575,
+    "subject": "JavaScript",
+    "question": "JSON.stringify() 함수의 역할은?",
+    "options": [
+      "JSON 문자열을 자바스크립트 객체로 변환",
+      "자바스크립트 객체를 JSON 문자열로 변환",
+      "JSON 파일을 읽어오기",
+      "JSON 형식을 검증하기"
+    ],
+    "answer": 1,
+    "explanation": "객체(Object)를 서버 전송 등을 위해 문자열(String)로 직렬화할 때 사용합니다."
+  },
+  {
+    "id": 576,
+    "subject": "리눅스",
+    "question": "리눅스에서 현재 디렉터리의 파일 목록을 자세히(권한, 소유자 등 포함) 보는 명령어는?",
+    "options": [
+      "ls -a",
+      "ls -l",
+      "pwd",
+      "cd"
+    ],
+    "answer": 1,
+    "explanation": "ls(list) 명령어에 -l(long format) 옵션을 붙입니다."
+  },
+  {
+    "id": 577,
+    "subject": "리눅스",
+    "question": "파일의 권한(Permission)을 변경하는 명령어는?",
+    "options": [
+      "chown",
+      "chmod",
+      "chgrp",
+      "umask"
+    ],
+    "answer": 1,
+    "explanation": "chmod(change mode)는 읽기(r), 쓰기(w), 실행(x) 권한을 변경합니다."
+  },
+  {
+    "id": 578,
+    "subject": "리눅스",
+    "question": "파일 내용 중 특정 문자열을 검색하여 해당 라인을 출력하는 명령어는?",
+    "options": [
+      "find",
+      "grep",
+      "cat",
+      "awk"
+    ],
+    "answer": 1,
+    "explanation": "grep은 텍스트 검색에 가장 많이 쓰이는 강력한 필터 명령어입니다."
+  },
+  {
+    "id": 579,
+    "subject": "리눅스",
+    "question": "현재 실행 중인 프로세스 목록을 확인하는 명령어는?",
+    "options": [
+      "ps",
+      "kill",
+      "ls",
+      "cp"
+    ],
+    "answer": 0,
+    "explanation": "ps(process status) 또는 top 명령어를 사용하여 프로세스 상태를 확인합니다."
+  },
+  {
+    "id": 580,
+    "subject": "리눅스",
+    "question": "리눅스 파일 권한 'rwx r-x r-x'를 숫자로 표현하면?",
+    "options": [
+      "777",
+      "755",
+      "644",
+      "700"
+    ],
+    "answer": 1,
+    "explanation": "r(4)+w(2)+x(1)=7, r(4)+x(1)=5 이므로 755입니다."
+  },
+  {
+    "id": 581,
+    "subject": "리눅스",
+    "question": "명령어의 실행 결과(표준 출력)를 다른 명령어의 입력으로 전달하는 기호(파이프)는?",
+    "options": [
+      ">",
+      ">>",
+      "|",
+      "&"
+    ],
+    "answer": 2,
+    "explanation": "파이프(|)는 앞 명령어의 출력을 뒤 명령어의 입력으로 연결합니다. (예: ps -ef | grep java)"
+  },
+  {
+    "id": 582,
+    "subject": "리눅스",
+    "question": "현재 작업 중인 디렉터리의 절대 경로를 출력하는 명령어는?",
+    "options": [
+      "ls",
+      "cd",
+      "pwd",
+      "mkdir"
+    ],
+    "answer": 2,
+    "explanation": "pwd는 Print Working Directory의 약자입니다."
+  },
+  {
+    "id": 583,
+    "subject": "리눅스",
+    "question": "파일을 삭제하는 명령어는?",
+    "options": [
+      "rm",
+      "mv",
+      "cp",
+      "touch"
+    ],
+    "answer": 0,
+    "explanation": "rm(remove) 명령어를 사용합니다. (디렉터리 삭제는 rm -r)"
+  },
+  {
+    "id": 584,
+    "subject": "리눅스",
+    "question": "리눅스 커널의 버전을 확인하는 명령어는?",
+    "options": [
+      "uname -a",
+      "ver",
+      "ls -v",
+      "kernel"
+    ],
+    "answer": 0,
+    "explanation": "uname -a는 시스템의 모든 정보(커널 버전 포함)를 출력합니다."
+  },
+  {
+    "id": 585,
+    "subject": "리눅스",
+    "question": "파일의 소유자(Owner)를 변경하는 명령어는?",
+    "options": [
+      "chmod",
+      "chown",
+      "useradd",
+      "passwd"
+    ],
+    "answer": 1,
+    "explanation": "chown(change owner) 명령어를 사용합니다."
+  },
+  {
+    "id": 586,
+    "subject": "리눅스",
+    "question": "VI 에디터에서 입력 모드(Insert Mode)에서 명령 모드로 빠져나오는 키는?",
+    "options": [
+      "Enter",
+      "Shift",
+      "Ctrl",
+      "Esc"
+    ],
+    "answer": 3,
+    "explanation": "Esc 키를 누르면 입력 모드가 종료되고 명령 모드로 전환됩니다."
+  },
+  {
+    "id": 587,
+    "subject": "리눅스",
+    "question": "루트(Root) 디렉터리를 의미하는 기호는?",
+    "options": [
+      "/",
+      "~",
+      ".",
+      ".."
+    ],
+    "answer": 0,
+    "explanation": "/는 최상위 루트, ~는 홈 디렉터리, .은 현재, ..은 상위 디렉터리를 의미합니다."
+  },
+  {
+    "id": 588,
+    "subject": "리눅스",
+    "question": "특정 파일의 뒷부분 10줄을 실시간으로 확인하고 싶을 때 사용하는 명령어는?",
+    "options": [
+      "head",
+      "tail -f",
+      "cat",
+      "more"
+    ],
+    "answer": 1,
+    "explanation": "tail -f (follow)는 로그 파일 등이 실시간으로 쌓이는 것을 확인할 때 유용합니다."
+  },
+  {
+    "id": 589,
+    "subject": "리눅스",
+    "question": "리눅스에서 패키지를 설치하거나 관리하는 도구(RedHat 계열)는?",
+    "options": [
+      "apt-get",
+      "yum / dnf",
+      "brew",
+      "npm"
+    ],
+    "answer": 1,
+    "explanation": "RedHat/CentOS 계열은 yum 또는 dnf, Debian/Ubuntu 계열은 apt-get을 사용합니다."
+  },
+  {
+    "id": 590,
+    "subject": "리눅스",
+    "question": "파일의 내용을 화면 단위로 끊어서 보여주는 명령어는?",
+    "options": [
+      "cat",
+      "grep",
+      "more (또는 less)",
+      "echo"
+    ],
+    "answer": 2,
+    "explanation": "파일이 길 때 more나 less를 사용하면 스페이스바로 페이지를 넘기며 볼 수 있습니다."
+  },
+  {
+    "id": 591,
+    "subject": "HTML/CSS",
+    "question": "HTML 문서의 인코딩 방식을 UTF-8로 지정하는 메타 태그는?",
+    "options": [
+      "<meta charset=\"UTF-8\">",
+      "<meta name=\"UTF-8\">",
+      "<link encoding=\"UTF-8\">",
+      "<script charset=\"UTF-8\">"
+    ],
+    "answer": 0,
+    "explanation": "한글 깨짐 방지를 위해 <head> 내에 <meta charset=\"UTF-8\">을 반드시 선언해야 합니다."
+  },
+  {
+    "id": 592,
+    "subject": "JavaScript",
+    "question": "변수에 값이 할당되지 않았을 때 가지는 자바스크립트의 기본 값은?",
+    "options": [
+      "null",
+      "undefined",
+      "0",
+      "false"
+    ],
+    "answer": 1,
+    "explanation": "변수를 선언만 하고 값을 넣지 않으면 undefined 상태가 됩니다. (null은 의도적으로 비운 값)"
+  },
+  {
+    "id": 593,
+    "subject": "리눅스",
+    "question": "절대 경로와 상대 경로에 대한 설명으로 틀린 것은?",
+    "options": [
+      "절대 경로는 항상 최상위 루트(/)부터 시작한다.",
+      "상대 경로는 현재 디렉터리를 기준으로 한다.",
+      "../ 는 하위 디렉터리로 이동한다는 뜻이다.",
+      "./ 는 현재 디렉터리를 의미한다."
+    ],
+    "answer": 2,
+    "explanation": ".. (점 두 개)는 상위(부모) 디렉터리를 의미합니다."
+  },
+  {
+    "id": 594,
+    "subject": "HTML/CSS",
+    "question": "CSS에서 요소의 위치를 절대 좌표(부모 기준)로 배치하기 위해 사용하는 속성 값은?",
+    "options": [
+      "position: static",
+      "position: relative",
+      "position: absolute",
+      "position: fixed"
+    ],
+    "answer": 2,
+    "explanation": "absolute는 가장 가까운 '위치 지정된(relative 등)' 조상을 기준으로 배치됩니다."
+  },
+  {
+    "id": 595,
+    "subject": "JavaScript",
+    "question": "화살표 함수(Arrow Function)의 특징이 아닌 것은?",
+    "options": [
+      "문법이 간결하다.",
+      "자신만의 this를 가지지 않는다.",
+      "생성자 함수로 사용할 수 있다.",
+      "항상 익명 함수이다."
+    ],
+    "answer": 2,
+    "explanation": "화살표 함수는 prototype 프로퍼티가 없어 생성자(new)로 사용할 수 없습니다."
+  },
+  {
+    "id": 596,
+    "subject": "리눅스",
+    "question": "특정 프로세스를 강제로 종료시키기 위해 사용하는 시그널 번호(Kill -9)의 의미는?",
+    "options": [
+      "SIGINT (Interrupt)",
+      "SIGKILL (강제 종료)",
+      "SIGTERM (정상 종료)",
+      "SIGHUP (재시작)"
+    ],
+    "answer": 1,
+    "explanation": "kill -9 PID 명령은 SIGKILL 시그널을 보내 프로세스를 즉시 강제 종료합니다."
+  },
+  {
+    "id": 597,
+    "subject": "HTML/CSS",
+    "question": "링크를 클릭했을 때 새 탭에서 열리게 하는 <a> 태그의 속성은?",
+    "options": [
+      "target=\"_self\"",
+      "target=\"_blank\"",
+      "target=\"_new\"",
+      "target=\"_parent\""
+    ],
+    "answer": 1,
+    "explanation": "target=\"_blank\"를 사용하면 링크가 새 탭(또는 새 창)에서 열립니다."
+  },
+  {
+    "id": 598,
+    "subject": "JavaScript",
+    "question": "3항 연산자의 올바른 문법은?",
+    "options": [
+      "조건 ? 참 : 거짓",
+      "조건 : 참 ? 거짓",
+      "조건 ?? 참 : 거짓",
+      "조건 !! 참 && 거짓"
+    ],
+    "answer": 0,
+    "explanation": "const result = condition ? trueValue : falseValue;"
+  },
+  {
+    "id": 599,
+    "subject": "리눅스",
+    "question": "빈 파일을 생성하거나 파일의 타임스탬프(수정 시간)를 갱신하는 명령어는?",
+    "options": [
+      "make",
+      "touch",
+      "new",
+      "add"
+    ],
+    "answer": 1,
+    "explanation": "touch filename 명령어는 파일이 없으면 0바이트 파일을 생성하고, 있으면 시간을 갱신합니다."
+  },
+  {
+    "id": 600,
+    "subject": "전공종합",
+    "question": "다음 중 오픈 소스 운영체제가 아닌 것은?",
+    "options": [
+      "Linux",
+      "Android",
+      "Ubuntu",
+      "Windows"
+    ],
+    "answer": 3,
+    "explanation": "Windows는 마이크로소프트의 독점(Proprietary) 상용 소프트웨어입니다."
+  }
+]
+
