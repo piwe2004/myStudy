@@ -37,7 +37,31 @@
                 <button id="next-btn" onclick="nextQuestion()">다음 문제 ▶</button>
             </div>
         </div>
-
+        <div id="score-screen" style="display: none;">
+            <div class="score-card">
+                <h2>수고하셨습니다! 🎉</h2>
+                <p class="score-label">당신의 점수는?</p>
+                <div class="score-circle">
+                    <span id="final-score">0</span>
+                    <span class="unit">점</span>
+                </div>
+                <div class="stats-box">
+                    <div class="stat-item">
+                        <span class="label">총 문제</span>
+                        <span class="value" id="total-count-display">0</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="label">정답</span>
+                        <span class="value correct" id="correct-count-display">0</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="label">오답</span>
+                        <span class="value wrong" id="wrong-count-display">0</span>
+                    </div>
+                </div>
+                <button onclick="goHome()" class="home-btn">메인으로 돌아가기</button>
+            </div>
+        </div>                                                                                                                                                                                                                                                                  
     </div>
 
     <script src="script.js"></script>

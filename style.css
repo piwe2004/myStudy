@@ -210,3 +210,166 @@ body {
         transform: translateX(5px);
     }
 }
+
+
+/* ▼▼▼ 정답/오답 관련 스타일 (수정됨) ▼▼▼ */
+
+/* 1. 보기 버튼 스타일 */
+
+/* 진짜 정답 버튼 (항상 초록색 강조) */
+.option-btn.correct {
+    background-color: #d4edda !important;  /* 연한 초록 배경 */
+    border: 2px solid #28a745 !important;  /* 진한 초록 테두리 */
+    color: #155724 !important;             /* 진한 녹색 글자 */
+    font-weight: bold;
+    position: relative;
+}
+
+/* 내가 고른 오답 버튼 (빨간색 배경 대신, 회색/취소선으로 얌전하게 처리) */
+.option-btn.wrong {
+    background-color: #f8f9fa !important;  /* 회색 배경 */
+    border: 2px solid #ced4da !important;  /* 회색 테두리 */
+    color: #6c757d !important;             /* 회색 글자 */
+    text-decoration: line-through;         /* 취소선 */
+}
+
+/* 선택 안 된 나머지 버튼들 (비활성화 시 흐리게) */
+.option-btn:disabled {
+    cursor: default;
+    opacity: 0.6;
+}
+
+/* 정답/오답 버튼은 선명하게 유지 */
+.option-btn.correct:disabled, 
+.option-btn.wrong:disabled {
+    opacity: 1; 
+}
+
+
+/* 2. 결과(해설) 박스 스타일 (무조건 초록색 계열로 통일) */
+
+#result-box {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 12px;
+    line-height: 1.6;
+    animation: fadeIn 0.3s ease-in-out;
+    
+    /* 공통 스타일: 초록색 계열 (눈이 편안함) */
+    background-color: #e8f5e9;  /* 아주 연한 초록 배경 */
+    border: 2px solid #81c784;  /* 부드러운 초록 테두리 */
+    color: #2e7d32;             /* 가독성 좋은 짙은 녹색 텍스트 */
+    font-size: 1.05rem;
+}
+
+/* 틀렸을 때 텍스트만 살짝 강조 (배경은 그대로 초록 유지) */
+.wrong-box strong {
+    color: #d32f2f; /* '틀렸습니다' 문구만 빨간색 포인트 */
+}
+
+.correct-box strong {
+    color: #2e7d32; /* '정답입니다' 문구는 녹색 */
+}
+/* ▼▼▼ 결과 화면(성적표) 스타일 ▼▼▼ */
+
+#score-screen {
+    padding: 40px 20px;
+        text-align: center;
+            display: flex;
+                flex-direction: column;
+                    align-items: center;
+                        justify-content: center;
+                            height: 100%;
+                            }
+
+                            .score-card {
+                                background: white;
+                                    padding: 40px 30px;
+                                        border-radius: 20px;
+                                            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+                                                width: 100%;
+                                                    max-width: 400px;
+                                                    }
+
+                                                    .score-card h2 {
+                                                        color: #2c3e50;
+                                                            margin-bottom: 10px;
+                                                            }
+
+                                                            .score-label {
+                                                                color: #7f8c8d;
+                                                                    margin-bottom: 30px;
+                                                                    }
+
+                                                                    /* 점수 원형 디자인 */
+                                                                    .score-circle {
+                                                                        width: 150px;
+                                                                            height: 150px;
+                                                                                background: #f8f9fa;
+                                                                                    border: 8px solid #3498db;
+                                                                                        border-radius: 50%;
+                                                                                            display: flex;
+                                                                                                align-items: center;
+                                                                                                    justify-content: center;
+                                                                                                        margin: 0 auto 40px;
+                                                                                                            flex-direction: column;
+                                                                                                            }
+
+                                                                                                            #final-score {
+                                                                                                                font-size: 3rem;
+                                                                                                                    font-weight: bold;
+                                                                                                                        color: #2c3e50;
+                                                                                                                        }
+
+                                                                                                                        .unit {
+                                                                                                                            font-size: 1rem;
+                                                                                                                                color: #7f8c8d;
+                                                                                                                                }
+
+                                                                                                                                /* 통계 박스 */
+                                                                                                                                .stats-box {
+                                                                                                                                    display: flex;
+                                                                                                                                        justify-content: space-around;
+                                                                                                                                            margin-bottom: 40px;
+                                                                                                                                                padding: 20px 0;
+                                                                                                                                                    border-top: 1px solid #eee;
+                                                                                                                                                        border-bottom: 1px solid #eee;
+                                                                                                                                                        }
+
+                                                                                                                                                        .stat-item {
+                                                                                                                                                            display: flex;
+                                                                                                                                                                flex-direction: column;
+                                                                                                                                                                    gap: 5px;
+                                                                                                                                                                    }
+
+                                                                                                                                                                    .stat-item .label {
+                                                                                                                                                                        font-size: 0.9rem;
+                                                                                                                                                                            color: #999;
+                                                                                                                                                                            }
+
+                                                                                                                                                                            .stat-item .value {
+                                                                                                                                                                                font-size: 1.2rem;
+                                                                                                                                                                                    font-weight: bold;
+                                                                                                                                                                                    }
+
+                                                                                                                                                                                    .stat-item .value.correct { color: #2ecc71; }
+                                                                                                                                                                                    .stat-item .value.wrong { color: #e74c3c; }
+
+                                                                                                                                                                                    /* 홈 버튼 */
+                                                                                                                                                                                    .home-btn {
+                                                                                                                                                                                        width: 100%;
+                                                                                                                                                                                            padding: 15px;
+                                                                                                                                                                                                background-color: #3498db;
+                                                                                                                                                                                                    color: white;
+                                                                                                                                                                                                        border: none;
+                                                                                                                                                                                                            border-radius: 12px;
+                                                                                                                                                                                                                font-size: 1.1rem;
+                                                                                                                                                                                                                    font-weight: bold;
+                                                                                                                                                                                                                        cursor: pointer;
+                                                                                                                                                                                                                            transition: background 0.2s;
+                                                                                                                                                                                                                            }
+
+                                                                                                                                                                                                                            .home-btn:hover {
+                                                                                                                                                                                                                                background-color: #2980b9;
+                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                
