@@ -3,67 +3,307 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>방통대 CS 문제은행</title>
-    <link rel="stylesheet" href="style.css">
+    <title>My Study Portal - 기출 및 예상문제</title>
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --bg-color: #f8fafc;
+            --text-main: #1e293b;
+            --border-color: #e2e8f0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .tabs {
+            display: flex;
+            background: #f1f5f9;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .tab-btn {
+            flex: 1;
+            padding: 16px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            border: none;
+            background: none;
+            color: #64748b;
+            transition: all 0.3s ease;
+        }
+
+        .tab-btn:hover {
+            color: var(--primary-color);
+            background: #e2e8f0;
+        }
+
+        .tab-btn.active {
+            color: var(--primary-color);
+            background: #ffffff;
+            border-bottom: 3px solid var(--primary-color);
+        }
+
+        .tab-content {
+            display: none;
+            padding: 24px;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        .subject-selector {
+            margin-bottom: 20px;
+            padding: 10px;
+            width: 100%;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            font-size: 16px;
+        }
+
+        .question-card {
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 16px;
+            background: #fdfdfd;
+        }
+
+        .question-title {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            line-height: 1.5;
+        }
+
+        .options-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .option-item {
+            padding: 10px 12px;
+            margin-bottom: 8px;
+            background: #f1f5f9;
+            border-radius: 6px;
+            cursor: pointer;
+            border: 1px solid transparent;
+            transition: 0.2s;
+        }
+
+        .option-item:hover {
+            background: #e2e8f0;
+        }
+
+        .answer-area {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px dashed var(--border-color);
+            display: none;
+        }
+
+        .answer-area.show {
+            display: block;
+        }
+
+        .btn-check {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .btn-check:hover {
+            background: #1d4ed8;
+        }
+    </style>
 </head>
 <body>
 
-    <div class="app-container">
-        
-        <div id="home-screen">
-            <h1 class="main-title">방통대 CS<br>문제은행 🎓</h1>
-            <p class="sub-title">총 600문제 (랜덤 출제)</p>
-            <div id="subject-list" class="grid-box">
-                </div>
-        </div>
-
-        <div id="quiz-screen" style="display: none;">
-            <div class="header">
-                <button onclick="goHome()" class="back-btn">← 나가기</button>
-                <span id="current-subject-title">과목명</span>
-                <span id="progress-text">1 / 100</span>
-            </div>
-            
-            <div class="quiz-content">
-                <div class="question-box">
-                    <p id="question-text">문제가 여기에 나옵니다.</p>
-                </div>
-
-                <div id="options-box" class="options-list">
-                    </div>
-
-                <div id="result-box" style="display: none;"></div>
-
-                <button id="next-btn" onclick="nextQuestion()">다음 문제 ▶</button>
-            </div>
-        </div>
-        <div id="score-screen" style="display: none;">
-            <div class="score-card">
-                <h2>수고하셨습니다! 🎉</h2>
-                <p class="score-label">당신의 점수는?</p>
-                <div class="score-circle">
-                    <span id="final-score">0</span>
-                    <span class="unit">점</span>
-                </div>
-                <div class="stats-box">
-                    <div class="stat-item">
-                        <span class="label">총 문제</span>
-                        <span class="value" id="total-count-display">0</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="label">정답</span>
-                        <span class="value correct" id="correct-count-display">0</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="label">오답</span>
-                        <span class="value wrong" id="wrong-count-display">0</span>
-                    </div>
-                </div>
-                <button onclick="goHome()" class="home-btn">메인으로 돌아가기</button>
-            </div>
-        </div>                                                                                                                                                                                                                                                                  
+<div class="container">
+    <div class="tabs">
+        <button class="tab-btn active" onclick="switchTab('knou')">방통대 전공</button>
+        <button class="tab-btn" onclick="switchTab('engineer')">정보처리기사</button>
     </div>
 
-    <script src="script.js"></script>
+    <div id="knou" class="tab-content active">
+        <h2>방통대 컴퓨터과학과 학습</h2>
+        <select id="knou-subject" class="subject-selector" onchange="renderQuestions('knou')">
+            <option value="c-programming">C 프로그래밍</option>
+            <option value="algorithm">알고리즘</option>
+        </select>
+        <div id="knou-questions-container"></div>
+    </div>
+
+    <div id="engineer" class="tab-content">
+        <h2>정보처리기사 필기 예상문제</h2>
+        <select id="engineer-subject" class="subject-selector" onchange="renderQuestions('engineer')">
+            <option value="subject1">1과목: 소프트웨어 설계</option>
+            <option value="subject2">2과목: 소프트웨어 개발</option>
+            <option value="subject3">3과목: 데이터베이스 구축</option>
+            <option value="subject4">4과목: 프로그래밍 언어 활용 (Java 중심)</option>
+            <option value="subject5">5과목: 정보시스템 구축 관리</option>
+        </select>
+        <div id="engineer-questions-container"></div>
+    </div>
+</div>
+
+<script>
+    // JSON 형태의 문제 데이터베이스 (이 배열에 문제 100개씩을 추가하시면 됩니다)
+    const database = {
+        knou: {
+            "c-programming": [
+                {
+                    q: "다음 중 C언어에서 변수 이름으로 사용할 수 없는 것은?",
+                    options: ["_myVar", "2ndValue", "total_sum", "value123"],
+                    answer: 1,
+                    explanation: "C언어에서 변수 이름은 숫자로 시작할 수 없습니다."
+                }
+            ],
+            "algorithm": [
+                {
+                    q: "퀵 정렬(Quick Sort)의 최악의 경우 시간 복잡도는?",
+                    options: ["O(n log n)", "O(n)", "O(n^2)", "O(log n)"],
+                    answer: 2,
+                    explanation: "분할이 극단적으로 비대칭일 경우 최악의 시간 복잡도 O(n^2)을 가집니다."
+                }
+            ]
+        },
+        engineer: {
+            "subject1": [
+                {
+                    q: "객체 지향 설계 원칙 중 SOLID에 해당하지 않는 것은?",
+                    options: ["단일 책임 원칙 (SRP)", "개방 폐쇄 원칙 (OCP)", "리스코프 치환 원칙 (LSP)", "다형성 원칙 (Polymorphism Principle)"],
+                    answer: 3,
+                    explanation: "SOLID는 SRP, OCP, LSP, ISP(인터페이스 분리 원칙), DIP(의존성 역전 원칙)입니다. 다형성은 객체지향의 특징 중 하나이지만 SOLID 설계 '원칙'의 알파벳에는 해당하지 않습니다."
+                }
+            ],
+            "subject2": [
+                {
+                    q: "소프트웨어 테스트에서 화이트박스 테스트 기법에 해당하는 것은?",
+                    options: ["경계값 분석", "기초 경로 검사", "동치 분할 검사", "원인-효과 그래프 검사"],
+                    answer: 1,
+                    explanation: "기초 경로 검사(Base Path Testing)는 논리적 흐름을 검사하는 대표적인 화이트박스 테스트 기법입니다. 나머지는 블랙박스 테스트입니다."
+                }
+            ],
+            "subject3": [
+                {
+                    q: "데이터베이스 정규화 과정에서 제2정규형(2NF)에서 제3정규형(3NF)으로 이행하기 위한 조건은?",
+                    options: ["부분 함수 종속성 제거", "이행적 함수 종속성 제거", "다치 종속성 제거", "결정자이면서 후보키가 아닌 것 제거"],
+                    answer: 1,
+                    explanation: "제3정규형(3NF)은 이행적 함수 종속성(A->B, B->C 일 때 A->C)을 제거한 상태입니다."
+                }
+            ],
+            "subject4": [
+                {
+                    q: "Java 프로그래밍에서 인터페이스(Interface)에 대한 설명으로 틀린 것은?",
+                    options: [
+                        "다중 상속의 효과를 내기 위해 사용된다.",
+                        "모든 메서드는 기본적으로 public abstract이다.",
+                        "일반 멤버 변수를 가질 수 있으며, 인스턴스 생성이 가능하다.",
+                        "클래스가 인터페이스를 구현할 때는 implements 키워드를 사용한다."
+                    ],
+                    answer: 2,
+                    explanation: "Java의 인터페이스는 인스턴스(객체)를 직접 생성할 수 없으며, 멤버 변수는 public static final(상수)만 가질 수 있습니다."
+                }
+            ],
+            "subject5": [
+                {
+                    q: "접근 통제 정책 중 주체와 객체의 보안 등급을 비교하여 접근 권한을 부여하는 강제적 접근 통제 방식은?",
+                    options: ["DAC", "MAC", "RBAC", "SSO"],
+                    answer: 1,
+                    explanation: "MAC (Mandatory Access Control)은 시스템이 정보의 기밀성과 보안 등급을 기준으로 강제적으로 접근을 통제하는 방식입니다."
+                }
+            ]
+        }
+    };
+
+    function switchTab(tabId) {
+        // 모든 탭 버튼 및 콘텐츠 비활성화
+        document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+        document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+        
+        // 선택된 탭 활성화
+        event.currentTarget.classList.add('active');
+        document.getElementById(tabId).classList.add('active');
+
+        // 초기 렌더링
+        renderQuestions(tabId);
+    }
+
+    function renderQuestions(tabId) {
+        const selectId = tabId === 'knou' ? 'knou-subject' : 'engineer-subject';
+        const containerId = tabId === 'knou' ? 'knou-questions-container' : 'engineer-questions-container';
+        
+        const subject = document.getElementById(selectId).value;
+        const container = document.getElementById(containerId);
+        const questions = database[tabId][subject] || [];
+
+        container.innerHTML = ''; // 초기화
+
+        if(questions.length === 0) {
+            container.innerHTML = '<p style="color: #64748b;">등록된 문제가 없습니다. JSON 데이터에 추가해주세요.</p>';
+            return;
+        }
+
+        questions.forEach((item, index) => {
+            const card = document.createElement('div');
+            card.className = 'question-card';
+            
+            let optionsHTML = '';
+            item.options.forEach((opt, optIdx) => {
+                optionsHTML += `<li class="option-item">${optIdx + 1}. ${opt}</li>`;
+            });
+
+            card.innerHTML = `
+                <div class="question-title">Q${index + 1}. ${item.q}</div>
+                <ul class="options-list">${optionsHTML}</ul>
+                <button class="btn-check" style="margin-top:10px;" onclick="toggleAnswer(this)">정답 확인</button>
+                <div class="answer-area">
+                    <p><strong>정답: ${item.answer + 1}번</strong></p>
+                    <p style="color: #475569; font-size: 14px;">해설: ${item.explanation}</p>
+                </div>
+            `;
+            container.appendChild(card);
+        });
+    }
+
+    function toggleAnswer(btn) {
+        const answerArea = btn.nextElementSibling;
+        if (answerArea.classList.contains('show')) {
+            answerArea.classList.remove('show');
+            btn.textContent = '정답 확인';
+        } else {
+            answerArea.classList.add('show');
+            btn.textContent = '해설 닫기';
+        }
+    }
+
+    // 초기 화면 로드 시 첫 번째 탭 렌더링
+    window.onload = () => {
+        renderQuestions('knou');
+    };
+</script>
+
 </body>
 </html>
