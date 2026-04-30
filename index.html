@@ -70,28 +70,35 @@
 
     <script src="script.js"></script>
     <script>
-        // [새로 추가할 함수] 탭 클릭 시 과목 필터링
-        function filterTab(tabId) {
-            // 탭 버튼 스타일 활성화 처리
+        // [수정된 함수] 탭 클릭 시 과목 필터링 및 데이터 로드
+        async function filterTab(tabId) {
+            // 1. 탭 버튼 스타일 활성화 처리
             document.querySelectorAll('.main-tab-btn').forEach(btn => {
-                if (btn.getAttribute('data-tab') === tabId) {
-                    btn.classList.add('active');
-                } else {
-                    btn.classList.remove('active');
-                }
+                btn.classList.toggle('active', btn.getAttribute('data-tab') === tabId);
             });
 
-            // 과목 카드 보여주기/숨기기
-            document.querySelectorAll('.subject-card').forEach(card => {
-                if (card.getAttribute('data-category') === tabId) {
-                    card.style.display = 'flex'; // style.css에 정의하신 기존 flex 레이아웃 유지
-                } else {
-                    card.style.display = 'none';
-                }
-                getData(tabId);
-            });
+            // 2. 데이터 가져오기 (반복문 밖에서 딱 '한 번'만 호출!)
+            // 기존에 .forEach 안쪽에 있던 getData를 밖으로 뺐습니다.
+            await getData(tabId); 
+
+            // 3. 과목 카드 보여주기/숨기기 (이미 renderSubjectButtons에서 생성된 카드를 제어)
+            const cards = document.querySelectorAll('.subject-card');
+            if (cards.length > 0) {
+                cards.forEach(card => {
+                    if (card.getAttribute('data-category') === tabId) {
+                        card.style.display = 'flex'; 
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            }
         }
-        getData('knou');
+
+        // 초기 로딩: 방통대 데이터를 기본으로 로드
+        // DOMContentLoaded를 사용하여 안전하게 시작합니다.
+        window.addEventListener('DOMContentLoaded', () => {
+            getData('knou');
+        });
     </script>
 </body>
 </html>

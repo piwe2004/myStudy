@@ -2,17 +2,17 @@ let allQuestions = [];
 let currentQuestions = [];   
 let currentIdx = 0;
 let correctCount = 0; // [추가] 맞은 개수 저장 변수
-
+let checkTab = 'knou';
 // 1. 데이터 로드
 async function getData(tabId){
-    const checkDataUrl = tabId === 'knou' ? 'data.json' : data2.json;
+    const checkDataUrl = tabId === 'knou' || !tabId ? 'data.json' : 'data2.json';
+    checkTab = tabId;
     try{
         const res = await fetch(checkDataUrl);
-
         if (!res.ok) {
             throw new Error(`HTTP error! status: ${res.status}`);
         }
-        const data = await res.json().data;
+        const data = await res.json();
     
         // 성공 시: success와 데이터를 함께 리턴
         allQuestions = data;
@@ -23,13 +23,6 @@ async function getData(tabId){
         return { success: false, error: error.message };
     }
 }
-// fetch('data.json')
-//     .then(res => res.json())
-//     .then(data => {
-//         allQuestions = data;
-//         renderSubjectButtons();
-//     })
-//     .catch(err => console.error("데이터 로드 실패:", err));
 
 // 2. 메인화면: 과목 버튼 만들기
 function renderSubjectButtons() {
@@ -37,12 +30,14 @@ function renderSubjectButtons() {
     subjectList.innerHTML = ''; 
 
     const allSubjects = [...new Set(allQuestions.map(q => q.subject))];
-    
     // 내 과목 우선순위 정렬
-    const myPriority = [
-        "C언어", "대학수학", "대학영어",
-        "오픈소스 기반 데이터분석", "클라우드컴퓨팅", "jsp프로그래밍"
-    ];
+    let myPriority = [];
+
+    if(checkTab === 'knou'){
+        myPriority = ["C언어", "대학수학", "대학영어", "오픈소스 기반 데이터분석", "클라우드컴퓨팅", "jsp프로그래밍"];
+    }else{
+        myPriority = ["소프트웨어 설계", "소프트웨어 개발", "데이터베이스 구축", "프로그래밍 언어 활용", "정보시스템 구축 관리"];
+    }
 
     allSubjects.sort((a, b) => {
         const idxA = myPriority.indexOf(a);
@@ -73,20 +68,13 @@ function renderSubjectButtons() {
             btn.style.backgroundColor = "#fdfdfd";
         }
         btn.innerText = sub;
-        
-        // 🔥 [추가된 부분] 과목명에 따라 카테고리 분리 (정처기 과목은 data.json에 '1과목', '과목' 혹은 '정처기' 등의 키워드가 포함되도록 작성)
-        if (sub.includes("과목") || sub.includes("정보처리기사") || sub.includes("소프트웨어 설계")) {
-            btn.setAttribute('data-category', 'engineer');
-        } else {
-            btn.setAttribute('data-category', 'knou'); // 나머지는 방통대로 분류
-        }
+
+        btn.setAttribute('data-category', checkTab);
 
         btn.onclick = () => startQuiz(sub);
         subjectList.appendChild(btn);
     });
 
-    // 🔥 [추가된 부분] 렌더링 직후 방통대 탭만 보이도록 초기화
-    filterTab('knou');
 }
 
 // 3. 배열 섞기
