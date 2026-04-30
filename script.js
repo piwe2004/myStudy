@@ -4,13 +4,32 @@ let currentIdx = 0;
 let correctCount = 0; // [추가] 맞은 개수 저장 변수
 
 // 1. 데이터 로드
-fetch('data.json')
-    .then(res => res.json())
-    .then(data => {
+async function getData(tabId){
+    const checkDataUrl = tabId === 'knou' ? 'data.json' : data2.json;
+    try{
+        const res = await fetch(checkDataUrl);
+
+        if (!res.ok) {
+            throw new Error(`HTTP error! status: ${res.status}`);
+        }
+        const data = await res.json().data;
+    
+        // 성공 시: success와 데이터를 함께 리턴
         allQuestions = data;
         renderSubjectButtons();
-    })
-    .catch(err => console.error("데이터 로드 실패:", err));
+    } catch (error) {
+        // 실패 시: success를 false로 하고 에러 메시지 포함
+        console.error("API Request Error:", error);
+        return { success: false, error: error.message };
+    }
+}
+// fetch('data.json')
+//     .then(res => res.json())
+//     .then(data => {
+//         allQuestions = data;
+//         renderSubjectButtons();
+//     })
+//     .catch(err => console.error("데이터 로드 실패:", err));
 
 // 2. 메인화면: 과목 버튼 만들기
 function renderSubjectButtons() {

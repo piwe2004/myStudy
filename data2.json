@@ -1,0 +1,15 @@
+[
+  {
+    "id": 1,
+    "subject": "Java프로그래밍",
+    "question": "Java 언어의 주요 특징으로 올바르지 않은 것은?",
+    "options": [
+      "플랫폼 독립적이다 (Write Once, Run Anywhere).",
+      "객체 지향 언어이다.",
+      "메모리를 개발자가 직접 해제해야 한다 (Garbage Collection 없음).",
+      "멀티스레드를 지원한다."
+    ],
+    "answer": 2,
+    "explanation": "Java는 가비지 컬렉터(Garbage Collector)가 메모리를 자동으로 관리하므로 개발자가 직접 해제할 필요가 없습니다."
+  }
+]
