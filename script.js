@@ -45,6 +45,29 @@ function renderSubjectButtons() {
         btn.onclick = () => startQuiz(sub);
         subjectList.appendChild(btn);
     });
+
+    allSubjects.forEach(sub => {
+        const btn = document.createElement('button');
+        btn.className = 'subject-card';
+        if (myPriority.includes(sub)) {
+            btn.style.border = "2px solid #3498db";
+            btn.style.backgroundColor = "#fdfdfd";
+        }
+        btn.innerText = sub;
+        
+        // 🔥 [추가된 부분] 과목명에 따라 카테고리 분리 (정처기 과목은 data.json에 '1과목', '과목' 혹은 '정처기' 등의 키워드가 포함되도록 작성)
+        if (sub.includes("과목") || sub.includes("정보처리기사") || sub.includes("소프트웨어 설계")) {
+            btn.setAttribute('data-category', 'engineer');
+        } else {
+            btn.setAttribute('data-category', 'knou'); // 나머지는 방통대로 분류
+        }
+
+        btn.onclick = () => startQuiz(sub);
+        subjectList.appendChild(btn);
+    });
+
+    // 🔥 [추가된 부분] 렌더링 직후 방통대 탭만 보이도록 초기화
+    filterTab('knou');
 }
 
 // 3. 배열 섞기
