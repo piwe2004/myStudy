@@ -5,17 +5,20 @@ let correctCount = 0; // [추가] 맞은 개수 저장 변수
 let checkTab = 'knou';
 // 1. 데이터 로드
 async function getData(tabId){
-    const checkDataUrl = tabId === 'knou' || !tabId ? 'data.json' : 'data2.json';
+    const dataUrls = tabId === 'knou' || !tabId
+        ? ['data.json', 'data-structure.json']
+        : ['data2.json'];
     checkTab = tabId;
     try{
-        const res = await fetch(checkDataUrl);
-        if (!res.ok) {
-            throw new Error(`HTTP error! status: ${res.status}`);
+        const responses = await Promise.all(dataUrls.map(url => fetch(url)));
+        const failedResponse = responses.find(res => !res.ok);
+        if (failedResponse) {
+            throw new Error(`HTTP error! status: ${failedResponse.status}`);
         }
-        const data = await res.json();
+        const datasets = await Promise.all(responses.map(res => res.json()));
     
-        // 성공 시: success와 데이터를 함께 리턴
-        allQuestions = data;
+        // 성공 시: 기존 데이터와 과목별 추가 데이터를 하나로 합침
+        allQuestions = datasets.flat();
         renderSubjectButtons();
     } catch (error) {
         // 실패 시: success를 false로 하고 에러 메시지 포함
@@ -34,7 +37,7 @@ function renderSubjectButtons() {
     let myPriority = [];
 
     if(checkTab === 'knou'){
-        myPriority = ["C언어", "대학수학", "대학영어", "오픈소스 기반 데이터분석", "클라우드컴퓨팅", "jsp프로그래밍"];
+        myPriority = ["자료구조", "C언어", "대학수학", "대학영어", "오픈소스 기반 데이터분석", "클라우드컴퓨팅", "jsp프로그래밍"];
     }else{
         myPriority = ["소프트웨어 설계", "소프트웨어 개발", "데이터베이스 구축", "프로그래밍 언어 활용", "정보시스템 구축 관리"];
     }
@@ -103,7 +106,8 @@ function startQuiz(subjectName) {
     }
 
     const shuffled = shuffleArray([...filtered]);
-    currentQuestions = shuffled.slice(0, 25); // 최대 25문제
+    const questionLimit = subjectName === '자료구조' ? 30 : 25;
+    currentQuestions = shuffled.slice(0, questionLimit);
 
     // [초기화] 게임 시작할 때 점수 초기화
     currentIdx = 0;
