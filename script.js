@@ -6,7 +6,7 @@ let checkTab = 'knou';
 // 1. 데이터 로드
 async function getData(tabId){
     const dataUrls = tabId === 'knou' || !tabId
-        ? ['data.json', 'data-structure.json']
+        ? ['data.json', 'data-structure.json', 'data-structure-2.json']
         : ['data2.json'];
     checkTab = tabId;
     try{
