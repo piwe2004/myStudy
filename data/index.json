@@ -139,6 +139,11 @@
       "subject": "딥러닝",
       "file": "data/knou/딥러닝.json",
       "count": 100
+    },
+    {
+      "subject": "경제학",
+      "file": "data/knou/경제학.json",
+      "count": 100
     }
   ],
   "engineer": [
