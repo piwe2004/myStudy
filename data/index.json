@@ -134,6 +134,11 @@
       "subject": "컴파일러구성",
       "file": "data/knou/컴파일러구성.json",
       "count": 100
+    },
+    {
+      "subject": "딥러닝",
+      "file": "data/knou/딥러닝.json",
+      "count": 100
     }
   ],
   "engineer": [
