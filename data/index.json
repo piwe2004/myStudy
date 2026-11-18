@@ -119,6 +119,11 @@
       "subject": "성,사랑,사회",
       "file": "data/knou/성-사랑-사회.json",
       "count": 100
+    },
+    {
+      "subject": "AI 리터러시",
+      "file": "data/knou/AI-리터러시.json",
+      "count": 100
     }
   ],
   "engineer": [
