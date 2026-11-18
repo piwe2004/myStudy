@@ -7,7 +7,7 @@ let checkTab = 'knou';
 let currentSubject = null;
 
 const PRIORITY = {
-    knou: ["AI 리터러시", "자료구조", "C언어", "대학수학", "대학영어", "오픈소스 기반 데이터분석", "클라우드컴퓨팅", "jsp프로그래밍"],
+    knou: ["AI 리터러시", "경영전략론", "자료구조", "C언어", "대학수학", "대학영어", "오픈소스 기반 데이터분석", "클라우드컴퓨팅", "jsp프로그래밍"],
     engineer: ["소프트웨어 설계", "소프트웨어 개발", "데이터베이스 구축", "프로그래밍 언어 활용", "정보시스템 구축 관리"]
 };
 
@@ -78,6 +78,7 @@ function shuffleArray(array) {
 
 // 보기 순서를 섞고 정답 번호를 맞춰줌
 function shuffleOptions(q) {
+    if (q.options.some(o => o.startsWith('위의'))) return q; // "위의 설명이 모두 옳다" 같은 보기는 순서 유지
     const order = shuffleArray(q.options.map((_, i) => i));
     return { ...q, options: order.map(i => q.options[i]), answer: order.indexOf(q.answer) };
 }

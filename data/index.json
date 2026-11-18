@@ -124,6 +124,11 @@
       "subject": "AI 리터러시",
       "file": "data/knou/AI-리터러시.json",
       "count": 100
+    },
+    {
+      "subject": "경영전략론",
+      "file": "data/knou/경영전략론.json",
+      "count": 100
     }
   ],
   "engineer": [
