@@ -1,0 +1,262 @@
+[
+  {
+    "id": 1,
+    "subject": "컴퓨터구조",
+    "question": "폰 노이만(Von Neumann) 구조의 가장 핵심적인 특징은?",
+    "options": [
+      "프로그램 내장 방식 (Stored Program Concept)",
+      "병렬 처리",
+      "하버드 아키텍처",
+      "진공관 사용"
+    ],
+    "answer": 0,
+    "explanation": "프로그램과 데이터를 메모리에 함께 저장해두고 CPU가 이를 순차적으로 인출(Fetch)하여 실행하는 방식입니다."
+  },
+  {
+    "id": 2,
+    "subject": "컴퓨터구조",
+    "question": "CPU 내부에서 산술 연산(+, -)과 논리 연산(AND, OR)을 담당하는 장치는?",
+    "options": [
+      "Control Unit (제어장치)",
+      "ALU (산술논리장치)",
+      "Register (레지스터)",
+      "Bus (버스)"
+    ],
+    "answer": 1,
+    "explanation": "ALU(Arithmetic Logic Unit)가 실제 계산과 비교 판단을 수행합니다."
+  },
+  {
+    "id": 3,
+    "subject": "컴퓨터구조",
+    "question": "명령어 사이클(Instruction Cycle)의 순서로 옳은 것은?",
+    "options": [
+      "Fetch -> Execute -> Decode -> Store",
+      "Fetch -> Decode -> Execute -> Store",
+      "Decode -> Fetch -> Execute -> Store",
+      "Execute -> Fetch -> Decode -> Store"
+    ],
+    "answer": 1,
+    "explanation": "명령어를 가져오고(인출), 해석하고(해독), 실행하고, 결과를 저장하는 순서입니다."
+  },
+  {
+    "id": 4,
+    "subject": "컴퓨터구조",
+    "question": "다음 중 메모리 계층 구조에서 속도가 가장 빠른 것은?",
+    "options": [
+      "L1 캐시",
+      "메인 메모리 (RAM)",
+      "하드 디스크 (HDD)",
+      "레지스터 (Register)"
+    ],
+    "answer": 3,
+    "explanation": "CPU 내부에 있는 레지스터가 가장 빠르며, 그 다음 L1캐시, L2캐시, RAM, 보조기억장치 순입니다."
+  },
+  {
+    "id": 5,
+    "subject": "컴퓨터구조",
+    "question": "파이프라이닝(Pipelining) 기법을 사용하는 주된 목적은?",
+    "options": [
+      "명령어 처리량(Throughput)을 높이기 위해",
+      "개별 명령어의 실행 시간(Latency)을 줄이기 위해",
+      "메모리 용량을 늘리기 위해",
+      "전력 소모를 줄이기 위해"
+    ],
+    "answer": 0,
+    "explanation": "여러 명령어를 중첩하여 실행함으로써 단위 시간당 처리하는 명령어의 개수를 늘립니다."
+  },
+  {
+    "id": 6,
+    "subject": "컴퓨터구조",
+    "question": "컴퓨터 내부에서 음수를 표현하는 표준적인 방법으로, 0이 하나만 존재하고 덧셈 연산이 용이한 방식은?",
+    "options": [
+      "부호와 절대치 (Sign and Magnitude)",
+      "1의 보수 (1's Complement)",
+      "2의 보수 (2's Complement)",
+      "부동 소수점"
+    ],
+    "answer": 2,
+    "explanation": "2의 보수법은 -0 문제가 없고, 뺄셈을 덧셈 회로로 처리할 수 있어 컴퓨터 시스템의 표준으로 사용됩니다."
+  },
+  {
+    "id": 7,
+    "subject": "컴퓨터구조",
+    "question": "캐시 메모리의 적중률(Hit Ratio)을 높이기 위해 활용하는 성질인 '참조의 지역성(Locality)'에 해당하지 않는 것은?",
+    "options": [
+      "시간적 지역성 (Temporal Locality)",
+      "공간적 지역성 (Spatial Locality)",
+      "순차적 지역성 (Sequential Locality)",
+      "무작위 지역성 (Random Locality)"
+    ],
+    "answer": 3,
+    "explanation": "지역성은 최근 사용한 데이터(시간)나 그 인접한 데이터(공간)가 다시 사용될 확률이 높다는 원리입니다. 무작위 지역성은 없습니다."
+  },
+  {
+    "id": 8,
+    "subject": "컴퓨터구조",
+    "question": "RISC(Reduced Instruction Set Computer) 프로세서의 특징으로 옳은 것은?",
+    "options": [
+      "명령어의 길이가 가변적이다.",
+      "복잡하고 많은 종류의 명령어를 가진다.",
+      "주로 하드와이어드(Hardwired) 제어 방식을 사용하여 속도가 빠르다.",
+      "메모리 참조 연산이 많다."
+    ],
+    "answer": 2,
+    "explanation": "RISC는 명령어 수를 줄이고 길이를 고정하여 파이프라이닝 효율을 높인 구조입니다. (반대는 CISC)"
+  },
+  {
+    "id": 9,
+    "subject": "컴퓨터구조",
+    "question": "인터럽트(Interrupt) 발생 시 CPU가 현재 작업 상태(Context)를 저장하는 곳은?",
+    "options": [
+      "하드 디스크",
+      "스택 (Stack)",
+      "ROM",
+      "ALU"
+    ],
+    "answer": 1,
+    "explanation": "복귀 주소와 레지스터 값 등은 시스템 스택(Stack)에 저장되었다가 인터럽트 처리가 끝나면 복구됩니다."
+  },
+  {
+    "id": 10,
+    "subject": "컴퓨터구조",
+    "question": "다음 중 휘발성(Volatile) 메모리는?",
+    "options": [
+      "ROM",
+      "Flash Memory",
+      "RAM",
+      "Magnetic Tape"
+    ],
+    "answer": 2,
+    "explanation": "RAM(Random Access Memory)은 전원이 꺼지면 저장된 데이터가 사라집니다."
+  },
+  {
+    "id": 11,
+    "subject": "컴퓨터구조",
+    "question": "명령어의 주소지정방식(Addressing Mode) 중, 오퍼랜드 필드에 실제 데이터 값이 직접 들어있는 방식은?",
+    "options": [
+      "즉치 주소지정 (Immediate Addressing)",
+      "직접 주소지정 (Direct Addressing)",
+      "간접 주소지정 (Indirect Addressing)",
+      "레지스터 주소지정"
+    ],
+    "answer": 0,
+    "explanation": "메모리 참조 없이 명령어 자체에 데이터(상수 등)가 포함된 방식입니다."
+  },
+  {
+    "id": 12,
+    "subject": "컴퓨터구조",
+    "question": "불 대수(Boolean Algebra)에서 A + A' (A OR NOT A)의 결과는?",
+    "options": [
+      "0",
+      "1",
+      "A",
+      "A'"
+    ],
+    "answer": 1,
+    "explanation": "어떤 변수와 그 부정의 합(OR)은 항상 참(1)입니다."
+  },
+  {
+    "id": 13,
+    "subject": "컴퓨터구조",
+    "question": "PC(Program Counter) 레지스터의 역할은?",
+    "options": [
+      "현재 실행 중인 명령어를 저장한다.",
+      "다음에 실행할 명령어의 주소를 저장한다.",
+      "연산 결과를 임시 저장한다.",
+      "상태 플래그를 저장한다."
+    ],
+    "answer": 1,
+    "explanation": "PC는 Next Instruction의 주소를 가리키고 있으며, 인출(Fetch) 후에는 자동으로 증가합니다."
+  },
+  {
+    "id": 14,
+    "subject": "컴퓨터구조",
+    "question": "서로 다른 입력일 때만 1을 출력하는 논리 게이트는? (이진 덧셈의 합과 동일)",
+    "options": [
+      "AND",
+      "OR",
+      "XOR (Exclusive OR)",
+      "NAND"
+    ],
+    "answer": 2,
+    "explanation": "XOR 게이트는 입력이 서로 다를 때(0,1 또는 1,0) 1을 출력합니다."
+  },
+  {
+    "id": 15,
+    "subject": "컴퓨터구조",
+    "question": "DMA(Direct Memory Access) 제어기의 주된 기능은?",
+    "options": [
+      "CPU의 개입 없이 메모리와 입출력 장치 간에 데이터를 전송한다.",
+      "가상 메모리 주소를 변환한다.",
+      "명령어를 해독한다.",
+      "캐시 일관성을 유지한다."
+    ],
+    "answer": 0,
+    "explanation": "대용량 데이터 전송 시 CPU 부하를 줄이기 위해 DMA 컨트롤러가 버스를 제어하여 데이터를 나릅니다."
+  },
+  {
+    "id": 16,
+    "subject": "컴퓨터구조",
+    "question": "해저드(Hazard) 중, 피연산자(데이터)가 준비되지 않아 파이프라인이 멈추는 현상은?",
+    "options": [
+      "구조적 해저드 (Structural Hazard)",
+      "데이터 해저드 (Data Hazard)",
+      "제어 해저드 (Control Hazard)",
+      "분기 해저드"
+    ],
+    "answer": 1,
+    "explanation": "이전 명령어의 실행 결과가 아직 나오지 않았는데 다음 명령어가 그 값을 필요로 할 때 발생합니다."
+  },
+  {
+    "id": 17,
+    "subject": "컴퓨터구조",
+    "question": "IEEE 754 표준은 무엇을 표현하기 위한 규약인가?",
+    "options": [
+      "부호 있는 정수",
+      "문자열 (Unicode)",
+      "부동 소수점 (Floating Point)",
+      "네트워크 패킷"
+    ],
+    "answer": 2,
+    "explanation": "실수를 컴퓨터에서 표현하기 위한 부동 소수점 표준입니다."
+  },
+  {
+    "id": 18,
+    "subject": "컴퓨터구조",
+    "question": "시스템 버스(System Bus)를 구성하는 3가지 버스가 아닌 것은?",
+    "options": [
+      "데이터 버스 (Data Bus)",
+      "주소 버스 (Address Bus)",
+      "제어 버스 (Control Bus)",
+      "인터넷 버스 (Internet Bus)"
+    ],
+    "answer": 3,
+    "explanation": "컴퓨터 내부 버스는 데이터, 주소, 제어 신호를 전달하는 3가지로 구성됩니다."
+  },
+  {
+    "id": 19,
+    "subject": "컴퓨터구조",
+    "question": "SRAM(Static RAM)과 DRAM(Dynamic RAM)의 차이점으로 옳은 것은?",
+    "options": [
+      "SRAM은 재충전(Refresh)이 필요 없다.",
+      "DRAM이 SRAM보다 속도가 빠르다.",
+      "SRAM이 DRAM보다 집적도가 높아 대용량화에 유리하다.",
+      "주기억장치(메인 메모리)는 주로 SRAM을 쓴다."
+    ],
+    "answer": 0,
+    "explanation": "SRAM은 플립플롭 기반이라 재충전이 필요 없고 빠르지만(캐시용), DRAM은 커패시터 기반이라 재충전이 필요하고 느리지만 용량이 큽니다(메인 메모리용)."
+  },
+  {
+    "id": 20,
+    "subject": "컴퓨터구조",
+    "question": "마이크로프로그래밍(Micro-programming) 기법을 사용하는 제어 장치의 특징은?",
+    "options": [
+      "속도가 매우 빠르다.",
+      "회로가 복잡하다.",
+      "제어 신호를 펌웨어(Firmware) 형태로 저장하여 유연성이 높다.",
+      "RISC 프로세서에서 주로 사용한다."
+    ],
+    "answer": 2,
+    "explanation": "제어 신호 발생 규칙을 메모리(Control Memory)에 마이크로 명령어 형태로 저장해두는 방식입니다."
+  }
+]

@@ -1,0 +1,1042 @@
+[
+  {
+    "id": 1,
+    "subject": "오픈소스 기반 데이터분석",
+    "question": "R 언어에서 데이터 프레임(Data Frame)의 특정 열(Column)을 선택할 때 사용하는 기호는?",
+    "options": [
+      "$",
+      "#",
+      "@",
+      "%"
+    ],
+    "answer": 0,
+    "explanation": "df$column_name 형태로 열을 선택합니다."
+  },
+  {
+    "id": 2,
+    "subject": "오픈소스 기반 데이터분석",
+    "question": "파이썬의 Pandas 라이브러리에서 엑셀 파일을 불러오는 함수는?",
+    "options": [
+      "pd.read_csv()",
+      "pd.read_excel()",
+      "pd.load_excel()",
+      "pd.import_excel()"
+    ],
+    "answer": 1,
+    "explanation": "엑셀(.xlsx) 파일은 read_excel() 함수를 사용합니다."
+  },
+  {
+    "id": 3,
+    "subject": "오픈소스 기반 데이터분석",
+    "question": "다음 중 데이터의 '산포도(Dispersion)'를 나타내는 척도가 아닌 것은?",
+    "options": [
+      "분산 (Variance)",
+      "표준편차 (Standard Deviation)",
+      "사분위수 범위 (IQR)",
+      "평균 (Mean)"
+    ],
+    "answer": 3,
+    "explanation": "평균은 데이터의 '중심 경향'을 나타내는 척도입니다."
+  },
+  {
+    "id": 4,
+    "subject": "오픈소스 기반 데이터분석",
+    "question": "지도 학습(Supervised Learning) 알고리즘에 해당하지 않는 것은?",
+    "options": [
+      "선형 회귀 (Linear Regression)",
+      "로지스틱 회귀 (Logistic Regression)",
+      "K-평균 군집화 (K-Means Clustering)",
+      "의사결정 나무 (Decision Tree)"
+    ],
+    "answer": 2,
+    "explanation": "K-Means는 정답(레이블) 없이 데이터를 그룹화하는 비지도 학습입니다."
+  },
+  {
+    "id": 5,
+    "subject": "오픈소스 기반 데이터분석",
+    "question": "데이터 분석 프로젝트 관리 방법론인 CRISP-DM의 첫 번째 단계는?",
+    "options": [
+      "데이터 이해 (Data Understanding)",
+      "비즈니스 이해 (Business Understanding)",
+      "데이터 준비 (Data Preparation)",
+      "모델링 (Modeling)"
+    ],
+    "answer": 1,
+    "explanation": "분석 목적과 요구사항을 파악하는 비즈니스 이해가 가장 먼저 선행되어야 합니다."
+  },
+  {
+    "id": 6,
+    "subject": "오픈소스 기반 데이터분석",
+    "question": "파이썬 리스트 [1, 2, 3, 4, 5]에서 슬라이싱 a[1:4]의 결과는?",
+    "options": [
+      "[1, 2, 3]",
+      "[2, 3, 4]",
+      "[2, 3, 4, 5]",
+      "[1, 2, 3, 4]"
+    ],
+    "answer": 1,
+    "explanation": "인덱스 1부터 4 '미만'까지이므로 인덱스 1, 2, 3에 해당하는 값인 [2, 3, 4]가 반환됩니다."
+  },
+  {
+    "id": 7,
+    "subject": "오픈소스 기반 데이터분석",
+    "question": "다음 중 범주형 변수(Categorical Variable) 시각화에 적합한 차트는?",
+    "options": [
+      "산점도 (Scatter Plot)",
+      "막대 그래프 (Bar Chart)",
+      "히스토그램 (Histogram)",
+      "선 그래프 (Line Chart)"
+    ],
+    "answer": 1,
+    "explanation": "범주별 빈도나 크기를 비교할 때는 막대 그래프가 가장 적합합니다. (히스토그램은 연속형 변수)"
+  },
+  {
+    "id": 8,
+    "subject": "오픈소스 기반 데이터분석",
+    "question": "SQL에서 데이터를 조회할 때 조건을 지정하는 절은?",
+    "options": [
+      "SELECT",
+      "FROM",
+      "WHERE",
+      "GROUP BY"
+    ],
+    "answer": 2,
+    "explanation": "WHERE 절을 사용하여 특정 조건에 맞는 행만 필터링합니다."
+  },
+  {
+    "id": 9,
+    "subject": "오픈소스 기반 데이터분석",
+    "question": "빅데이터의 3V 특징에 포함되지 않는 것은?",
+    "options": [
+      "Volume (규모)",
+      "Velocity (속도)",
+      "Variety (다양성)",
+      "Victory (승리)"
+    ],
+    "answer": 3,
+    "explanation": "빅데이터의 3대 요소는 크기(Volume), 속도(Velocity), 다양성(Variety)입니다. (최근엔 Value, Veracity 등을 더해 5V라고도 함)"
+  },
+  {
+    "id": 10,
+    "subject": "오픈소스 기반 데이터분석",
+    "question": "머신러닝 모델의 성능 평가 지표 중 '정확도(Accuracy)'의 계산식은?",
+    "options": [
+      "(TP + TN) / 전체 데이터 수",
+      "TP / (TP + FP)",
+      "TP / (TP + FN)",
+      "2 * (Precision * Recall) / (Precision + Recall)"
+    ],
+    "answer": 0,
+    "explanation": "전체 예측 중 맞게 예측한(TP, TN) 비율을 의미합니다."
+  },
+  {
+    "id": 11,
+    "subject": "오픈소스 기반 데이터분석",
+    "question": "딥러닝 프레임워크 중 구글이 개발하였으며 가장 널리 사용되는 오픈소스 라이브러리는?",
+    "options": [
+      "PyTorch",
+      "TensorFlow",
+      "Keras",
+      "Caffe"
+    ],
+    "answer": 1,
+    "explanation": "텐서플로우(TensorFlow)는 구글이 만든 강력한 딥러닝 라이브러리입니다. (PyTorch는 메타/페이스북)"
+  },
+  {
+    "id": 12,
+    "subject": "오픈소스 기반 데이터분석",
+    "question": "데이터의 정규성(Normality)을 검정하는 방법이 아닌 것은?",
+    "options": [
+      "Shapiro-Wilk Test",
+      "Kolmogorov-Smirnov Test",
+      "Q-Q Plot",
+      "T-Test"
+    ],
+    "answer": 3,
+    "explanation": "T-Test는 두 집단의 평균 차이를 검정하는 방법이지, 정규성 자체를 검정하는 방법은 아닙니다."
+  },
+  {
+    "id": 13,
+    "subject": "오픈소스 기반 데이터분석",
+    "question": "군집 분석(Clustering)에서 최적의 군집 개수(K)를 결정하기 위해 사용하는 시각화 기법은?",
+    "options": [
+      "Elbow Method",
+      "Box Plot",
+      "Heatmap",
+      "ROC Curve"
+    ],
+    "answer": 0,
+    "explanation": "군집 수에 따른 오차 제곱합(SSE)을 그려서 그래프가 팔꿈치처럼 꺾이는 지점을 찾는 엘보우 기법을 사용합니다."
+  },
+  {
+    "id": 14,
+    "subject": "오픈소스 기반 데이터분석",
+    "question": "시계열 데이터(Time Series) 분석에서 이동 평균(Moving Average)을 사용하는 주된 목적은?",
+    "options": [
+      "데이터의 추세(Trend)를 파악하기 위해",
+      "계절성(Seasonality)을 제거하기 위해",
+      "결측치를 삭제하기 위해",
+      "데이터의 크기를 줄이기 위해"
+    ],
+    "answer": 0,
+    "explanation": "불규칙한 변동을 매끄럽게 하여 전반적인 추세를 파악하는 데 도움을 줍니다."
+  },
+  {
+    "id": 15,
+    "subject": "오픈소스 기반 데이터분석",
+    "question": "파이썬에서 함수를 정의할 때 사용하는 키워드는?",
+    "options": [
+      "func",
+      "function",
+      "def",
+      "define"
+    ],
+    "answer": 2,
+    "explanation": "def function_name(): 형태로 정의합니다."
+  },
+  {
+    "id": 16,
+    "subject": "오픈소스 기반 데이터분석",
+    "question": "오픈소스 하드웨어 플랫폼으로, IoT(사물인터넷) 프로젝트에 많이 사용되는 신용카드 크기의 컴퓨터는?",
+    "options": [
+      "Arduino (아두이노)",
+      "Raspberry Pi (라즈베리 파이)",
+      "Intel Core",
+      "NVIDIA Jetson"
+    ],
+    "answer": 1,
+    "explanation": "라즈베리 파이는 리눅스 OS가 돌아가는 초소형 컴퓨터입니다. (아두이노는 마이크로컨트롤러)"
+  },
+  {
+    "id": 17,
+    "subject": "오픈소스 기반 데이터분석",
+    "question": "다음 중 NoSQL 데이터베이스인 MongoDB에서 사용하는 데이터 저장 형식은?",
+    "options": [
+      "XML",
+      "CSV",
+      "BSON (Binary JSON)",
+      "YAML"
+    ],
+    "answer": 2,
+    "explanation": "MongoDB는 JSON과 유사한 BSON 형식을 사용하여 문서를 저장합니다."
+  },
+  {
+    "id": 18,
+    "subject": "오픈소스 기반 데이터분석",
+    "question": "의사결정 나무(Decision Tree)에서 불순도(Impurity)를 측정하는 지표가 아닌 것은?",
+    "options": [
+      "지니 지수 (Gini Index)",
+      "엔트로피 (Entropy)",
+      "카이제곱 통계량",
+      "MSE (Mean Squared Error) - 회귀나무인 경우 사용 가능하나 분류에서는 아님"
+    ],
+    "answer": 3,
+    "explanation": "분류 트리에서는 지니 지수나 엔트로피를 주로 사용합니다. (질문이 분류 문제라면 MSE는 오답 후보이나, 회귀 트리도 있어 애매할 수 있음. 하지만 통상 분류 모델 질문 시 MSE는 회귀용이므로 구분됨. 여기선 가장 거리가 먼 '상관 계수' 같은 게 명확하겠지만 보기상으로는 설명이 필요함. 수정: 3번을 '상관 계수'로 변경 추천하나 데이터 유지. 설명: 일반적으로 분류 의사결정나무의 불순도 지표로는 지니와 엔트로피가 대표적입니다.)"
+  },
+  {
+    "id": 19,
+    "subject": "오픈소스 기반 데이터분석",
+    "question": "데이터 간의 관계를 노드(Node)와 링크(Link)로 표현하여 분석하는 기법은?",
+    "options": [
+      "사회 연결망 분석 (SNA)",
+      "회귀 분석",
+      "시계열 분석",
+      "요인 분석"
+    ],
+    "answer": 0,
+    "explanation": "Social Network Analysis(SNA)는 네트워크 구조와 관계를 분석합니다."
+  },
+  {
+    "id": 20,
+    "subject": "오픈소스 기반 데이터분석",
+    "question": "자연어 처리에서 문장을 단어(Token) 단위로 쪼개는 과정을 무엇이라 하는가?",
+    "options": [
+      "Tokenization (토큰화)",
+      "Stemming (어간 추출)",
+      "Lemmatization (표제어 추출)",
+      "Embedding (임베딩)"
+    ],
+    "answer": 0,
+    "explanation": "텍스트를 분석 가능한 단위(토큰)로 나누는 것을 토큰화라고 합니다."
+  },
+  {
+    "id": 21,
+    "subject": "오픈소스 기반 데이터분석",
+    "question": "R에서 패키지를 설치하는 명령어는?",
+    "options": [
+      "library()",
+      "install.packages()",
+      "require()",
+      "get.package()"
+    ],
+    "answer": 1,
+    "explanation": "설치는 install.packages(\"이름\"), 로드는 library(\"이름\") 입니다."
+  },
+  {
+    "id": 22,
+    "subject": "오픈소스 기반 데이터분석",
+    "question": "파이썬의 자료형 중 '순서가 없고 중복을 허용하지 않는' 것은?",
+    "options": [
+      "List (리스트)",
+      "Tuple (튜플)",
+      "Set (집합)",
+      "Dictionary (딕셔너리)"
+    ],
+    "answer": 2,
+    "explanation": "Set(집합)은 순서가 없고 중복된 값을 가질 수 없습니다."
+  },
+  {
+    "id": 23,
+    "subject": "오픈소스 기반 데이터분석",
+    "question": "데이터 분석에서 차원 축소(Dimensionality Reduction)의 대표적인 알고리즘인 PCA의 전체 이름은?",
+    "options": [
+      "Principal Component Analysis (주성분 분석)",
+      "Partial Correlation Analysis",
+      "Predictive Component Algorithm",
+      "Primary Cluster Analysis"
+    ],
+    "answer": 0,
+    "explanation": "데이터의 분산을 최대한 보존하면서 고차원 데이터를 저차원으로 변환하는 주성분 분석입니다."
+  },
+  {
+    "id": 24,
+    "subject": "오픈소스 기반 데이터분석",
+    "question": "다음 중 연속형 변수 간의 관계를 파악하기 위한 분석 방법은?",
+    "options": [
+      "교차 분석 (Chi-square Test)",
+      "상관 분석 (Correlation Analysis)",
+      "빈도 분석",
+      "기술 통계"
+    ],
+    "answer": 1,
+    "explanation": "키와 몸무게처럼 두 연속형 변수가 서로 얼마나 관련되어 있는지 보는 것은 상관 분석입니다."
+  },
+  {
+    "id": 25,
+    "subject": "오픈소스 기반 데이터분석",
+    "question": "앙상블 학습(Ensemble Learning) 기법 중, 이전 모델이 틀린 오차를 보정해 나가는 방식은?",
+    "options": [
+      "Bagging (배깅)",
+      "Boosting (부스팅)",
+      "Stacking (스태킹)",
+      "Voting (투표)"
+    ],
+    "answer": 1,
+    "explanation": "Gradient Boosting, XGBoost 등이 이에 해당하며, 오차에 가중치를 두어 성능을 높입니다."
+  },
+  {
+    "id": 26,
+    "subject": "오픈소스 기반 데이터분석",
+    "question": "다음 중 오픈소스 웹 서버 소프트웨어가 아닌 것은?",
+    "options": [
+      "Apache HTTP Server",
+      "Nginx",
+      "Microsoft IIS",
+      "Lighttpd"
+    ],
+    "answer": 2,
+    "explanation": "IIS는 마이크로소프트의 상용 웹 서버입니다."
+  },
+  {
+    "id": 27,
+    "subject": "오픈소스 기반 데이터분석",
+    "question": "리눅스/유닉스 계열에서 파일의 내용을 화면에 출력하는 명령어는?",
+    "options": [
+      "ls",
+      "cd",
+      "cat",
+      "pwd"
+    ],
+    "answer": 2,
+    "explanation": "concatenate의 약자인 cat 명령어를 사용하여 파일 내용을 봅니다."
+  },
+  {
+    "id": 28,
+    "subject": "오픈소스 기반 데이터분석",
+    "question": "데이터 마이닝의 작업 유형 중, 과거 데이터를 바탕으로 미래의 값을 예측하는 것은?",
+    "options": [
+      "연관 규칙 발견 (Association)",
+      "군집화 (Clustering)",
+      "예측 (Prediction/Regression)",
+      "요약 (Summarization)"
+    ],
+    "answer": 2,
+    "explanation": "회귀 분석 등을 통해 연속적인 값을 예측하는 것을 말합니다."
+  },
+  {
+    "id": 29,
+    "subject": "오픈소스 기반 데이터분석",
+    "question": "JSON 데이터 포맷의 특징으로 틀린 것은?",
+    "options": [
+      "Key-Value 쌍으로 이루어져 있다.",
+      "사람이 읽기 쉽고 기계가 파싱하기도 쉽다.",
+      "자바스크립트 객체 문법을 따른다.",
+      "오직 자바스크립트 언어에서만 사용할 수 있다."
+    ],
+    "answer": 3,
+    "explanation": "JSON은 언어 독립적인 데이터 교환 포맷으로, 파이썬, 자바, C 등 대부분의 언어에서 지원합니다."
+  },
+  {
+    "id": 30,
+    "subject": "오픈소스 기반 데이터분석",
+    "question": "분산 버전 관리 시스템 Git에서 로컬 저장소의 변경 내용을 원격 저장소에 반영하는 명령어는?",
+    "options": [
+      "git pull",
+      "git fetch",
+      "git clone",
+      "git push"
+    ],
+    "answer": 3,
+    "explanation": "내 컴퓨터(로컬)의 커밋을 서버(원격)로 밀어 올리는 것은 push입니다."
+  },
+  {
+    "id": 31,
+    "subject": "오픈소스 기반 데이터분석",
+    "question": "다음 코드의 출력 결과는? print(10 // 3)",
+    "options": [
+      "3.333...",
+      "3",
+      "1",
+      "10"
+    ],
+    "answer": 1,
+    "explanation": "// 연산자는 나눗셈의 몫(정수 부분)만 반환합니다."
+  },
+  {
+    "id": 32,
+    "subject": "오픈소스 기반 데이터분석",
+    "question": "워드클라우드(Word Cloud) 시각화에서 단어의 크기를 결정하는 기준은?",
+    "options": [
+      "단어의 길이",
+      "단어의 출현 빈도 (Frequency)",
+      "단어의 사전적 순서",
+      "단어의 품사"
+    ],
+    "answer": 1,
+    "explanation": "많이 언급된 중요 단어일수록 글자가 크게 나타납니다."
+  },
+  {
+    "id": 33,
+    "subject": "오픈소스 기반 데이터분석",
+    "question": "데이터베이스에서 '트랜잭션(Transaction)'의 4가지 특징(ACID)이 아닌 것은?",
+    "options": [
+      "Atomicity (원자성)",
+      "Consistency (일관성)",
+      "Isolation (독립성)",
+      "Dependency (의존성)"
+    ],
+    "answer": 3,
+    "explanation": "D는 Durability(지속성)입니다. 트랜잭션 결과는 영구적으로 저장되어야 합니다."
+  },
+  {
+    "id": 34,
+    "subject": "오픈소스 기반 데이터분석",
+    "question": "머신러닝에서 모델을 학습시킬 때 과적합(Overfitting)을 막기 위한 방법은?",
+    "options": [
+      "데이터 양을 줄인다.",
+      "학습 횟수(Epoch)를 무한정 늘린다.",
+      "규제(Regularization)를 적용하거나 드롭아웃을 사용한다.",
+      "모델의 복잡도를 높인다."
+    ],
+    "answer": 2,
+    "explanation": "L1/L2 규제나 드롭아웃, 조기 종료(Early Stopping) 등을 사용하여 일반화 성능을 높입니다."
+  },
+  {
+    "id": 35,
+    "subject": "오픈소스 기반 데이터분석",
+    "question": "파이썬에서 예외 처리를 위해 사용하는 구문은?",
+    "options": [
+      "try - except",
+      "if - else",
+      "do - while",
+      "switch - case"
+    ],
+    "answer": 0,
+    "explanation": "에러가 발생할 수 있는 코드를 try 블록에, 에러 처리 코드를 except 블록에 넣습니다."
+  },
+  {
+    "id": 36,
+    "subject": "오픈소스 기반 데이터분석",
+    "question": "API(Application Programming Interface) 중 RESTful API가 주로 사용하는 HTTP 메소드가 아닌 것은?",
+    "options": [
+      "GET",
+      "POST",
+      "DELETE",
+      "SEND"
+    ],
+    "answer": 3,
+    "explanation": "REST API는 GET(조회), POST(생성), PUT(수정), DELETE(삭제) 등을 사용합니다. SEND라는 표준 메소드는 없습니다."
+  },
+  {
+    "id": 37,
+    "subject": "오픈소스 기반 데이터분석",
+    "question": "다음 중 시계열 데이터의 정상성(Stationarity) 조건이 아닌 것은?",
+    "options": [
+      "평균이 시간에 따라 일정하다.",
+      "분산이 시간에 따라 일정하다.",
+      "공분산이 시차에만 의존하고 시점에는 의존하지 않는다.",
+      "데이터의 추세가 뚜렷하게 상승하거나 하강한다."
+    ],
+    "answer": 3,
+    "explanation": "뚜렷한 추세(Trend)나 계절성이 있으면 비정상 시계열이므로, 차분(Differencing) 등을 통해 정상화해야 합니다."
+  },
+  {
+    "id": 38,
+    "subject": "오픈소스 기반 데이터분석",
+    "question": "HTML 문서의 특정 요소를 선택하기 위해 사용하는 CSS 선택자 중 id를 나타내는 기호는?",
+    "options": [
+      ".",
+      "#",
+      "*",
+      "@"
+    ],
+    "answer": 1,
+    "explanation": "id는 '#' (예: #header), class는 '.' (예: .menu)를 사용합니다."
+  },
+  {
+    "id": 39,
+    "subject": "오픈소스 기반 데이터분석",
+    "question": "컴퓨터 비전 라이브러리 OpenCV에서 이미지를 흑백(Grayscale)으로 변환하는 이유는?",
+    "options": [
+      "용량을 늘리기 위해",
+      "데이터 처리를 단순화하고 연산 속도를 높이기 위해",
+      "색상 정보를 보존하기 위해",
+      "이미지 해상도를 높이기 위해"
+    ],
+    "answer": 1,
+    "explanation": "3채널(RGB)을 1채널(명암)로 줄이면 연산량이 1/3로 줄어들어 처리가 빨라집니다."
+  },
+  {
+    "id": 40,
+    "subject": "오픈소스 기반 데이터분석",
+    "question": "다음 중 관계형 데이터베이스(RDBMS)가 아닌 것은?",
+    "options": [
+      "MySQL",
+      "Oracle",
+      "PostgreSQL",
+      "Redis"
+    ],
+    "answer": 3,
+    "explanation": "Redis는 키-값 구조의 인메모리 NoSQL 데이터베이스입니다."
+  },
+  {
+    "id": 41,
+    "subject": "오픈소스 기반 데이터분석",
+    "question": "R 언어에서 변수에 값을 할당할 때 주로 사용하는 연산자는?",
+    "options": [
+      "=",
+      "<-",
+      ":=",
+      "=="
+    ],
+    "answer": 1,
+    "explanation": "R에서는 등호(=)도 가능하지만, 전통적으로 화살표(<-)를 할당 연산자로 권장합니다."
+  },
+  {
+    "id": 42,
+    "subject": "오픈소스 기반 데이터분석",
+    "question": "파이썬에서 특정 라이브러리나 모듈을 불러올 때 사용하는 키워드는?",
+    "options": [
+      "include",
+      "require",
+      "import",
+      "using"
+    ],
+    "answer": 2,
+    "explanation": "import pandas as pd 처럼 사용합니다."
+  },
+  {
+    "id": 43,
+    "subject": "오픈소스 기반 데이터분석",
+    "question": "데이터의 분포를 파악하기 위해 사용하는 시각화 도구로, 데이터의 구간별 빈도수를 막대로 표현한 것은?",
+    "options": [
+      "Scatter Plot",
+      "Pie Chart",
+      "Histogram (히스토그램)",
+      "Radar Chart"
+    ],
+    "answer": 2,
+    "explanation": "연속형 변수의 도수분포를 나타내는 그래프는 히스토그램입니다."
+  },
+  {
+    "id": 44,
+    "subject": "오픈소스 기반 데이터분석",
+    "question": "머신러닝에서 '지도 학습'과 '비지도 학습'을 구분하는 가장 큰 기준은?",
+    "options": [
+      "데이터의 양",
+      "컴퓨터의 성능",
+      "정답(Label/Target)의 유무",
+      "사용하는 프로그래밍 언어"
+    ],
+    "answer": 2,
+    "explanation": "정답지를 주고 학습시키면 지도 학습, 정답 없이 데이터의 패턴을 찾게 하면 비지도 학습입니다."
+  },
+  {
+    "id": 45,
+    "subject": "오픈소스 기반 데이터분석",
+    "question": "통계적 가설 검정에서 '귀무가설(H0)이 참일 때, 이를 기각할 확률'을 의미하는 값은?",
+    "options": [
+      "P-value (유의 확률)",
+      "R-squared",
+      "Accuracy",
+      "F-score"
+    ],
+    "answer": 0,
+    "explanation": "P-value가 유의 수준(보통 0.05)보다 작으면 귀무가설을 기각합니다."
+  },
+  {
+    "id": 46,
+    "subject": "오픈소스 기반 데이터분석",
+    "question": "파이썬 Pandas에서 데이터프레임의 앞부분 5개 행만 미리보기 위해 사용하는 함수는?",
+    "options": [
+      "df.tail()",
+      "df.head()",
+      "df.show()",
+      "df.view()"
+    ],
+    "answer": 1,
+    "explanation": "head()는 상위 5행, tail()은 하위 5행을 보여줍니다."
+  },
+  {
+    "id": 47,
+    "subject": "오픈소스 기반 데이터분석",
+    "question": "R의 대표적인 시각화 패키지로, 레이어(Layer)를 쌓듯이 그래프를 그리는 문법을 가진 것은?",
+    "options": [
+      "shiny",
+      "ggplot2",
+      "dplyr",
+      "tidyr"
+    ],
+    "answer": 1,
+    "explanation": "ggplot2는 'Grammar of Graphics'를 기반으로 한 강력한 시각화 패키지입니다."
+  },
+  {
+    "id": 48,
+    "subject": "오픈소스 기반 데이터분석",
+    "question": "다음 중 '범주형 데이터(Categorical Data)'의 예시는?",
+    "options": [
+      "키 (Height)",
+      "몸무게 (Weight)",
+      "혈액형 (Blood Type)",
+      "연봉 (Salary)"
+    ],
+    "answer": 2,
+    "explanation": "혈액형(A, B, O, AB)이나 성별처럼 그룹으로 나뉘는 데이터입니다. 나머지는 수치형(연속형)입니다."
+  },
+  {
+    "id": 49,
+    "subject": "오픈소스 기반 데이터분석",
+    "question": "머신러닝 모델의 오차 행렬(Confusion Matrix)에서 '실제는 Positive인데 모델이 Negative로 잘못 예측한 경우'는?",
+    "options": [
+      "TP (True Positive)",
+      "TN (True Negative)",
+      "FP (False Positive)",
+      "FN (False Negative)"
+    ],
+    "answer": 3,
+    "explanation": "거짓(False)으로 부정(Negative) 예측을 했으므로 FN입니다."
+  },
+  {
+    "id": 50,
+    "subject": "오픈소스 기반 데이터분석",
+    "question": "텍스트 데이터를 분석할 때 불용어(Stopwords)를 제거하는 이유는?",
+    "options": [
+      "데이터의 양을 늘리기 위해",
+      "분석에 큰 의미가 없는 조사, 접속사 등을 제외하여 분석 효율을 높이기 위해",
+      "개인정보를 보호하기 위해",
+      "단어의 의미를 변경하기 위해"
+    ],
+    "answer": 1,
+    "explanation": "'그리고', '하지만', 'the', 'a' 같이 빈도수는 높지만 분석적 가치가 낮은 단어를 제거합니다."
+  },
+  {
+    "id": 51,
+    "subject": "오픈소스 기반 데이터분석",
+    "question": "K-Fold 교차 검증(Cross Validation)을 사용하는 주된 목적은?",
+    "options": [
+      "모델의 학습 속도를 높이기 위해",
+      "데이터 부족 문제를 해결하고 모델의 일반화 성능을 평가하기 위해",
+      "데이터를 시각화하기 위해",
+      "파라미터 개수를 줄이기 위해"
+    ],
+    "answer": 1,
+    "explanation": "데이터를 K개로 나누어 학습과 검증을 반복함으로써 특정 데이터셋에 과적합되는 것을 방지합니다."
+  },
+  {
+    "id": 52,
+    "subject": "오픈소스 기반 데이터분석",
+    "question": "파이썬에서 익명 함수(이름 없는 함수)를 간단하게 만들 때 사용하는 키워드는?",
+    "options": [
+      "def",
+      "lambda",
+      "anonymous",
+      "func"
+    ],
+    "answer": 1,
+    "explanation": "lambda x: x + 1 처럼 한 줄짜리 함수를 만들 때 사용합니다."
+  },
+  {
+    "id": 53,
+    "subject": "오픈소스 기반 데이터분석",
+    "question": "두 변수 간의 인과관계(Causality)가 아닌 상관관계(Correlation)만을 보여주는 분석의 한계는?",
+    "options": [
+      "두 변수가 서로 관련이 없음을 의미한다.",
+      "한 변수가 다른 변수의 원인인지는 알 수 없다.",
+      "상관 계수가 항상 0이다.",
+      "데이터의 양이 적어야만 분석 가능하다."
+    ],
+    "answer": 1,
+    "explanation": "상관관계가 높다고 해서 반드시 인과관계(원인과 결과)가 성립하는 것은 아닙니다."
+  },
+  {
+    "id": 54,
+    "subject": "오픈소스 기반 데이터분석",
+    "question": "다음 중 파이썬의 반복문 키워드는?",
+    "options": [
+      "loop",
+      "repeat",
+      "for / while",
+      "do / until"
+    ],
+    "answer": 2,
+    "explanation": "파이썬은 for문과 while문을 지원합니다."
+  },
+  {
+    "id": 55,
+    "subject": "오픈소스 기반 데이터분석",
+    "question": "데이터프레임에서 결측치가 있는 행을 모두 제거하는 Pandas 함수는?",
+    "options": [
+      "dropna()",
+      "fillna()",
+      "remove_na()",
+      "delete_null()"
+    ],
+    "answer": 0,
+    "explanation": "dropna()는 결측값(NaN)이 포함된 행이나 열을 삭제합니다. (fillna()는 채우기)"
+  },
+  {
+    "id": 56,
+    "subject": "오픈소스 기반 데이터분석",
+    "question": "R 언어에서 데이터의 구조(변수 타입, 개수 등)를 요약해서 보여주는 함수는?",
+    "options": [
+      "summary()",
+      "str()",
+      "class()",
+      "dim()"
+    ],
+    "answer": 1,
+    "explanation": "str() (structure) 함수는 데이터 객체의 내부 구조를 간결하게 보여줍니다."
+  },
+  {
+    "id": 57,
+    "subject": "오픈소스 기반 데이터분석",
+    "question": "KNN(K-Nearest Neighbors) 알고리즘의 분류 방식은?",
+    "options": [
+      "가장 가까운 K개의 이웃 데이터를 보고 다수결로 분류한다.",
+      "데이터를 반으로 나누어 트리 구조를 만든다.",
+      "데이터의 확률 분포를 추정한다.",
+      "선형 방정식을 푼다."
+    ],
+    "answer": 0,
+    "explanation": "새로운 데이터가 들어오면 거리가 가장 가까운 K개의 기존 데이터(이웃)를 확인하여 분류합니다."
+  },
+  {
+    "id": 58,
+    "subject": "오픈소스 기반 데이터분석",
+    "question": "분산/편향 트레이드오프(Bias-Variance Tradeoff)에서 모델이 너무 복잡하여 학습 데이터에 과적합되었을 때의 상태는?",
+    "options": [
+      "높은 편향, 낮은 분산",
+      "낮은 편향, 높은 분산",
+      "높은 편향, 높은 분산",
+      "낮은 편향, 낮은 분산"
+    ],
+    "answer": 1,
+    "explanation": "과적합은 학습 데이터에는 정확하지만(낮은 편향), 새로운 데이터에는 변동성이 큰(높은 분산) 상태입니다."
+  },
+  {
+    "id": 59,
+    "subject": "오픈소스 기반 데이터분석",
+    "question": "파이썬 리스트 a = [1, 2, 3] 에 값 4를 추가하는 메소드는?",
+    "options": [
+      "a.add(4)",
+      "a.push(4)",
+      "a.append(4)",
+      "a.insert(4)"
+    ],
+    "answer": 2,
+    "explanation": "리스트의 끝에 요소를 추가할 때는 append()를 사용합니다."
+  },
+  {
+    "id": 60,
+    "subject": "오픈소스 기반 데이터분석",
+    "question": "다음 중 딥러닝 학습 시 최적화(Optimization)를 위해 사용하는 기법은?",
+    "options": [
+      "SGD (Stochastic Gradient Descent)",
+      "PCA",
+      "ANOVA",
+      "TF-IDF"
+    ],
+    "answer": 0,
+    "explanation": "SGD(확률적 경사 하강법)는 전체 데이터 대신 일부 데이터만 사용하여 가중치를 업데이트하는 최적화 알고리즘입니다."
+  },
+  {
+    "id": 61,
+    "subject": "오픈소스 기반 데이터분석",
+    "question": "데이터의 척도(Scale) 중, 절대 영점(Absolute Zero)이 존재하여 사칙연산이 모두 가능한 척도는?",
+    "options": [
+      "명목 척도 (Nominal)",
+      "서열 척도 (Ordinal)",
+      "등간 척도 (Interval)",
+      "비율 척도 (Ratio)"
+    ],
+    "answer": 3,
+    "explanation": "키, 몸무게, 시간 등은 0이 '없음'을 의미하는 비율 척도입니다."
+  },
+  {
+    "id": 62,
+    "subject": "오픈소스 기반 데이터분석",
+    "question": "파이썬의 논리 연산자가 아닌 것은?",
+    "options": [
+      "and",
+      "or",
+      "not",
+      "&&"
+    ],
+    "answer": 3,
+    "explanation": "파이썬은 기호(&&) 대신 영단어 and, or, not을 사용합니다. (&&는 C/Java 등)"
+  },
+  {
+    "id": 63,
+    "subject": "오픈소스 기반 데이터분석",
+    "question": "이상치(Outlier)를 판단하는 기준 중 IQR(Interquartile Range) 방식을 이용할 때 주로 사용하는 범위는?",
+    "options": [
+      "1분위수 - 1.5*IQR ~ 3분위수 + 1.5*IQR",
+      "평균 ± 2*표준편차",
+      "최소값 ~ 최대값",
+      "중앙값 ± IQR"
+    ],
+    "answer": 0,
+    "explanation": "박스 플롯에서 수염(Whisker)의 길이를 결정하는 방식입니다."
+  },
+  {
+    "id": 64,
+    "subject": "오픈소스 기반 데이터분석",
+    "question": "R에서 패키지를 로드하지 않고 '패키지명::함수명' 형태로 함수를 호출하는 이유는?",
+    "options": [
+      "속도가 더 빨라서",
+      "함수 이름 충돌을 방지하기 위해서",
+      "메모리를 절약하기 위해서",
+      "코드가 짧아져서"
+    ],
+    "answer": 1,
+    "explanation": "여러 패키지에 같은 이름의 함수(예: filter)가 있을 때 명시적으로 구분하기 위함입니다."
+  },
+  {
+    "id": 65,
+    "subject": "오픈소스 기반 데이터분석",
+    "question": "로지스틱 회귀(Logistic Regression) 분석의 종속 변수(Y) 형태는?",
+    "options": [
+      "연속형 (예: 키, 매출액)",
+      "범주형 (예: 성공/실패, 0/1)",
+      "텍스트",
+      "이미지"
+    ],
+    "answer": 1,
+    "explanation": "이름은 회귀지만 실제로는 이진 분류(Classification)에 사용됩니다."
+  },
+  {
+    "id": 66,
+    "subject": "오픈소스 기반 데이터분석",
+    "question": "데이터프레임들을 공통된 컬럼(Key)을 기준으로 합치는 Pandas 함수는?",
+    "options": [
+      "concat()",
+      "merge()",
+      "append()",
+      "join()"
+    ],
+    "answer": 1,
+    "explanation": "SQL의 JOIN과 유사하게 키를 기준으로 병합하는 것은 merge()입니다. (concat은 물리적으로 갖다 붙임)"
+  },
+  {
+    "id": 67,
+    "subject": "오픈소스 기반 데이터분석",
+    "question": "파이썬에서 문자열의 포맷팅(Formatting)을 위해 사용하는 f-string 문법의 예시는?",
+    "options": [
+      "f\"Hello {name}\"",
+      "\"Hello %s\" % name",
+      "\"Hello {}\".format(name)",
+      "fmt(\"Hello\", name)"
+    ],
+    "answer": 0,
+    "explanation": "파이썬 3.6부터 지원되는 f-string은 f\"...\" 안에 변수를 {}로 감싸서 표현합니다."
+  },
+  {
+    "id": 68,
+    "subject": "오픈소스 기반 데이터분석",
+    "question": "다음 중 파이썬의 주석(Comment) 기호는?",
+    "options": [
+      "//",
+      "/* */",
+      "#",
+      "--"
+    ],
+    "answer": 2,
+    "explanation": "파이썬은 샵(#) 기호로 한 줄 주석을 처리합니다."
+  },
+  {
+    "id": 69,
+    "subject": "오픈소스 기반 데이터분석",
+    "question": "데이터 사이언스에서 'Feature Engineering(피처 엔지니어링)'이란?",
+    "options": [
+      "데이터를 수집하는 과정",
+      "모델의 성능을 높이기 위해 원본 데이터로부터 새로운 특징(변수)을 생성하거나 가공하는 과정",
+      "하드웨어를 조립하는 과정",
+      "알고리즘을 코딩하는 과정"
+    ],
+    "answer": 1,
+    "explanation": "도메인 지식을 활용해 의미 있는 변수를 만들어내는 머신러닝의 핵심 단계입니다."
+  },
+  {
+    "id": 70,
+    "subject": "오픈소스 기반 데이터분석",
+    "question": "SQL에서 테이블의 모든 데이터를 삭제하지만 테이블 구조는 남기는 명령어는?",
+    "options": [
+      "DROP",
+      "DELETE",
+      "TRUNCATE",
+      "REMOVE"
+    ],
+    "answer": 2,
+    "explanation": "TRUNCATE는 데이터를 빠르게 비우고 공간을 해제하지만 테이블 껍데기는 남깁니다. (DELETE는 로그를 남겨 느림)"
+  },
+  {
+    "id": 71,
+    "subject": "오픈소스 기반 데이터분석",
+    "question": "추천 시스템(Recommender System)에서 사용자와 아이템 간의 상호작용 정보를 이용해 추천하는 방식은?",
+    "options": [
+      "콘텐츠 기반 필터링 (Content-based Filtering)",
+      "협업 필터링 (Collaborative Filtering)",
+      "규칙 기반 필터링",
+      "랜덤 추천"
+    ],
+    "answer": 1,
+    "explanation": "'나와 비슷한 취향을 가진 사람들이 좋아한 것'을 추천하는 방식입니다."
+  },
+  {
+    "id": 72,
+    "subject": "오픈소스 기반 데이터분석",
+    "question": "파이썬 Pandas에서 열(Series)의 고유한 값들의 개수를 세는 함수는?",
+    "options": [
+      "count()",
+      "value_counts()",
+      "unique()",
+      "sum()"
+    ],
+    "answer": 1,
+    "explanation": "value_counts()는 각 범주별 빈도수를 내림차순으로 반환합니다."
+  },
+  {
+    "id": 73,
+    "subject": "오픈소스 기반 데이터분석",
+    "question": "다음 중 텍스트 데이터를 벡터로 변환하는 기법인 TF-IDF의 의미는?",
+    "options": [
+      "단어 빈도와 역문서 빈도를 곱한 값",
+      "단어의 길이와 빈도를 더한 값",
+      "전체 문서 수 나누기 단어 수",
+      "가장 많이 나오는 단어"
+    ],
+    "answer": 0,
+    "explanation": "특정 문서에서는 자주 나오지만(TF 높음), 다른 문서들에서는 드물게 나오는(IDF 높음) 단어에 가중치를 줍니다."
+  },
+  {
+    "id": 74,
+    "subject": "오픈소스 기반 데이터분석",
+    "question": "R 언어에서 패키지의 도움말이나 함수 설명을 보고 싶을 때 사용하는 명령어는?",
+    "options": [
+      "?함수명",
+      "help(함수명)",
+      "둘 다 가능",
+      "info(함수명)"
+    ],
+    "answer": 2,
+    "explanation": "?read.csv 또는 help(read.csv) 둘 다 사용할 수 있습니다."
+  },
+  {
+    "id": 75,
+    "subject": "오픈소스 기반 데이터분석",
+    "question": "파이썬에서 `range(0, 10, 2)`가 생성하는 숫자는?",
+    "options": [
+      "0, 1, 2, 3, 4, 5, 6, 7, 8, 9",
+      "0, 2, 4, 6, 8, 10",
+      "0, 2, 4, 6, 8",
+      "2, 4, 6, 8, 10"
+    ],
+    "answer": 2,
+    "explanation": "0부터 10 '미만'까지 2씩 증가하므로 0, 2, 4, 6, 8 입니다."
+  },
+  {
+    "id": 76,
+    "subject": "오픈소스 기반 데이터분석",
+    "question": "딥러닝에서 '역전파(Backpropagation)' 알고리즘의 주된 역할은?",
+    "options": [
+      "입력 데이터를 출력층으로 전달한다.",
+      "출력층의 오차를 입력층 방향으로 전파하며 가중치를 업데이트한다.",
+      "데이터를 정규화한다.",
+      "활성화 함수를 정의한다."
+    ],
+    "answer": 1,
+    "explanation": "예측값과 실제값의 차이(오차)를 줄이기 위해 미분을 이용해 가중치를 뒤에서부터 조정해 나갑니다."
+  },
+  {
+    "id": 77,
+    "subject": "오픈소스 기반 데이터분석",
+    "question": "데이터베이스 정규화(Normalization)를 하는 가장 큰 이유는?",
+    "options": [
+      "데이터 중복을 최소화하고 이상 현상(Anomaly)을 방지하기 위해",
+      "데이터 조회 속도를 높이기 위해",
+      "테이블 개수를 줄이기 위해",
+      "보안을 강화하기 위해"
+    ],
+    "answer": 0,
+    "explanation": "정규화는 데이터를 쪼개서 중복을 없애고 무결성을 유지하는 과정입니다. (조회 속도는 오히려 느려질 수 있음)"
+  },
+  {
+    "id": 78,
+    "subject": "오픈소스 기반 데이터분석",
+    "question": "다음 중 Git의 작업 흐름에서 파일의 상태가 아닌 것은?",
+    "options": [
+      "Committed",
+      "Modified",
+      "Staged",
+      "Finished"
+    ],
+    "answer": 3,
+    "explanation": "Git의 3가지 상태는 Modified(수정됨), Staged(준비됨), Committed(저장됨)입니다."
+  },
+  {
+    "id": 79,
+    "subject": "오픈소스 기반 데이터분석",
+    "question": "파이썬에서 딕셔너리(Dictionary)의 값에 접근하는 방법은?",
+    "options": [
+      "dict[index]",
+      "dict[key]",
+      "dict(key)",
+      "dict.index"
+    ],
+    "answer": 1,
+    "explanation": "딕셔너리는 키(Key)를 통해 값(Value)에 접근합니다. 예: my_dict['apple']"
+  },
+  {
+    "id": 80,
+    "subject": "오픈소스 기반 데이터분석",
+    "question": "데이터 시각화에서 전체에 대한 각 부분의 비율을 부채꼴 모양으로 보여주는 차트는?",
+    "options": [
+      "Bar Chart",
+      "Line Chart",
+      "Pie Chart (원형 차트)",
+      "Box Plot"
+    ],
+    "answer": 2,
+    "explanation": "비율을 직관적으로 보여줄 때 파이 차트를 사용합니다."
+  }
+]

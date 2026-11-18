@@ -1,0 +1,15 @@
+[
+  {
+    "id": 1,
+    "subject": "전공종합",
+    "question": "다음 중 오픈 소스 운영체제가 아닌 것은?",
+    "options": [
+      "Linux",
+      "Android",
+      "Ubuntu",
+      "Windows"
+    ],
+    "answer": 3,
+    "explanation": "Windows는 마이크로소프트의 독점(Proprietary) 상용 소프트웨어입니다."
+  }
+]

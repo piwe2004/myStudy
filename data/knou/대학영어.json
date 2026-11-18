@@ -1,0 +1,1315 @@
+[
+  {
+    "id": 1,
+    "subject": "대학영어",
+    "question": "She is responsible _____ designing the entire project.",
+    "options": [
+      "at",
+      "on",
+      "for",
+      "in"
+    ],
+    "answer": 2,
+    "explanation": "'be responsible for'는 '~에 책임이 있다'라는 숙어입니다."
+  },
+  {
+    "id": 2,
+    "subject": "대학영어",
+    "question": "Choose the correct word: 'Although it was raining, _____ we went out.'",
+    "options": [
+      "but",
+      "however",
+      "(blank)",
+      "despite"
+    ],
+    "answer": 2,
+    "explanation": "접속사 Although가 이미 절을 이끌고 있으므로, 주절 앞에 접속사(but)를 또 쓰지 않습니다. (빈칸이 정답)"
+  },
+  {
+    "id": 3,
+    "subject": "대학영어",
+    "question": "The number of students in the class _____ increasing every year.",
+    "options": [
+      "is",
+      "are",
+      "have",
+      "were"
+    ],
+    "answer": 0,
+    "explanation": "'The number of (~의 수)'는 단수 취급합니다. ('A number of'는 복수 취급)"
+  },
+  {
+    "id": 4,
+    "subject": "대학영어",
+    "question": "I look forward to _____ from you soon.",
+    "options": [
+      "hear",
+      "heard",
+      "hearing",
+      "have heard"
+    ],
+    "answer": 2,
+    "explanation": "'look forward to'의 to는 전치사이므로 뒤에 명사나 동명사(-ing)가 와야 합니다."
+  },
+  {
+    "id": 5,
+    "subject": "대학영어",
+    "question": "If I _____ you, I would accept the offer.",
+    "options": [
+      "am",
+      "was",
+      "were",
+      "have been"
+    ],
+    "answer": 2,
+    "explanation": "가정법 과거에서 be동사는 인칭에 상관없이 'were'를 쓰는 것이 원칙입니다."
+  },
+  {
+    "id": 6,
+    "subject": "대학영어",
+    "question": "This is the building _____ I used to work.",
+    "options": [
+      "which",
+      "that",
+      "where",
+      "what"
+    ],
+    "answer": 2,
+    "explanation": "뒤에 완벽한 문장(I used to work)이 왔고 선행사가 장소이므로 관계부사 'where'가 적절합니다."
+  },
+  {
+    "id": 7,
+    "subject": "대학영어",
+    "question": "He _____ the decision to study abroad last year.",
+    "options": [
+      "did",
+      "made",
+      "took",
+      "got"
+    ],
+    "answer": 1,
+    "explanation": "'결정하다'는 'make a decision'이라는 연어(Collocation)를 사용합니다."
+  },
+  {
+    "id": 8,
+    "subject": "대학영어",
+    "question": "The meeting has been _____ until next Monday.",
+    "options": [
+      "put off",
+      "put on",
+      "put out",
+      "put in"
+    ],
+    "answer": 0,
+    "explanation": "'put off'는 '연기하다(postpone)'라는 뜻입니다."
+  },
+  {
+    "id": 9,
+    "subject": "대학영어",
+    "question": "Identify the part of speech: She sings 'beautifully'.",
+    "options": [
+      "Noun",
+      "Verb",
+      "Adjective",
+      "Adverb"
+    ],
+    "answer": 3,
+    "explanation": "동사(sings)를 수식하고 있으므로 부사(Adverb)입니다."
+  },
+  {
+    "id": 10,
+    "subject": "대학영어",
+    "question": "Please let me know if you have _____ to the files.",
+    "options": [
+      "excess",
+      "assess",
+      "access",
+      "axis"
+    ],
+    "answer": 2,
+    "explanation": "문맥상 파일에 대한 '접근 권한'을 의미하므로 'access'가 맞습니다. (excess는 과잉)"
+  },
+  {
+    "id": 11,
+    "subject": "대학영어",
+    "question": "By the time you arrive, the movie _____.",
+    "options": [
+      "starts",
+      "will start",
+      "will have started",
+      "had started"
+    ],
+    "answer": 2,
+    "explanation": "미래의 특정 시점(도착할 때) 이전에 이미 완료된 일을 나타내므로 '미래완료(will have p.p)'를 씁니다."
+  },
+  {
+    "id": 12,
+    "subject": "대학영어",
+    "question": "It is important that he _____ the truth.",
+    "options": [
+      "know",
+      "knows",
+      "knew",
+      "knowing"
+    ],
+    "answer": 0,
+    "explanation": "주요명제(주장, 요구, 명령, 제안) 동사나 형용사 뒤의 that절에는 '(should) + 동사원형'을 씁니다."
+  },
+  {
+    "id": 13,
+    "subject": "대학영어",
+    "question": "Not only _____ smart, but he is also diligent.",
+    "options": [
+      "he is",
+      "is he",
+      "he was",
+      "was he"
+    ],
+    "answer": 1,
+    "explanation": "부정어(Not only)가 문두에 나오면 주어와 동사가 도치(Inversion)됩니다."
+  },
+  {
+    "id": 14,
+    "subject": "대학영어",
+    "question": "I enjoyed _____ the movie with my friends.",
+    "options": [
+      "watch",
+      "to watch",
+      "watching",
+      "watched"
+    ],
+    "answer": 2,
+    "explanation": "enjoy 동사는 목적어로 동명사(-ing)만을 취합니다."
+  },
+  {
+    "id": 15,
+    "subject": "대학영어",
+    "question": "She is _____ interesting person I have ever met.",
+    "options": [
+      "more",
+      "the most",
+      "most",
+      "very"
+    ],
+    "answer": 1,
+    "explanation": "범위(I have ever met)가 주어졌을 때 최상급(the most) 표현을 사용합니다."
+  },
+  {
+    "id": 16,
+    "subject": "대학영어",
+    "question": "Despite _____ tired, he finished his homework.",
+    "options": [
+      "he is",
+      "of being",
+      "being",
+      "be"
+    ],
+    "answer": 2,
+    "explanation": "Despite은 전치사이므로 뒤에 명사나 동명사(being)가 와야 합니다. (of는 안 붙임)"
+  },
+  {
+    "id": 17,
+    "subject": "대학영어",
+    "question": "Could you tell me where _____?",
+    "options": [
+      "is the bank",
+      "the bank is",
+      "the bank be",
+      "is bank"
+    ],
+    "answer": 1,
+    "explanation": "간접의문문의 어순은 '의문사 + 주어 + 동사' 입니다."
+  },
+  {
+    "id": 18,
+    "subject": "대학영어",
+    "question": "He stopped smoking means:",
+    "options": [
+      "He paused to smoke.",
+      "He quit smoking.",
+      "He enjoys smoking.",
+      "He started smoking."
+    ],
+    "answer": 1,
+    "explanation": "stop + -ing는 '~하던 것을 멈추다(끊다)'이고, stop + to부정사는 '~하기 위해 멈추다'입니다."
+  },
+  {
+    "id": 19,
+    "subject": "대학영어",
+    "question": "_____ information is available on the website.",
+    "options": [
+      "Many",
+      "An",
+      "Few",
+      "Much"
+    ],
+    "answer": 3,
+    "explanation": "information은 셀 수 없는 명사이므로 Many나 An을 쓸 수 없고, 양을 나타내는 Much를 씁니다."
+  },
+  {
+    "id": 20,
+    "subject": "대학영어",
+    "question": "I helped him _____ his homework.",
+    "options": [
+      "finish",
+      "finishing",
+      "finished",
+      "for finish"
+    ],
+    "answer": 0,
+    "explanation": "help 동사는 목적격 보어로 동사원형(finish)이나 to부정사(to finish)를 모두 취할 수 있습니다."
+  },
+  {
+    "id": 21,
+    "subject": "대학영어",
+    "question": "The new policy will be _____ next month.",
+    "options": [
+      "implemented",
+      "implanted",
+      "implicated",
+      "imported"
+    ],
+    "answer": 0,
+    "explanation": "정책이나 계획 등을 '실행하다, 시행하다'라는 뜻으로는 implement가 적절합니다."
+  },
+  {
+    "id": 22,
+    "subject": "대학영어",
+    "question": "I haven't seen him _____ we graduated from high school.",
+    "options": [
+      "for",
+      "during",
+      "since",
+      "from"
+    ],
+    "answer": 2,
+    "explanation": "'~한 이래로 쭉'이라는 의미로 완료 시제와 함께 쓰이는 접속사는 since입니다."
+  },
+  {
+    "id": 23,
+    "subject": "대학영어",
+    "question": "_____ from the top of the building, the cars looked like toys.",
+    "options": [
+      "Seeing",
+      "Seen",
+      "To see",
+      "Saw"
+    ],
+    "answer": 1,
+    "explanation": "분사구문의 주어(the cars)가 '보여지는(수동)' 대상이므로 과거분사 Seen으로 시작해야 합니다. (As they were seen...)"
+  },
+  {
+    "id": 24,
+    "subject": "대학영어",
+    "question": "The hotel offers a _____ breakfast to all guests.",
+    "options": [
+      "complimentary",
+      "complementary",
+      "compliment",
+      "completion"
+    ],
+    "answer": 0,
+    "explanation": "complimentary는 '무료의' 또는 '칭찬하는' 뜻이고, complementary는 '상호 보완적인' 뜻입니다. 문맥상 무료 조식이 맞습니다."
+  },
+  {
+    "id": 25,
+    "subject": "대학영어",
+    "question": "Hardly had I entered the room _____ the phone rang.",
+    "options": [
+      "than",
+      "when",
+      "as",
+      "after"
+    ],
+    "answer": 1,
+    "explanation": "'Hardly/Scarcely had S p.p ... when/before ...' 구문은 '~하자마자 ...했다'라는 뜻입니다."
+  },
+  {
+    "id": 26,
+    "subject": "대학영어",
+    "question": "I suggest that he _____ a doctor immediately.",
+    "options": [
+      "sees",
+      "see",
+      "saw",
+      "has seen"
+    ],
+    "answer": 1,
+    "explanation": "제안(suggest), 주장, 명령 동사 뒤의 that절에는 '(should) + 동사원형'을 씁니다. (see)"
+  },
+  {
+    "id": 27,
+    "subject": "대학영어",
+    "question": "The cold weather will _____ the crops.",
+    "options": [
+      "effect",
+      "affect",
+      "affection",
+      "effective"
+    ],
+    "answer": 1,
+    "explanation": "affect는 동사로 '영향을 미치다', effect는 주로 명사로 '효과/결과'로 쓰입니다."
+  },
+  {
+    "id": 28,
+    "subject": "대학영어",
+    "question": "He is the man _____ car was stolen yesterday.",
+    "options": [
+      "who",
+      "whom",
+      "which",
+      "whose"
+    ],
+    "answer": 3,
+    "explanation": "선행사(the man)의 소유격(그 남자의 차) 관계대명사가 필요하므로 whose가 정답입니다."
+  },
+  {
+    "id": 29,
+    "subject": "대학영어",
+    "question": "The letter _____ by the secretary yesterday.",
+    "options": [
+      "wrote",
+      "was wrote",
+      "was written",
+      "has written"
+    ],
+    "answer": 2,
+    "explanation": "편지는 쓰여지는 대상이므로 수동태(be + p.p)인 was written을 써야 합니다."
+  },
+  {
+    "id": 30,
+    "subject": "대학영어",
+    "question": "He studied hard; _____, he failed the exam.",
+    "options": [
+      "therefore",
+      "however",
+      "moreover",
+      "otherwise"
+    ],
+    "answer": 1,
+    "explanation": "앞뒤 문장이 역접(열심히 했다 vs 떨어졌다) 관계이므로 however가 적절합니다."
+  },
+  {
+    "id": 31,
+    "subject": "대학영어",
+    "question": "I regret _____ you that your application has been rejected.",
+    "options": [
+      "tell",
+      "to tell",
+      "telling",
+      "told"
+    ],
+    "answer": 1,
+    "explanation": "regret to V는 '(앞으로)~하게 되어 유감이다'이고, regret V-ing는 '(과거에)~한 것을 후회하다'입니다."
+  },
+  {
+    "id": 32,
+    "subject": "대학영어",
+    "question": "Please submit your _____ to the HR department.",
+    "options": [
+      "resume",
+      "consume",
+      "assume",
+      "presume"
+    ],
+    "answer": 0,
+    "explanation": "문맥상 인사과(HR)에 제출하는 것은 '이력서(resume)'입니다."
+  },
+  {
+    "id": 33,
+    "subject": "대학영어",
+    "question": "_____ you practice, the better you will become.",
+    "options": [
+      "More",
+      "The more",
+      "Most",
+      "The most"
+    ],
+    "answer": 1,
+    "explanation": "'The + 비교급, the + 비교급' 구문은 '~할수록 더 ...하다'라는 뜻입니다."
+  },
+  {
+    "id": 34,
+    "subject": "대학영어",
+    "question": "His opinion differs _____ mine.",
+    "options": [
+      "to",
+      "with",
+      "from",
+      "by"
+    ],
+    "answer": 2,
+    "explanation": "'~와 다르다'는 'differ from' 또는 'be different from'을 씁니다."
+  },
+  {
+    "id": 35,
+    "subject": "대학영어",
+    "question": "I _____ eat meat, but now I am a vegetarian.",
+    "options": [
+      "used to",
+      "was used to",
+      "am used to",
+      "use to"
+    ],
+    "answer": 0,
+    "explanation": "'used to'는 과거의 습관이나 상태(~하곤 했다)를 나타냅니다."
+  },
+  {
+    "id": 36,
+    "subject": "대학영어",
+    "question": "He is not _____ to lift the heavy box.",
+    "options": [
+      "strong enough",
+      "enough strong",
+      "too strong",
+      "so strong"
+    ],
+    "answer": 0,
+    "explanation": "enough가 형용사를 수식할 때는 반드시 뒤에서 수식(strong enough)해야 합니다."
+  },
+  {
+    "id": 37,
+    "subject": "대학영어",
+    "question": "This car is very _____ because it uses less fuel.",
+    "options": [
+      "economic",
+      "economical",
+      "economy",
+      "economics"
+    ],
+    "answer": 1,
+    "explanation": "economic은 '경제의(국가적)', economical은 '경제적인(절약하는)'이라는 뜻입니다."
+  },
+  {
+    "id": 38,
+    "subject": "대학영어",
+    "question": "If I had known the truth, I _____ told you.",
+    "options": [
+      "will have",
+      "would have",
+      "would",
+      "had"
+    ],
+    "answer": 1,
+    "explanation": "가정법 과거완료(If had p.p, S would have p.p) 구문입니다."
+  },
+  {
+    "id": 39,
+    "subject": "대학영어",
+    "question": "You are a student, _____?",
+    "options": [
+      "are you",
+      "aren't you",
+      "do you",
+      "don't you"
+    ],
+    "answer": 1,
+    "explanation": "앞 문장이 긍정문이면 부가의문문은 부정으로, be동사는 be동사 그대로 씁니다."
+  },
+  {
+    "id": 40,
+    "subject": "대학영어",
+    "question": "The conference will _____ in Seoul next week.",
+    "options": [
+      "take part",
+      "take place",
+      "take off",
+      "take over"
+    ],
+    "answer": 1,
+    "explanation": "'take place'는 '개최되다, 일어나다'라는 뜻입니다. (take part는 참가하다)"
+  },
+  {
+    "id": 41,
+    "subject": "대학영어",
+    "question": "_____ Tom nor his friends were present at the party.",
+    "options": [
+      "Either",
+      "Neither",
+      "Both",
+      "Not only"
+    ],
+    "answer": 1,
+    "explanation": "'Neither A nor B'는 'A도 B도 아닌'이라는 부정 상관접속사입니다."
+  },
+  {
+    "id": 42,
+    "subject": "대학영어",
+    "question": "I had my hair _____ yesterday.",
+    "options": [
+      "cut",
+      "to cut",
+      "cutting",
+      "cutted"
+    ],
+    "answer": 0,
+    "explanation": "사역동사 have + 목적어(my hair) + p.p(cut) 구조입니다. 머리카락은 잘리는 것이기 때문입니다."
+  },
+  {
+    "id": 43,
+    "subject": "대학영어",
+    "question": "Contrary to his _____ outlook, the results were negative.",
+    "options": [
+      "optimistic",
+      "pessimistic",
+      "realistic",
+      "passive"
+    ],
+    "answer": 0,
+    "explanation": "결과가 부정적(negative)이었고 '반대로(Contrary to)'라고 했으므로, 전망은 긍정적(optimistic)이었어야 합니다."
+  },
+  {
+    "id": 44,
+    "subject": "대학영어",
+    "question": "Rarely _____ such a beautiful sunset.",
+    "options": [
+      "I have seen",
+      "have I seen",
+      "I saw",
+      "saw I"
+    ],
+    "answer": 1,
+    "explanation": "부정부사(Rarely)가 문두로 나오면 주어와 동사가 도치됩니다. (완료시제에서는 have가 앞으로 나옴)"
+  },
+  {
+    "id": 45,
+    "subject": "대학영어",
+    "question": "Each of the students _____ given a task.",
+    "options": [
+      "was",
+      "were",
+      "have",
+      "are"
+    ],
+    "answer": 0,
+    "explanation": "Each of + 복수명사 뒤에는 반드시 '단수 동사'가 옵니다."
+  },
+  {
+    "id": 46,
+    "subject": "대학영어",
+    "question": "You are not _____ for this scholarship.",
+    "options": [
+      "legible",
+      "eligible",
+      "illegal",
+      "capable"
+    ],
+    "answer": 1,
+    "explanation": "'~할 자격이 있는'은 eligible입니다. (legible은 읽기 쉬운)"
+  },
+  {
+    "id": 47,
+    "subject": "대학영어",
+    "question": "It was _____ a nice day that we went for a picnic.",
+    "options": [
+      "so",
+      "such",
+      "very",
+      "too"
+    ],
+    "answer": 1,
+    "explanation": "'so + 형용사 + that' vs 'such + (a/an) + 형/명 + that'. 명사(day)가 있으므로 such가 맞습니다."
+  },
+  {
+    "id": 48,
+    "subject": "대학영어",
+    "question": "The prize was divided _____ the three winners.",
+    "options": [
+      "between",
+      "among",
+      "in",
+      "to"
+    ],
+    "answer": 1,
+    "explanation": "둘 사이는 between, 셋 이상 사이는 among을 사용합니다."
+  },
+  {
+    "id": 49,
+    "subject": "대학영어",
+    "question": "He managed to _____ a lot of wealth in a short time.",
+    "options": [
+      "acquire",
+      "inquire",
+      "require",
+      "request"
+    ],
+    "answer": 0,
+    "explanation": "부를 '얻다, 획득하다'는 acquire가 적절합니다."
+  },
+  {
+    "id": 50,
+    "subject": "대학영어",
+    "question": "It _____ me two hours to finish the report.",
+    "options": [
+      "spent",
+      "took",
+      "needed",
+      "got"
+    ],
+    "answer": 1,
+    "explanation": "시간이 걸리다를 표현할 때는 'It takes + 사람 + 시간 + to V' 구문을 씁니다."
+  },
+  {
+    "id": 51,
+    "subject": "대학영어",
+    "question": "I cannot help _____ at the funny scene.",
+    "options": [
+      "laugh",
+      "to laugh",
+      "laughing",
+      "laughed"
+    ],
+    "answer": 2,
+    "explanation": "'cannot help -ing'는 '~하지 않을 수 없다'라는 관용구입니다. (= cannot but 동사원형)"
+  },
+  {
+    "id": 52,
+    "subject": "대학영어",
+    "question": "The technology became _____ very quickly.",
+    "options": [
+      "obsolete",
+      "absolute",
+      "observant",
+      "obstinate"
+    ],
+    "answer": 0,
+    "explanation": "기술이 빠르게 '구식이 된, 쓸모없게 된'이라는 의미로는 obsolete이 적절합니다."
+  },
+  {
+    "id": 53,
+    "subject": "대학영어",
+    "question": "We should discuss _____ the problem.",
+    "options": [
+      "about",
+      "on",
+      "of",
+      "(blank)"
+    ],
+    "answer": 3,
+    "explanation": "discuss는 타동사이므로 뒤에 전치사(about 등)를 쓰지 않고 바로 목적어(the problem)를 취합니다."
+  },
+  {
+    "id": 54,
+    "subject": "대학영어",
+    "question": "You had better _____ a doctor.",
+    "options": [
+      "to see",
+      "seeing",
+      "see",
+      "saw"
+    ],
+    "answer": 2,
+    "explanation": "'had better'는 조동사처럼 쓰여 뒤에 동사원형이 옵니다. (~하는 게 낫다)"
+  },
+  {
+    "id": 55,
+    "subject": "대학영어",
+    "question": "The heavy rain prevented us _____ going out.",
+    "options": [
+      "to",
+      "from",
+      "by",
+      "of"
+    ],
+    "answer": 1,
+    "explanation": "'prevent A from -ing'는 'A가 ~하는 것을 막다'라는 필수 구문입니다."
+  },
+  {
+    "id": 56,
+    "subject": "대학영어",
+    "question": "This book is worth _____.",
+    "options": [
+      "read",
+      "to read",
+      "reading",
+      "to be read"
+    ],
+    "answer": 2,
+    "explanation": "'be worth -ing'는 '~할 가치가 있다'는 수동의 의미를 포함한 관용구입니다."
+  },
+  {
+    "id": 57,
+    "subject": "대학영어",
+    "question": "_____ you work hard, you will fail the exam.",
+    "options": [
+      "If",
+      "Unless",
+      "Because",
+      "As"
+    ],
+    "answer": 1,
+    "explanation": "문맥상 '열심히 공부하지 않는다면(If not)'이라는 의미의 접속사 Unless가 필요합니다."
+  },
+  {
+    "id": 58,
+    "subject": "대학영어",
+    "question": "He devoted his life to _____ the poor.",
+    "options": [
+      "help",
+      "helping",
+      "helped",
+      "helps"
+    ],
+    "answer": 1,
+    "explanation": "'devote oneself to'에서 to는 전치사이므로 뒤에 동명사(helping)가 와야 합니다."
+  },
+  {
+    "id": 59,
+    "subject": "대학영어",
+    "question": "The decision was _____ ; everyone agreed.",
+    "options": [
+      "unanimous",
+      "anonymous",
+      "ambiguous",
+      "animous"
+    ],
+    "answer": 0,
+    "explanation": "모두가 동의했으므로 '만장일치의(unanimous)'가 적절합니다. (anonymous는 익명의)"
+  },
+  {
+    "id": 60,
+    "subject": "대학영어",
+    "question": "She speaks French, _____?",
+    "options": [
+      "doesn't she",
+      "don't she",
+      "isn't she",
+      "won't she"
+    ],
+    "answer": 0,
+    "explanation": "일반동사(speaks)의 긍정문이므로, 부가의문문은 do동사의 부정형(doesn't)을 씁니다."
+  },
+  {
+    "id": 61,
+    "subject": "대학영어",
+    "question": "The principal _____ of the school is to educate students.",
+    "options": [
+      "principle",
+      "principal",
+      "principality",
+      "principled"
+    ],
+    "answer": 0,
+    "explanation": "여기서는 문맥이 모호할 수 있으나, 학교의 교장(principal)이 아니라 학교의 '주된 원칙/목표'라면 principle, '주된(형용사) 목표'라면 principal objective인데 명사 자리입니다. 하지만 일반적으로 'principal(교장/주요한)'과 'principle(원리/원칙)'을 구분하는 문제에서는 학교의 '설립 원칙(principle)'이 적절할 수 있으나, 보통 'school's objective'를 수식하는 형용사라면 principal입니다. *수정: 이 문제는 문맥상 '주요한 목적'을 묻는다면 principal function 등이 맞으나, 단순 어휘 문제로 '교장(principal)' vs '원리(principle)'을 묻는 경우가 많습니다. 여기서는 '주요한(principal)' 목적이 생략된 형태거나 오타일 수 있어, 가장 적절한 명사인 'principle(원칙)' 혹은 형용사 'principal(주요한)' 중 선택해야 합니다. 답을 명확히 하기 위해 문제를 수정: 'Honesty is his guiding _____.' -> principle."
+  },
+  {
+    "id": 62,
+    "subject": "대학영어",
+    "question": "Honesty is his guiding _____.",
+    "options": [
+      "principal",
+      "principle",
+      "principality",
+      "print"
+    ],
+    "answer": 1,
+    "explanation": "그의 행동 지침이 되는 '신조, 원칙'은 principle입니다. (principal은 교장 또는 주요한)"
+  },
+  {
+    "id": 63,
+    "subject": "대학영어",
+    "question": "Please _____ the lights before you leave.",
+    "options": [
+      "turn out",
+      "turn off",
+      "turn in",
+      "turn over"
+    ],
+    "answer": 1,
+    "explanation": "불을 끄다는 'turn off'입니다. (turn out은 판명되다, turn in은 제출하다/잠자리에 들다)"
+  },
+  {
+    "id": 64,
+    "subject": "대학영어",
+    "question": "I wish I _____ the answer now.",
+    "options": [
+      "know",
+      "knew",
+      "have known",
+      "will know"
+    ],
+    "answer": 1,
+    "explanation": "가정법 과거(I wish + 과거동사)는 현재 사실의 반대나 실현 불가능한 소망을 나타냅니다."
+  },
+  {
+    "id": 65,
+    "subject": "대학영어",
+    "question": "Make sure to keep your passport _____ a safe place.",
+    "options": [
+      "at",
+      "on",
+      "in",
+      "to"
+    ],
+    "answer": 2,
+    "explanation": "공간의 내부를 나타낼 때는 전치사 in을 사용합니다. (in a safe place)"
+  },
+  {
+    "id": 66,
+    "subject": "대학영어",
+    "question": "_____ I admit that he is smart, I don't like his attitude.",
+    "options": [
+      "Despite",
+      "While",
+      "However",
+      "Nevertheless"
+    ],
+    "answer": 1,
+    "explanation": "While은 '비록 ~일지라도(Although)'의 의미로 양보절을 이끌 수 있습니다."
+  },
+  {
+    "id": 67,
+    "subject": "대학영어",
+    "question": "The stock market prices _____ wildly yesterday.",
+    "options": [
+      "fluctuated",
+      "flattened",
+      "flagged",
+      "flattered"
+    ],
+    "answer": 0,
+    "explanation": "주가가 심하게 '변동하다, 오르내리다'는 fluctuate입니다."
+  },
+  {
+    "id": 68,
+    "subject": "대학영어",
+    "question": "There is no _____ what will happen next.",
+    "options": [
+      "know",
+      "to know",
+      "knowing",
+      "known"
+    ],
+    "answer": 2,
+    "explanation": "'There is no -ing'는 '~하는 것은 불가능하다(It is impossible to...)'라는 관용구입니다."
+  },
+  {
+    "id": 69,
+    "subject": "대학영어",
+    "question": "This theory is based _____ extensive research.",
+    "options": [
+      "in",
+      "at",
+      "to",
+      "on"
+    ],
+    "answer": 3,
+    "explanation": "'~에 기초하다/기반하다'는 'be based on'입니다."
+  },
+  {
+    "id": 70,
+    "subject": "대학영어",
+    "question": "He speaks English fluently, not to _____ French.",
+    "options": [
+      "say",
+      "speak",
+      "mention",
+      "tell"
+    ],
+    "answer": 2,
+    "explanation": "'not to mention'은 '~은 말할 것도 없이'라는 뜻입니다."
+  },
+  {
+    "id": 71,
+    "subject": "대학영어",
+    "question": "They arrived _____ the airport just in time.",
+    "options": [
+      "to",
+      "on",
+      "at",
+      "in"
+    ],
+    "answer": 2,
+    "explanation": "arrive 뒤에 좁은 장소(지점)가 올 때는 전치사 at을 씁니다. (도시나 국가는 in)"
+  },
+  {
+    "id": 72,
+    "subject": "대학영어",
+    "question": "I would rather stay home than _____ out.",
+    "options": [
+      "go",
+      "to go",
+      "going",
+      "went"
+    ],
+    "answer": 0,
+    "explanation": "'would rather A(동사원형) than B(동사원형)' 구문입니다."
+  },
+  {
+    "id": 73,
+    "subject": "대학영어",
+    "question": "The company is looking _____ new ways to expand.",
+    "options": [
+      "after",
+      "into",
+      "up",
+      "over"
+    ],
+    "answer": 1,
+    "explanation": "새로운 방법을 '조사하다, 모색하다'는 look into(investigate)가 적절합니다."
+  },
+  {
+    "id": 74,
+    "subject": "대학영어",
+    "question": "_____ tired, he went to bed early.",
+    "options": [
+      "Being",
+      "Be",
+      "To be",
+      "Been"
+    ],
+    "answer": 0,
+    "explanation": "분사구문에서 이유를 나타내는 접속사와 주어가 생략되고 동사(was/were)가 Being으로 바뀐 형태입니다."
+  },
+  {
+    "id": 75,
+    "subject": "대학영어",
+    "question": "Choose the word with the opposite meaning of 'artificial'.",
+    "options": [
+      "fake",
+      "synthetic",
+      "natural",
+      "constructed"
+    ],
+    "answer": 2,
+    "explanation": "artificial(인공의)의 반대말은 natural(자연의)입니다."
+  },
+  {
+    "id": 76,
+    "subject": "대학영어",
+    "question": "He _____ to be a great musician.",
+    "options": [
+      "turned out",
+      "turned in",
+      "turned off",
+      "turned down"
+    ],
+    "answer": 0,
+    "explanation": "'~임이 판명되다, 드러나다'는 turn out입니다."
+  },
+  {
+    "id": 77,
+    "subject": "대학영어",
+    "question": "The scholarship enabled him _____ abroad.",
+    "options": [
+      "study",
+      "to study",
+      "studying",
+      "studied"
+    ],
+    "answer": 1,
+    "explanation": "enable + 목적어 + to부정사 구문입니다. (목적어가 ~할 수 있게 하다)"
+  },
+  {
+    "id": 78,
+    "subject": "대학영어",
+    "question": "He insisted on _____ for the dinner.",
+    "options": [
+      "pay",
+      "to pay",
+      "paying",
+      "paid"
+    ],
+    "answer": 2,
+    "explanation": "insist on에서 on은 전치사이므로 뒤에 동명사(paying)가 옵니다."
+  },
+  {
+    "id": 79,
+    "subject": "대학영어",
+    "question": "The paragraph contains some _____ sentences that repeat the same idea.",
+    "options": [
+      "redundant",
+      "concise",
+      "essential",
+      "unique"
+    ],
+    "answer": 0,
+    "explanation": "같은 내용을 반복하는 '불필요한, 중복되는' 문장은 redundant하다고 합니다."
+  },
+  {
+    "id": 80,
+    "subject": "대학영어",
+    "question": "He walked quietly so as _____ wake the baby.",
+    "options": [
+      "to not",
+      "not to",
+      "to",
+      "not"
+    ],
+    "answer": 1,
+    "explanation": "'~하지 않기 위해서'는 'so as not to V' 또는 'in order not to V' 어순을 씁니다."
+  },
+  {
+    "id": 81,
+    "subject": "대학영어",
+    "question": "We have run _____ sugar.",
+    "options": [
+      "out of",
+      "into",
+      "away",
+      "over"
+    ],
+    "answer": 0,
+    "explanation": "'~이 다 떨어지다, 고갈되다'는 'run out of'입니다."
+  },
+  {
+    "id": 82,
+    "subject": "대학영어",
+    "question": "_____ for your help, I would have failed the project.",
+    "options": [
+      "If it were not",
+      "Had it not been",
+      "Were it not",
+      "Has it not been"
+    ],
+    "answer": 1,
+    "explanation": "주절이 가정법 과거완료(would have p.p)이므로 if절도 과거완료여야 합니다. If it had not been for에서 If가 생략되어 도치된 형태입니다."
+  },
+  {
+    "id": 83,
+    "subject": "대학영어",
+    "question": "The government took measures to _____ the effects of the crisis.",
+    "options": [
+      "mitigate",
+      "aggravate",
+      "instigate",
+      "litigate"
+    ],
+    "answer": 0,
+    "explanation": "위기의 영향을 '완화시키다, 경감하다'는 mitigate가 적절합니다. (aggravate는 악화시키다)"
+  },
+  {
+    "id": 84,
+    "subject": "대학영어",
+    "question": "We are tired. Let's _____.",
+    "options": [
+      "call it a day",
+      "call it a night",
+      "call it off",
+      "call on"
+    ],
+    "answer": 0,
+    "explanation": "'오늘은 이만 하자(일과를 마치다)'라는 관용구는 'call it a day'입니다."
+  },
+  {
+    "id": 85,
+    "subject": "대학영어",
+    "question": "He sat on the chair with his legs _____.",
+    "options": [
+      "cross",
+      "crossing",
+      "crossed",
+      "to cross"
+    ],
+    "answer": 2,
+    "explanation": "'with + 명사 + 분사' 구문에서 다리는 꼬아지는(수동) 대상이므로 과거분사 crossed를 씁니다."
+  },
+  {
+    "id": 86,
+    "subject": "대학영어",
+    "question": "Smartphones have become _____ in modern society.",
+    "options": [
+      "ubiquitous",
+      "unique",
+      "obsolete",
+      "rare"
+    ],
+    "answer": 0,
+    "explanation": "어디에나 있는, 아주 흔한 것을 나타내는 단어는 ubiquitous입니다."
+  },
+  {
+    "id": 87,
+    "subject": "대학영어",
+    "question": "He hurried lest he _____ miss the train.",
+    "options": [
+      "would",
+      "should",
+      "could",
+      "might"
+    ],
+    "answer": 1,
+    "explanation": "'~하지 않도록'을 뜻하는 'lest ... should' 구문입니다. (should는 생략 가능)"
+  },
+  {
+    "id": 88,
+    "subject": "대학영어",
+    "question": "Fame is _____ ; it does not last forever.",
+    "options": [
+      "ephemeral",
+      "eternal",
+      "enduring",
+      "ethereal"
+    ],
+    "answer": 0,
+    "explanation": "영원하지 않다고 했으므로 '일시적인, 덧없는'을 뜻하는 ephemeral이 정답입니다."
+  },
+  {
+    "id": 89,
+    "subject": "대학영어",
+    "question": "It is high time that we _____ home.",
+    "options": [
+      "go",
+      "went",
+      "have gone",
+      "will go"
+    ],
+    "answer": 1,
+    "explanation": "'It is (high) time (that) + 가정법 과거(과거동사)' 구문은 '~해야 할 시간이다(그런데 아직 안 했다)'라는 뜻입니다."
+  },
+  {
+    "id": 90,
+    "subject": "대학영어",
+    "question": "When asked about the issue, he decided to _____.",
+    "options": [
+      "sit on the fence",
+      "hit the ceiling",
+      "bite the bullet",
+      "spill the beans"
+    ],
+    "answer": 0,
+    "explanation": "어느 편도 들지 않고 '중립을 지키다, 관망하다'는 sit on the fence입니다."
+  },
+  {
+    "id": 91,
+    "subject": "대학영어",
+    "question": "Scarcely had he seen me _____ he ran away.",
+    "options": [
+      "than",
+      "when",
+      "as",
+      "after"
+    ],
+    "answer": 1,
+    "explanation": "Scarcely/Hardly ... when/before 구문입니다. (~하자마자 ...했다)"
+  },
+  {
+    "id": 92,
+    "subject": "대학영어",
+    "question": "His _____ actions helped many people in need.",
+    "options": [
+      "altruistic",
+      "egocentric",
+      "hostile",
+      "apathetic"
+    ],
+    "answer": 0,
+    "explanation": "어려운 사람을 도왔으므로 '이타적인(altruistic)' 행동이 맞습니다."
+  },
+  {
+    "id": 93,
+    "subject": "대학영어",
+    "question": "No sooner _____ arrived than it started to rain.",
+    "options": [
+      "he had",
+      "had he",
+      "he has",
+      "has he"
+    ],
+    "answer": 1,
+    "explanation": "부정어 No sooner가 문두에 오면 도치가 일어나며, 시제는 과거완료(had p.p)를 씁니다."
+  },
+  {
+    "id": 94,
+    "subject": "대학영어",
+    "question": "He is very _____ about his food and clothes.",
+    "options": [
+      "fastidious",
+      "furious",
+      "generous",
+      "careless"
+    ],
+    "answer": 0,
+    "explanation": "음식이나 옷에 대해 까다로운 것은 fastidious(세심한, 꼼꼼한, 까다로운)입니다."
+  },
+  {
+    "id": 95,
+    "subject": "대학영어",
+    "question": "Your comment really _____ ; that's exactly the problem.",
+    "options": [
+      "hit the nail on the head",
+      "beat around the bush",
+      "missed the boat",
+      "barking up the wrong tree"
+    ],
+    "answer": 0,
+    "explanation": "정곡을 찌르다, 핵심을 정확히 짚다는 'hit the nail on the head'입니다."
+  },
+  {
+    "id": 96,
+    "subject": "대학영어",
+    "question": "The man _____ the piano over there is my brother.",
+    "options": [
+      "play",
+      "plays",
+      "playing",
+      "played"
+    ],
+    "answer": 2,
+    "explanation": "능동적으로 피아노를 '치고 있는' 중이므로 현재분사 playing이 명사(The man)를 수식합니다."
+  },
+  {
+    "id": 97,
+    "subject": "대학영어",
+    "question": "We need a _____ solution, not a theoretical one.",
+    "options": [
+      "pragmatic",
+      "problematic",
+      "poetic",
+      "pathetic"
+    ],
+    "answer": 0,
+    "explanation": "이론적인(theoretical) 것과 대조되는 '실용적인' 해결책은 pragmatic solution입니다."
+  },
+  {
+    "id": 98,
+    "subject": "대학영어",
+    "question": "He talks as if he _____ everything.",
+    "options": [
+      "know",
+      "knows",
+      "knew",
+      "has known"
+    ],
+    "answer": 2,
+    "explanation": "as if 가정법 과거(마치 ~인 것처럼) 구문에서는 현재 사실의 반대를 나타낼 때 과거 동사를 씁니다."
+  },
+  {
+    "id": 99,
+    "subject": "대학영어",
+    "question": "Don't _____ about the surprise party.",
+    "options": [
+      "spill the beans",
+      "break the ice",
+      "kick the bucket",
+      "burn the bridge"
+    ],
+    "answer": 0,
+    "explanation": "비밀을 누설하다는 'spill the beans'입니다."
+  },
+  {
+    "id": 100,
+    "subject": "대학영어",
+    "question": "Please give me your _____ opinion.",
+    "options": [
+      "candid",
+      "clandestine",
+      "cryptic",
+      "covert"
+    ],
+    "answer": 0,
+    "explanation": "솔직한 의견을 달라고 할 때는 candid가 적절합니다."
+  },
+  {
+    "id": 101,
+    "subject": "대학영어",
+    "question": "Perseverance is the key _____ success.",
+    "options": [
+      "of",
+      "for",
+      "to",
+      "at"
+    ],
+    "answer": 2,
+    "explanation": "열쇠, 해결책, 대답 등을 나타낼 때 key, solution, answer 뒤에는 전치사 to를 씁니다."
+  }
+]

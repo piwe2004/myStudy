@@ -1,0 +1,1302 @@
+[
+  {
+    "id": 1,
+    "subject": "jsp프로그래밍",
+    "question": "웹 서버와 웹 컨테이너(WAS)의 역할을 모두 수행하며 JSP와 서블릿을 실행할 수 있는 대표적인 오픈소스 엔진은?",
+    "options": [
+      "Apache HTTP Server",
+      "Apache Tomcat (톰캣)",
+      "Nginx",
+      "IIS"
+    ],
+    "answer": 1,
+    "explanation": "톰캣은 JSP/Servlet 컨테이너로서 자바 웹 애플리케이션을 구동하는 핵심 역할을 합니다."
+  },
+  {
+    "id": 2,
+    "subject": "jsp프로그래밍",
+    "question": "JSP 페이지가 요청될 때, 서블릿(Servlet)으로 변환되는 과정에서 생성되는 메소드가 아닌 것은?",
+    "options": [
+      "_jspInit()",
+      "_jspService()",
+      "_jspDestroy()",
+      "main()"
+    ],
+    "answer": 3,
+    "explanation": "JSP는 서블릿 생명주기를 따르며, 일반 자바 프로그램처럼 main() 메소드를 통해 실행되지 않습니다."
+  },
+  {
+    "id": 3,
+    "subject": "jsp프로그래밍",
+    "question": "JSP 주석(Comment)의 올바른 표기법은? (소스보기 했을 때 클라이언트에 전송되지 않음)",
+    "options": [
+      "",
+      "<%-- ... --%>",
+      "// ...",
+      "/* ... */"
+    ],
+    "answer": 1,
+    "explanation": "<%-- --%>는 JSP 주석으로, 서버에서 처리될 때 무시되므로 브라우저 소스 보기에는 나타나지 않습니다. (는 HTML 주석으로 보임)"
+  },
+  {
+    "id": 4,
+    "subject": "jsp프로그래밍",
+    "question": "다음 중 JSP의 선언문(Declaration) 태그로, 멤버 변수나 메소드를 선언할 때 사용하는 것은?",
+    "options": [
+      "<% ... %>",
+      "<%= ... %>",
+      "<%! ... %>",
+      "<%@ ... %>"
+    ],
+    "answer": 2,
+    "explanation": "<%! ... %> 태그 안에 작성된 코드는 서블릿 클래스의 멤버 필드나 멤버 메소드로 변환됩니다."
+  },
+  {
+    "id": 5,
+    "subject": "jsp프로그래밍",
+    "question": "page 지시어(Directive)의 속성 중, 다른 페이지에서 클래스를 가져다 쓰기 위해 사용하는 속성은?",
+    "options": [
+      "language",
+      "extends",
+      "import",
+      "session"
+    ],
+    "answer": 2,
+    "explanation": "<%@ page import=\"java.util.*\" %> 처럼 자바 패키지나 클래스를 임포트할 때 사용합니다."
+  },
+  {
+    "id": 6,
+    "subject": "jsp프로그래밍",
+    "question": "현재 페이지가 에러 페이지임을 명시하고, exception 내장 객체를 사용할 수 있게 하는 page 지시어 속성은?",
+    "options": [
+      "isErrorPage=\"true\"",
+      "errorPage=\"true\"",
+      "isException=\"true\"",
+      "useError=\"true\""
+    ],
+    "answer": 0,
+    "explanation": "isErrorPage=\"true\"로 설정된 페이지에서만 exception 객체에 접근하여 에러 내용을 처리할 수 있습니다."
+  },
+  {
+    "id": 7,
+    "subject": "jsp프로그래밍",
+    "question": "JSP 내장 객체 중, HTML 폼에서 넘어온 파라미터 값을 한글 깨짐 없이 받기 위해 인코딩을 설정하는 메소드는?",
+    "options": [
+      "response.setCharacterEncoding()",
+      "request.setCharacterEncoding()",
+      "out.println()",
+      "session.setAttribute()"
+    ],
+    "answer": 1,
+    "explanation": "POST 방식으로 넘어온 한글 데이터는 request.setCharacterEncoding(\"UTF-8\") 등을 먼저 호출해야 깨지지 않습니다."
+  },
+  {
+    "id": 8,
+    "subject": "jsp프로그래밍",
+    "question": "response 내장 객체의 기능으로 틀린 것은?",
+    "options": [
+      "헤더 정보 설정",
+      "쿠키 추가 (addCookie)",
+      "페이지 리다이렉트 (sendRedirect)",
+      "클라이언트 요청 파라미터 읽기"
+    ],
+    "answer": 3,
+    "explanation": "요청 파라미터를 읽는 것은 request 객체의 역할입니다. response는 응답을 보낼 때 사용합니다."
+  },
+  {
+    "id": 9,
+    "subject": "jsp프로그래밍",
+    "question": "세션(Session)의 유효 시간을 설정하는 메소드는?",
+    "options": [
+      "session.setMaxInactiveInterval()",
+      "session.setTimeout()",
+      "session.setValidTime()",
+      "session.setLifeCycle()"
+    ],
+    "answer": 0,
+    "explanation": "setMaxInactiveInterval(초) 메소드를 사용하여 세션이 유지되는 시간(유휴 시간)을 설정합니다."
+  },
+  {
+    "id": 10,
+    "subject": "jsp프로그래밍",
+    "question": "application 내장 객체의 특징으로 옳은 것은?",
+    "options": [
+      "하나의 클라이언트 요청에 대해서만 유효하다.",
+      "하나의 브라우저 세션 동안만 유효하다.",
+      "웹 애플리케이션 전체에서 공유되며, 서버가 종료될 때까지 유지된다.",
+      "예외가 발생했을 때만 생성된다."
+    ],
+    "answer": 2,
+    "explanation": "application 객체는 웹 어플리케이션 당 하나만 생성되며 모든 사용자가 공유하는 전역 저장소 역할을 합니다."
+  },
+  {
+    "id": 11,
+    "subject": "jsp프로그래밍",
+    "question": "out 내장 객체는 어떤 클래스의 인스턴스인가?",
+    "options": [
+      "javax.servlet.jsp.JspWriter",
+      "java.io.PrintWriter",
+      "java.io.OutputStream",
+      "javax.servlet.ServletResponse"
+    ],
+    "answer": 0,
+    "explanation": "out 객체는 JspWriter 타입으로, 버퍼링 기능을 지원하는 출력 스트림입니다."
+  },
+  {
+    "id": 12,
+    "subject": "jsp프로그래밍",
+    "question": "액션 태그 <jsp:include>와 include 지시어 <%@ include %>의 가장 큰 차이점은?",
+    "options": [
+      "차이점이 없다.",
+      "지시어는 실행 시점에 파일을 포함하고, 액션 태그는 컴파일 시점에 소스를 포함한다.",
+      "지시어는 소스 코드 자체를 복사해서 포함(정적)하고, 액션 태그는 실행 결과를 포함(동적)한다.",
+      "액션 태그는 변수를 공유할 수 없다."
+    ],
+    "answer": 2,
+    "explanation": "include 지시어는 파일을 합쳐서 하나의 서블릿으로 컴파일하지만, <jsp:include>는 요청 시점에 해당 페이지로 흐름을 이동시켰다가 결과를 가져옵니다."
+  },
+  {
+    "id": 13,
+    "subject": "jsp프로그래밍",
+    "question": "자바빈(JavaBean) 클래스를 작성할 때 반드시 지켜야 할 규칙이 아닌 것은?",
+    "options": [
+      "패키지(package)에 소속되어야 한다.",
+      "멤버 변수는 private으로 선언해야 한다.",
+      "매개변수가 없는 기본 생성자(Default Constructor)가 있어야 한다.",
+      "반드시 Runnable 인터페이스를 구현해야 한다."
+    ],
+    "answer": 3,
+    "explanation": "자바빈은 데이터를 담는 객체(DTO/VO) 규약일 뿐, 스레드 실행을 위한 Runnable 구현은 필수 조건이 아닙니다."
+  },
+  {
+    "id": 14,
+    "subject": "jsp프로그래밍",
+    "question": "액션 태그 <jsp:setProperty>에서 property=\"*\" 의 의미는?",
+    "options": [
+      "모든 프로퍼티 값을 null로 설정한다.",
+      "요청 파라미터 이름과 자바빈의 프로퍼티 이름이 일치하는 것들을 자동으로 매핑하여 값을 설정한다.",
+      "프로퍼티 설정을 무시한다.",
+      "모든 프로퍼티를 출력한다."
+    ],
+    "answer": 1,
+    "explanation": "폼 태그의 input name과 자바빈의 멤버 변수명이 같으면 자동으로 값을 채워주는 편리한 기능입니다."
+  },
+  {
+    "id": 15,
+    "subject": "jsp프로그래밍",
+    "question": "웹 애플리케이션의 배포 서술자(Deployment Descriptor) 파일인 web.xml의 위치는?",
+    "options": [
+      "/ (루트 디렉터리)",
+      "/WEB-INF/",
+      "/META-INF/",
+      "/classes/"
+    ],
+    "answer": 1,
+    "explanation": "웹 애플리케이션의 설정 정보는 반드시 WEB-INF 폴더 아래의 web.xml에 위치해야 합니다."
+  },
+  {
+    "id": 16,
+    "subject": "jsp프로그래밍",
+    "question": "쿠키(Cookie)를 생성하여 클라이언트에게 전송하는 올바른 코드는?",
+    "options": [
+      "Cookie c = new Cookie(\"id\", \"kim\"); response.addCookie(c);",
+      "Cookie c = new Cookie(\"id\", \"kim\"); request.setCookie(c);",
+      "response.createCookie(\"id\", \"kim\");",
+      "session.addCookie(\"id\", \"kim\");"
+    ],
+    "answer": 0,
+    "explanation": "쿠키 객체를 생성한(new) 뒤, response 객체의 addCookie() 메소드를 통해 응답 헤더에 실어 보냅니다."
+  },
+  {
+    "id": 17,
+    "subject": "jsp프로그래밍",
+    "question": "JDBC 프로그래밍 단계 중 가장 마지막에 수행해야 하는 작업은?",
+    "options": [
+      "드라이버 로드",
+      "SQL 실행",
+      "자원 해제 (close)",
+      "DB 연결 (Connection)"
+    ],
+    "answer": 2,
+    "explanation": "사용이 끝난 Connection, Statement, ResultSet 객체는 반드시 close() 하여 자원을 반납해야 합니다."
+  },
+  {
+    "id": 18,
+    "subject": "jsp프로그래밍",
+    "question": "SQL Injection 공격을 방지하기 위해 값을 바인딩(?)하여 처리하는 JDBC 객체는?",
+    "options": [
+      "Statement",
+      "PreparedStatement",
+      "CallableStatement",
+      "ResultStatement"
+    ],
+    "answer": 1,
+    "explanation": "PreparedStatement는 쿼리를 미리 컴파일하고 값을 나중에 채워 넣으므로 SQL 주입 공격에 안전합니다."
+  },
+  {
+    "id": 19,
+    "subject": "jsp프로그래밍",
+    "question": "커넥션 풀(Connection Pool)을 사용하는 주된 이유는?",
+    "options": [
+      "DB 연결 정보를 암호화하기 위해",
+      "DB 연결(Connection) 생성 및 해제에 드는 오버헤드를 줄여 성능을 높이기 위해",
+      "동시에 접속할 수 있는 사용자 수를 제한하기 위해",
+      "데이터베이스 용량을 늘리기 위해"
+    ],
+    "answer": 1,
+    "explanation": "미리 생성해 둔 연결 객체를 빌려 쓰고 반납하는 방식으로, 연결 생성 시간을 절약합니다."
+  },
+  {
+    "id": 20,
+    "subject": "jsp프로그래밍",
+    "question": "JSP에서 파일을 업로드하기 위해 form 태그에 반드시 설정해야 하는 속성은?",
+    "options": [
+      "method=\"get\"",
+      "enctype=\"multipart/form-data\"",
+      "type=\"file\"",
+      "action=\"upload.jsp\""
+    ],
+    "answer": 1,
+    "explanation": "바이너리 파일 전송을 위해서는 인코딩 타입을 반드시 multipart/form-data로 지정해야 하며 method는 post여야 합니다."
+  },
+  {
+    "id": 21,
+    "subject": "jsp프로그래밍",
+    "question": "표현 언어(EL)에서 null 값을 처리하는 방식은?",
+    "options": [
+      "\"null\" 문자열을 출력한다.",
+      "NullPointerException을 발생시킨다.",
+      "아무것도 출력하지 않는다 (빈 문자열).",
+      "0을 출력한다."
+    ],
+    "answer": 2,
+    "explanation": "EL은 null에 관대하여 에러를 내지 않고 공백으로 처리하므로 뷰(View) 작성 시 편리합니다."
+  },
+  {
+    "id": 22,
+    "subject": "jsp프로그래밍",
+    "question": "EL의 내장 객체 중, 파라미터 값을 가져올 때 사용하는 객체는?",
+    "options": [
+      "requestScope",
+      "param",
+      "header",
+      "cookie"
+    ],
+    "answer": 1,
+    "explanation": "${param.id} 처럼 param 객체를 통해 request.getParameter(\"id\")와 같은 효과를 냅니다."
+  },
+  {
+    "id": 23,
+    "subject": "jsp프로그래밍",
+    "question": "JSTL의 Core 태그 라이브러리를 사용하기 위한 선언문으로 옳은 것은?",
+    "options": [
+      "<%@ taglib prefix=\"c\" uri=\"http://java.sun.com/jsp/jstl/core\" %>",
+      "<%@ include file=\"jstl.jar\" %>",
+      "<jsp:useBean id=\"c\" class=\"jstl.Core\" />",
+      "<%@ page import=\"javax.servlet.jsp.jstl.*\" %>"
+    ],
+    "answer": 0,
+    "explanation": "taglib 지시어를 사용하여 URI와 접두어(prefix)를 선언해야 합니다."
+  },
+  {
+    "id": 24,
+    "subject": "jsp프로그래밍",
+    "question": "JSTL 태그 중, 자바의 if-else 문이나 switch 문과 유사하게 여러 조건을 비교할 때 사용하는 태그 그룹은?",
+    "options": [
+      "<c:if>와 <c:else>",
+      "<c:choose>, <c:when>, <c:otherwise>",
+      "<c:switch>, <c:case>",
+      "<c:forTokens>"
+    ],
+    "answer": 1,
+    "explanation": "<c:choose> 안에 <c:when>(조건)과 <c:otherwise>(그 외)를 사용하여 다중 조건을 처리합니다."
+  },
+  {
+    "id": 25,
+    "subject": "jsp프로그래밍",
+    "question": "MVC 패턴에서 'Controller'의 역할을 담당하는 기술은?",
+    "options": [
+      "JSP",
+      "JavaBean",
+      "Servlet (서블릿)",
+      "HTML"
+    ],
+    "answer": 2,
+    "explanation": "사용자의 요청을 받아 분석하고 모델을 호출한 뒤 뷰로 이동시키는 역할은 주로 서블릿이 담당합니다."
+  },
+  {
+    "id": 26,
+    "subject": "jsp프로그래밍",
+    "question": "서블릿 클래스를 작성할 때 상속받아야 하는 클래스는?",
+    "options": [
+      "GenericServlet",
+      "HttpServlet",
+      "ServletRequest",
+      "JspPage"
+    ],
+    "answer": 1,
+    "explanation": "HTTP 프로토콜(GET, POST 등)을 처리하기 위해 보통 HttpServlet을 상속받아 구현합니다."
+  },
+  {
+    "id": 27,
+    "subject": "jsp프로그래밍",
+    "question": "web.xml 없이 자바 소스 코드에서 서블릿 매핑(URL)을 설정할 때 사용하는 어노테이션은?",
+    "options": [
+      "@WebServlet",
+      "@Controller",
+      "@RequestMapping",
+      "@Override"
+    ],
+    "answer": 0,
+    "explanation": "@WebServlet(\"/hello\") 와 같이 클래스 위에 선언하여 URL 패턴을 매핑합니다."
+  },
+  {
+    "id": 28,
+    "subject": "jsp프로그래밍",
+    "question": "세션을 강제로 종료(로그아웃)시킬 때 사용하는 메소드는?",
+    "options": [
+      "session.close()",
+      "session.exit()",
+      "session.invalidate()",
+      "session.remove()"
+    ],
+    "answer": 2,
+    "explanation": "invalidate()를 호출하면 세션에 저장된 모든 데이터가 삭제되고 세션이 무효화됩니다."
+  },
+  {
+    "id": 29,
+    "subject": "jsp프로그래밍",
+    "question": "JSP 페이지의 버퍼(Buffer) 크기를 설정하거나 버퍼 사용 여부를 지정하는 page 지시어 속성은?",
+    "options": [
+      "buffer",
+      "autoFlush",
+      "info",
+      "isThreadSafe"
+    ],
+    "answer": 0,
+    "explanation": "buffer=\"8kb\"(기본값) 또는 buffer=\"none\" 등으로 출력 버퍼를 설정할 수 있습니다."
+  },
+  {
+    "id": 30,
+    "subject": "jsp프로그래밍",
+    "question": "다음 중 톰캣(Tomcat) 서버의 기본 HTTP 포트 번호는?",
+    "options": [
+      "80",
+      "8080",
+      "3306",
+      "21"
+    ],
+    "answer": 1,
+    "explanation": "톰캣은 기본적으로 8080 포트를 사용합니다. (설정 파일 server.xml에서 변경 가능)"
+  },
+  {
+    "id": 31,
+    "subject": "jsp프로그래밍",
+    "question": "JSP에서 예외 처리 페이지를 지정하지 않고, try-catch 블록 없이 에러를 처리하는 방법으로 web.xml에 설정하는 태그는?",
+    "options": [
+      "<error-page>",
+      "<exception-type>",
+      "<error-code>",
+      "모두 포함됨"
+    ],
+    "answer": 3,
+    "explanation": "<error-page> 태그 안에 <error-code>(예: 404)나 <exception-type>을 지정하여 통합 에러 처리를 할 수 있습니다."
+  },
+  {
+    "id": 32,
+    "subject": "jsp프로그래밍",
+    "question": "모델 1(Model 1) 아키텍처의 특징은?",
+    "options": [
+      "JSP가 뷰와 컨트롤러 역할을 모두 수행한다.",
+      "유지보수가 매우 쉽고 구조가 명확하다.",
+      "로직과 디자인이 완벽하게 분리되어 있다.",
+      "대규모 프로젝트에 적합하다."
+    ],
+    "answer": 0,
+    "explanation": "JSP 파일 하나에 자바 코드와 HTML이 뒤섞여 있어 개발 속도는 빠르지만 유지보수가 어렵습니다."
+  },
+  {
+    "id": 33,
+    "subject": "jsp프로그래밍",
+    "question": "EL 연산자 중 'empty' 연산자의 기능은?",
+    "options": [
+      "변수를 비운다(삭제).",
+      "객체가 null이거나, 빈 문자열(\"\")이거나, 빈 컬렉션이면 true를 반환한다.",
+      "변수가 비어있지 않은지 확인한다.",
+      "메모리를 초기화한다."
+    ],
+    "answer": 1,
+    "explanation": "${empty list} 처럼 사용하여 리스트나 변수가 비어있는지 쉽게 체크할 수 있습니다."
+  },
+  {
+    "id": 34,
+    "subject": "jsp프로그래밍",
+    "question": "필터(Filter) 인터페이스의 메소드 중, 실제 필터링 로직을 구현해야 하는 메소드는?",
+    "options": [
+      "init()",
+      "doFilter()",
+      "destroy()",
+      "filter()"
+    ],
+    "answer": 1,
+    "explanation": "doFilter(request, response, chain) 메소드 내에서 요청 전/후의 작업을 처리하고 chain.doFilter()로 다음 단계로 넘깁니다."
+  },
+  {
+    "id": 35,
+    "subject": "jsp프로그래밍",
+    "question": "JSP 페이지가 컴파일된 결과물(.class 파일)이 저장되는 위치는?",
+    "options": [
+      "웹 애플리케이션 루트 폴더",
+      "WEB-INF/classes",
+      "톰캣의 work 디렉터리",
+      "src 폴더"
+    ],
+    "answer": 2,
+    "explanation": "톰캣은 JSP를 변환한 서블릿 소스와 클래스 파일을 CATALINA_HOME/work 폴더 내에 생성하여 관리합니다."
+  },
+  {
+    "id": 36,
+    "subject": "jsp프로그래밍",
+    "question": "다음 중 JSP 스크립트 요소가 아닌 것은?",
+    "options": [
+      "선언문 (Declaration)",
+      "스크립트릿 (Scriptlet)",
+      "표현식 (Expression)",
+      "지시어 (Directive)"
+    ],
+    "answer": 3,
+    "explanation": "지시어(<%@ ... %>)는 컨테이너에게 메시지를 보내는 설정 정보이지, 자바 코드를 직접 실행하는 스크립트 요소와는 구분됩니다."
+  },
+  {
+    "id": 37,
+    "subject": "jsp프로그래밍",
+    "question": "HTTP 프로토콜의 특징인 'Stateless(무상태)'를 보완하기 위한 기술이 아닌 것은?",
+    "options": [
+      "Cookie",
+      "Session",
+      "Hidden Form Field",
+      "Connection Pooling"
+    ],
+    "answer": 3,
+    "explanation": "커넥션 풀은 DB 연결 효율을 위한 기술이며, 클라이언트의 상태 유지(State)와는 직접적인 관련이 없습니다."
+  },
+  {
+    "id": 38,
+    "subject": "jsp프로그래밍",
+    "question": "JSP에서 <jsp:useBean id=\"user\" class=\"com.test.User\" scope=\"session\" /> 태그의 의미는?",
+    "options": [
+      "매번 새로운 User 객체를 생성한다.",
+      "session 영역에서 'user'라는 이름의 객체를 찾고, 없으면 새로 생성하여 session에 저장한다.",
+      "request 영역에 저장한다.",
+      "이미 존재하는 객체만 가져오고 없으면 에러를 낸다."
+    ],
+    "answer": 1,
+    "explanation": "useBean은 지정된 scope에서 객체를 검색(Lookup)하고, 없을 경우 생성(Create)하는 기능을 수행합니다."
+  },
+  {
+    "id": 39,
+    "subject": "jsp프로그래밍",
+    "question": "JSTL <c:forEach> 태그에서 현재 반복 상태(인덱스, 횟수 등)를 알기 위해 사용하는 속성은?",
+    "options": [
+      "status",
+      "varStatus",
+      "index",
+      "count"
+    ],
+    "answer": 1,
+    "explanation": "varStatus=\"status\"로 지정하면 ${status.index}, ${status.count} 등을 사용할 수 있습니다."
+  },
+  {
+    "id": 40,
+    "subject": "jsp프로그래밍",
+    "question": "파일 업로드 라이브러리(cos.jar)에서 제공하는 클래스로, 파일명 중복 시 자동으로 이름을 변경해주는 정책 클래스는?",
+    "options": [
+      "DefaultFileRenamePolicy",
+      "AutoRenamePolicy",
+      "FileOverlapPolicy",
+      "MultipartRequest"
+    ],
+    "answer": 0,
+    "explanation": "DefaultFileRenamePolicy는 파일명 뒤에 1, 2, 3 등을 붙여 중복을 방지합니다."
+  },
+  {
+    "id": 41,
+    "subject": "jsp프로그래밍",
+    "question": "서블릿 초기화 파라미터(Init Parameter)를 설정하는 web.xml 태그는?",
+    "options": [
+      "<init-param>",
+      "<context-param>",
+      "<servlet-param>",
+      "<load-on-startup>"
+    ],
+    "answer": 0,
+    "explanation": "특정 서블릿 내에서만 사용할 파라미터는 <servlet> 태그 안의 <init-param>으로 설정합니다."
+  },
+  {
+    "id": 42,
+    "subject": "jsp프로그래밍",
+    "question": "모든 서블릿이 공유하는 전역 파라미터를 설정하는 web.xml 태그는?",
+    "options": [
+      "<init-param>",
+      "<context-param>",
+      "<global-param>",
+      "<shared-param>"
+    ],
+    "answer": 1,
+    "explanation": "애플리케이션 전체에서 공유하는 값은 <context-param>으로 설정하고 ServletContext로 읽습니다."
+  },
+  {
+    "id": 43,
+    "subject": "jsp프로그래밍",
+    "question": "리스너(Listener) 인터페이스 중, 세션이 생성되거나 소멸될 때 이벤트를 감지하는 것은?",
+    "options": [
+      "ServletContextListener",
+      "HttpSessionListener",
+      "ServletRequestListener",
+      "HttpSessionAttributeListener"
+    ],
+    "answer": 1,
+    "explanation": "HttpSessionListener는 sessionCreated()와 sessionDestroyed() 메소드를 가집니다."
+  },
+  {
+    "id": 44,
+    "subject": "jsp프로그래밍",
+    "question": "JSP 페이지가 실행될 때 공백(Whitespace)이 많이 생기는 것을 방지하기 위한 page 지시어 속성은?",
+    "options": [
+      "trimDirectiveWhitespaces=\"true\"",
+      "removeSpace=\"true\"",
+      "compact=\"true\"",
+      "noSpace=\"true\""
+    ],
+    "answer": 0,
+    "explanation": "JSP 2.1부터 지원되는 속성으로, 불필요한 줄바꿈 공백을 제거해 줍니다."
+  },
+  {
+    "id": 45,
+    "subject": "jsp프로그래밍",
+    "question": "URL 패턴 매핑 중 확장자 매핑(Extension Mapping)의 예시는?",
+    "options": [
+      "/hello",
+      "*.do",
+      "/board/*",
+      "/"
+    ],
+    "answer": 1,
+    "explanation": "*.do, *.action 처럼 특정 확장자로 끝나는 요청을 처리하는 방식입니다."
+  },
+  {
+    "id": 46,
+    "subject": "jsp프로그래밍",
+    "question": "HTTP 상태 코드 500의 의미는?",
+    "options": [
+      "요청 페이지 없음 (Not Found)",
+      "서버 내부 오류 (Internal Server Error)",
+      "권한 없음 (Forbidden)",
+      "잘못된 요청 (Bad Request)"
+    ],
+    "answer": 1,
+    "explanation": "자바 코드 예외 발생 등으로 서버가 요청을 정상적으로 처리하지 못했을 때 500 에러가 발생합니다."
+  },
+  {
+    "id": 47,
+    "subject": "jsp프로그래밍",
+    "question": "MVC 패턴에서 Model이 하는 역할은?",
+    "options": [
+      "사용자 입력을 받는다.",
+      "데이터를 저장, 가공, 처리하는 비즈니스 로직을 수행한다.",
+      "처리 결과를 화면에 보여준다.",
+      "흐름을 제어한다."
+    ],
+    "answer": 1,
+    "explanation": "Model은 데이터와 로직을 담당하며(JavaBean, DAO, Service), 화면(View)이나 제어(Controller)와는 독립적이어야 합니다."
+  },
+  {
+    "id": 48,
+    "subject": "jsp프로그래밍",
+    "question": "JSP에서 EL 함수(Function)를 정의하여 사용하기 위해 필요한 파일은?",
+    "options": [
+      "TLD (Tag Library Descriptor) 파일",
+      "web.xml",
+      "pom.xml",
+      "class 파일"
+    ],
+    "answer": 0,
+    "explanation": "TLD 파일(.tld)에 자바 static 메소드를 등록해야 JSP EL에서 함수처럼 호출할 수 있습니다."
+  },
+  {
+    "id": 49,
+    "subject": "jsp프로그래밍",
+    "question": "request.getAttribute()의 반환 타입은?",
+    "options": [
+      "String",
+      "Object",
+      "int",
+      "String[]"
+    ],
+    "answer": 1,
+    "explanation": "어떤 객체든 담을 수 있어야 하므로 Object 타입으로 반환되며, 사용 시 적절한 형변환(Casting)이 필요합니다."
+  },
+  {
+    "id": 50,
+    "subject": "jsp프로그래밍",
+    "question": "서블릿이 메모리에 로드될 때 한 번만 실행되며, 자원 초기화 등에 사용되는 메소드는?",
+    "options": [
+      "service()",
+      "doGet()",
+      "init()",
+      "main()"
+    ],
+    "answer": 2,
+    "explanation": "init() 메소드는 서블릿 생명주기 중 최초 1회만 호출됩니다."
+  },
+  {
+    "id": 51,
+    "subject": "jsp프로그래밍",
+    "question": "모든 클라이언트의 요청을 한 곳(서블릿)으로 집중시켜 처리하는 디자인 패턴은?",
+    "options": [
+      "Singleton Pattern",
+      "Front Controller Pattern",
+      "Observer Pattern",
+      "DAO Pattern"
+    ],
+    "answer": 1,
+    "explanation": "프론트 컨트롤러 패턴은 진입점을 하나로 통일하여 공통 작업(인코딩, 에러 처리 등)을 효율적으로 처리합니다."
+  },
+  {
+    "id": 52,
+    "subject": "jsp프로그래밍",
+    "question": "서블릿 초기화 파라미터(Init Parameter)를 읽어오기 위해 사용하는 객체는?",
+    "options": [
+      "ServletConfig",
+      "ServletContext",
+      "HttpSession",
+      "HttpServletRequest"
+    ],
+    "answer": 0,
+    "explanation": "init() 메소드의 매개변수로 전달되는 ServletConfig 객체를 통해 해당 서블릿 전용 초기화 파라미터를 읽습니다."
+  },
+  {
+    "id": 53,
+    "subject": "jsp프로그래밍",
+    "question": "JSTL의 Formatting 태그(fmt)를 사용하여 날짜를 원하는 형식(yyyy-MM-dd 등)으로 출력하는 태그는?",
+    "options": [
+      "<fmt:formatDate>",
+      "<fmt:formatNumber>",
+      "<fmt:parseDate>",
+      "<fmt:timeZone>"
+    ],
+    "answer": 0,
+    "explanation": "<fmt:formatDate value=\"${date}\" pattern=\"yyyy-MM-dd\" /> 형태로 사용합니다."
+  },
+  {
+    "id": 54,
+    "subject": "jsp프로그래밍",
+    "question": "데이터베이스 연결 설정(DataSource)을 관리하는 톰캣의 설정 파일은?",
+    "options": [
+      "web.xml",
+      "context.xml",
+      "tomcat-users.xml",
+      "logging.properties"
+    ],
+    "answer": 1,
+    "explanation": "META-INF/context.xml 파일에 Resource 태그를 사용하여 JNDI 데이터 소스를 정의합니다."
+  },
+  {
+    "id": 55,
+    "subject": "jsp프로그래밍",
+    "question": "DAO(Data Access Object) 패턴의 주된 목적은?",
+    "options": [
+      "데이터를 저장하는 객체를 만들기 위해",
+      "비즈니스 로직과 데이터베이스 접근 로직을 분리하기 위해",
+      "화면 출력을 담당하기 위해",
+      "컨트롤러 역할을 하기 위해"
+    ],
+    "answer": 1,
+    "explanation": "DB 접근 코드를 DAO 클래스에 모아두면 유지보수가 쉽고 코드 재사용성이 높아집니다."
+  },
+  {
+    "id": 56,
+    "subject": "jsp프로그래밍",
+    "question": "다음 중 JSP 페이지가 실행될 때 생성되는 임시 자바 파일의 저장 경로는?",
+    "options": [
+      "work 디렉터리",
+      "webapps 디렉터리",
+      "temp 디렉터리",
+      "conf 디렉터리"
+    ],
+    "answer": 0,
+    "explanation": "톰캣은 JSP를 서블릿으로 변환한 .java 및 .class 파일을 work 폴더 내부에 저장합니다."
+  },
+  {
+    "id": 57,
+    "subject": "jsp프로그래밍",
+    "question": "URL 재작성(URL Rewriting) 기술은 언제 사용하는가?",
+    "options": [
+      "클라이언트가 쿠키 사용을 막았을 때 세션 ID를 전달하기 위해",
+      "보안을 강화하기 위해",
+      "DB 연결을 위해",
+      "이미지 경로를 변경하기 위해"
+    ],
+    "answer": 0,
+    "explanation": "쿠키가 차단되면 세션 ID를 쿠키에 저장할 수 없으므로 URL 뒤에 ;jsessionid=... 를 붙여서 전달합니다."
+  },
+  {
+    "id": 58,
+    "subject": "jsp프로그래밍",
+    "question": "JSP EL에서 산술 연산자 중 나눗셈의 몫이 아닌 '나눗셈 결과(실수 포함)'를 반환하는 연산자는?",
+    "options": [
+      "div ( / )",
+      "mod ( % )",
+      "plus ( + )",
+      "eq ( == )"
+    ],
+    "answer": 0,
+    "explanation": "EL에서 ${10 / 4} 또는 ${10 div 4}는 2가 아닌 2.5를 반환합니다."
+  },
+  {
+    "id": 59,
+    "subject": "jsp프로그래밍",
+    "question": "웹 애플리케이션을 배포할 때 사용하는 압축 파일 확장자는?",
+    "options": [
+      ".jar",
+      ".war (Web Archive)",
+      ".ear",
+      ".zip"
+    ],
+    "answer": 1,
+    "explanation": "웹 프로젝트 전체 구조를 하나로 묶은 배포 파일은 WAR 파일입니다."
+  },
+  {
+    "id": 60,
+    "subject": "jsp프로그래밍",
+    "question": "MultipartRequest 객체를 사용하여 업로드된 파일의 원래 이름(Original File Name)을 알아내는 메소드는?",
+    "options": [
+      "getOriginalFileName()",
+      "getFilesystemName()",
+      "getFileName()",
+      "getFile()"
+    ],
+    "answer": 0,
+    "explanation": "서버에 저장된 이름(중복 처리됨)은 getFilesystemName(), 사용자가 올린 원래 이름은 getOriginalFileName()입니다."
+  },
+  {
+    "id": 61,
+    "subject": "jsp프로그래밍",
+    "question": "싱글톤 패턴(Singleton Pattern)을 적용하는 가장 큰 이유는?",
+    "options": [
+      "객체 생성을 원천적으로 막기 위해",
+      "시스템 전체에서 단 하나의 인스턴스만 생성하여 메모리 낭비를 줄이고 공유하기 위해",
+      "상속을 금지하기 위해",
+      "보안을 강화하기 위해"
+    ],
+    "answer": 1,
+    "explanation": "DB Connection Pool이나 설정 관리자처럼 하나만 있어도 되는 객체에 주로 사용합니다."
+  },
+  {
+    "id": 62,
+    "subject": "jsp프로그래밍",
+    "question": "JSP 페이지의 실행 순서를 제어하거나 반복문 등을 처리하기 위해 자바 코드 없이 태그 형태로 제공하는 라이브러리는?",
+    "options": [
+      "JSTL (JSP Standard Tag Library)",
+      "JDBC",
+      "JNDI",
+      "JSON"
+    ],
+    "answer": 0,
+    "explanation": "JSTL을 사용하면 스크립트릿(<% %>) 없이 태그만으로 로직을 구현할 수 있어 가독성이 좋아집니다."
+  },
+  {
+    "id": 63,
+    "subject": "jsp프로그래밍",
+    "question": "서블릿 3.0부터 web.xml 대신 어노테이션으로 필터를 등록할 때 사용하는 어노테이션은?",
+    "options": [
+      "@WebFilter",
+      "@WebServlet",
+      "@WebListener",
+      "@WebInitParam"
+    ],
+    "answer": 0,
+    "explanation": "@WebFilter(urlPatterns=\"/*\") 처럼 사용하여 필터를 등록합니다."
+  },
+  {
+    "id": 64,
+    "subject": "jsp프로그래밍",
+    "question": "DTO(Data Transfer Object) 혹은 VO(Value Object)의 역할은?",
+    "options": [
+      "데이터베이스 연결 관리",
+      "계층(Layer) 간 데이터 교환을 위한 객체",
+      "비즈니스 로직 처리",
+      "화면 출력 처리"
+    ],
+    "answer": 1,
+    "explanation": "로직을 갖지 않고 getter/setter 만을 가진 데이터 전달용 객체입니다."
+  },
+  {
+    "id": 65,
+    "subject": "jsp프로그래밍",
+    "question": "jsp:param 액션 태그는 주로 어떤 태그와 함께 사용되는가?",
+    "options": [
+      "<jsp:include> 또는 <jsp:forward>",
+      "<jsp:useBean>",
+      "<jsp:setProperty>",
+      "<jsp:plugin>"
+    ],
+    "answer": 0,
+    "explanation": "include나 forward 시 다른 페이지로 파라미터를 추가해서 넘길 때 사용합니다."
+  },
+  {
+    "id": 66,
+    "subject": "jsp프로그래밍",
+    "question": "다음 중 JSP 내장 객체와 반환 타입의 연결이 틀린 것은?",
+    "options": [
+      "request - HttpServletRequest",
+      "response - HttpServletResponse",
+      "session - HttpSession",
+      "application - ServletConfig"
+    ],
+    "answer": 3,
+    "explanation": "application 내장 객체의 타입은 ServletContext입니다. (ServletConfig는 config 객체)"
+  },
+  {
+    "id": 67,
+    "subject": "jsp프로그래밍",
+    "question": "커스텀 태그(Custom Tag)를 정의하는 파일의 확장자는?",
+    "options": [
+      ".tld (Tag Library Descriptor)",
+      ".xml",
+      ".jar",
+      ".tag"
+    ],
+    "answer": 0,
+    "explanation": "태그 라이브러리 기술자(TLD) 파일에 태그의 이름, 클래스 경로, 속성 등을 정의합니다."
+  },
+  {
+    "id": 68,
+    "subject": "jsp프로그래밍",
+    "question": "EL에서 ${user.name} 코드가 실행될 때 실제로 호출되는 메소드는?",
+    "options": [
+      "user.name()",
+      "user.getName()",
+      "user.setName()",
+      "user.accessName()"
+    ],
+    "answer": 1,
+    "explanation": "EL은 자바빈 규약에 따라 프로퍼티 이름(name)을 통해 getter 메소드(getName)를 자동 호출합니다."
+  },
+  {
+    "id": 69,
+    "subject": "jsp프로그래밍",
+    "question": "웹 서버와 클라이언트 간의 통신을 암호화하기 위해 SSL/TLS를 적용한 프로토콜은?",
+    "options": [
+      "HTTP",
+      "HTTPS",
+      "FTP",
+      "SMTP"
+    ],
+    "answer": 1,
+    "explanation": "HTTPS를 사용하면 데이터가 암호화되어 전송되므로 중간에 가로채더라도 내용을 알 수 없습니다."
+  },
+  {
+    "id": 70,
+    "subject": "jsp프로그래밍",
+    "question": "다음 중 톰캣의 디렉터리 구조에서 웹 애플리케이션이 배포되는 기본 폴더는?",
+    "options": [
+      "bin",
+      "conf",
+      "lib",
+      "webapps"
+    ],
+    "answer": 3,
+    "explanation": "webapps 폴더 안에 WAR 파일을 넣거나 폴더를 생성하면 자동으로 배포됩니다."
+  },
+  {
+    "id": 71,
+    "subject": "jsp프로그래밍",
+    "question": "JSP 파일이 수정되면 서버를 재시작해야 변경 사항이 반영되는가?",
+    "options": [
+      "그렇다.",
+      "아니다. 톰캣이 변경을 감지하고 자동으로 재컴파일한다.",
+      "web.xml을 수정해야 반영된다.",
+      "브라우저를 재시작해야 한다."
+    ],
+    "answer": 1,
+    "explanation": "JSP는 런타임에 변경 사항이 체크되어 자동으로 서블릿으로 다시 변환되므로 서버 재시작이 필요 없습니다."
+  },
+  {
+    "id": 72,
+    "subject": "jsp프로그래밍",
+    "question": "Model 2 방식(MVC)의 장점이 아닌 것은?",
+    "options": [
+      "로직과 뷰의 분리로 유지보수가 용이하다.",
+      "개발자와 디자이너의 분업이 가능하다.",
+      "구조가 단순하여 개발 속도가 Model 1보다 빠르다.",
+      "확장성이 좋다."
+    ],
+    "answer": 2,
+    "explanation": "구조가 복잡하고 초기 설정이 많아 Model 1보다 개발 난이도가 높고 시간이 더 걸릴 수 있습니다."
+  },
+  {
+    "id": 73,
+    "subject": "jsp프로그래밍",
+    "question": "요청(Request)에 대한 문자열 인코딩 방식을 지정하지 않았을 때 톰캣(8.0 이하)의 기본 인코딩은?",
+    "options": [
+      "UTF-8",
+      "EUC-KR",
+      "ISO-8859-1",
+      "MS949"
+    ],
+    "answer": 2,
+    "explanation": "과거 버전 톰캣은 기본적으로 서유럽 언어(ISO-8859-1)로 처리하여 한글이 깨졌습니다. (요즘은 UTF-8 설정이 일반적)"
+  },
+  {
+    "id": 74,
+    "subject": "jsp프로그래밍",
+    "question": "로그인 체크 필터(LoginCheckFilter)를 구현할 때, 필터 체인의 다음 단계로 넘어가지 않게 하려면 어떻게 해야 하는가?",
+    "options": [
+      "chain.doFilter()를 호출하지 않는다.",
+      "return false를 반환한다.",
+      "break를 사용한다.",
+      "System.exit(0)을 호출한다."
+    ],
+    "answer": 0,
+    "explanation": "chain.doFilter()를 호출해야 다음 필터나 서블릿으로 요청이 전달됩니다. 호출 안 하면 거기서 멈춥니다(주로 리다이렉트 시킴)."
+  },
+  {
+    "id": 75,
+    "subject": "jsp프로그래밍",
+    "question": "JSP 페이지 상단에 <%@ page session=\"false\" %> 라고 설정했을 때 사용할 수 없는 내장 객체는?",
+    "options": [
+      "request",
+      "response",
+      "session",
+      "application"
+    ],
+    "answer": 2,
+    "explanation": "세션을 사용하지 않겠다고 선언했으므로 session 내장 객체가 생성되지 않습니다."
+  },
+  {
+    "id": 76,
+    "subject": "jsp프로그래밍",
+    "question": "EL에서 맵(Map) 객체의 값에 접근할 때 사용하는 문법은?",
+    "options": [
+      "${map.key}",
+      "${map[index]}",
+      "${map.get(key)}",
+      "${map.value}"
+    ],
+    "answer": 0,
+    "explanation": "자바빈 프로퍼티처럼 도트(.) 연산자나 대괄호([])를 사용하여 키 값에 접근합니다. ${map['key']} 도 가능."
+  },
+  {
+    "id": 77,
+    "subject": "jsp프로그래밍",
+    "question": "서블릿 컨텍스트 리스너(ServletContextListener)의 contextInitialized() 메소드는 언제 호출되는가?",
+    "options": [
+      "서버(웹 애플리케이션)가 시작될 때",
+      "사용자가 로그인할 때",
+      "세션이 생성될 때",
+      "요청이 들어올 때마다"
+    ],
+    "answer": 0,
+    "explanation": "웹 애플리케이션이 톰캣에 로딩되어 시작되는 시점에 딱 한 번 호출되므로, 전체 초기화 작업에 적합합니다."
+  },
+  {
+    "id": 78,
+    "subject": "jsp프로그래밍",
+    "question": "JSTL 함수 라이브러리(fn)를 사용하여 문자열의 길이를 구하는 태그는?",
+    "options": [
+      "${fn:length(str)}",
+      "${fn:size(str)}",
+      "${fn:count(str)}",
+      "${str.length()}"
+    ],
+    "answer": 0,
+    "explanation": "fn 라이브러리는 EL 내부에서 함수처럼 사용되며, 길이 반환은 fn:length() 입니다."
+  },
+  {
+    "id": 79,
+    "subject": "jsp프로그래밍",
+    "question": "데이터베이스 트랜잭션 처리를 위해 자동 커밋을 끄는 JDBC 코드는?",
+    "options": [
+      "conn.setAutoCommit(false)",
+      "conn.setCommit(false)",
+      "conn.startTransaction()",
+      "conn.rollback()"
+    ],
+    "answer": 0,
+    "explanation": "기본적으로 JDBC는 자동 커밋이 켜져 있으므로, 트랜잭션 관리를 하려면 false로 설정해야 합니다."
+  },
+  {
+    "id": 80,
+    "subject": "jsp프로그래밍",
+    "question": "톰캣 서버의 전역 설정(포트 번호 변경 등)을 담고 있는 파일은?",
+    "options": [
+      "web.xml",
+      "context.xml",
+      "server.xml",
+      "tomcat.xml"
+    ],
+    "answer": 2,
+    "explanation": "conf/server.xml 파일에서 커넥터 포트(8080) 등을 수정할 수 있습니다."
+  },
+  {
+    "id": 81,
+    "subject": "jsp프로그래밍",
+    "question": "다음 중 JSP 동작 에러(500)가 발생하는 원인이 아닌 것은?",
+    "options": [
+      "NullPointerException 발생",
+      "문법 오류 (Syntax Error)",
+      "클래스를 찾을 수 없음 (ClassNotFoundException)",
+      "요청한 파일이 없음 (404)"
+    ],
+    "answer": 3,
+    "explanation": "파일이 없는 것은 404 에러입니다. 500 에러는 서버 내부 로직 수행 중 발생한 예외입니다."
+  },
+  {
+    "id": 82,
+    "subject": "jsp프로그래밍",
+    "question": "Post 방식 요청 시 데이터의 크기 제한은?",
+    "options": [
+      "255자",
+      "1KB",
+      "제한 없음 (서버 설정에 따름)",
+      "GET 방식과 동일"
+    ],
+    "answer": 2,
+    "explanation": "GET 방식은 URL 길이에 제한받지만, POST 방식은 HTTP Body에 데이터를 실어 보내므로 이론상 제한이 없습니다."
+  },
+  {
+    "id": 83,
+    "subject": "jsp프로그래밍",
+    "question": "Wrapper 클래스(HttpServletRequestWrapper 등)를 사용하는 주된 목적은?",
+    "options": [
+      "요청/응답 객체의 기능을 변경하거나 확장하여 필터 등에서 사용하기 위해",
+      "DB 연결을 위해",
+      "세션을 생성하기 위해",
+      "파일 업로드를 위해"
+    ],
+    "answer": 0,
+    "explanation": "필터에서 요청 파라미터를 가공하거나 인코딩을 변경해서 서블릿에 넘겨줄 때 래퍼 클래스를 상속받아 구현합니다."
+  },
+  {
+    "id": 84,
+    "subject": "jsp프로그래밍",
+    "question": "JSTL <c:set> 태그의 scope 속성 기본값은?",
+    "options": [
+      "page",
+      "request",
+      "session",
+      "application"
+    ],
+    "answer": 0,
+    "explanation": "scope를 지정하지 않으면 현재 페이지(page) 영역에 변수가 저장됩니다."
+  },
+  {
+    "id": 85,
+    "subject": "jsp프로그래밍",
+    "question": "비동기 통신 기술인 AJAX(Asynchronous JavaScript and XML)의 핵심 객체는?",
+    "options": [
+      "XMLHttpRequest",
+      "ActiveXObject",
+      "DOMParser",
+      "JSONParser"
+    ],
+    "answer": 0,
+    "explanation": "브라우저에서 서버와 비동기로 데이터를 주고받기 위해 XMLHttpRequest 객체(또는 fetch API)를 사용합니다."
+  },
+  {
+    "id": 86,
+    "subject": "jsp프로그래밍",
+    "question": "서블릿이 싱글톤으로 동작함에 따라 주의해야 할 점은?",
+    "options": [
+      "메모리를 많이 사용한다.",
+      "멤버 변수(인스턴스 변수)에 상태 정보를 저장하면 스레드 안전(Thread-safe)하지 않다.",
+      "속도가 느리다.",
+      "동시 접속 처리가 불가능하다."
+    ],
+    "answer": 1,
+    "explanation": "하나의 서블릿 인스턴스를 여러 스레드가 공유하므로, 멤버 변수에 사용자별 데이터를 저장하면 데이터가 꼬일 수 있습니다. (지역 변수 사용 권장)"
+  },
+  {
+    "id": 87,
+    "subject": "jsp프로그래밍",
+    "question": "EL에서 논리 연산자 중 OR를 의미하는 키워드는?",
+    "options": [
+      "and",
+      "or",
+      "not",
+      "eq"
+    ],
+    "answer": 1,
+    "explanation": "|| 기호 대신 or 키워드를 사용할 수 있습니다. (&&는 and, !는 not)"
+  },
+  {
+    "id": 88,
+    "subject": "jsp프로그래밍",
+    "question": "JSP 페이지의 트림(Trim) 지시어로, HTML 출력 시 불필요한 공백 제거를 돕는 것은?",
+    "options": [
+      "trimDirectiveWhitespaces",
+      "removeWhitespace",
+      "deleteSpace",
+      "noBlank"
+    ],
+    "answer": 0,
+    "explanation": "JSP 2.1 이상에서 <%@ page trimDirectiveWhitespaces=\"true\" %> 로 설정합니다."
+  },
+  {
+    "id": 89,
+    "subject": "jsp프로그래밍",
+    "question": "다음 중 JSP에서 사용할 수 있는 주석이 아닌 것은?",
+    "options": [
+      "<%-- JSP 주석 --%>",
+      "",
+      "// 자바 한 줄 주석 (스크립트릿 내)",
+      "# 파이썬 스타일 주석"
+    ],
+    "answer": 3,
+    "explanation": "JSP는 자바 기반이므로 # 주석은 지원하지 않습니다."
+  },
+  {
+    "id": 90,
+    "subject": "jsp프로그래밍",
+    "question": "서버 측에서 클라이언트의 브라우저 정보를 알 수 있는 헤더는?",
+    "options": [
+      "User-Agent",
+      "Referer",
+      "Host",
+      "Cookie"
+    ],
+    "answer": 0,
+    "explanation": "User-Agent 헤더를 분석하면 접속한 기기가 모바일인지 PC인지, 브라우저 종류가 무엇인지 알 수 있습니다."
+  },
+  {
+    "id": 91,
+    "subject": "jsp프로그래밍",
+    "question": "JNDI(Java Naming and Directory Interface)를 이용한 DB 연결의 장점은?",
+    "options": [
+      "소스 코드 내에 DB 계정 정보를 하드코딩할 필요가 없다.",
+      "속도가 느리다.",
+      "톰캣이 아닌 다른 서버에서는 사용할 수 없다.",
+      "설정이 필요 없다."
+    ],
+    "answer": 0,
+    "explanation": "설정 파일(context.xml)에 리소스를 정의하고 코드에서는 이름(Name)으로 찾아 쓰므로, 코드 수정 없이 DB 설정 변경이 가능합니다."
+  },
+  {
+    "id": 92,
+    "subject": "jsp프로그래밍",
+    "question": "MVC 패턴의 뷰(View)에서 컨트롤러나 모델로 데이터를 다시 보낼 때 주로 사용하는 HTML 태그는?",
+    "options": [
+      "<form>",
+      "<table>",
+      "<div>",
+      "<span>"
+    ],
+    "answer": 0,
+    "explanation": "form 태그를 사용하여 사용자 입력 값을 서버(Action/Servlet)로 전송합니다."
+  },
+  {
+    "id": 93,
+    "subject": "jsp프로그래밍",
+    "question": "서블릿의 url-pattern 설정에서 확장자 매핑 시 주의할 점은?",
+    "options": [
+      "반드시 /로 시작해야 한다.",
+      "/로 시작하면 안 된다. (예: *.do)",
+      "확장자는 3글자여야 한다.",
+      "특수문자를 사용할 수 없다."
+    ],
+    "answer": 1,
+    "explanation": "확장자 매핑은 '*.do' 처럼 작성하며, 앞에 슬래시(/)를 붙이면 에러가 발생합니다. (디렉터리 매핑은 /로 시작)"
+  },
+  {
+    "id": 94,
+    "subject": "jsp프로그래밍",
+    "question": "GET 방식 요청의 특징으로 옳은 것은?",
+    "options": [
+      "데이터가 URL 뒤에 쿼리 스트링으로 노출된다.",
+      "대용량 데이터 전송에 적합하다.",
+      "보안에 유리하다.",
+      "바이너리 데이터 전송이 가능하다."
+    ],
+    "answer": 0,
+    "explanation": "URL?name=value 형태로 전송되므로 보안에 취약하고 길이 제한이 있습니다."
+  },
+  {
+    "id": 95,
+    "subject": "jsp프로그래밍",
+    "question": "JSP 액션 태그 <jsp:plugin>의 용도는?",
+    "options": [
+      "자바 애플릿이나 자바빈즈를 클라이언트 브라우저에서 실행하기 위해",
+      "서버 플러그인을 설치하기 위해",
+      "이미지를 보여주기 위해",
+      "DB를 연결하기 위해"
+    ],
+    "answer": 0,
+    "explanation": "브라우저에 자바 플러그인을 임베드하여 애플릿 등을 실행할 때 사용하지만, 현재는 보안 문제로 거의 사용되지 않습니다."
+  },
+  {
+    "id": 96,
+    "subject": "jsp프로그래밍",
+    "question": "HTTP 프로토콜은 기본적으로 연결을 유지하지 않는다(Connectionless). 이를 극복하고 지속적인 연결을 유지하기 위한 헤더 설정은?",
+    "options": [
+      "Connection: keep-alive",
+      "Connection: close",
+      "Cache-Control: no-cache",
+      "Content-Type: text/html"
+    ],
+    "answer": 0,
+    "explanation": "keep-alive를 사용하면 한 번 맺은 TCP 연결을 재사용하여 성능을 높일 수 있습니다."
+  },
+  {
+    "id": 97,
+    "subject": "jsp프로그래밍",
+    "question": "다음 중 JSP 내장 객체가 아닌 것은?",
+    "options": [
+      "request",
+      "response",
+      "service",
+      "pageContext"
+    ],
+    "answer": 2,
+    "explanation": "service는 서블릿의 메소드 이름이며, JSP 내장 객체 이름은 아닙니다."
+  },
+  {
+    "id": 98,
+    "subject": "jsp프로그래밍",
+    "question": "서블릿에서 다른 서블릿이나 JSP로 데이터를 공유하기 위해 사용하는 3가지 주요 객체가 아닌 것은?",
+    "options": [
+      "HttpServletRequest (Request Scope)",
+      "HttpSession (Session Scope)",
+      "ServletContext (Application Scope)",
+      "PrintWriter"
+    ],
+    "answer": 3,
+    "explanation": "PrintWriter는 출력 스트림이며, 데이터를 저장하고 공유하는 스코프 객체(저장소)가 아닙니다."
+  },
+  {
+    "id": 99,
+    "subject": "jsp프로그래밍",
+    "question": "톰캣 컨테이너가 관리하는 세션의 기본 타임아웃 시간은?",
+    "options": [
+      "10분",
+      "20분",
+      "30분",
+      "60분"
+    ],
+    "answer": 2,
+    "explanation": "톰캣의 web.xml 기본 설정(session-timeout)은 30분입니다."
+  },
+  {
+    "id": 100,
+    "subject": "jsp프로그래밍",
+    "question": "MVC 패턴을 적용하여 게시판을 만들 때, 게시글 목록(List)을 가져오는 흐름으로 가장 적절한 것은?",
+    "options": [
+      "JSP(View) -> DAO -> DB",
+      "Servlet(Controller) -> Service/DAO(Model) -> DB -> Servlet -> JSP(View)",
+      "HTML -> DB -> JSP",
+      "DAO -> Servlet -> JSP"
+    ],
+    "answer": 1,
+    "explanation": "요청(Servlet) → 로직 처리 및 데이터 조회(Model) → 결과 저장 후 뷰(JSP)로 포워딩하는 것이 정석입니다."
+  }
+]

@@ -1,0 +1,262 @@
+[
+  {
+    "id": 1,
+    "subject": "컴퓨터 네트워크",
+    "question": "OSI 7계층 중, 물리적인 연결 설정 및 전송 매체를 통해 비트(Bit) 단위의 데이터를 전송하는 계층은?",
+    "options": [
+      "물리 계층 (Physical Layer)",
+      "데이터 링크 계층 (Data Link Layer)",
+      "네트워크 계층 (Network Layer)",
+      "전송 계층 (Transport Layer)"
+    ],
+    "answer": 0,
+    "explanation": "1계층인 물리 계층은 케이블, 리피터, 허브 등을 이용해 전기적 신호(Bit)를 전송합니다."
+  },
+  {
+    "id": 2,
+    "subject": "컴퓨터 네트워크",
+    "question": "TCP와 UDP의 차이점에 대한 설명으로 틀린 것은?",
+    "options": [
+      "TCP는 연결 지향형(Connection-oriented) 프로토콜이다.",
+      "UDP는 비연결형(Connectionless) 프로토콜이다.",
+      "TCP는 신뢰성 있는 데이터 전송을 보장한다.",
+      "UDP는 3-way Handshake 과정을 거쳐 연결을 설정한다."
+    ],
+    "answer": 3,
+    "explanation": "3-way Handshake는 TCP의 연결 설정 과정입니다. UDP는 연결 설정 없이 데이터를 바로 보냅니다."
+  },
+  {
+    "id": 3,
+    "subject": "컴퓨터 네트워크",
+    "question": "IP 주소 부족 문제를 해결하기 위해 고안된 차세대 인터넷 주소 체계로, 128비트 주소 길이를 가지는 것은?",
+    "options": [
+      "IPv4",
+      "IPv5",
+      "IPv6",
+      "MAC Address"
+    ],
+    "answer": 2,
+    "explanation": "IPv4는 32비트, IPv6는 128비트 주소 체계를 사용하여 거의 무한대에 가까운 주소를 제공합니다."
+  },
+  {
+    "id": 4,
+    "subject": "컴퓨터 네트워크",
+    "question": "HTTP 상태 코드(Status Code) 중, '요청한 페이지를 찾을 수 없음(Not Found)'을 의미하는 것은?",
+    "options": [
+      "200",
+      "403",
+      "404",
+      "500"
+    ],
+    "answer": 2,
+    "explanation": "200은 성공(OK), 403은 권한 없음(Forbidden), 500은 서버 내부 오류, 404는 찾을 수 없음(Not Found)입니다."
+  },
+  {
+    "id": 5,
+    "subject": "컴퓨터 네트워크",
+    "question": "도메인 이름(www.knou.ac.kr)을 IP 주소로 변환해주는 시스템은?",
+    "options": [
+      "DHCP",
+      "DNS (Domain Name System)",
+      "ARP",
+      "NAT"
+    ],
+    "answer": 1,
+    "explanation": "DNS 서버는 사람이 읽을 수 있는 도메인 이름을 컴퓨터가 이해하는 IP 주소로 매핑해줍니다."
+  },
+  {
+    "id": 6,
+    "subject": "컴퓨터 네트워크",
+    "question": "네트워크 계층(L3)에서 데이터 전송 경로를 설정(Routing)하고 패킷을 중계하는 장비는?",
+    "options": [
+      "Hub (허브)",
+      "Switch (스위치)",
+      "Router (라우터)",
+      "Repeater (리피터)"
+    ],
+    "answer": 2,
+    "explanation": "라우터는 IP 주소를 기반으로 최적의 경로를 찾아 패킷을 목적지까지 전달합니다."
+  },
+  {
+    "id": 7,
+    "subject": "컴퓨터 네트워크",
+    "question": "TCP 연결 설정 과정인 '3-way Handshake'의 순서로 옳은 것은?",
+    "options": [
+      "SYN -> SYN-ACK -> ACK",
+      "ACK -> SYN -> SYN-ACK",
+      "SYN -> ACK -> FIN",
+      "FIN -> ACK -> SYN"
+    ],
+    "answer": 0,
+    "explanation": "클라이언트가 SYN을 보내고, 서버가 SYN-ACK로 응답하고, 클라이언트가 다시 ACK를 보내 연결을 수립합니다."
+  },
+  {
+    "id": 8,
+    "subject": "컴퓨터 네트워크",
+    "question": "논리적 주소(IP)를 물리적 주소(MAC)로 변환하는 프로토콜은?",
+    "options": [
+      "RARP",
+      "ARP (Address Resolution Protocol)",
+      "ICMP",
+      "IGMP"
+    ],
+    "answer": 1,
+    "explanation": "ARP는 '이 IP 가진 사람 누구야?'라고 브로드캐스팅하여 해당 장비의 MAC 주소를 알아냅니다."
+  },
+  {
+    "id": 9,
+    "subject": "컴퓨터 네트워크",
+    "question": "서브넷 마스크(Subnet Mask)의 주된 용도는?",
+    "options": [
+      "IP 주소를 네트워크 부분과 호스트 부분으로 구분하기 위해",
+      "데이터 전송 속도를 높이기 위해",
+      "데이터 암호화를 위해",
+      "도메인 이름을 변환하기 위해"
+    ],
+    "answer": 0,
+    "explanation": "255.255.255.0 같은 서브넷 마스크를 AND 연산하여 네트워크 ID를 추출합니다."
+  },
+  {
+    "id": 10,
+    "subject": "컴퓨터 네트워크",
+    "question": "오류 제어 방식 중, 데이터를 전송할 때 오류 검출을 위한 여분의 비트(체크섬 등)를 함께 보내, 수신 측에서 재전송(ARQ)을 요청하는 방식은?",
+    "options": [
+      "FEC (Forward Error Correction)",
+      "BEC (Backward Error Correction)",
+      "Hamming Code",
+      "Parity Bit"
+    ],
+    "answer": 1,
+    "explanation": "오류가 발견되면 송신 측에 다시 보내달라고 요청하는 방식(ARQ)을 후진 오류 수정(BEC)이라고 합니다."
+  },
+  {
+    "id": 11,
+    "subject": "컴퓨터 네트워크",
+    "question": "OSI 7계층 중, 종단 간(End-to-End) 신뢰성 있는 데이터 전송을 담당하며, 포트(Port) 번호를 사용하여 프로세스를 식별하는 계층은?",
+    "options": [
+      "네트워크 계층",
+      "전송 계층 (Transport Layer)",
+      "세션 계층",
+      "표현 계층"
+    ],
+    "answer": 1,
+    "explanation": "4계층 전송 계층(TCP/UDP)은 포트 번호를 통해 어떤 프로그램(서비스)으로 데이터를 보낼지 결정합니다."
+  },
+  {
+    "id": 12,
+    "subject": "컴퓨터 네트워크",
+    "question": "다음 중 사설 IP(Private IP) 대역이 아닌 것은?",
+    "options": [
+      "10.0.0.0 ~ 10.255.255.255",
+      "172.16.0.0 ~ 172.31.255.255",
+      "192.168.0.0 ~ 192.168.255.255",
+      "8.8.8.8"
+    ],
+    "answer": 3,
+    "explanation": "8.8.8.8은 구글의 DNS 서버로 사용되는 공인 IP(Public IP)입니다."
+  },
+  {
+    "id": 13,
+    "subject": "컴퓨터 네트워크",
+    "question": "웹 브라우저와 웹 서버 간에 데이터를 암호화하여 전송하는 보안 프로토콜은?",
+    "options": [
+      "HTTP",
+      "FTP",
+      "HTTPS (SSL/TLS)",
+      "SMTP"
+    ],
+    "answer": 2,
+    "explanation": "HTTPS는 HTTP에 SSL/TLS 암호화 계층을 추가하여 보안을 강화한 프로토콜입니다."
+  },
+  {
+    "id": 14,
+    "subject": "컴퓨터 네트워크",
+    "question": "패킷 교환 방식(Packet Switching)의 특징이 아닌 것은?",
+    "options": [
+      "데이터를 작은 패킷 단위로 나누어 전송한다.",
+      "전송 대역폭을 효율적으로 이용할 수 있다.",
+      "전용 회선을 독점하여 사용한다.",
+      "저장 후 전송(Store and Forward) 방식을 사용한다."
+    ],
+    "answer": 2,
+    "explanation": "전용 회선을 독점하는 것은 '회선 교환(Circuit Switching)' 방식(예: 전화)입니다. 패킷 교환은 회선을 공유합니다."
+  },
+  {
+    "id": 15,
+    "subject": "컴퓨터 네트워크",
+    "question": "이메일을 보낼 때(송신) 사용하는 프로토콜은?",
+    "options": [
+      "POP3",
+      "IMAP",
+      "SMTP (Simple Mail Transfer Protocol)",
+      "SNMP"
+    ],
+    "answer": 2,
+    "explanation": "메일 전송은 SMTP, 메일 수신(읽기)은 POP3나 IMAP을 사용합니다."
+  },
+  {
+    "id": 16,
+    "subject": "컴퓨터 네트워크",
+    "question": "자기 자신을 가리키는 루프백(Loopback) IP 주소는?",
+    "options": [
+      "0.0.0.0",
+      "127.0.0.1",
+      "255.255.255.0",
+      "192.168.0.1"
+    ],
+    "answer": 1,
+    "explanation": "localhost라고도 불리는 127.0.0.1은 자기 자신의 컴퓨터를 가리키는 특수 주소입니다."
+  },
+  {
+    "id": 17,
+    "subject": "컴퓨터 네트워크",
+    "question": "라우팅 프로토콜 중, 거리 벡터(Distance Vector) 알고리즘을 사용하며 홉(Hop) 수 제한이 있는 것은?",
+    "options": [
+      "RIP (Routing Information Protocol)",
+      "OSPF",
+      "BGP",
+      "ISIS"
+    ],
+    "answer": 0,
+    "explanation": "RIP는 최대 홉 수를 15로 제한하며, 경로 설정 시 거리(Hop count)만을 고려합니다."
+  },
+  {
+    "id": 18,
+    "subject": "컴퓨터 네트워크",
+    "question": "흐름 제어(Flow Control) 기법 중, 수신 측의 윈도우 크기만큼 송신 측이 확인 응답(ACK) 없이 데이터를 연속해서 보내는 방식은?",
+    "options": [
+      "Stop and Wait",
+      "Sliding Window",
+      "Go-Back-N",
+      "Selective Repeat"
+    ],
+    "answer": 1,
+    "explanation": "슬라이딩 윈도우는 수신 버퍼의 여유 공간만큼 윈도우를 밀면서(Sliding) 효율적으로 전송하는 기법입니다."
+  },
+  {
+    "id": 19,
+    "subject": "컴퓨터 네트워크",
+    "question": "MAC 주소(물리 주소)의 비트 길이는?",
+    "options": [
+      "32비트",
+      "48비트",
+      "64비트",
+      "128비트"
+    ],
+    "answer": 1,
+    "explanation": "MAC 주소는 16진수 12자리로 표현되며, 총 48비트(6바이트) 길이입니다."
+  },
+  {
+    "id": 20,
+    "subject": "컴퓨터 네트워크",
+    "question": "well-known 포트 번호 연결이 올바르지 않은 것은?",
+    "options": [
+      "HTTP : 80",
+      "HTTPS : 443",
+      "FTP : 21",
+      "SSH : 23"
+    ],
+    "answer": 3,
+    "explanation": "SSH는 22번 포트를 사용합니다. 23번은 Telnet입니다."
+  }
+]

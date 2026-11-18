@@ -2,103 +2,78 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>방통대 CS 문제은행</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#f5f6f8">
+    <title>CS 문제은행</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <div class="app-container">
-        
-        <div id="home-screen">
-            <h1 class="main-title">방통대 CS<br>문제은행 🎓</h1>
-            <p class="sub-title">총 600문제 (랜덤 출제)</p>
-            <div class="main-tabs">
+
+        <!-- 홈 -->
+        <main id="home-screen">
+            <header class="home-header">
+                <h1 class="main-title">CS 문제은행</h1>
+                <p class="sub-title">문제 불러오는 중...</p>
+            </header>
+
+            <div class="main-tabs" role="tablist">
                 <button class="main-tab-btn active" data-tab="knou" onclick="filterTab('knou')">방통대 CS</button>
                 <button class="main-tab-btn" data-tab="engineer" onclick="filterTab('engineer')">정보처리기사</button>
             </div>
 
-            <div id="subject-list" class="grid-box"></div>
-        </div>
+            <div id="subject-list"></div>
+        </main>
 
-        <div id="quiz-screen" style="display: none;">
-            <div class="header">
-                <button onclick="goHome()" class="back-btn">← 나가기</button>
+        <!-- 퀴즈 -->
+        <section id="quiz-screen" hidden>
+            <header class="header">
+                <button onclick="goHome()" class="back-btn" aria-label="나가기">✕</button>
                 <span id="current-subject-title">과목명</span>
-                <span id="progress-text">1 / 100</span>
-            </div>
-            
+                <span id="progress-text">1 / 25</span>
+            </header>
+            <div class="progress"><div id="progress-bar"></div></div>
+
             <div class="quiz-content">
-                <div class="question-box">
-                    <p id="question-text">문제가 여기에 나옵니다.</p>
-                </div>
-
-                <div id="options-box" class="options-list">
-                    </div>
-
-                <div id="result-box" style="display: none;"></div>
-
-                <button id="next-btn" onclick="nextQuestion()">다음 문제 ▶</button>
+                <p id="question-text"></p>
+                <div id="options-box" class="options-list"></div>
+                <div id="result-box" hidden></div>
             </div>
-        </div>
-        <div id="score-screen" style="display: none;">
+
+            <div class="bottom-bar">
+                <button id="next-btn" onclick="nextQuestion()" hidden>다음 문제</button>
+            </div>
+        </section>
+
+        <!-- 결과 -->
+        <section id="score-screen" hidden>
             <div class="score-card">
-                <h2>수고하셨습니다! 🎉</h2>
-                <p class="score-label">당신의 점수는?</p>
-                <div class="score-circle">
-                    <span id="final-score">0</span>
-                    <span class="unit">점</span>
+                <p class="score-label">결과</p>
+                <div class="score-ring" id="score-ring">
+                    <span id="final-score">0</span><span class="unit">점</span>
                 </div>
                 <div class="stats-box">
                     <div class="stat-item">
-                        <span class="label">총 문제</span>
                         <span class="value" id="total-count-display">0</span>
+                        <span class="label">총 문제</span>
                     </div>
                     <div class="stat-item">
-                        <span class="label">정답</span>
                         <span class="value correct" id="correct-count-display">0</span>
+                        <span class="label">정답</span>
                     </div>
                     <div class="stat-item">
-                        <span class="label">오답</span>
                         <span class="value wrong" id="wrong-count-display">0</span>
+                        <span class="label">오답</span>
                     </div>
                 </div>
-                <button onclick="goHome()" class="home-btn">메인으로 돌아가기</button>
+                <button onclick="retry()" class="primary-btn">같은 과목 다시 풀기</button>
+                <button onclick="goHome()" class="ghost-btn">과목 선택으로</button>
             </div>
-        </div>                                                                                                                                                                                                                                                                  
+        </section>
     </div>
 
     <script src="script.js"></script>
-    <script>
-        // [수정된 함수] 탭 클릭 시 과목 필터링 및 데이터 로드
-        async function filterTab(tabId) {
-            // 1. 탭 버튼 스타일 활성화 처리
-            document.querySelectorAll('.main-tab-btn').forEach(btn => {
-                btn.classList.toggle('active', btn.getAttribute('data-tab') === tabId);
-            });
-
-            // 2. 데이터 가져오기 (반복문 밖에서 딱 '한 번'만 호출!)
-            // 기존에 .forEach 안쪽에 있던 getData를 밖으로 뺐습니다.
-            await getData(tabId); 
-
-            // 3. 과목 카드 보여주기/숨기기 (이미 renderSubjectButtons에서 생성된 카드를 제어)
-            const cards = document.querySelectorAll('.subject-card');
-            if (cards.length > 0) {
-                cards.forEach(card => {
-                    if (card.getAttribute('data-category') === tabId) {
-                        card.style.display = 'flex'; 
-                    } else {
-                        card.style.display = 'none';
-                    }
-                });
-            }
-        }
-
-        // 초기 로딩: 방통대 데이터를 기본으로 로드
-        // DOMContentLoaded를 사용하여 안전하게 시작합니다.
-        window.addEventListener('DOMContentLoaded', () => {
-            getData('knou');
-        });
-    </script>
 </body>
 </html>

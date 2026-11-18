@@ -1,0 +1,1302 @@
+[
+  {
+    "id": 1,
+    "subject": "클라우드컴퓨팅",
+    "question": "미국 국립표준기술연구소(NIST)가 정의한 클라우드 컴퓨팅의 5가지 주요 특성이 아닌 것은?",
+    "options": [
+      "주문형 셀프 서비스 (On-demand Self-service)",
+      "광범위한 네트워크 접근 (Broad Network Access)",
+      "자원 풀링 (Resource Pooling)",
+      "고정된 요금제 (Fixed Pricing)"
+    ],
+    "answer": 3,
+    "explanation": "클라우드는 사용한 만큼 비용을 지불하는 '측정된 서비스(Measured Service)'가 특징입니다. 고정 요금제가 아닙니다."
+  },
+  {
+    "id": 2,
+    "subject": "클라우드컴퓨팅",
+    "question": "클라우드 서비스 모델 중, 네트워크, 스토리지, 서버, 가상화 등 기본적인 컴퓨팅 자원을 제공하는 모델은?",
+    "options": [
+      "SaaS (Software as a Service)",
+      "PaaS (Platform as a Service)",
+      "IaaS (Infrastructure as a Service)",
+      "FaaS (Function as a Service)"
+    ],
+    "answer": 2,
+    "explanation": "인프라(Infrastructure)를 빌려주는 IaaS에 대한 설명입니다. (예: AWS EC2)"
+  },
+  {
+    "id": 3,
+    "subject": "클라우드컴퓨팅",
+    "question": "애플리케이션 개발, 실행, 관리에 필요한 플랫폼(OS, 미들웨어, 런타임)을 제공하는 서비스 모델은?",
+    "options": [
+      "IaaS",
+      "PaaS",
+      "SaaS",
+      "DaaS"
+    ],
+    "answer": 1,
+    "explanation": "개발자가 인프라 관리 없이 코드 개발에 집중할 수 있게 해주는 PaaS입니다. (예: Google App Engine)"
+  },
+  {
+    "id": 4,
+    "subject": "클라우드컴퓨팅",
+    "question": "클라우드 제공자가 관리하는 애플리케이션을 사용자가 웹 브라우저 등을 통해 사용하는 모델은?",
+    "options": [
+      "IaaS",
+      "PaaS",
+      "SaaS",
+      "CaaS"
+    ],
+    "answer": 2,
+    "explanation": "소프트웨어(Software) 자체를 서비스로 제공받는 SaaS입니다. (예: Gmail, Dropbox)"
+  },
+  {
+    "id": 5,
+    "subject": "클라우드컴퓨팅",
+    "question": "클라우드 배포 모델 중, 특정 조직(기업) 내부에서만 독점적으로 사용하는 클라우드 환경은?",
+    "options": [
+      "Public Cloud (퍼블릭 클라우드)",
+      "Private Cloud (프라이빗 클라우드)",
+      "Hybrid Cloud (하이브리드 클라우드)",
+      "Community Cloud (커뮤니티 클라우드)"
+    ],
+    "answer": 1,
+    "explanation": "보안이 중요하거나 규제가 엄격한 조직이 자체적으로 구축하여 사용하는 사설 클라우드입니다."
+  },
+  {
+    "id": 6,
+    "subject": "클라우드컴퓨팅",
+    "question": "물리적 하드웨어와 가상 머신(VM) 사이에서 자원을 중재하고 VM을 생성/관리하는 소프트웨어 계층은?",
+    "options": [
+      "Hypervisor (하이퍼바이저)",
+      "Docker",
+      "Kubernetes",
+      "Middleware"
+    ],
+    "answer": 0,
+    "explanation": "가상화의 핵심 기술인 하이퍼바이저(VMM)에 대한 설명입니다."
+  },
+  {
+    "id": 7,
+    "subject": "클라우드컴퓨팅",
+    "question": "베어메탈(Bare Metal) 기반 하이퍼바이저(Type 1)의 예시가 아닌 것은?",
+    "options": [
+      "VMware ESXi",
+      "Microsoft Hyper-V",
+      "Xen",
+      "Oracle VirtualBox"
+    ],
+    "answer": 3,
+    "explanation": "VirtualBox는 호스트 OS 위에 설치되는 호스트형(Type 2) 하이퍼바이저입니다."
+  },
+  {
+    "id": 8,
+    "subject": "클라우드컴퓨팅",
+    "question": "기존의 가상머신(VM) 방식과 달리, OS 커널을 공유하며 프로세스를 격리하는 가벼운 가상화 기술은?",
+    "options": [
+      "전가상화",
+      "반가상화",
+      "컨테이너 (Container)",
+      "에뮬레이션"
+    ],
+    "answer": 2,
+    "explanation": "컨테이너 기술(Docker 등)은 Guest OS가 없어서 VM보다 훨씬 가볍고 빠릅니다."
+  },
+  {
+    "id": 9,
+    "subject": "클라우드컴퓨팅",
+    "question": "여러 개의 컨테이너를 관리, 배포, 확장(Scaling)하는 자동화 기술을 무엇이라 하는가?",
+    "options": [
+      "Virtualization",
+      "Orchestration (오케스트레이션)",
+      "Encapsulation",
+      "Segmentation"
+    ],
+    "answer": 1,
+    "explanation": "쿠버네티스(Kubernetes)가 대표적인 컨테이너 오케스트레이션 도구입니다."
+  },
+  {
+    "id": 10,
+    "subject": "클라우드컴퓨팅",
+    "question": "서버 용량을 늘리는 방법 중, 서버의 사양(CPU, RAM 등)을 높이는 방식은?",
+    "options": [
+      "Scale-out (수평적 확장)",
+      "Scale-in",
+      "Scale-up (수직적 확장)",
+      "Scale-down"
+    ],
+    "answer": 2,
+    "explanation": "장비 자체의 성능을 업그레이드하는 것을 스케일 업(Scale-up)이라고 합니다."
+  },
+  {
+    "id": 11,
+    "subject": "클라우드컴퓨팅",
+    "question": "서버의 개수를 늘려서 처리 능력을 향상시키는 방식은?",
+    "options": [
+      "Scale-out (수평적 확장)",
+      "Scale-up (수직적 확장)",
+      "Failover",
+      "Migration"
+    ],
+    "answer": 0,
+    "explanation": "비슷한 사양의 서버를 여러 대 추가하여 부하를 분산하는 것을 스케일 아웃이라고 합니다. 클라우드에 적합한 방식입니다."
+  },
+  {
+    "id": 12,
+    "subject": "클라우드컴퓨팅",
+    "question": "AWS의 책임 공유 모델에서 '클라우드 제공자(AWS)'의 책임 범위에 해당하는 것은?",
+    "options": [
+      "고객 데이터 암호화",
+      "운영체제 보안 패치",
+      "네트워크 방화벽 설정",
+      "물리적 데이터 센터의 보안 및 인프라 하드웨어 유지보수"
+    ],
+    "answer": 3,
+    "explanation": "AWS는 '클라우드의 보안(물리적 시설, 하드웨어)'을, 고객은 '클라우드 내부의 보안(데이터, OS, 앱)'을 책임집니다."
+  },
+  {
+    "id": 13,
+    "subject": "클라우드컴퓨팅",
+    "question": "클라우드 서비스 제공자(CSP)가 전 세계에 구축한 데이터 센터의 물리적 위치 집합을 무엇이라 하는가?",
+    "options": [
+      "Zone",
+      "Region (리전)",
+      "Edge",
+      "Cluster"
+    ],
+    "answer": 1,
+    "explanation": "리전(Region)은 데이터 센터들이 모여 있는 지리적 영역(예: 서울 리전, 도쿄 리전)입니다."
+  },
+  {
+    "id": 14,
+    "subject": "클라우드컴퓨팅",
+    "question": "하나의 리전 내에 격리되어 있는 독립적인 데이터 센터(또는 센터 군)를 의미하는 것은?",
+    "options": [
+      "Availability Zone (AZ, 가용 영역)",
+      "Local Zone",
+      "VPC",
+      "Subnet"
+    ],
+    "answer": 0,
+    "explanation": "AZ는 하나의 리전 안에서 전력, 네트워크 등이 물리적으로 분리된 데이터 센터입니다. 고가용성 구성에 필수입니다."
+  },
+  {
+    "id": 15,
+    "subject": "클라우드컴퓨팅",
+    "question": "전통적인 IT 비용 지출 방식인 CAPEX(자본 지출)와 대비되는, 클라우드의 비용 지출 방식은?",
+    "options": [
+      "OPEX (Operating Expense, 운영 비용)",
+      "TCO (Total Cost of Ownership)",
+      "ROI (Return on Investment)",
+      "Fixed Cost"
+    ],
+    "answer": 0,
+    "explanation": "초기 투자 비용 없이 사용한 만큼 매달 지불하는 운영 비용(OPEX) 모델입니다."
+  },
+  {
+    "id": 16,
+    "subject": "클라우드컴퓨팅",
+    "question": "특정 클라우드 공급업체의 기술에 종속되어 다른 업체로 이동하기 어려워지는 현상은?",
+    "options": [
+      "Vendor Lock-in (벤더 락인)",
+      "Cloud Native",
+      "Multi-cloud",
+      "SLA Breach"
+    ],
+    "answer": 0,
+    "explanation": "특정 업체의 독자적인 기술이나 API에 너무 깊게 의존하면 나중에 마이그레이션이 어려워지는 락인 효과가 발생합니다."
+  },
+  {
+    "id": 17,
+    "subject": "클라우드컴퓨팅",
+    "question": "서버리스(Serverless) 컴퓨팅의 특징으로 틀린 것은?",
+    "options": [
+      "서버가 아예 존재하지 않는다.",
+      "사용자는 서버 관리에 신경 쓸 필요가 없다.",
+      "이벤트가 발생할 때만 코드가 실행된다.",
+      "유휴 시간(Idle time)에는 비용이 발생하지 않는다."
+    ],
+    "answer": 0,
+    "explanation": "물리적인 서버는 당연히 존재하지만, 클라우드 제공자가 전적으로 관리하므로 사용자 입장에서 '서버가 없는 것처럼' 느껴지는 것입니다."
+  },
+  {
+    "id": 18,
+    "subject": "클라우드컴퓨팅",
+    "question": "애플리케이션을 작은 독립적인 서비스 단위로 쪼개어 개발하고 배포하는 아키텍처는?",
+    "options": [
+      "Monolithic Architecture (모놀리식)",
+      "Microservices Architecture (MSA, 마이크로서비스)",
+      "Client-Server",
+      "Peer-to-Peer"
+    ],
+    "answer": 1,
+    "explanation": "클라우드 네이티브 앱 개발에 적합한 MSA는 각 서비스가 독립적으로 배포되고 확장될 수 있습니다."
+  },
+  {
+    "id": 19,
+    "subject": "클라우드컴퓨팅",
+    "question": "클라우드 네이티브(Cloud Native) 기술의 핵심 요소 4가지(CNCF 정의)에 포함되지 않는 것은?",
+    "options": [
+      "컨테이너 (Containers)",
+      "서비스 메쉬 (Service Mesh)",
+      "마이크로서비스 (Microservices)",
+      "가상 머신 (Virtual Machines)"
+    ],
+    "answer": 3,
+    "explanation": "CNCF는 컨테이너, 서비스 메쉬, 마이크로서비스, 불변 인프라(Immutable Infrastructure)를 핵심 요소로 정의합니다. VM은 기존 방식입니다."
+  },
+  {
+    "id": 20,
+    "subject": "클라우드컴퓨팅",
+    "question": "AWS S3와 같은 객체 스토리지(Object Storage)의 특징은?",
+    "options": [
+      "계층적 디렉터리 구조를 가진다.",
+      "데이터를 객체(Object) 단위로 저장하며 고유한 ID(Key)와 메타데이터를 가진다.",
+      "OS를 설치하여 부팅할 수 있다.",
+      "블록 단위로 데이터를 수정할 수 있다."
+    ],
+    "answer": 1,
+    "explanation": "객체 스토리지는 파일 시스템과 달리 평면적 구조이며, REST API를 통해 접근합니다. 대용량 비정형 데이터 저장에 적합합니다."
+  },
+  {
+    "id": 21,
+    "subject": "클라우드컴퓨팅",
+    "question": "트래픽 부하를 여러 대의 서버로 분산시켜 주는 서비스는?",
+    "options": [
+      "Auto Scaling",
+      "Load Balancer (로드 밸런서)",
+      "CDN",
+      "VPN"
+    ],
+    "answer": 1,
+    "explanation": "ELB(Elastic Load Balancing)와 같은 로드 밸런서가 트래픽을 건강한 인스턴스로 분산합니다."
+  },
+  {
+    "id": 22,
+    "subject": "클라우드컴퓨팅",
+    "question": "시스템 부하(CPU 사용률 등)에 따라 자동으로 서버(인스턴스) 수를 늘리거나 줄이는 기능은?",
+    "options": [
+      "Auto Scaling (오토 스케일링)",
+      "Load Balancing",
+      "Monitoring",
+      "Clustering"
+    ],
+    "answer": 0,
+    "explanation": "오토 스케일링을 사용하면 트래픽 변동에 탄력적으로 대응하여 비용을 최적화할 수 있습니다."
+  },
+  {
+    "id": 23,
+    "subject": "클라우드컴퓨팅",
+    "question": "전 세계에 분산된 엣지 로케이션을 통해 콘텐츠(이미지, 영상 등)를 사용자에게 빠르게 전송하는 서비스는?",
+    "options": [
+      "VPC",
+      "CDN (Content Delivery Network)",
+      "VPN",
+      "DNS"
+    ],
+    "answer": 1,
+    "explanation": "CDN은 데이터를 사용자와 가까운 캐시 서버에 저장하여 전송 속도를 높입니다. (예: AWS CloudFront)"
+  },
+  {
+    "id": 24,
+    "subject": "클라우드컴퓨팅",
+    "question": "퍼블릭 클라우드 내에 논리적으로 격리된 가상 네트워크 공간을 생성하여 보안성을 높이는 서비스는?",
+    "options": [
+      "VPC (Virtual Private Cloud)",
+      "VPN (Virtual Private Network)",
+      "VM (Virtual Machine)",
+      "VDI (Virtual Desktop Infrastructure)"
+    ],
+    "answer": 0,
+    "explanation": "VPC를 사용하면 퍼블릭 클라우드 안에서도 사설 IP 대역을 사용하여 나만의 네트워크 환경을 구성할 수 있습니다."
+  },
+  {
+    "id": 25,
+    "subject": "클라우드컴퓨팅",
+    "question": "AWS의 IAM(Identity and Access Management) 서비스의 주된 기능은?",
+    "options": [
+      "서버 모니터링",
+      "사용자 계정 및 권한 관리",
+      "데이터베이스 백업",
+      "비용 청구 관리"
+    ],
+    "answer": 1,
+    "explanation": "IAM은 누가(인증) 어떤 리소스에 접근할 수 있는지(인가)를 제어하는 보안 서비스입니다."
+  },
+  {
+    "id": 26,
+    "subject": "클라우드컴퓨팅",
+    "question": "다음 중 NoSQL 데이터베이스 서비스(AWS)는?",
+    "options": [
+      "Amazon RDS",
+      "Amazon Aurora",
+      "Amazon DynamoDB",
+      "Amazon Redshift"
+    ],
+    "answer": 2,
+    "explanation": "RDS와 Aurora는 관계형 DB이고, DynamoDB는 키-값 구조의 NoSQL 서비스입니다."
+  },
+  {
+    "id": 27,
+    "subject": "클라우드컴퓨팅",
+    "question": "DevOps(데브옵스) 문화와 밀접한 관련이 있는 '지속적 통합 및 지속적 배포'를 의미하는 용어는?",
+    "options": [
+      "CI/CD",
+      "IaC",
+      "MSA",
+      "TDD"
+    ],
+    "answer": 0,
+    "explanation": "CI(Continuous Integration) / CD(Continuous Deployment)는 개발과 운영의 자동화를 핵심으로 합니다."
+  },
+  {
+    "id": 28,
+    "subject": "클라우드컴퓨팅",
+    "question": "코드로 인프라를 관리하고 프로비저닝하는 기술(Infrastructure as Code)을 의미하는 약어는?",
+    "options": [
+      "SaaS",
+      "IaC",
+      "PaaS",
+      "IaaS"
+    ],
+    "answer": 1,
+    "explanation": "Terraform이나 AWS CloudFormation 등을 사용하여 인프라 구성을 코드로 작성하고 관리하는 것입니다."
+  },
+  {
+    "id": 29,
+    "subject": "클라우드컴퓨팅",
+    "question": "Docker 컨테이너를 생성하기 위한 읽기 전용 템플릿을 무엇이라 하는가?",
+    "options": [
+      "Container",
+      "Image (이미지)",
+      "Registry",
+      "Dockerfile"
+    ],
+    "answer": 1,
+    "explanation": "도커 이미지는 컨테이너 실행에 필요한 파일과 설정을 포함한 불변의 파일입니다."
+  },
+  {
+    "id": 30,
+    "subject": "클라우드컴퓨팅",
+    "question": "쿠버네티스(Kubernetes)에서 배포의 가장 작은 단위로, 하나 이상의 컨테이너 그룹을 의미하는 것은?",
+    "options": [
+      "Node",
+      "Cluster",
+      "Pod (파드)",
+      "Service"
+    ],
+    "answer": 2,
+    "explanation": "쿠버네티스는 컨테이너를 직접 관리하지 않고 Pod 단위로 관리합니다."
+  },
+  {
+    "id": 31,
+    "subject": "클라우드컴퓨팅",
+    "question": "클라우드 환경에서 '가용성(Availability)'을 높이기 위한 설계 원칙은?",
+    "options": [
+      "단일 서버에 모든 기능 집중",
+      "단일 실패 지점(SPOF) 제거 및 다중 AZ 배포",
+      "백업 수행 안 함",
+      "수동 복구 절차 수립"
+    ],
+    "answer": 1,
+    "explanation": "하나가 죽어도 시스템이 멈추지 않도록 이중화(Redundancy)하고 SPOF를 없애야 합니다."
+  },
+  {
+    "id": 32,
+    "subject": "클라우드컴퓨팅",
+    "question": "REST API에서 자원(Resource)을 생성(Create)할 때 주로 사용하는 HTTP 메소드는?",
+    "options": [
+      "GET",
+      "POST",
+      "PUT",
+      "DELETE"
+    ],
+    "answer": 1,
+    "explanation": "일반적으로 POST는 생성, GET은 조회, PUT은 수정, DELETE는 삭제에 사용됩니다."
+  },
+  {
+    "id": 33,
+    "subject": "클라우드컴퓨팅",
+    "question": "클라우드 컴퓨팅의 효시가 된 기술로, 유휴 자원을 공유하여 거대한 연산 능력을 확보하는 기술은?",
+    "options": [
+      "Grid Computing (그리드 컴퓨팅)",
+      "Mobile Computing",
+      "Quantum Computing",
+      "Edge Computing"
+    ],
+    "answer": 0,
+    "explanation": "그리드 컴퓨팅은 분산된 컴퓨터 자원을 묶어 대용량 연산을 수행하는 기술로 클라우드의 발전 기반이 되었습니다."
+  },
+  {
+    "id": 34,
+    "subject": "클라우드컴퓨팅",
+    "question": "오픈소스 클라우드 구축 플랫폼으로, 프라이빗 클라우드 구축에 가장 널리 사용되는 것은?",
+    "options": [
+      "OpenStack (오픈스택)",
+      "VMware vSphere",
+      "AWS Outposts",
+      "Azure Stack"
+    ],
+    "answer": 0,
+    "explanation": "오픈스택은 NASA와 Rackspace가 시작한 오픈소스 프로젝트로, AWS와 유사한 기능을 사내에 구축할 수 있게 해줍니다."
+  },
+  {
+    "id": 35,
+    "subject": "클라우드컴퓨팅",
+    "question": "다음 중 클라우드 마이그레이션 전략인 '6R'에 해당하지 않는 것은?",
+    "options": [
+      "Rehost (Lift and Shift)",
+      "Refactor",
+      "Retire",
+      "Reboot"
+    ],
+    "answer": 3,
+    "explanation": "6R은 Rehost, Replatform, Repurchase, Refactor, Retire, Retain 입니다. Reboot는 없습니다."
+  },
+  {
+    "id": 36,
+    "subject": "클라우드컴퓨팅",
+    "question": "클라우드 서비스 제공자(AWS, Azure 등)가 보장하는 서비스 가동률 등을 명시한 문서는?",
+    "options": [
+      "NDA",
+      "SLA (Service Level Agreement)",
+      "MOU",
+      "RFP"
+    ],
+    "answer": 1,
+    "explanation": "SLA는 서비스 수준 협약서로, 약속된 가동률(예: 99.99%)을 지키지 못하면 크레딧 등으로 보상합니다."
+  },
+  {
+    "id": 37,
+    "subject": "클라우드컴퓨팅",
+    "question": "AWS에서 관계형 데이터베이스를 쉽게 설정, 운영, 확장할 수 있게 해주는 서비스는?",
+    "options": [
+      "Amazon EC2",
+      "Amazon S3",
+      "Amazon RDS (Relational Database Service)",
+      "Amazon VPC"
+    ],
+    "answer": 2,
+    "explanation": "RDS는 MySQL, PostgreSQL, Oracle 등의 RDBMS를 관리형 서비스로 제공합니다."
+  },
+  {
+    "id": 38,
+    "subject": "클라우드컴퓨팅",
+    "question": "네트워크 지연(Latency)을 최소화하기 위해 중앙 클라우드가 아닌 사용자 단말 근처에서 데이터를 처리하는 기술은?",
+    "options": [
+      "Cloud Computing",
+      "Edge Computing (엣지 컴퓨팅)",
+      "Grid Computing",
+      "Utility Computing"
+    ],
+    "answer": 1,
+    "explanation": "데이터 발생원 근처(Edge)에서 처리하여 응답 속도를 높이고 대역폭을 절약합니다."
+  },
+  {
+    "id": 39,
+    "subject": "클라우드컴퓨팅",
+    "question": "클라우드 환경에서 시스템이 중단 없이 계속해서 정상적으로 운영될 수 있는 성질은?",
+    "options": [
+      "가용성 (Availability)",
+      "무결성 (Integrity)",
+      "기밀성 (Confidentiality)",
+      "인증 (Authentication)"
+    ],
+    "answer": 0,
+    "explanation": "가용성은 '언제든지 서비스를 이용할 수 있는 상태'를 의미하며 HA(High Availability) 구성이 중요합니다."
+  },
+  {
+    "id": 40,
+    "subject": "클라우드컴퓨팅",
+    "question": "도커(Docker)에서 이미지를 빌드(생성)하는 명령어는?",
+    "options": [
+      "docker run",
+      "docker build",
+      "docker pull",
+      "docker push"
+    ],
+    "answer": 1,
+    "explanation": "docker build -t 이미지명 . 명령어를 사용하여 Dockerfile을 기반으로 이미지를 생성합니다."
+  },
+  {
+    "id": 41,
+    "subject": "클라우드컴퓨팅",
+    "question": "가상 머신(VM)과 비교하여 컨테이너(Container)의 장점이 아닌 것은?",
+    "options": [
+      "가볍고 구동 속도가 빠르다.",
+      "OS 커널을 공유하여 자원 효율이 높다.",
+      "이식성이 뛰어나다.",
+      "보안 격리 수준이 VM보다 훨씬 강력하다."
+    ],
+    "answer": 3,
+    "explanation": "컨테이너는 커널을 공유하기 때문에 하이퍼바이저로 완전히 격리되는 VM보다는 보안 격리 수준이 낮을 수 있습니다."
+  },
+  {
+    "id": 42,
+    "subject": "클라우드컴퓨팅",
+    "question": "AWS Lambda와 같은 서버리스 서비스의 과금 기준은?",
+    "options": [
+      "서버 임대 시간 (월 단위)",
+      "함수의 실행 횟수와 실행 시간 (밀리초 단위)",
+      "저장 데이터 용량",
+      "네트워크 대역폭"
+    ],
+    "answer": 1,
+    "explanation": "서버리스는 코드가 실제 실행된 시간만큼만(보통 100ms 단위) 비용을 청구합니다."
+  },
+  {
+    "id": 43,
+    "subject": "클라우드컴퓨팅",
+    "question": "클라우드 네이티브 애플리케이션의 12 Factor App 방법론에 포함되지 않는 것은?",
+    "options": [
+      "코드베이스 (Codebase)",
+      "종속성 (Dependencies)",
+      "설정 (Config)",
+      "수동 배포 (Manual Deployment)"
+    ],
+    "answer": 3,
+    "explanation": "12 Factor App은 자동화된 빌드, 릴리즈, 실행을 강조합니다. 수동 배포는 지양합니다."
+  },
+  {
+    "id": 44,
+    "subject": "클라우드컴퓨팅",
+    "question": "여러 클라우드 제공자(AWS, Azure, Google 등)의 서비스를 동시에 사용하는 전략은?",
+    "options": [
+      "Hybrid Cloud",
+      "Multi-cloud (멀티 클라우드)",
+      "Private Cloud",
+      "Community Cloud"
+    ],
+    "answer": 1,
+    "explanation": "특정 벤더 종속을 피하고 각 벤더의 장점을 활용하기 위해 2개 이상의 퍼블릭 클라우드를 쓰는 것을 멀티 클라우드라 합니다."
+  },
+  {
+    "id": 45,
+    "subject": "클라우드컴퓨팅",
+    "question": "블록 스토리지(Block Storage)의 특징으로 옳은 것은?",
+    "options": [
+      "데이터를 파일 단위로 관리한다.",
+      "데이터를 고정된 크기의 블록으로 나누어 저장하며, OS가 하드디스크처럼 인식한다.",
+      "HTTP API를 통해 접근한다.",
+      "메타데이터를 무제한으로 확장할 수 있다."
+    ],
+    "answer": 1,
+    "explanation": "AWS EBS처럼 가상 서버에 마운트하여 C드라이브나 D드라이브처럼 쓰는 것이 블록 스토리지입니다."
+  },
+  {
+    "id": 46,
+    "subject": "클라우드컴퓨팅",
+    "question": "하이퍼바이저 없이 물리 서버에 직접 컨테이너 엔진을 올려 사용하는 방식은?",
+    "options": [
+      "Bare Metal Container",
+      "Virtual Machine",
+      "Full Virtualization",
+      "Para Virtualization"
+    ],
+    "answer": 0,
+    "explanation": "OS 위에 바로 컨테이너를 올리거나 베어메탈 서버를 사용하여 오버헤드를 최소화하는 방식입니다."
+  },
+  {
+    "id": 47,
+    "subject": "클라우드컴퓨팅",
+    "question": "다음 중 클라우드 컴퓨팅의 단점(Risk)으로 볼 수 있는 것은?",
+    "options": [
+      "초기 비용 절감",
+      "유연한 확장성",
+      "인터넷 연결 의존성 및 보안/프라이버시 우려",
+      "유지보수 부담 감소"
+    ],
+    "answer": 2,
+    "explanation": "인터넷이 끊기면 사용할 수 없고, 중요 데이터를 외부에 맡긴다는 보안 우려가 존재합니다."
+  },
+  {
+    "id": 48,
+    "subject": "클라우드컴퓨팅",
+    "question": "AWS의 글로벌 인프라 중, 사용자에게 가장 짧은 지연 시간으로 콘텐츠를 전송하기 위해 전 세계에 배치된 거점은?",
+    "options": [
+      "Region",
+      "Availability Zone",
+      "Edge Location (엣지 로케이션)",
+      "Data Center"
+    ],
+    "answer": 2,
+    "explanation": "CloudFront(CDN) 서비스가 사용하는 캐시 서버들이 위치한 곳을 엣지 로케이션이라 합니다."
+  },
+  {
+    "id": 49,
+    "subject": "클라우드컴퓨팅",
+    "question": "유틸리티 컴퓨팅(Utility Computing)의 개념은?",
+    "options": [
+      "컴퓨팅 자원을 전기나 수도처럼 사용한 만큼 요금을 지불하는 모델",
+      "무료로 자원을 사용하는 모델",
+      "자원을 미리 구매하여 사용하는 모델",
+      "PC를 조립하는 기술"
+    ],
+    "answer": 0,
+    "explanation": "클라우드 컴퓨팅의 과금 방식의 기초가 된 개념입니다."
+  },
+  {
+    "id": 50,
+    "subject": "클라우드컴퓨팅",
+    "question": "서로 다른 애플리케이션 간에 메시지를 비동기적으로 교환하기 위해 사용하는 서비스(예: AWS SQS)는?",
+    "options": [
+      "Message Queue (메시지 큐)",
+      "Load Balancer",
+      "Database",
+      "Storage"
+    ],
+    "answer": 0,
+    "explanation": "메시지 큐를 사용하면 시스템 간 결합도(Coupling)를 낮추고 비동기 처리가 가능해집니다."
+  },
+  {
+    "id": 51,
+    "subject": "클라우드컴퓨팅",
+    "question": "하이퍼바이저(Hypervisor)의 유형 중, 호스트 OS 없이 하드웨어 위에 직접 설치되는 Type 1(베어메탈) 방식의 장점은?",
+    "options": [
+      "설치가 가장 쉽다.",
+      "호스트 OS의 오버헤드가 없어 성능이 우수하고 효율적이다.",
+      "개인용 PC에서 주로 사용한다.",
+      "다양한 하드웨어를 지원하기 어렵다."
+    ],
+    "answer": 1,
+    "explanation": "중간에 호스트 OS를 거치지 않기 때문에 엔터프라이즈 서버 가상화에 주로 사용됩니다. (예: ESXi, Xen)"
+  },
+  {
+    "id": 52,
+    "subject": "클라우드컴퓨팅",
+    "question": "AWS VPC에서 서브넷(Subnet)을 생성할 때 지정해야 하는 주소 체계는?",
+    "options": [
+      "MAC Address",
+      "CIDR (Classless Inter-Domain Routing) 블록",
+      "DNS Name",
+      "URL"
+    ],
+    "answer": 1,
+    "explanation": "10.0.0.0/24 와 같이 CIDR 표기법을 사용하여 서브넷의 IP 범위를 지정합니다."
+  },
+  {
+    "id": 53,
+    "subject": "클라우드컴퓨팅",
+    "question": "클라우드 보안 그룹(Security Group)의 특징으로 옳은 것은?",
+    "options": [
+      "Stateless (상태 비저장)이다.",
+      "인바운드 규칙만 설정할 수 있다.",
+      "Stateful (상태 저장)이며, 인스턴스 단위의 방화벽 역할을 한다.",
+      "서브넷 단위로 적용된다."
+    ],
+    "answer": 2,
+    "explanation": "보안 그룹은 들어오는 트래픽을 허용하면 나가는 트래픽도 자동으로 허용되는 Stateful 성격을 가집니다."
+  },
+  {
+    "id": 54,
+    "subject": "클라우드컴퓨팅",
+    "question": "재해 복구(Disaster Recovery) 전략 중, 가장 복구 시간이 빠르지만 비용이 가장 많이 드는 방식은?",
+    "options": [
+      "Backup & Restore (백업 및 복구)",
+      "Pilot Light (파일럿 라이트)",
+      "Warm Standby (웜 스탠바이)",
+      "Multi-site Active/Active (멀티 사이트 액티브/액티브)"
+    ],
+    "answer": 3,
+    "explanation": "두 곳 이상의 사이트를 동시에 가동하여 트래픽을 처리하므로, 한 곳이 죽어도 즉시(다운타임 거의 없이) 전환됩니다."
+  },
+  {
+    "id": 55,
+    "subject": "클라우드컴퓨팅",
+    "question": "시스템의 구성 요소 중 하나가 고장 나더라도 전체 시스템이 중단되지 않고 계속 작동하는 능력을 무엇이라 하는가?",
+    "options": [
+      "Scalability (확장성)",
+      "Fault Tolerance (내결함성)",
+      "Agility (민첩성)",
+      "Elasticity (탄력성)"
+    ],
+    "answer": 1,
+    "explanation": "내결함성은 일부 장애에도 불구하고 기능을 유지하는 능력을 말합니다."
+  },
+  {
+    "id": 56,
+    "subject": "클라우드컴퓨팅",
+    "question": "마이크로서비스 아키텍처(MSA)에서 서비스 간 통신을 위해 주로 사용하는 경량 프로토콜은?",
+    "options": [
+      "SOAP",
+      "RESTful API (HTTP/JSON)",
+      "FTP",
+      "Telnet"
+    ],
+    "answer": 1,
+    "explanation": "REST API는 HTTP 표준을 따르며 JSON을 데이터 포맷으로 사용하여 서비스 간 통신에 적합합니다."
+  },
+  {
+    "id": 57,
+    "subject": "클라우드컴퓨팅",
+    "question": "클라우드 리소스를 모니터링하고 로그를 수집하며 알람을 설정할 수 있는 AWS 서비스는?",
+    "options": [
+      "AWS CloudTrail",
+      "Amazon CloudWatch",
+      "AWS Config",
+      "Amazon Inspector"
+    ],
+    "answer": 1,
+    "explanation": "CloudWatch는 리소스의 지표(CPU, 메모리 등)를 감시하고 로그를 저장하는 모니터링 도구입니다."
+  },
+  {
+    "id": 58,
+    "subject": "클라우드컴퓨팅",
+    "question": "다음 중 프라이빗 서브넷(Private Subnet)에 있는 인스턴스가 인터넷과 통신하기 위해 필요한 게이트웨이는?",
+    "options": [
+      "Internet Gateway (IGW)",
+      "NAT Gateway",
+      "VPN Gateway",
+      "Customer Gateway"
+    ],
+    "answer": 1,
+    "explanation": "프라이빗 인스턴스는 공인 IP가 없으므로, NAT Gateway를 통해 아웃바운드 트래픽을 내보내야 인터넷(업데이트 등)이 가능합니다."
+  },
+  {
+    "id": 59,
+    "subject": "클라우드컴퓨팅",
+    "question": "클라우드 네이티브 환경에서 '불변 인프라(Immutable Infrastructure)'의 개념은?",
+    "options": [
+      "한 번 구축한 서버는 절대 변경하지 않고 평생 사용한다.",
+      "서버를 수정(Update)하는 대신, 새로운 버전의 서버 이미지로 교체(Replace)하여 배포한다.",
+      "인프라 설정을 수동으로 관리한다.",
+      "하드웨어 변경이 불가능하다."
+    ],
+    "answer": 1,
+    "explanation": "서버에 패치를 적용하는 대신 새 이미지를 배포하고 기존 것을 버리는 방식으로, 구성 불일치(Configuration Drift)를 방지합니다."
+  },
+  {
+    "id": 60,
+    "subject": "클라우드컴퓨팅",
+    "question": "API 요청을 받아 적절한 백엔드 서비스로 라우팅하고, 인증 및 속도 제한 등을 처리하는 관리형 서비스는?",
+    "options": [
+      "API Gateway",
+      "Load Balancer",
+      "Firewall",
+      "DNS"
+    ],
+    "answer": 0,
+    "explanation": "API Gateway는 클라이언트와 백엔드 사이의 단일 진입점 역할을 하며 API 관리를 담당합니다."
+  },
+  {
+    "id": 61,
+    "subject": "클라우드컴퓨팅",
+    "question": "다음 중 '수직적 확장(Scale-up)'이 적합하지 않은 상황은?",
+    "options": [
+      "단일 DB 서버의 성능을 높여야 할 때",
+      "트래픽이 폭발적으로 늘어나 무한한 확장이 필요할 때",
+      "소프트웨어 라이선스 비용을 줄여야 할 때",
+      "구조 변경 없이 성능을 높이고 싶을 때"
+    ],
+    "answer": 1,
+    "explanation": "하드웨어 스펙을 올리는 것(Scale-up)에는 물리적인 한계가 있으므로, 무한 확장이 필요하면 Scale-out이 유리합니다."
+  },
+  {
+    "id": 62,
+    "subject": "클라우드컴퓨팅",
+    "question": "클라우드 스토리지 중, 파일 시스템(계층 구조) 인터페이스를 제공하며 여러 인스턴스에서 동시에 마운트하여 공유할 수 있는 것은?",
+    "options": [
+      "Amazon EBS",
+      "Amazon S3",
+      "Amazon EFS (Elastic File System)",
+      "Amazon Glacier"
+    ],
+    "answer": 2,
+    "explanation": "EFS는 NAS(Network Attached Storage)처럼 여러 서버가 네트워크를 통해 파일을 공유할 수 있게 해줍니다."
+  },
+  {
+    "id": 63,
+    "subject": "클라우드컴퓨팅",
+    "question": "DevOps의 주요 목표인 CAMS에 포함되지 않는 것은?",
+    "options": [
+      "Culture (문화)",
+      "Automation (자동화)",
+      "Measurement (측정)",
+      "Separation (분리)"
+    ],
+    "answer": 3,
+    "explanation": "DevOps는 개발과 운영의 분리가 아닌 '공유(Sharing)'와 협업을 강조합니다."
+  },
+  {
+    "id": 64,
+    "subject": "클라우드컴퓨팅",
+    "question": "쿠버네티스 아키텍처에서 클러스터의 상태를 관리하고 제어하는 두뇌 역할을 하는 컴포넌트는?",
+    "options": [
+      "Worker Node",
+      "Control Plane (Master Node)",
+      "Kubelet",
+      "Kube-proxy"
+    ],
+    "answer": 1,
+    "explanation": "Control Plane(API Server, Scheduler, etcd 등)이 클러스터 전체를 제어합니다."
+  },
+  {
+    "id": 65,
+    "subject": "클라우드컴퓨팅",
+    "question": "데이터베이스의 읽기 성능을 높이기 위해 주로 사용하는 패턴으로, 쓰기 전용 DB와 읽기 전용 DB를 분리하는 것은?",
+    "options": [
+      "Sharding (샤딩)",
+      "Read Replica (읽기 전용 복제본)",
+      "Backup",
+      "Snapshot"
+    ],
+    "answer": 1,
+    "explanation": "Master DB에는 쓰기를, Read Replica에는 읽기를 수행하여 트래픽을 분산시킵니다."
+  },
+  {
+    "id": 66,
+    "subject": "클라우드컴퓨팅",
+    "question": "JSON 웹 토큰(JWT)을 사용하여 사용자 인증 정보를 안전하게 전달하는 방식은?",
+    "options": [
+      "Stateless 인증",
+      "Session 기반 인증",
+      "Cookie 기반 인증",
+      "MFA"
+    ],
+    "answer": 0,
+    "explanation": "JWT는 서버에 세션 상태를 저장하지 않고 토큰 자체에 정보를 담아 검증하는 Stateless 방식입니다."
+  },
+  {
+    "id": 67,
+    "subject": "클라우드컴퓨팅",
+    "question": "클라우드 환경에서 네트워크 지연이나 패킷 손실 등을 테스트하기 위해 고의로 장애를 주입하는 테스트 기법은?",
+    "options": [
+      "Chaos Engineering (카오스 엔지니어링)",
+      "Stress Test",
+      "Unit Test",
+      "Penetration Test"
+    ],
+    "answer": 0,
+    "explanation": "넷플릭스의 '카오스 몽키'가 대표적인 예로, 실제 운영 환경에서의 예측 불가능한 장애를 대비합니다."
+  },
+  {
+    "id": 68,
+    "subject": "클라우드컴퓨팅",
+    "question": "대용량 데이터를 분석하기 위해 데이터를 컬럼(Column) 기반으로 저장하여 조회 속도를 높인 데이터웨어하우스 서비스는?",
+    "options": [
+      "Amazon RDS",
+      "Amazon Redshift",
+      "Amazon DynamoDB",
+      "Amazon ElastiCache"
+    ],
+    "answer": 1,
+    "explanation": "Redshift는 페타바이트급 데이터를 처리할 수 있는 완전 관리형 데이터웨어하우스입니다."
+  },
+  {
+    "id": 69,
+    "subject": "클라우드컴퓨팅",
+    "question": "RPO (Recovery Point Objective)의 의미는?",
+    "options": [
+      "목표 복구 시간 (시스템이 얼마나 빨리 복구되어야 하는가)",
+      "목표 복구 시점 (데이터를 어느 시점까지 되돌려야 하는가 / 허용 가능한 데이터 손실량)",
+      "최대 허용 다운타임",
+      "재해 발생 확률"
+    ],
+    "answer": 1,
+    "explanation": "RPO는 '언제 시점의 백업 데이터로 복구할 것인가'를 의미하며, 데이터 손실 허용 범위를 결정합니다."
+  },
+  {
+    "id": 70,
+    "subject": "클라우드컴퓨팅",
+    "question": "다음 중 가상화 기술의 이점이 아닌 것은?",
+    "options": [
+      "서버 통합을 통한 하드웨어 활용률 향상",
+      "빠른 프로비저닝(생성)",
+      "격리된 환경 제공",
+      "물리적 하드웨어 성능의 100% 보장"
+    ],
+    "answer": 3,
+    "explanation": "가상화 계층(하이퍼바이저)의 오버헤드 때문에 물리 서버 성능의 100%를 내기는 어렵습니다."
+  },
+  {
+    "id": 71,
+    "subject": "클라우드컴퓨팅",
+    "question": "컨테이너 이미지를 저장하고 관리하는 저장소(Registry) 서비스의 예시는?",
+    "options": [
+      "Docker Hub",
+      "GitHub",
+      "GitLab",
+      "Bitbucket"
+    ],
+    "answer": 0,
+    "explanation": "Docker Hub는 가장 널리 쓰이는 퍼블릭 컨테이너 이미지 레지스트리입니다. (AWS ECR 등도 있음)"
+  },
+  {
+    "id": 72,
+    "subject": "클라우드컴퓨팅",
+    "question": "두 개의 서로 다른 VPC를 프라이빗 네트워크로 연결하여 통신하게 해주는 기능은?",
+    "options": [
+      "VPC Peering (VPC 피어링)",
+      "VPN Connection",
+      "Direct Connect",
+      "Internet Gateway"
+    ],
+    "answer": 0,
+    "explanation": "VPC 피어링을 맺으면 서로 다른 VPC 간에 마치 같은 네트워크에 있는 것처럼 사설 IP로 통신할 수 있습니다."
+  },
+  {
+    "id": 73,
+    "subject": "클라우드컴퓨팅",
+    "question": "NoSQL 데이터베이스 중, 데이터 간의 관계를 그래프 구조(Node, Edge)로 저장하는 유형은?",
+    "options": [
+      "Key-Value Store",
+      "Document Store",
+      "Graph Database (그래프 DB)",
+      "Column Family Store"
+    ],
+    "answer": 2,
+    "explanation": "Neo4j나 AWS Neptune 같은 그래프 DB는 소셜 네트워크 분석이나 추천 시스템에 적합합니다."
+  },
+  {
+    "id": 74,
+    "subject": "클라우드컴퓨팅",
+    "question": "클라우드 비용 최적화 전략으로 적절하지 않은 것은?",
+    "options": [
+      "사용하지 않는 인스턴스 중지하기",
+      "스팟 인스턴스(Spot Instance) 활용하기",
+      "항상 가장 큰 사양의 인스턴스를 미리 예약해두기",
+      "오토 스케일링 적용하기"
+    ],
+    "answer": 2,
+    "explanation": "필요 이상으로 큰 인스턴스(Over-provisioning)를 사용하는 것은 비용 낭비입니다. 적정 크기(Right-sizing)를 찾아야 합니다."
+  },
+  {
+    "id": 75,
+    "subject": "클라우드컴퓨팅",
+    "question": "자주 조회되는 쿼리 결과를 메모리에 저장하여 DB 부하를 줄이고 응답 속도를 높이는 기술은?",
+    "options": [
+      "Caching (캐싱)",
+      "Sharding",
+      "Indexing",
+      "Replication"
+    ],
+    "answer": 0,
+    "explanation": "Redis나 Memcached 같은 인메모리 캐시를 사용하면 디스크 기반 DB보다 훨씬 빠르게 데이터를 읽을 수 있습니다."
+  },
+  {
+    "id": 76,
+    "subject": "클라우드컴퓨팅",
+    "question": "온프레미스 데이터센터와 클라우드를 전용선(Dedicate Line)으로 직접 연결하여 보안과 품질을 높이는 AWS 서비스는?",
+    "options": [
+      "Site-to-Site VPN",
+      "AWS Direct Connect",
+      "Internet Gateway",
+      "Transit Gateway"
+    ],
+    "answer": 1,
+    "explanation": "Direct Connect는 공용 인터넷망을 통하지 않고 전용 회선으로 연결하는 서비스입니다."
+  },
+  {
+    "id": 77,
+    "subject": "클라우드컴퓨팅",
+    "question": "서버리스 아키텍처의 단점인 'Cold Start'란?",
+    "options": [
+      "서버가 너무 차가워져서 고장 나는 현상",
+      "오랫동안 실행되지 않은 함수가 호출될 때, 컨테이너 초기화로 인해 응답 지연이 발생하는 현상",
+      "비용이 너무 많이 나오는 현상",
+      "보안이 취약해지는 현상"
+    ],
+    "answer": 1,
+    "explanation": "서버리스 함수는 유휴 상태에 있다가 첫 요청이 들어오면 실행 환경을 준비하는 데 시간이 걸립니다."
+  },
+  {
+    "id": 78,
+    "subject": "클라우드컴퓨팅",
+    "question": "도메인 주소(www.example.com)를 관리하고 트래픽을 라우팅하는 AWS의 DNS 서비스는?",
+    "options": [
+      "Route 53",
+      "CloudFront",
+      "ELB",
+      "Direct Connect"
+    ],
+    "answer": 0,
+    "explanation": "Route 53은 가용성이 뛰어난 클라우드 DNS 웹 서비스입니다."
+  },
+  {
+    "id": 79,
+    "subject": "클라우드컴퓨팅",
+    "question": "클라우드 상에서 암호화 키를 생성하고 관리하는 서비스는?",
+    "options": [
+      "IAM",
+      "KMS (Key Management Service)",
+      "WAF",
+      "Shield"
+    ],
+    "answer": 1,
+    "explanation": "KMS를 사용하면 데이터 암호화에 사용되는 키를 안전하게 관리할 수 있습니다."
+  },
+  {
+    "id": 80,
+    "subject": "클라우드컴퓨팅",
+    "question": "다음 중 클라우드 컴퓨팅의 3가지 배포 모델이 아닌 것은?",
+    "options": [
+      "Public Cloud",
+      "Private Cloud",
+      "Hybrid Cloud",
+      "Personal Cloud"
+    ],
+    "answer": 3,
+    "explanation": "NIST 정의 배포 모델은 Public, Private, Hybrid, Community 입니다. Personal은 표준 용어가 아닙니다."
+  },
+  {
+    "id": 81,
+    "subject": "클라우드컴퓨팅",
+    "question": "AWS에서 사용자 활동 및 API 호출 기록을 저장하여 감사를 지원하는 서비스는?",
+    "options": [
+      "AWS CloudTrail",
+      "Amazon CloudWatch",
+      "AWS Config",
+      "AWS Trusted Advisor"
+    ],
+    "answer": 0,
+    "explanation": "누가 언제 어떤 리소스를 건드렸는지 추적(Trail)하는 서비스입니다."
+  },
+  {
+    "id": 82,
+    "subject": "클라우드컴퓨팅",
+    "question": "컨테이너 오케스트레이션 도구인 쿠버네티스에서 서비스 디스커버리와 로드밸런싱을 담당하는 객체는?",
+    "options": [
+      "Pod",
+      "Service",
+      "Volume",
+      "Namespace"
+    ],
+    "answer": 1,
+    "explanation": "Service 객체는 유동적인 Pod IP를 하나의 고정된 엔드포인트로 묶어주는 역할을 합니다."
+  },
+  {
+    "id": 83,
+    "subject": "클라우드컴퓨팅",
+    "question": "클라우드 마이그레이션 방식 중 'Lift and Shift'라고도 불리며, 수정 없이 그대로 클라우드로 옮기는 방식은?",
+    "options": [
+      "Rehost (리호스팅)",
+      "Refactor (리팩터링)",
+      "Replatform (리플랫폼)",
+      "Repurchase"
+    ],
+    "answer": 0,
+    "explanation": "기존 환경을 변경하지 않고 VM 이미지를 그대로 IaaS로 옮기는 가장 빠른 방식입니다."
+  },
+  {
+    "id": 84,
+    "subject": "클라우드컴퓨팅",
+    "question": "다음 중 SaaS(Software as a Service)의 예시는?",
+    "options": [
+      "Google Workspace (구 G Suite)",
+      "Amazon EC2",
+      "Google Compute Engine",
+      "OpenStack"
+    ],
+    "answer": 0,
+    "explanation": "구글 닥스, 지메일 등이 포함된 구글 워크스페이스는 대표적인 SaaS입니다."
+  },
+  {
+    "id": 85,
+    "subject": "클라우드컴퓨팅",
+    "question": "데이터의 무결성을 보장하기 위해, 데이터가 변경되거나 삭제되지 않도록 'Write Once, Read Many (WORM)' 방식을 적용하는 스토리지는?",
+    "options": [
+      "Object Lock (객체 잠금)",
+      "Block Storage",
+      "File Storage",
+      "Cache"
+    ],
+    "answer": 0,
+    "explanation": "객체 스토리지(S3)의 Object Lock 기능을 사용하면 규정 준수를 위해 데이터를 변경 불가능하게 만들 수 있습니다."
+  },
+  {
+    "id": 86,
+    "subject": "클라우드컴퓨팅",
+    "question": "웹 애플리케이션에 대한 일반적인 공격(SQL Injection, XSS 등)을 차단하는 클라우드 보안 서비스는?",
+    "options": [
+      "WAF (Web Application Firewall)",
+      "Network Firewall",
+      "Security Group",
+      "NACL"
+    ],
+    "answer": 0,
+    "explanation": "WAF는 7계층(애플리케이션 계층)에서 웹 공격을 방어합니다."
+  },
+  {
+    "id": 87,
+    "subject": "클라우드컴퓨팅",
+    "question": "클라우드 제공자에게 물리적인 전용 서버를 할당받아 사용하는 EC2 인스턴스 유형은?",
+    "options": [
+      "On-Demand Instance",
+      "Dedicated Host (전용 호스트)",
+      "Spot Instance",
+      "Reserved Instance"
+    ],
+    "answer": 1,
+    "explanation": "다른 고객과 하드웨어를 공유하지 않아야 하는 규정 준수 시 사용합니다."
+  },
+  {
+    "id": 88,
+    "subject": "클라우드컴퓨팅",
+    "question": "인프라 구성을 코드(YAML, JSON 등)로 정의하여 배포하는 AWS 서비스는?",
+    "options": [
+      "AWS CloudFormation",
+      "AWS CodeDeploy",
+      "AWS OpsWorks",
+      "AWS Systems Manager"
+    ],
+    "answer": 0,
+    "explanation": "CloudFormation은 IaC(Infrastructure as Code)를 AWS에서 구현하는 서비스입니다."
+  },
+  {
+    "id": 89,
+    "subject": "클라우드컴퓨팅",
+    "question": "데이터베이스 샤딩(Sharding)의 주된 목적은?",
+    "options": [
+      "데이터 백업",
+      "데이터를 수평으로 분할하여 저장함으로써 대용량 데이터 처리 성능 향상",
+      "데이터 암호화",
+      "데이터 중복 제거"
+    ],
+    "answer": 1,
+    "explanation": "하나의 DB에 몰리는 부하를 여러 샤드(Shard)로 분산시키는 스케일 아웃 기법입니다."
+  },
+  {
+    "id": 90,
+    "subject": "클라우드컴퓨팅",
+    "question": "Amazon S3의 스토리지 클래스 중, 접근 빈도가 매우 낮고 장기 보관(아카이빙)이 주 목적이며 비용이 가장 저렴한 것은?",
+    "options": [
+      "S3 Standard",
+      "S3 Intelligent-Tiering",
+      "S3 Glacier Deep Archive",
+      "S3 Standard-IA"
+    ],
+    "answer": 2,
+    "explanation": "Glacier Deep Archive는 테이프 백업을 대체하는 초저가 스토리지로, 데이터 복구에 시간이 걸립니다."
+  },
+  {
+    "id": 91,
+    "subject": "클라우드컴퓨팅",
+    "question": "클라우드 환경에서 '탄력성(Elasticity)'이란?",
+    "options": [
+      "항상 최대 용량을 유지하는 것",
+      "수요 변화에 맞춰 리소스를 자동으로 프로비저닝하고 해제하는 능력",
+      "장애 발생 시 복구하는 능력",
+      "전 세계 어디서나 접속 가능한 능력"
+    ],
+    "answer": 1,
+    "explanation": "필요할 때 늘리고 필요 없으면 줄이는 것이 탄력성입니다."
+  },
+  {
+    "id": 92,
+    "subject": "클라우드컴퓨팅",
+    "question": "마이크로서비스 간의 복잡한 통신을 관리하고 모니터링하기 위해 도입된 인프라 계층은?",
+    "options": [
+      "API Gateway",
+      "Service Mesh (서비스 메쉬)",
+      "Load Balancer",
+      "Container Runtime"
+    ],
+    "answer": 1,
+    "explanation": "Istio와 같은 서비스 메쉬는 사이드카 패턴을 이용해 서비스 간 통신을 제어합니다."
+  },
+  {
+    "id": 93,
+    "subject": "클라우드컴퓨팅",
+    "question": "클라우드 컴퓨팅에서 '멀티 테넌시(Multi-tenancy)'란?",
+    "options": [
+      "한 명의 사용자가 여러 클라우드를 쓰는 것",
+      "하나의 물리적/소프트웨어 자원을 여러 사용자(Tenant)가 공유하여 사용하는 것",
+      "여러 개의 서버를 사용하는 것",
+      "여러 개의 계정을 만드는 것"
+    ],
+    "answer": 1,
+    "explanation": "아파트처럼 하나의 건물을 여러 입주자가 나눠 쓰는 구조로, 자원 효율성을 극대화합니다."
+  },
+  {
+    "id": 94,
+    "subject": "클라우드컴퓨팅",
+    "question": "다음 중 퍼블릭 클라우드의 장점이 아닌 것은?",
+    "options": [
+      "초기 투자 비용이 낮다.",
+      "확장성이 뛰어나다.",
+      "데이터의 위치와 보안을 사용자가 100% 완벽하게 통제할 수 있다.",
+      "유지보수 부담이 적다."
+    ],
+    "answer": 2,
+    "explanation": "퍼블릭 클라우드는 인프라가 공유되므로 프라이빗 클라우드에 비해 데이터 위치나 물리적 통제권이 제한적일 수 있습니다."
+  },
+  {
+    "id": 95,
+    "subject": "클라우드컴퓨팅",
+    "question": "쿠버네티스에서 컨테이너의 상태를 주기적으로 체크하여 문제가 있으면 재시작시키는 기능은?",
+    "options": [
+      "Health Check (Liveness Probe)",
+      "Auto Scaling",
+      "Rolling Update",
+      "Service Discovery"
+    ],
+    "answer": 0,
+    "explanation": "Liveness Probe는 애플리케이션이 살아있는지 확인하고, 응답이 없으면 컨테이너를 재시작합니다."
+  },
+  {
+    "id": 96,
+    "subject": "클라우드컴퓨팅",
+    "question": "VPC 내에서 프라이빗 서브넷과 퍼블릭 서브넷을 구분하는 기준은?",
+    "options": [
+      "IP 주소 대역",
+      "라우팅 테이블에 인터넷 게이트웨이(IGW) 연결 여부",
+      "인스턴스 타입",
+      "보안 그룹 설정"
+    ],
+    "answer": 1,
+    "explanation": "라우팅 테이블에 0.0.0.0/0 -> IGW 규칙이 있으면 퍼블릭, 없으면 프라이빗 서브넷입니다."
+  },
+  {
+    "id": 97,
+    "subject": "클라우드컴퓨팅",
+    "question": "클라우드 서비스에서 '블루/그린 배포(Blue/Green Deployment)'의 장점은?",
+    "options": [
+      "서버 비용이 절약된다.",
+      "다운타임(중단 시간) 없이 배포하고, 문제 발생 시 즉시 롤백할 수 있다.",
+      "배포 과정이 단순하다.",
+      "테스트를 생략할 수 있다."
+    ],
+    "answer": 1,
+    "explanation": "기존 버전(Blue)과 새 버전(Green)을 동시에 띄워놓고 트래픽만 전환하므로 무중단 배포가 가능합니다."
+  },
+  {
+    "id": 98,
+    "subject": "클라우드컴퓨팅",
+    "question": "CDN(Content Delivery Network) 서비스가 주로 캐싱하는 데이터 유형은?",
+    "options": [
+      "동적으로 변하는 DB 데이터",
+      "정적 콘텐츠 (이미지, CSS, JS 파일, 동영상)",
+      "사용자 세션 정보",
+      "실시간 주식 시세"
+    ],
+    "answer": 1,
+    "explanation": "변경이 잦지 않은 정적 콘텐츠를 엣지 서버에 캐싱하여 전송 속도를 높입니다."
+  },
+  {
+    "id": 99,
+    "subject": "클라우드컴퓨팅",
+    "question": "AWS의 관리형 DDoS 방어 서비스는?",
+    "options": [
+      "AWS Shield",
+      "AWS WAF",
+      "Amazon Inspector",
+      "Amazon GuardDuty"
+    ],
+    "answer": 0,
+    "explanation": "AWS Shield는 DDoS 공격으로부터 애플리케이션을 보호합니다. (Standard는 무료, Advanced는 유료)"
+  },
+  {
+    "id": 100,
+    "subject": "클라우드컴퓨팅",
+    "question": "클라우드 아키텍처 설계 원칙 중 '느슨한 결합(Loose Coupling)'의 의미는?",
+    "options": [
+      "컴포넌트 간의 의존성을 최소화하여 하나의 실패가 전체로 확산되지 않게 한다.",
+      "모든 컴포넌트를 하나의 서버에 통합한다.",
+      "데이터베이스를 공유한다.",
+      "네트워크 연결을 끊는다."
+    ],
+    "answer": 0,
+    "explanation": "시스템 간 의존성을 줄여야 독립적인 확장과 유지보수가 가능하며, 장애 격리가 용이합니다."
+  }
+]

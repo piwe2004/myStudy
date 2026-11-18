@@ -1,0 +1,1302 @@
+[
+  {
+    "id": 1,
+    "subject": "데이터베이스 구축",
+    "question": "데이터베이스의 3계층 스키마(Schema) 중, 데이터베이스의 전체적인 논리적 구조로서 모든 응용 프로그램이나 사용자들이 필요로 하는 데이터를 종합한 조직 전체의 데이터베이스 구조는?",
+    "options": [
+      "외부 스키마(External Schema)",
+      "개념 스키마(Conceptual Schema)",
+      "내부 스키마(Internal Schema)",
+      "물리 스키마(Physical Schema)"
+    ],
+    "answer": 1,
+    "explanation": "개념 스키마는 조직 전체의 관점에서 본 통합된 데이터베이스의 논리적 구조입니다. 외부 스키마는 사용자 관점, 내부 스키마는 시스템(물리적 저장) 관점의 구조입니다."
+  },
+  {
+    "id": 2,
+    "subject": "데이터베이스 구축",
+    "question": "데이터베이스 설계의 논리적 순서로 바르게 나열된 것은?",
+    "options": [
+      "요구 조건 분석 -> 개념적 설계 -> 논리적 설계 -> 물리적 설계 -> 구현",
+      "요구 조건 분석 -> 논리적 설계 -> 개념적 설계 -> 물리적 설계 -> 구현",
+      "요구 조건 분석 -> 물리적 설계 -> 논리적 설계 -> 개념적 설계 -> 구현",
+      "개념적 설계 -> 요구 조건 분석 -> 논리적 설계 -> 물리적 설계 -> 구현"
+    ],
+    "answer": 0,
+    "explanation": "데이터베이스 설계는 '요구 조건 분석 -> 개념적 설계(E-R 모델) -> 논리적 설계(매핑, 정규화) -> 물리적 설계 -> 구현'의 순서로 진행됩니다."
+  },
+  {
+    "id": 3,
+    "subject": "데이터베이스 구축",
+    "question": "E-R(Entity-Relationship) 모델의 다이어그램 기호와 의미의 연결이 틀린 것은?",
+    "options": [
+      "사각형 - 개체(Entity) 타입",
+      "마름모 - 관계(Relationship) 타입",
+      "타원 - 속성(Attribute)",
+      "선(Line) - 다중 값 속성(Multi-valued Attribute)"
+    ],
+    "answer": 3,
+    "explanation": "다중 값 속성은 '이중 타원'으로 표기합니다. 선(Line)은 개체와 속성, 또는 개체와 관계를 연결하는 데 사용됩니다."
+  },
+  {
+    "id": 4,
+    "subject": "데이터베이스 구축",
+    "question": "관계형 데이터베이스에서 후보키(Candidate Key)가 되기 위해 만족해야 하는 두 가지 기본 조건은?",
+    "options": [
+      "유일성과 부분성",
+      "유일성과 최소성",
+      "참조성과 무결성",
+      "최소성과 일관성"
+    ],
+    "answer": 1,
+    "explanation": "후보키는 튜플을 유일하게 식별할 수 있는 '유일성'과, 식별에 꼭 필요한 최소한의 속성으로만 구성되어야 하는 '최소성'을 모두 만족해야 합니다."
+  },
+  {
+    "id": 5,
+    "subject": "데이터베이스 구축",
+    "question": "관계형 데이터베이스의 무결성(Integrity) 제약조건 중, 기본키(Primary Key)는 널(Null) 값이나 중복값을 가질 수 없다는 규정은?",
+    "options": [
+      "개체 무결성(Entity Integrity)",
+      "참조 무결성(Referential Integrity)",
+      "도메인 무결성(Domain Integrity)",
+      "사용자 정의 무결성(User-Defined Integrity)"
+    ],
+    "answer": 0,
+    "explanation": "개체 무결성은 기본키를 구성하는 어떤 속성도 Null 값이거나 중복값을 가질 수 없다는 규칙입니다."
+  },
+  {
+    "id": 6,
+    "subject": "데이터베이스 구축",
+    "question": "관계 대수(Relational Algebra) 연산자 중 릴레이션의 수직적 부분집합으로, 주어진 속성들의 값으로만 구성된 새로운 릴레이션을 만드는 연산은? (기호는 π)",
+    "options": [
+      "Select",
+      "Project",
+      "Join",
+      "Division"
+    ],
+    "answer": 1,
+    "explanation": "Project(프로젝트, π) 연산은 주어진 릴레이션에서 조건에 맞는 특정 열(Column, 속성)들만 추출하는 수직적 부분집합 연산입니다."
+  },
+  {
+    "id": 7,
+    "subject": "데이터베이스 구축",
+    "question": "관계 대수(Relational Algebra)와 관계 해석(Relational Calculus)에 대한 설명으로 틀린 것은?",
+    "options": [
+      "관계 대수는 절차적 언어이고, 관계 해석은 비절차적 언어이다.",
+      "관계 대수는 '어떻게' 질의를 수행할 것인가를 명시한다.",
+      "관계 해석은 튜플 관계 해석과 도메인 관계 해석이 있다.",
+      "관계 대수와 관계 해석은 정보 추출 능력이 서로 다르며, 관계 해석이 더 강력하다."
+    ],
+    "answer": 3,
+    "explanation": "관계 대수와 관계 해석은 질의를 표현하는 방식(절차적 vs 비절차적)만 다를 뿐, 데이터를 처리하고 추출하는 능력(표현력)은 수학적으로 완전히 동등합니다."
+  },
+  {
+    "id": 8,
+    "subject": "데이터베이스 구축",
+    "question": "정규화(Normalization) 과정에서 제2정규형(2NF)에서 제3정규형(3NF)으로 이행하기 위한 조건은?",
+    "options": [
+      "부분 함수 종속 제거",
+      "이행적 함수 종속 제거",
+      "다치 종속 제거",
+      "결정자이면서 후보키가 아닌 것 제거"
+    ],
+    "answer": 1,
+    "explanation": "제3정규형(3NF)은 제2정규형을 만족하면서, 기본키가 아닌 모든 속성이 기본키에 이행적 함수 종속(A->B, B->C 일 때 A->C)되지 않는 상태를 말합니다."
+  },
+  {
+    "id": 9,
+    "subject": "데이터베이스 구축",
+    "question": "정규화를 거치지 않아 릴레이션에서 데이터의 중복이 발생하여 생기는 이상(Anomaly) 현상의 종류가 아닌 것은?",
+    "options": [
+      "삽입 이상(Insertion Anomaly)",
+      "삭제 이상(Deletion Anomaly)",
+      "갱신 이상(Update Anomaly)",
+      "검색 이상(Search Anomaly)"
+    ],
+    "answer": 3,
+    "explanation": "이상(Anomaly) 현상에는 불필요한 데이터까지 삽입해야 하는 삽입 이상, 연쇄 삭제가 일어나는 삭제 이상, 일부만 갱신되어 모순이 생기는 갱신 이상이 있습니다. 검색 이상은 존재하지 않습니다."
+  },
+  {
+    "id": 10,
+    "subject": "데이터베이스 구축",
+    "question": "다음 중 SQL의 데이터 정의어(DDL: Data Definition Language)에 해당하지 않는 것은?",
+    "options": [
+      "CREATE",
+      "ALTER",
+      "DROP",
+      "UPDATE"
+    ],
+    "answer": 3,
+    "explanation": "UPDATE는 데이터 조작어(DML: Data Manipulation Language)에 속합니다. DDL에는 CREATE, ALTER, DROP, TRUNCATE 등이 있습니다."
+  },
+  {
+    "id": 11,
+    "subject": "데이터베이스 구축",
+    "question": "SQL의 SELECT 문에서 특정 열의 중복된 값을 제거하고 한 번만 출력하도록 지정하는 키워드는?",
+    "options": [
+      "DISTINCT",
+      "UNIQUE",
+      "GROUP BY",
+      "ORDER BY"
+    ],
+    "answer": 0,
+    "explanation": "SELECT DISTINCT 절을 사용하면 조회된 결과에서 중복되는 튜플들을 제거하고 한 번씩만 출력합니다."
+  },
+  {
+    "id": 12,
+    "subject": "데이터베이스 구축",
+    "question": "데이터베이스 관리자(DBA)가 사용자에게 데이터베이스에 대한 권한을 부여(GRANT)하고 회수(REVOKE)하는 데 사용하는 언어는?",
+    "options": [
+      "DDL (데이터 정의어)",
+      "DML (데이터 조작어)",
+      "DCL (데이터 제어어)",
+      "DQL (데이터 질의어)"
+    ],
+    "answer": 2,
+    "explanation": "DCL(Data Control Language)은 보안, 무결성, 권한 제어, 병행 제어 등을 위한 언어로 GRANT, REVOKE, COMMIT, ROLLBACK 등이 있습니다."
+  },
+  {
+    "id": 13,
+    "subject": "데이터베이스 구축",
+    "question": "뷰(View)에 대한 설명으로 옳지 않은 것은?",
+    "options": [
+      "기본 테이블에서 유도된 가상 테이블이다.",
+      "뷰에 대한 삽입, 삭제, 갱신 연산에는 제약이 따른다.",
+      "뷰의 정의는 ALTER 문을 이용하여 자유롭게 변경할 수 있다.",
+      "데이터의 논리적 독립성을 제공하고 보안을 유지할 수 있다."
+    ],
+    "answer": 2,
+    "explanation": "뷰(View)는 가상 테이블이므로 ALTER 문을 사용하여 구조를 변경할 수 없습니다. 뷰를 변경하려면 DROP 문으로 삭제한 후 CREATE 문으로 다시 생성해야 합니다."
+  },
+  {
+    "id": 14,
+    "subject": "데이터베이스 구축",
+    "question": "트랜잭션(Transaction)의 4가지 주요 특성(ACID) 중, 트랜잭션의 연산은 데이터베이스에 모두 반영되든지 아니면 전혀 반영되지 않아야(All or Nothing) 한다는 특성은?",
+    "options": [
+      "원자성(Atomicity)",
+      "일관성(Consistency)",
+      "격리성(Isolation)",
+      "영속성(Durability)"
+    ],
+    "answer": 0,
+    "explanation": "원자성(Atomicity)은 트랜잭션 내의 모든 연산이 완벽하게 수행되거나 전혀 수행되지 않아야 한다는 특성으로, 회복(Recovery)의 주된 목적이 됩니다."
+  },
+  {
+    "id": 15,
+    "subject": "데이터베이스 구축",
+    "question": "데이터베이스의 병행 제어(Concurrency Control) 기법 중 하나인 로킹(Locking)에 대한 설명으로 옳지 않은 것은?",
+    "options": [
+      "로킹 단위가 크면 병행성 수준이 높아진다.",
+      "로킹 단위가 작으면 로킹 오버헤드가 증가한다.",
+      "한 번에 잠금(Lock)을 설정할 수 있는 데이터의 크기를 로킹 단위라고 한다.",
+      "로킹 단위에는 데이터베이스, 파일, 레코드, 필드 등이 있다."
+    ],
+    "answer": 0,
+    "explanation": "로킹 단위가 크면 한 번에 잠그는 영역이 커져 관리가 쉽고 오버헤드가 감소하지만, 동시에 데이터에 접근할 수 있는 정도인 병행성(Concurrency) 수준은 낮아집니다."
+  },
+  {
+    "id": 16,
+    "subject": "데이터베이스 구축",
+    "question": "시스템 카탈로그(System Catalog)에 대한 설명으로 옳지 않은 것은?",
+    "options": [
+      "데이터베이스에 포함된 다양한 데이터 객체에 대한 메타데이터를 유지한다.",
+      "데이터 사전(Data Dictionary)이라고도 한다.",
+      "일반 사용자도 SQL을 이용하여 내용을 검색할 수 있다.",
+      "일반 사용자가 INSERT, DELETE, UPDATE 문을 사용하여 내용을 직접 갱신할 수 있다."
+    ],
+    "answer": 3,
+    "explanation": "시스템 카탈로그는 DBMS가 스스로 생성하고 유지하는 데이터베이스이므로 사용자가 SQL을 통해 조회(검색)할 수는 있지만, 직접 갱신(수정)할 수는 없습니다."
+  },
+  {
+    "id": 17,
+    "subject": "데이터베이스 구축",
+    "question": "데이터베이스 물리적 설계(Physical Design) 단계의 주요 수행 항목으로 거리가 먼 것은?",
+    "options": [
+      "저장 레코드의 양식 설계",
+      "레코드 집중의 분석 및 설계",
+      "접근 경로(인덱스 등) 설계",
+      "개념 스키마(E-R 모델) 설계"
+    ],
+    "answer": 3,
+    "explanation": "개념 스키마 설계 및 E-R 모델링은 데이터베이스의 '개념적 설계(Conceptual Design)' 단계에서 수행되는 작업입니다."
+  },
+  {
+    "id": 18,
+    "subject": "데이터베이스 구축",
+    "question": "테이블의 검색 속도를 높이기 위해 사용하는 인덱스(Index)에 대한 설명으로 가장 적절하지 않은 것은?",
+    "options": [
+      "인덱스를 너무 많이 생성하면 INSERT, UPDATE, DELETE의 성능이 저하될 수 있다.",
+      "B-트리(B-Tree) 구조가 인덱스에 가장 널리 사용된다.",
+      "기본키(Primary Key)를 지정하면 자동으로 인덱스가 생성된다.",
+      "데이터의 중복도가 높은 컬럼에 인덱스를 생성하는 것이 가장 효율적이다."
+    ],
+    "answer": 3,
+    "explanation": "인덱스는 성별(남/녀)과 같이 중복도가 높은(카디널리티가 낮은) 컬럼에 생성하면 효율성이 크게 떨어집니다. 값의 종류가 다양하여 식별성이 높은 컬럼에 인덱스를 생성해야 검색 효율이 높습니다."
+  },
+  {
+    "id": 19,
+    "subject": "데이터베이스 구축",
+    "question": "관계형 데이터베이스(RDBMS)의 한계를 극복하기 위해 등장한 NoSQL 데이터베이스의 일반적인 특징이 아닌 것은?",
+    "options": [
+      "스키마(Schema)가 없거나 유연하여 데이터 구조 변경이 쉽다.",
+      "고정된 테이블 구조와 엄격한 조인(Join) 연산을 강제한다.",
+      "수평적 확장(Scale-out)에 용이하여 대용량 분산 처리에 적합하다.",
+      "Key-Value, Document, Column-Family, Graph 등의 데이터 모델을 사용한다."
+    ],
+    "answer": 1,
+    "explanation": "고정된 테이블 구조와 엄격한 스키마, 조인(Join) 연산 지원 등은 RDBMS의 특징입니다. NoSQL은 스키마리스(Schemaless)로 유연하며 복잡한 조인을 잘 지원하지 않는 경우가 많습니다."
+  },
+  {
+    "id": 20,
+    "subject": "데이터베이스 구축",
+    "question": "SQL의 조인(JOIN) 연산 중, 조인 조건에 만족하지 않는 행(Row)들도 모두 결과에 포함시키며, 짝이 맞지 않는 빈 데이터는 NULL로 표시하는 조인 방식은?",
+    "options": [
+      "INNER JOIN (내부 조인)",
+      "OUTER JOIN (외부 조인)",
+      "CROSS JOIN (교차 조인)",
+      "SELF JOIN (자체 조인)"
+    ],
+    "answer": 1,
+    "explanation": "OUTER JOIN(외부 조인)은 양쪽 테이블 중 한쪽 또는 양쪽에 데이터가 없을 때 NULL로 채우면서 조건에 일치하지 않는 데이터까지 모두 출력하는 조인입니다. (LEFT, RIGHT, FULL OUTER JOIN이 있습니다.)"
+  },
+  {
+    "id": 21,
+    "subject": "데이터베이스 구축",
+    "question": "트랜잭션의 상태 중 트랜잭션의 마지막 연산이 실행된 직후의 상태를 의미하는 것은?",
+    "options": [
+      "활동(Active) 상태",
+      "부분 완료(Partially Committed) 상태",
+      "완료(Committed) 상태",
+      "실패(Failed) 상태"
+    ],
+    "answer": 1,
+    "explanation": "부분 완료(Partially Committed) 상태는 트랜잭션의 마지막 연산까지 모두 실행되었지만, 아직 데이터베이스에 최종적으로 반영(Commit)되지는 않은 상태입니다."
+  },
+  {
+    "id": 22,
+    "subject": "데이터베이스 구축",
+    "question": "관계 대수(Relational Algebra) 연산자 중 순수 관계 연산자가 아닌 것은?",
+    "options": [
+      "Select",
+      "Project",
+      "Join",
+      "Cartesian Product"
+    ],
+    "answer": 3,
+    "explanation": "교차곱(Cartesian Product)은 일반 집합 연산자입니다. 순수 관계 연산자에는 Select(σ), Project(π), Join(⋈), Division(÷)이 있습니다."
+  },
+  {
+    "id": 23,
+    "subject": "데이터베이스 구축",
+    "question": "정규화(Normalization) 과정에서 모든 결정자가 후보키(Candidate Key)인 상태의 정규형은?",
+    "options": [
+      "제1정규형(1NF)",
+      "제2정규형(2NF)",
+      "제3정규형(3NF)",
+      "보이스-코드 정규형(BCNF)"
+    ],
+    "answer": 3,
+    "explanation": "BCNF(Boyce-Codd Normal Form)는 릴레이션의 모든 결정자가 후보키인 정규형으로, 제3정규형보다 더 엄격한 기준을 적용합니다."
+  },
+  {
+    "id": 24,
+    "subject": "데이터베이스 구축",
+    "question": "릴레이션 조작 시 조인(Join) 연산의 종류 중, 공통 속성을 중심으로 조건이 일치하는 튜플만 반환하며 중복된 속성은 한 번만 표시하는 조인은?",
+    "options": [
+      "동등 조인(Equi Join)",
+      "자연 조인(Natural Join)",
+      "외부 조인(Outer Join)",
+      "교차 조인(Cross Join)"
+    ],
+    "answer": 1,
+    "explanation": "자연 조인(Natural Join)은 동등 조인의 결과에서 중복되는 속성(Column)을 제거하여 한 번만 표시하는 조인 연산입니다."
+  },
+  {
+    "id": 25,
+    "subject": "데이터베이스 구축",
+    "question": "데이터베이스 회복(Recovery) 기법 중, 트랜잭션이 성공적으로 완료(Commit)될 때까지 데이터베이스에 대한 실질적인 갱신을 미루는 기법은?",
+    "options": [
+      "연기 갱신 기법(Deferred Update)",
+      "즉각 갱신 기법(Immediate Update)",
+      "검사점 기법(Checkpoint)",
+      "그림자 페이징 기법(Shadow Paging)"
+    ],
+    "answer": 0,
+    "explanation": "연기 갱신 기법은 트랜잭션이 완료될 때까지 DB 갱신을 연기하고 로그에만 기록하는 방식으로, 트랜잭션 실패 시 Undo(취소) 작업이 필요 없습니다."
+  },
+  {
+    "id": 26,
+    "subject": "데이터베이스 구축",
+    "question": "SQL의 DML(데이터 조작어) 명령어가 아닌 것은?",
+    "options": [
+      "SELECT",
+      "INSERT",
+      "ALTER",
+      "DELETE"
+    ],
+    "answer": 2,
+    "explanation": "ALTER는 테이블의 구조를 변경하는 데이터 정의어(DDL)입니다. DML에는 SELECT, INSERT, UPDATE, DELETE가 있습니다."
+  },
+  {
+    "id": 27,
+    "subject": "데이터베이스 구축",
+    "question": "두 개의 테이블을 조인할 때 참조 무결성(Referential Integrity) 제약조건과 가장 관련이 깊은 키(Key)는?",
+    "options": [
+      "기본키(Primary Key)",
+      "외래키(Foreign Key)",
+      "대체키(Alternate Key)",
+      "슈퍼키(Super Key)"
+    ],
+    "answer": 1,
+    "explanation": "참조 무결성은 외래키(Foreign Key) 값은 참조하는 테이블의 기본키 값과 일치하거나 널(Null)이어야 한다는 규정입니다."
+  },
+  {
+    "id": 28,
+    "subject": "데이터베이스 구축",
+    "question": "데이터 모델(Data Model)을 구성하는 세 가지 요소에 해당하지 않는 것은?",
+    "options": [
+      "논리적 데이터 구조(Structure)",
+      "연산(Operation)",
+      "제약조건(Constraint)",
+      "데이터 사전(Data Dictionary)"
+    ],
+    "answer": 3,
+    "explanation": "데이터 모델의 3요소는 구조(Structure), 연산(Operation), 제약조건(Constraint)입니다. 데이터 사전은 시스템 카탈로그를 의미합니다."
+  },
+  {
+    "id": 29,
+    "subject": "데이터베이스 구축",
+    "question": "SQL에서 권한을 취소하는 REVOKE 문의 옵션 중, 해당 권한을 부여받은 다른 사용자의 권한까지 연쇄적으로 취소하는 옵션은?",
+    "options": [
+      "RESTRICT",
+      "CASCADE",
+      "GRANT OPTION",
+      "WITH ROW"
+    ],
+    "answer": 1,
+    "explanation": "CASCADE 옵션은 권한을 취소할 때 해당 사용자가 다른 사용자에게 부여한 권한까지 모두 연쇄적으로 취소(회수)하는 옵션입니다. 반대는 RESTRICT입니다."
+  },
+  {
+    "id": 30,
+    "subject": "데이터베이스 구축",
+    "question": "병행 제어(Concurrency Control) 기법 중 트랜잭션이 스케줄을 순차적으로 처리하기 위해 직렬성을 보장하지만, 교착 상태(Deadlock)가 발생할 수 있는 기법은?",
+    "options": [
+      "타임 스탬프 순서 기법(Time Stamp Ordering)",
+      "2단계 로킹 규약(2-Phase Locking)",
+      "낙관적 병행 제어(Optimistic Concurrency Control)",
+      "다중 버전 기법(Multi-version Concurrency Control)"
+    ],
+    "answer": 1,
+    "explanation": "2단계 로킹 규약(2PL)은 트랜잭션의 직렬성을 보장하는 대표적인 기법이지만, 교착 상태를 완벽하게 예방할 수는 없다는 단점이 있습니다."
+  },
+  {
+    "id": 31,
+    "subject": "데이터베이스 구축",
+    "question": "데이터베이스 이상(Anomaly) 현상을 방지하기 위한 정규화(Normalization)의 목적으로 가장 거리가 먼 것은?",
+    "options": [
+      "데이터의 중복을 최소화한다.",
+      "정보의 무손실 분해를 원칙으로 한다.",
+      "데이터 삽입, 갱신, 삭제 시 발생하는 이상 현상을 방지한다.",
+      "릴레이션 간의 데이터 종속성을 최대한 강화한다."
+    ],
+    "answer": 3,
+    "explanation": "정규화의 목적은 데이터의 중복을 최소화하고 속성 간의 종속성을 '배제(최소화)'하여 이상 현상을 방지하는 것입니다. 종속성을 강화하는 것이 아닙니다."
+  },
+  {
+    "id": 32,
+    "subject": "데이터베이스 구축",
+    "question": "SQL 질의에서 특정 열(Column)의 값이 비어 있는(Null) 튜플을 검색하기 위한 올바른 조건절은?",
+    "options": [
+      "WHERE 컬럼명 = NULL",
+      "WHERE 컬럼명 IS NULL",
+      "WHERE 컬럼명 == NULL",
+      "WHERE 컬럼명 HAS NULL"
+    ],
+    "answer": 1,
+    "explanation": "SQL에서 Null 값을 검색할 때는 등호(=)를 사용할 수 없으며, 반드시 'IS NULL' 또는 'IS NOT NULL' 연산자를 사용해야 합니다."
+  },
+  {
+    "id": 33,
+    "subject": "데이터베이스 구축",
+    "question": "데이터베이스의 물리적 설계 시 고려해야 할 파티셔닝(Partitioning)의 종류 중, 특정 범위(예: 날짜, 금액 등)를 기준으로 데이터를 분할하는 방식은?",
+    "options": [
+      "해시 파티셔닝(Hash Partitioning)",
+      "리스트 파티셔닝(List Partitioning)",
+      "범위 파티셔닝(Range Partitioning)",
+      "컴포지트 파티셔닝(Composite Partitioning)"
+    ],
+    "answer": 2,
+    "explanation": "범위 파티셔닝(Range Partitioning)은 연속된 범위를 기준으로 테이블을 분할하는 방식으로, 이력 데이터나 날짜 데이터 관리에 많이 사용됩니다."
+  },
+  {
+    "id": 34,
+    "subject": "데이터베이스 구축",
+    "question": "분산 데이터베이스(Distributed Database)의 4대 목표(투명성)에 해당하지 않는 것은?",
+    "options": [
+      "위치 투명성(Location Transparency)",
+      "중복 투명성(Replication Transparency)",
+      "병행 투명성(Concurrency Transparency)",
+      "보안 투명성(Security Transparency)"
+    ],
+    "answer": 3,
+    "explanation": "분산 데이터베이스의 4대 투명성은 위치 투명성, 중복 투명성, 병행 투명성, 장애 투명성입니다. 보안 투명성은 이에 포함되지 않습니다."
+  },
+  {
+    "id": 35,
+    "subject": "데이터베이스 구축",
+    "question": "SQL 문에서 검색 조건 지정 시, 특정 문자열로 시작하거나 포함하는 데이터를 검색하기 위해 사용하는 패턴 매칭 연산자는?",
+    "options": [
+      "IN",
+      "BETWEEN",
+      "LIKE",
+      "EXISTS"
+    ],
+    "answer": 2,
+    "explanation": "LIKE 연산자는 와일드카드 문자('%' 또는 '_')와 함께 사용하여 특정 패턴과 일치하는 문자열을 검색할 때 사용됩니다. (예: LIKE '김%')"
+  },
+  {
+    "id": 36,
+    "subject": "데이터베이스 구축",
+    "question": "개체-관계(E-R) 모델에서 관계의 참여(대응) 카디널리티(Cardinality)를 나타내는 기호가 아닌 것은?",
+    "options": [
+      "1 : 1",
+      "1 : N",
+      "N : M",
+      "1 : N : M"
+    ],
+    "answer": 3,
+    "explanation": "대응 카디널리티는 두 개체 간의 관계를 나타내며 1:1, 1:N, N:M의 세 가지 유형이 있습니다. 1:N:M 형태는 존재하지 않습니다."
+  },
+  {
+    "id": 37,
+    "subject": "데이터베이스 구축",
+    "question": "관계 대수의 연산자 중 차수가 m과 n인 두 릴레이션을 연결하여, 차수가 m+n이고 튜플 수는 두 릴레이션 튜플 수의 곱과 같은 새로운 릴레이션을 생성하는 연산은?",
+    "options": [
+      "Join",
+      "Project",
+      "Cartesian Product",
+      "Union"
+    ],
+    "answer": 2,
+    "explanation": "교차곱(Cartesian Product, 카티션 프로덕트) 연산은 두 릴레이션의 모든 튜플을 각각 연결하여 가능한 모든 조합을 만드는 집합 연산입니다."
+  },
+  {
+    "id": 38,
+    "subject": "데이터베이스 구축",
+    "question": "데이터베이스에서 생성된 뷰(View)를 삭제하기 위한 올바른 SQL 명령어는?",
+    "options": [
+      "DELETE VIEW 뷰이름;",
+      "DROP VIEW 뷰이름;",
+      "REMOVE VIEW 뷰이름;",
+      "ALTER VIEW 뷰이름 DROP;"
+    ],
+    "answer": 1,
+    "explanation": "뷰는 가상 '테이블(객체)'이므로 DDL 명령어인 DROP을 사용하여 삭제해야 합니다. DELETE는 테이블 안의 데이터(튜플)를 삭제할 때 사용합니다."
+  },
+  {
+    "id": 39,
+    "subject": "데이터베이스 구축",
+    "question": "트랜잭션 격리 수준(Isolation Level) 중, 가장 낮은 수준으로 다른 트랜잭션이 아직 커밋하지 않은 데이터를 읽을 수 있도록 허용하는 것은?",
+    "options": [
+      "Read Uncommitted",
+      "Read Committed",
+      "Repeatable Read",
+      "Serializable"
+    ],
+    "answer": 0,
+    "explanation": "Read Uncommitted는 격리 수준이 가장 낮으며, 커밋되지 않은 데이터를 읽음으로써 Dirty Read 현상이 발생할 수 있는 수준입니다."
+  },
+  {
+    "id": 40,
+    "subject": "데이터베이스 구축",
+    "question": "SQL 질의어에서 GROUP BY 절과 함께 사용되며, 그룹화된 결과에 대해 특정 조건을 부여할 때 사용하는 키워드는?",
+    "options": [
+      "WHERE",
+      "HAVING",
+      "ORDER BY",
+      "SORT BY"
+    ],
+    "answer": 1,
+    "explanation": "WHERE 절은 개별 행에 대한 조건을 지정할 때 사용하고, HAVING 절은 GROUP BY로 그룹화된 결과 그룹 자체에 대한 조건을 지정할 때 사용합니다."
+  },
+  {
+    "id": 41,
+    "subject": "데이터베이스 구축",
+    "question": "데이터베이스의 병행 제어 기법인 2단계 로킹(Two-Phase Locking) 프로토콜을 구성하는 두 가지 단계는?",
+    "options": [
+      "확장 단계(Growing phase)와 수축 단계(Shrinking phase)",
+      "공유 단계(Shared phase)와 배타 단계(Exclusive phase)",
+      "판독 단계(Read phase)와 기록 단계(Write phase)",
+      "잠금 단계(Lock phase)와 해제 단계(Unlock phase)"
+    ],
+    "answer": 0,
+    "explanation": "2단계 로킹 규약은 트랜잭션이 로크를 획득만 할 수 있는 '확장 단계'와 로크를 반납만 할 수 있는 '수축 단계'로 나누어 직렬성을 보장하는 기법입니다."
+  },
+  {
+    "id": 42,
+    "subject": "데이터베이스 구축",
+    "question": "관계 해석(Relational Calculus)에서 '모든 것(For All)'을 의미하는 전칭 정량자 기호는?",
+    "options": [
+      "∃",
+      "∀",
+      "∈",
+      "⊂"
+    ],
+    "answer": 1,
+    "explanation": "관계 해석에서 ∀ 기호는 '모든 가능한 튜플에 대하여(For All)'를 의미하는 전칭 정량자입니다. ∃는 '적어도 하나 존재하는(There Exists)'을 의미하는 존재 정량자입니다."
+  },
+  {
+    "id": 43,
+    "subject": "데이터베이스 구축",
+    "question": "다음 중 데이터 조작어(DML)에 해당하는 SQL 명령어로만 짝지어진 것은?",
+    "options": [
+      "SELECT, INSERT, UPDATE, DELETE",
+      "CREATE, ALTER, DROP, TRUNCATE",
+      "GRANT, REVOKE, COMMIT, ROLLBACK",
+      "CREATE, UPDATE, DELETE, GRANT"
+    ],
+    "answer": 0,
+    "explanation": "데이터 조작어(DML)는 저장된 데이터를 실질적으로 관리하고 조작하는 언어로 SELECT, INSERT, UPDATE, DELETE가 있습니다."
+  },
+  {
+    "id": 44,
+    "subject": "데이터베이스 구축",
+    "question": "NoSQL 데이터베이스의 데이터 모델 중, 데이터를 키(Key)와 하나 이상의 열(Column)로 구성된 컬럼 패밀리 구조로 저장하며, HBase나 Cassandra가 대표적인 모델은?",
+    "options": [
+      "Key-Value Store",
+      "Document Store",
+      "Column Family Store",
+      "Graph Store"
+    ],
+    "answer": 2,
+    "explanation": "Column Family Store(컬럼 패밀리 스토어)는 테이블 구조를 갖지만 스키마가 유연하고 키에 여러 개의 컬럼을 묶어서 저장하는 NoSQL 모델입니다."
+  },
+  {
+    "id": 45,
+    "subject": "데이터베이스 구축",
+    "question": "데이터베이스 장애 발생 시 복구(Recovery)를 위해 사용하는 기법 중, 트랜잭션 수행 중 변경될 때마다 그 변경 내용을 로그(Log) 파일에 기록하고, 장애 발생 시 로그 파일을 이용하여 복구하는 방식은?",
+    "options": [
+      "그림자 페이징 기법(Shadow Paging)",
+      "검사점 기법(Checkpoint)",
+      "연기 갱신 기법(Deferred Update)",
+      "로그 기반 복구 기법(Log-based Recovery)"
+    ],
+    "answer": 3,
+    "explanation": "로그 기반 복구 기법은 지연 갱신이나 즉각 갱신 기법에서 데이터베이스의 상태 변화를 '로그(Log)' 파일에 기록해 두었다가 취소(Undo)나 재작업(Redo) 시 사용하는 방법입니다."
+  },
+  {
+    "id": 46,
+    "subject": "데이터베이스 구축",
+    "question": "SQL 질의문에서 하나의 SQL 문장 내부의 WHERE 절이나 FROM 절 등에 포함된 또 다른 SELECT 문장을 무엇이라 하는가?",
+    "options": [
+      "뷰(View)",
+      "조인(Join)",
+      "서브쿼리(Subquery)",
+      "트리거(Trigger)"
+    ],
+    "answer": 2,
+    "explanation": "서브쿼리(Subquery)는 메인 쿼리 안에 포함되어 있는 또 다른 형태의 쿼리로, 복잡한 조건의 데이터를 조회할 때 사용됩니다."
+  },
+  {
+    "id": 47,
+    "subject": "데이터베이스 구축",
+    "question": "대량의 데이터 집합에서 사용자의 요구에 따라 유용한 정보를 추출하고 방대한 데이터 사이의 숨겨진 패턴이나 새로운 규칙을 찾아내는 기술을 무엇이라 하는가?",
+    "options": [
+      "데이터 웨어하우스(Data Warehouse)",
+      "데이터 마이닝(Data Mining)",
+      "데이터 마트(Data Mart)",
+      "메타 데이터(Meta Data)"
+    ],
+    "answer": 1,
+    "explanation": "데이터 마이닝(Data Mining)은 대용량 데이터에서 가치 있는 정보나 숨겨진 규칙, 패턴을 찾아내는 지식 발견 과정입니다."
+  },
+  {
+    "id": 48,
+    "subject": "데이터베이스 구축",
+    "question": "데이터베이스 관리자가 사용자에게 데이터베이스 객체(테이블 등)에 대한 권한을 부여할 때 사용하는 SQL 명령어는?",
+    "options": [
+      "REVOKE",
+      "DENY",
+      "GRANT",
+      "COMMIT"
+    ],
+    "answer": 2,
+    "explanation": "GRANT는 사용자에게 특정 데이터베이스 권한을 부여하는 명령어이고, REVOKE는 부여된 권한을 회수하는 명령어입니다."
+  },
+  {
+    "id": 49,
+    "subject": "데이터베이스 구축",
+    "question": "관계 대수의 연산자 중 주어진 릴레이션에서 특정 조건을 만족하는 튜플(행)들을 추출하여 수평적 부분집합을 구하는 연산은? (기호는 σ)",
+    "options": [
+      "Select",
+      "Project",
+      "Join",
+      "Division"
+    ],
+    "answer": 0,
+    "explanation": "Select(σ) 연산은 조건을 만족하는 릴레이션의 수평적 부분집합(행, 튜플)을 구하는 관계 대수 연산입니다."
+  },
+  {
+    "id": 50,
+    "subject": "데이터베이스 구축",
+    "question": "정규화(Normalization) 과정에서 제1정규형(1NF)을 만족하기 위한 필수 조건은?",
+    "options": [
+      "모든 속성의 값이 원자값(Atomic Value)을 가져야 한다.",
+      "부분 함수 종속을 제거하여 완전 함수 종속으로 만들어야 한다.",
+      "이행적 함수 종속을 제거해야 한다.",
+      "다치 종속을 제거해야 한다."
+    ],
+    "answer": 0,
+    "explanation": "제1정규형(1NF)은 릴레이션에 속한 모든 도메인이 분해될 수 없는 원자값(Atomic Value)만으로 구성되어야 한다는 조건입니다."
+  },
+  {
+    "id": 51,
+    "subject": "데이터베이스 구축",
+    "question": "트랜잭션(Transaction)의 특성(ACID) 중, 트랜잭션이 성공적으로 완료된 후에는 시스템에 어떤 오류가 발생하더라도 그 결과가 데이터베이스에 영구적으로 보존되어야 한다는 특성은?",
+    "options": [
+      "원자성(Atomicity)",
+      "일관성(Consistency)",
+      "격리성(Isolation)",
+      "영속성(Durability)"
+    ],
+    "answer": 3,
+    "explanation": "영속성(지속성, Durability)은 성공적으로 커밋된 트랜잭션의 결과는 시스템이 고장 나더라도 영구적으로 반영되어야 함을 의미합니다."
+  },
+  {
+    "id": 52,
+    "subject": "데이터베이스 구축",
+    "question": "SQL의 GRANT 문을 통해 특정 사용자에게 권한을 부여할 때, 그 사용자가 다른 사용자에게 부여받은 권한을 다시 부여할 수 있도록 허용하는 옵션은?",
+    "options": [
+      "WITH ADMIN OPTION",
+      "WITH GRANT OPTION",
+      "CASCADE",
+      "RESTRICT"
+    ],
+    "answer": 1,
+    "explanation": "WITH GRANT OPTION은 권한을 부여받은 사용자가 자신이 받은 권한을 다른 사용자에게 다시 부여(전파)할 수 있도록 하는 옵션입니다."
+  },
+  {
+    "id": 53,
+    "subject": "데이터베이스 구축",
+    "question": "데이터베이스의 검색 속도를 높이고 시스템의 성능을 향상시키기 위해, 의도적으로 정규화 원칙을 위배하고 데이터의 중복을 허용하여 테이블을 통합하거나 분할하는 기법은?",
+    "options": [
+      "반정규화(Denormalization)",
+      "데이터 마이닝(Data Mining)",
+      "파티셔닝(Partitioning)",
+      "클러스터링(Clustering)"
+    ],
+    "answer": 0,
+    "explanation": "반정규화(역정규화, Denormalization)는 시스템의 성능 향상, 개발 및 운영의 단순화를 위해 정규화된 데이터 모델을 통합, 중복, 분리하는 과정입니다."
+  },
+  {
+    "id": 54,
+    "subject": "데이터베이스 구축",
+    "question": "데이터 웨어하우스에 저장된 다차원 데이터를 대화식으로 분석하여 사용자가 원하는 정보를 빠르고 일관되게 제공하며, 의사 결정 지원 시스템(DSS)의 핵심 기술로 사용되는 것은?",
+    "options": [
+      "OLTP (Online Transaction Processing)",
+      "OLAP (Online Analytical Processing)",
+      "ODBC (Open Database Connectivity)",
+      "ORM (Object-Relational Mapping)"
+    ],
+    "answer": 1,
+    "explanation": "OLAP(온라인 분석 처리)는 다차원 데이터 모델을 기반으로 사용자가 직접 질의를 던져 데이터를 분석하고 의사 결정에 활용하는 기술입니다."
+  },
+  {
+    "id": 55,
+    "subject": "데이터베이스 구축",
+    "question": "테이블 생성 시(CREATE TABLE), 특정 컬럼에 데이터가 입력되지 않았을 때 시스템이 자동으로 채워 넣을 기본값을 지정하는 제약조건 키워드는?",
+    "options": [
+      "UNIQUE",
+      "NOT NULL",
+      "DEFAULT",
+      "CHECK"
+    ],
+    "answer": 2,
+    "explanation": "DEFAULT 제약조건은 데이터 입력 시 해당 컬럼이 생략된 경우, 사전에 지정해 둔 기본값을 자동으로 입력해 주는 기능입니다."
+  },
+  {
+    "id": 56,
+    "subject": "데이터베이스 구축",
+    "question": "해싱(Hashing) 함수 중, 키(Key) 값을 제곱한 후 그 결과 데이터의 중간 부분에 있는 몇 비트만을 선택하여 해시 테이블의 주소로 사용하는 방법은?",
+    "options": [
+      "제산법(Division Method)",
+      "폴딩법(Folding Method)",
+      "기수 변환법(Radix Conversion Method)",
+      "중간 제곱법(Mid-Square Method)"
+    ],
+    "answer": 3,
+    "explanation": "중간 제곱법(Mid-Square Method)은 키 값을 제곱한 후 결과의 중간 부분 값을 해시 주소로 취하는 해싱 기법입니다."
+  },
+  {
+    "id": 57,
+    "subject": "데이터베이스 구축",
+    "question": "뷰(View)의 장점에 대한 설명으로 거리가 먼 것은?",
+    "options": [
+      "논리적 데이터 독립성을 제공한다.",
+      "데이터에 대한 접근을 제어하여 보안성을 향상시킨다.",
+      "뷰 자체에 물리적인 데이터를 직접 저장하여 검색 속도를 크게 높인다.",
+      "사용자가 필요한 데이터만 골라서 볼 수 있어 쿼리가 단순해진다."
+    ],
+    "answer": 2,
+    "explanation": "뷰(View)는 물리적으로 데이터를 저장하지 않고 정의(SQL 쿼리)만 저장하고 있는 가상의 테이블입니다. 뷰 자체에 데이터를 저장하여 속도를 높이는 것은 아닙니다."
+  },
+  {
+    "id": 58,
+    "subject": "데이터베이스 구축",
+    "question": "관계형 데이터베이스 모델에서 데이터의 가장 작은 논리적 단위를 나타내며, 파일 시스템의 레코드(Record)와 대응되는 개념은?",
+    "options": [
+      "도메인(Domain)",
+      "튜플(Tuple)",
+      "속성(Attribute)",
+      "릴레이션(Relation)"
+    ],
+    "answer": 1,
+    "explanation": "튜플(Tuple)은 릴레이션을 구성하는 각각의 행(Row)으로, 속성들의 모임으로 구성되며 파일 시스템의 레코드(Record)에 해당합니다."
+  },
+  {
+    "id": 59,
+    "subject": "데이터베이스 구축",
+    "question": "데이터베이스 설계 단계 중 트랜잭션의 인터페이스를 설계하고, 개념 스키마를 특정 DBMS가 지원하는 데이터 모델에 맞게 변환(매핑)하는 단계는?",
+    "options": [
+      "요구 조건 분석",
+      "개념적 설계",
+      "논리적 설계",
+      "물리적 설계"
+    ],
+    "answer": 2,
+    "explanation": "논리적 설계 단계에서는 개념적 설계에서 생성된 E-R 모델을 특정 DBMS의 논리적 자료 구조(관계형 모델 등)로 변환(매핑 규칙 적용)하고 트랜잭션 인터페이스를 설계합니다."
+  },
+  {
+    "id": 60,
+    "subject": "데이터베이스 구축",
+    "question": "SQL 조작어(DML) 중, 특정 테이블의 기존 데이터를 새로운 값으로 수정할 때 사용하는 명령어의 기본 구문 구조로 옳은 것은?",
+    "options": [
+      "UPDATE 테이블명 SET 컬럼명=값 WHERE 조건;",
+      "MODIFY 테이블명 SET 컬럼명=값 WHERE 조건;",
+      "CHANGE 테이블명 컬럼명=값 WHERE 조건;",
+      "ALTER 테이블명 SET 컬럼명=값 WHERE 조건;"
+    ],
+    "answer": 0,
+    "explanation": "테이블의 튜플 데이터를 수정할 때는 'UPDATE 테이블명 SET 컬럼명=새로운값 WHERE 조건;' 구문을 사용합니다. ALTER는 테이블 구조(DDL)를 변경할 때 사용합니다."
+  },
+  {
+    "id": 61,
+    "subject": "데이터베이스 구축",
+    "question": "순수 관계 대수 연산자 중 릴레이션 R과 S가 있을 때, 릴레이션 S의 모든 튜플과 관련되어 있는 R의 튜플들을 반환하는 연산자는?",
+    "options": [
+      "Select (σ)",
+      "Project (π)",
+      "Join (⋈)",
+      "Division (÷)"
+    ],
+    "answer": 3,
+    "explanation": "디비전(Division, ÷) 연산은 기준이 되는 릴레이션 S의 모든 속성값을 만족하는 릴레이션 R의 튜플들을 추출하는 연산입니다."
+  },
+  {
+    "id": 62,
+    "subject": "데이터베이스 구축",
+    "question": "트랜잭션의 특성 중, 여러 트랜잭션이 동시에 실행될 때 한 트랜잭션이 완료될 때까지는 다른 트랜잭션이 그 트랜잭션의 중간 연산 결과에 접근할 수 없도록 하는 특성은?",
+    "options": [
+      "원자성(Atomicity)",
+      "일관성(Consistency)",
+      "격리성(Isolation)",
+      "영속성(Durability)"
+    ],
+    "answer": 2,
+    "explanation": "격리성(Isolation, 고립성)은 둘 이상의 트랜잭션이 동시에 병행 실행되는 경우 어느 하나의 트랜잭션 실행 중에 다른 트랜잭션의 연산이 끼어들 수 없음을 의미합니다."
+  },
+  {
+    "id": 63,
+    "subject": "데이터베이스 구축",
+    "question": "어떤 릴레이션 R에서 속성 X와 Y를 각각 R의 부분집합이라고 할 때, 속성 X의 값에 대해 속성 Y의 값이 오직 하나만 매핑되는 관계를 무엇이라 하는가?",
+    "options": [
+      "다치 종속(Multi-valued Dependency)",
+      "함수적 종속(Functional Dependency)",
+      "이행적 종속(Transitive Dependency)",
+      "부분 종속(Partial Dependency)"
+    ],
+    "answer": 1,
+    "explanation": "함수적 종속(Functional Dependency)은 X의 값에 따라 Y의 값이 유일하게 결정될 때(X → Y), 'Y는 X에 함수적으로 종속된다'라고 합니다."
+  },
+  {
+    "id": 64,
+    "subject": "데이터베이스 구축",
+    "question": "SQL에서 기존 테이블에 새로운 컬럼을 추가하기 위해 사용하는 올바른 DDL 구문은?",
+    "options": [
+      "ALTER TABLE 테이블명 ADD 컬럼명 데이터타입;",
+      "ALTER TABLE 테이블명 MODIFY 컬럼명 데이터타입;",
+      "UPDATE TABLE 테이블명 ADD 컬럼명 데이터타입;",
+      "INSERT INTO 테이블명 컬럼명 데이터타입;"
+    ],
+    "answer": 0,
+    "explanation": "테이블 구조 변경 명령어인 ALTER TABLE에서 새로운 컬럼을 추가할 때는 ADD 키워드를 사용합니다."
+  },
+  {
+    "id": 65,
+    "subject": "데이터베이스 구축",
+    "question": "데이터베이스 병행 제어(Concurrency Control)를 하지 않았을 때 발생할 수 있는 문제점이 아닌 것은?",
+    "options": [
+      "갱신 분실(Lost Update)",
+      "모순성(Inconsistency)",
+      "연쇄 복귀(Cascading Rollback)",
+      "데드락(Deadlock)"
+    ],
+    "answer": 3,
+    "explanation": "데드락(교착 상태)은 병행 제어 기법(로킹 등)을 사용했을 때 발생할 수 있는 부작용이며, 제어를 하지 않았을 때 발생하는 직접적인 문제는 아닙니다."
+  },
+  {
+    "id": 66,
+    "subject": "데이터베이스 구축",
+    "question": "릴레이션(Relation)의 특징으로 옳지 않은 것은?",
+    "options": [
+      "한 릴레이션에 포함된 튜플(Tuple)들은 모두 상이하다.",
+      "한 릴레이션에 포함된 튜플 사이에는 순서가 존재하지 않는다.",
+      "릴레이션을 구성하는 속성(Attribute) 사이에는 순서가 존재한다.",
+      "모든 속성 값은 원자값(Atomic Value)만 가진다."
+    ],
+    "answer": 2,
+    "explanation": "릴레이션(테이블)을 구성하는 속성(컬럼)들 사이에는 물리적인 순서가 존재하지 않습니다."
+  },
+  {
+    "id": 67,
+    "subject": "데이터베이스 구축",
+    "question": "데이터베이스 인덱스(Index) 구조 중, 기본키(Primary Key)에 의해 데이터가 물리적으로 정렬되어 저장되며, 테이블당 한 개만 생성할 수 있는 인덱스는?",
+    "options": [
+      "클러스터드 인덱스(Clustered Index)",
+      "넌클러스터드 인덱스(Non-Clustered Index)",
+      "비트맵 인덱스(Bitmap Index)",
+      "해시 인덱스(Hash Index)"
+    ],
+    "answer": 0,
+    "explanation": "클러스터드 인덱스는 인덱스 키의 순서에 따라 데이터가 물리적으로 정렬되는 방식이며, 테이블당 1개만 생성 가능합니다."
+  },
+  {
+    "id": 68,
+    "subject": "데이터베이스 구축",
+    "question": "분산 데이터베이스(Distributed Database)의 투명성(Transparency) 중, 데이터가 논리적인 이름만으로 접근 가능하며 데이터의 물리적 저장 위치를 알 필요가 없도록 하는 투명성은?",
+    "options": [
+      "위치 투명성(Location Transparency)",
+      "중복 투명성(Replication Transparency)",
+      "병행 투명성(Concurrency Transparency)",
+      "분할 투명성(Fragmentation Transparency)"
+    ],
+    "answer": 0,
+    "explanation": "위치 투명성은 사용자가 접근하려는 데이터의 물리적 저장 위치를 알 필요 없이 논리적 이름만으로 접근할 수 있게 하는 특성입니다."
+  },
+  {
+    "id": 69,
+    "subject": "데이터베이스 구축",
+    "question": "정규화(Normalization) 과정 중 다치 종속(Multi-Valued Dependency)을 제거하여 만족하게 되는 정규형은?",
+    "options": [
+      "제2정규형(2NF)",
+      "제3정규형(3NF)",
+      "보이스-코드 정규형(BCNF)",
+      "제4정규형(4NF)"
+    ],
+    "answer": 3,
+    "explanation": "제4정규형(4NF)은 보이스-코드 정규형을 만족하면서 다치 종속을 제거한 상태를 의미합니다."
+  },
+  {
+    "id": 70,
+    "subject": "데이터베이스 구축",
+    "question": "트랜잭션 수행 도중 장애가 발생하여 이전 상태로 복구하기 위해, 트랜잭션이 수행한 모든 변경 연산을 취소하는 연산은?",
+    "options": [
+      "COMMIT",
+      "ROLLBACK",
+      "GRANT",
+      "REVOKE"
+    ],
+    "answer": 1,
+    "explanation": "ROLLBACK은 트랜잭션이 행한 모든 변경 작업을 취소하고 데이터베이스를 이전의 일관된 상태로 되돌리는 연산입니다."
+  },
+  {
+    "id": 71,
+    "subject": "데이터베이스 구축",
+    "question": "관계형 데이터베이스에서 외래키 지정 시 참조하는 부모 테이블의 데이터가 삭제될 때, 자식 테이블의 해당 데이터도 빈 값(NULL)으로 자동 설정되도록 하는 옵션은?",
+    "options": [
+      "CASCADE",
+      "RESTRICT",
+      "SET NULL",
+      "NO ACTION"
+    ],
+    "answer": 2,
+    "explanation": "SET NULL 옵션은 부모 레코드 삭제 시 이를 참조하는 외래키 값을 NULL로 변경하여 무결성을 유지합니다."
+  },
+  {
+    "id": 72,
+    "subject": "데이터베이스 구축",
+    "question": "로킹(Locking) 단위에 대한 설명으로 옳은 것은?",
+    "options": [
+      "로킹 단위가 크면 클수록 데이터베이스 공유도가 증가한다.",
+      "로킹 단위가 작아지면 로킹 오버헤드가 감소한다.",
+      "로킹 단위가 크면 로크(Lock)의 수가 줄어들어 시스템 관리가 수월해진다.",
+      "레코드 필드 단위로는 로킹을 설정할 수 없다."
+    ],
+    "answer": 2,
+    "explanation": "로킹 단위가 크면 로크의 수가 적어 관리 비용(오버헤드)이 줄어들지만, 공유 가능한 데이터 범위가 줄어들어 병행성은 낮아집니다."
+  },
+  {
+    "id": 73,
+    "subject": "데이터베이스 구축",
+    "question": "여러 명의 사용자에게 다양한 권한을 한 번에 효율적으로 부여하기 위해 권한들을 하나로 묶어놓은 그룹은?",
+    "options": [
+      "스키마(Schema)",
+      "롤(Role)",
+      "뷰(View)",
+      "도메인(Domain)"
+    ],
+    "answer": 1,
+    "explanation": "롤(Role)은 관련 있는 권한들을 묶어 관리함으로써 사용자에게 권한을 효율적으로 부여할 수 있게 해주는 객체입니다."
+  },
+  {
+    "id": 74,
+    "subject": "데이터베이스 구축",
+    "question": "데이터 마이닝 기법 중, 데이터들 사이의 유의미한 상관관계나 동시 구매 패턴 등을 찾아내는 기법은?",
+    "options": [
+      "분류(Classification)",
+      "군집화(Clustering)",
+      "연관 규칙(Association Rule)",
+      "의사결정 나무(Decision Tree)"
+    ],
+    "answer": 2,
+    "explanation": "연관 규칙(Association Rule)은 데이터 항목들 간의 종속관계를 분석하여 장바구니 분석 등에 활용되는 기법입니다."
+  },
+  {
+    "id": 75,
+    "subject": "데이터베이스 구축",
+    "question": "SQL의 집계 함수(Aggregate Function)에 해당하지 않는 것은?",
+    "options": [
+      "SUM",
+      "AVG",
+      "COUNT",
+      "SORT"
+    ],
+    "answer": 3,
+    "explanation": "SORT는 정렬 관련 개념이며 SQL의 집계 함수에는 SUM, AVG, COUNT, MAX, MIN 등이 있습니다."
+  },
+  {
+    "id": 76,
+    "subject": "데이터베이스 구축",
+    "question": "개념 스키마(Conceptual Schema)에 대한 설명으로 옳은 것은?",
+    "options": [
+      "사용자 개개인의 입장에서 본 데이터베이스 구조이다.",
+      "조직 전체의 관점에서 본 통합된 데이터베이스의 논리적 구조이다.",
+      "데이터베이스의 물리적 저장 장치 구조이다.",
+      "실제 데이터가 저장되는 하드웨어적 상세 구조이다."
+    ],
+    "answer": 1,
+    "explanation": "개념 스키마는 범기관적 입장에서 본 데이터베이스의 통합된 논리적 구조를 정의한 것입니다."
+  },
+  {
+    "id": 77,
+    "subject": "데이터베이스 구축",
+    "question": "E-R 다이어그램(Entity-Relationship Diagram)에서 관계(Relationship)를 나타내는 기호는?",
+    "options": [
+      "사각형",
+      "타원",
+      "마름모",
+      "밑줄"
+    ],
+    "answer": 2,
+    "explanation": "E-R 다이어그램에서 사각형은 개체, 타원은 속성, 마름모는 관계를 나타냅니다."
+  },
+  {
+    "id": 78,
+    "subject": "데이터베이스 구축",
+    "question": "데이터베이스 설계 단계 중 논리적 설계(Logical Design) 단계의 주요 작업이 아닌 것은?",
+    "options": [
+      "논리적 데이터 모델로의 변환 (매핑)",
+      "트랜잭션 인터페이스 설계",
+      "스키마의 평가 및 정규화",
+      "데이터의 물리적 저장 경로 및 인덱스 설계"
+    ],
+    "answer": 3,
+    "explanation": "데이터의 물리적 저장 구조 및 인덱스 설계는 '물리적 설계' 단계에서 수행됩니다."
+  },
+  {
+    "id": 79,
+    "subject": "데이터베이스 구축",
+    "question": "데이터베이스에서 특정 이벤트가 발생할 때마다 자동으로 실행되도록 정의된 절차형 SQL 프로그램은?",
+    "options": [
+      "저장 프로시저(Stored Procedure)",
+      "사용자 정의 함수(User-Defined Function)",
+      "트리거(Trigger)",
+      "인덱스(Index)"
+    ],
+    "answer": 2,
+    "explanation": "트리거(Trigger)는 데이터의 삽입, 수정, 삭제 등의 이벤트가 발생할 때 자동으로 호출되어 실행되는 프로그램입니다."
+  },
+  {
+    "id": 80,
+    "subject": "데이터베이스 구축",
+    "question": "분산 데이터베이스 시스템의 장점으로 거리가 먼 것은?",
+    "options": [
+      "시스템 용량 확장이 용이하다.",
+      "신뢰성과 가용성이 증대된다.",
+      "지역 자치성이 보장된다.",
+      "소프트웨어 개발 비용이 감소한다."
+    ],
+    "answer": 3,
+    "explanation": "분산 데이터베이스는 시스템 설계와 관리의 복잡성으로 인해 소프트웨어 개발 및 관리 비용이 오히려 증가합니다."
+  },
+  {
+    "id": 81,
+    "subject": "데이터베이스 구축",
+    "question": "SQL의 DDL 명령어 중, 테이블의 모든 데이터를 삭제하지만 테이블의 구조는 유지하며 로그를 최소화하여 DELETE보다 속도가 빠른 명령어는?",
+    "options": [
+      "DROP",
+      "TRUNCATE",
+      "PURGE",
+      "REMOVE"
+    ],
+    "answer": 1,
+    "explanation": "TRUNCATE는 테이블의 모든 행을 제거하는 DDL 명령어로, 데이터만 삭제하고 구조는 남겨두며 롤백 정보를 남기지 않아 처리가 매우 빠릅니다."
+  },
+  {
+    "id": 82,
+    "subject": "데이터베이스 구축",
+    "question": "데이터베이스 보안 관리 기법 중 사용자의 역할에 따라 권한을 부여하고 관리하며, 관리 효율성이 높아 대규모 시스템에서 주로 사용하는 제어 방식은?",
+    "options": [
+      "DAC (임의 접근 통제)",
+      "MAC (강제 접근 통제)",
+      "RBAC (역할 기반 접근 통제)",
+      "ACL (접근 제어 목록)"
+    ],
+    "answer": 2,
+    "explanation": "RBAC(Role Based Access Control)은 개별 사용자 대신 '역할'에 권한을 할당하고 사용자를 해당 역할에 부여하여 권한 관리를 단순화하는 방식입니다."
+  },
+  {
+    "id": 83,
+    "subject": "데이터베이스 구축",
+    "question": "트랜잭션의 ACID 특성 중, 트랜잭션이 성공적으로 수행되면 언제나 모순 없이 일관된 데이터베이스 상태를 유지해야 한다는 특성은?",
+    "options": [
+      "원자성(Atomicity)",
+      "일관성(Consistency)",
+      "격리성(Isolation)",
+      "영속성(Durability)"
+    ],
+    "answer": 1,
+    "explanation": "일관성(Consistency)은 트랜잭션 수행 전후의 데이터베이스가 고정된 규칙이나 무결성 제약조건을 항상 만족해야 함을 의미합니다."
+  },
+  {
+    "id": 84,
+    "subject": "데이터베이스 구축",
+    "question": "SQL 문을 실행하기 전, 가장 효율적으로 데이터를 찾을 수 있도록 최적의 실행 계획(Execution Plan)을 세우는 DBMS의 핵심 엔진은?",
+    "options": [
+      "파서(Parser)",
+      "옵티마이저(Optimizer)",
+      "스케줄러(Scheduler)",
+      "트랜잭션 관리자"
+    ],
+    "answer": 1,
+    "explanation": "옵티마이저(Optimizer)는 사용자의 SQL 질의를 가장 적은 비용으로 빠르게 처리할 수 있는 경로를 선택하여 실행 계획을 생성합니다."
+  },
+  {
+    "id": 85,
+    "subject": "데이터베이스 구축",
+    "question": "분산 데이터베이스 시스템의 특징을 설명하는 CAP 이론의 3요소에 해당하지 않는 것은?",
+    "options": [
+      "일관성(Consistency)",
+      "가용성(Availability)",
+      "분할 내성(Partition Tolerance)",
+      "원자성(Atomicity)"
+    ],
+    "answer": 3,
+    "explanation": "CAP 이론은 일관성(C), 가용성(A), 분할 내성(P) 중 두 가지만 충족 가능하다는 이론입니다. 원자성은 트랜잭션의 특성입니다."
+  },
+  {
+    "id": 86,
+    "subject": "데이터베이스 구축",
+    "question": "정규화 과정 중 제4정규형(4NF)에서 제5정규형(5NF)이 되기 위해 제거해야 하는 것은?",
+    "options": [
+      "함수적 종속성",
+      "이행적 함수 종속성",
+      "다치 종속성",
+      "조인 종속성"
+    ],
+    "answer": 3,
+    "explanation": "제5정규형(5NF)은 릴레이션의 모든 조인 종속성이 후보키를 통해서만 성립되도록 하여 데이터 중복을 방지하는 단계입니다."
+  },
+  {
+    "id": 87,
+    "subject": "데이터베이스 구축",
+    "question": "관계 해석(Relational Calculus)의 특징으로 가장 적절한 것은?",
+    "options": [
+      "원하는 정보를 어떻게(How) 유도하는가를 정의하는 절차적 언어이다.",
+      "수학의 프레디킷 해석(Predicate Calculus)에 기반을 둔 비절차적 언어이다.",
+      "Select, Project, Join 등의 연산자를 사용하여 질의를 표현한다.",
+      "관계 대수에 비해 질의 표현 능력이 떨어진다."
+    ],
+    "answer": 1,
+    "explanation": "관계 해석은 원하는 정보가 무엇(What)인지만 정의하는 비절차적 특성을 가지며 수학적 기호를 사용합니다."
+  },
+  {
+    "id": 88,
+    "subject": "데이터베이스 구축",
+    "question": "E-R 다이어그램에서 한 개체가 여러 개의 값을 가질 수 있는 '다중 값 속성'을 나타낼 때 사용하는 기호는?",
+    "options": [
+      "단일 타원",
+      "이중 타원",
+      "이중 사각형",
+      "점선 타원"
+    ],
+    "answer": 1,
+    "explanation": "이중 타원은 전화번호가 여러 개이거나 전공이 여러 개인 경우와 같은 다중 값 속성을 표현합니다."
+  },
+  {
+    "id": 89,
+    "subject": "데이터베이스 구축",
+    "question": "데이터베이스 파티셔닝 기법 중, 해시 함수를 적용하여 데이터를 고르게 분산 저장하며 특정 데이터가 어디에 있는지 파악하기 어려운 방식은?",
+    "options": [
+      "레인지 파티셔닝",
+      "리스트 파티셔닝",
+      "해시 파티셔닝",
+      "컴포지트 파티셔닝"
+    ],
+    "answer": 2,
+    "explanation": "해시 파티셔닝은 균등한 데이터 분할에는 유리하지만 특정 범위 검색에는 불리한 방식입니다."
+  },
+  {
+    "id": 90,
+    "subject": "데이터베이스 구축",
+    "question": "SQL 질의에서 서브쿼리의 결과가 존재하는지 여부만을 확인하여 참 또는 거짓을 반환하는 연산자는?",
+    "options": [
+      "IN",
+      "ANY",
+      "EXISTS",
+      "ALL"
+    ],
+    "answer": 2,
+    "explanation": "EXISTS 연산자는 조건에 맞는 행이 하나라도 존재하면 참을 반환하여 불필요한 전체 탐색을 방지합니다."
+  },
+  {
+    "id": 91,
+    "subject": "데이터베이스 구축",
+    "question": "데이터 웨어하우스의 데이터를 외부 소스 시스템에서 추출(Extract), 변환(Transform), 적재(Load)하는 일련의 과정을 의미하는 용어는?",
+    "options": [
+      "E-R",
+      "ETL",
+      "OLAP",
+      "TCL"
+    ],
+    "answer": 1,
+    "explanation": "ETL은 데이터 분석을 위해 다양한 소스에서 데이터를 수집하고 가공하여 저장하는 핵심 공정입니다."
+  },
+  {
+    "id": 92,
+    "subject": "데이터베이스 구축",
+    "question": "데이터베이스 내의 테이블, 뷰, 인덱스 등 데이터 객체에 대한 정보와 이들 간의 관계를 기술한 '데이터에 대한 데이터'는?",
+    "options": [
+      "로우 데이터",
+      "메타 데이터",
+      "마스터 데이터",
+      "로그 데이터"
+    ],
+    "answer": 1,
+    "explanation": "메타 데이터(Meta-data)는 시스템 카탈로그에 저장되어 관리되는 관리용 데이터를 의미합니다."
+  },
+  {
+    "id": 93,
+    "subject": "데이터베이스 구축",
+    "question": "동일한 테이블 내에서 두 개의 컬럼을 연관시켜 비교하거나 계층 구조를 조회할 때 사용하는 조인 방식은?",
+    "options": [
+      "내부 조인",
+      "자체 조인 (Self Join)",
+      "동등 조인",
+      "교차 조인"
+    ],
+    "answer": 1,
+    "explanation": "자체 조인(Self Join)은 하나의 테이블에 별칭(Alias)을 두 개 부여하여 마치 두 개의 테이블인 것처럼 조인하는 기법입니다."
+  },
+  {
+    "id": 94,
+    "subject": "데이터베이스 구축",
+    "question": "관계형 데이터베이스에서 외래키 제약조건 설정 시, 부모 테이블의 데이터가 변경되면 자식 테이블의 데이터도 연쇄적으로 변경되도록 설정하는 옵션은?",
+    "options": [
+      "ON DELETE RESTRICT",
+      "ON UPDATE CASCADE",
+      "ON DELETE SET NULL",
+      "ON UPDATE NO ACTION"
+    ],
+    "answer": 1,
+    "explanation": "CASCADE 옵션은 참조 무결성을 유지하면서 부모와 자식 데이터를 동기화하여 변경할 때 사용합니다."
+  },
+  {
+    "id": 95,
+    "subject": "데이터베이스 구축",
+    "question": "데이터베이스 뷰(View)의 특징 중 틀린 것은?",
+    "options": [
+      "가상 테이블이므로 독립적인 인덱스를 가질 수 없다.",
+      "뷰의 정의를 변경하려면 ALTER VIEW를 사용해야 한다.",
+      "하나의 뷰를 삭제하면 그 뷰를 기초로 정의된 다른 뷰도 자동으로 삭제될 수 있다.",
+      "복잡한 쿼리를 단순하게 만들어 주는 장점이 있다."
+    ],
+    "answer": 1,
+    "explanation": "뷰는 구조 변경이 불가능하므로 DROP 후 다시 CREATE 해야 합니다. (ALTER VIEW는 대부분의 DBMS에서 지원하지 않거나 제약이 큽니다.)"
+  },
+  {
+    "id": 96,
+    "subject": "데이터베이스 구축",
+    "question": "트랜잭션 격리 수준 중, 다른 트랜잭션이 작업 중인 데이터를 읽을 수 있어 데이터의 일관성이 깨지는 'Dirty Read'가 발생할 수 있는 단계는?",
+    "options": [
+      "READ UNCOMMITTED",
+      "READ COMMITTED",
+      "REPEATABLE READ",
+      "SERIALIZABLE"
+    ],
+    "answer": 0,
+    "explanation": "READ UNCOMMITTED는 성능은 가장 좋지만 데이터 무결성이 가장 취약한 최하위 격리 수준입니다."
+  },
+  {
+    "id": 97,
+    "subject": "데이터베이스 구축",
+    "question": "물리적 정렬 순서와 인덱스의 키 순서가 일치하여 범위 검색에 매우 유리하며 테이블당 하나만 존재할 수 있는 인덱스는?",
+    "options": [
+      "클러스터드 인덱스",
+      "보조 인덱스",
+      "해시 인덱스",
+      "비트맵 인덱스"
+    ],
+    "answer": 0,
+    "explanation": "클러스터드 인덱스는 데이터 자체가 인덱스 순서로 저장되어 있어 조회 속도가 매우 빠릅니다."
+  },
+  {
+    "id": 98,
+    "subject": "데이터베이스 구축",
+    "question": "데이터베이스 설계의 논리적 설계 단계에서 수행하는 '매핑 룰(Mapping Rule)'의 대상으로 옳은 것은?",
+    "options": [
+      "개체(Entity) -> 테이블(Table)",
+      "속성(Attribute) -> 튜플(Tuple)",
+      "관계(Relationship) -> 도메인(Domain)",
+      "식별자(Identifier) -> 데이터 타입"
+    ],
+    "answer": 0,
+    "explanation": "논리적 설계에서는 E-R 다이어그램의 각 요소를 관계형 모델의 테이블, 컬럼, 키 등으로 변환하는 작업을 수행합니다."
+  },
+  {
+    "id": 99,
+    "subject": "데이터베이스 구축",
+    "question": "NoSQL 데이터베이스 중 JSON 형태의 문서(Document) 단위로 데이터를 저장하며 유연한 스키마를 제공하는 대표적인 모델은?",
+    "options": [
+      "Redis (Key-Value)",
+      "MongoDB (Document)",
+      "Neo4j (Graph)",
+      "Cassandra (Wide-Column)"
+    ],
+    "answer": 1,
+    "explanation": "MongoDB는 BSON(Binary JSON) 형식으로 데이터를 관리하는 가장 대중적인 도큐먼트 기반 NoSQL입니다."
+  },
+  {
+    "id": 100,
+    "subject": "데이터베이스 구축",
+    "question": "SQL의 DML 명령어 중, 데이터의 존재 여부에 따라 INSERT를 수행하거나 UPDATE를 수행하는 병합 명령어는?",
+    "options": [
+      "UNION",
+      "JOIN",
+      "MERGE",
+      "UPSERT"
+    ],
+    "answer": 2,
+    "explanation": "MERGE 문은 소스 테이블의 데이터를 타겟 테이블에 합칠 때 조건에 따라 삽입 또는 수정을 선택적으로 수행합니다."
+  }
+]

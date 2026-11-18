@@ -1,0 +1,151 @@
+{
+  "knou": [
+    {
+      "subject": "Java프로그래밍",
+      "file": "data/knou/Java프로그래밍.json",
+      "count": 252
+    },
+    {
+      "subject": "C언어",
+      "file": "data/knou/C언어.json",
+      "count": 100
+    },
+    {
+      "subject": "대학수학",
+      "file": "data/knou/대학수학.json",
+      "count": 100
+    },
+    {
+      "subject": "대학영어",
+      "file": "data/knou/대학영어.json",
+      "count": 101
+    },
+    {
+      "subject": "데이터베이스",
+      "file": "data/knou/데이터베이스.json",
+      "count": 20
+    },
+    {
+      "subject": "자료구조",
+      "file": "data/knou/자료구조.json",
+      "count": 120
+    },
+    {
+      "subject": "운영체제",
+      "file": "data/knou/운영체제.json",
+      "count": 120
+    },
+    {
+      "subject": "컴퓨터구조",
+      "file": "data/knou/컴퓨터구조.json",
+      "count": 20
+    },
+    {
+      "subject": "컴퓨터 네트워크",
+      "file": "data/knou/컴퓨터-네트워크.json",
+      "count": 20
+    },
+    {
+      "subject": "소프트웨어 공학",
+      "file": "data/knou/소프트웨어-공학.json",
+      "count": 20
+    },
+    {
+      "subject": "알고리즘",
+      "file": "data/knou/알고리즘.json",
+      "count": 20
+    },
+    {
+      "subject": "인공지능",
+      "file": "data/knou/인공지능.json",
+      "count": 239
+    },
+    {
+      "subject": "HTML/CSS",
+      "file": "data/knou/HTML-CSS.json",
+      "count": 10
+    },
+    {
+      "subject": "JavaScript",
+      "file": "data/knou/JavaScript.json",
+      "count": 11
+    },
+    {
+      "subject": "리눅스",
+      "file": "data/knou/리눅스.json",
+      "count": 18
+    },
+    {
+      "subject": "전공종합",
+      "file": "data/knou/전공종합.json",
+      "count": 1
+    },
+    {
+      "subject": "오픈소스 기반 데이터분석",
+      "file": "data/knou/오픈소스-기반-데이터분석.json",
+      "count": 80
+    },
+    {
+      "subject": "클라우드컴퓨팅",
+      "file": "data/knou/클라우드컴퓨팅.json",
+      "count": 100
+    },
+    {
+      "subject": "jsp프로그래밍",
+      "file": "data/knou/jsp프로그래밍.json",
+      "count": 100
+    },
+    {
+      "subject": "유비쿼터스컴퓨팅개론",
+      "file": "data/knou/유비쿼터스컴퓨팅개론.json",
+      "count": 199
+    },
+    {
+      "subject": "디지털 논리회로",
+      "file": "data/knou/디지털-논리회로.json",
+      "count": 160
+    },
+    {
+      "subject": "파이썬프로그래밍기초",
+      "file": "data/knou/파이썬프로그래밍기초.json",
+      "count": 100
+    },
+    {
+      "subject": "대중영화의이해",
+      "file": "data/knou/대중영화의이해.json",
+      "count": 100
+    },
+    {
+      "subject": "성,사랑,사회",
+      "file": "data/knou/성-사랑-사회.json",
+      "count": 100
+    }
+  ],
+  "engineer": [
+    {
+      "subject": "소프트웨어 설계",
+      "file": "data/engineer/소프트웨어-설계.json",
+      "count": 100
+    },
+    {
+      "subject": "소프트웨어 개발",
+      "file": "data/engineer/소프트웨어-개발.json",
+      "count": 100
+    },
+    {
+      "subject": "데이터베이스 구축",
+      "file": "data/engineer/데이터베이스-구축.json",
+      "count": 100
+    },
+    {
+      "subject": "프로그래밍 언어 활용",
+      "file": "data/engineer/프로그래밍-언어-활용.json",
+      "count": 100
+    },
+    {
+      "subject": "정보시스템 구축 관리",
+      "file": "data/engineer/정보시스템-구축-관리.json",
+      "count": 100
+    }
+  ]
+}

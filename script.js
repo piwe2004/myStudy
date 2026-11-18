@@ -1,83 +1,70 @@
-let allQuestions = [];       
-let currentQuestions = [];   
+let index = null;            // data/index.json (탭별 과목 목록)
+const cache = {};            // 한 번 불러온 과목 파일 보관
+let currentQuestions = [];
 let currentIdx = 0;
-let correctCount = 0; // [추가] 맞은 개수 저장 변수
+let correctCount = 0;
 let checkTab = 'knou';
-// 1. 데이터 로드
-async function getData(tabId){
-    const dataUrls = tabId === 'knou' || !tabId
-        ? ['data.json', 'data-structure.json', 'data-structure-2.json', 'data-structure-3.json']
-        : ['data2.json'];
+let currentSubject = null;
+
+const PRIORITY = {
+    knou: ["자료구조", "C언어", "대학수학", "대학영어", "오픈소스 기반 데이터분석", "클라우드컴퓨팅", "jsp프로그래밍"],
+    engineer: ["소프트웨어 설계", "소프트웨어 개발", "데이터베이스 구축", "프로그래밍 언어 활용", "정보시스템 구축 관리"]
+};
+
+// 1. 탭 전환
+async function filterTab(tabId) {
     checkTab = tabId;
-    try{
-        const responses = await Promise.all(dataUrls.map(url => fetch(url)));
-        const failedResponse = responses.find(res => !res.ok);
-        if (failedResponse) {
-            throw new Error(`HTTP error! status: ${failedResponse.status}`);
-        }
-        const datasets = await Promise.all(responses.map(res => res.json()));
-    
-        // 성공 시: 기존 데이터와 과목별 추가 데이터를 하나로 합침
-        allQuestions = datasets.flat();
-        renderSubjectButtons();
+    document.querySelectorAll('.main-tab-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.tab === tabId);
+    });
+
+    try {
+        index ??= await fetch('data/index.json').then(res => res.json());
     } catch (error) {
-        // 실패 시: success를 false로 하고 에러 메시지 포함
-        console.error("API Request Error:", error);
-        return { success: false, error: error.message };
+        console.error(error);
+        document.getElementById('subject-list').textContent = '문제 목록을 불러오지 못했습니다.';
+        return;
     }
+    renderSubjectButtons();
 }
 
-// 2. 메인화면: 과목 버튼 만들기
+// 2. 과목 버튼
 function renderSubjectButtons() {
+    const subjects = index[checkTab];
+    const priority = PRIORITY[checkTab];
+    const total = subjects.reduce((sum, s) => sum + s.count, 0);
+    document.querySelector('.sub-title').textContent = `총 ${total}문제 (랜덤 출제)`;
+
+    const rank = s => {
+        const i = priority.indexOf(s.subject);
+        return i === -1 ? priority.length : i;
+    };
+    const sorted = [...subjects].sort((a, b) => rank(a) - rank(b) || a.subject.localeCompare(b.subject));
+
     const subjectList = document.getElementById('subject-list');
-    subjectList.innerHTML = ''; 
-
-    const allSubjects = [...new Set(allQuestions.map(q => q.subject))];
-    // 내 과목 우선순위 정렬
-    let myPriority = [];
-
-    if(checkTab === 'knou'){
-        myPriority = ["자료구조", "C언어", "대학수학", "대학영어", "오픈소스 기반 데이터분석", "클라우드컴퓨팅", "jsp프로그래밍"];
-    }else{
-        myPriority = ["소프트웨어 설계", "소프트웨어 개발", "데이터베이스 구축", "프로그래밍 언어 활용", "정보시스템 구축 관리"];
-    }
-
-    allSubjects.sort((a, b) => {
-        const idxA = myPriority.indexOf(a);
-        const idxB = myPriority.indexOf(b);
-        if (idxA !== -1 && idxB !== -1) return idxA - idxB;
-        if (idxA !== -1) return -1;
-        if (idxB !== -1) return 1;
-        return a.localeCompare(b);
+    subjectList.innerHTML = '';
+    const groups = [
+        ['내 과목', sorted.filter(s => priority.includes(s.subject))],
+        ['다른 과목', sorted.filter(s => !priority.includes(s.subject))]
+    ];
+    groups.forEach(([label, list]) => {
+        if (list.length === 0) return;
+        const title = document.createElement('p');
+        title.className = 'section-label';
+        title.textContent = label;
+        const group = document.createElement('div');
+        group.className = 'subject-group';
+        list.forEach(s => {
+            const btn = document.createElement('button');
+            btn.className = 'subject-card';
+            btn.innerHTML = '<span></span><span class="count"></span>';
+            btn.children[0].textContent = s.subject;
+            btn.children[1].textContent = `${s.count}문제`;
+            btn.onclick = () => startQuiz(s);
+            group.appendChild(btn);
+        });
+        subjectList.append(title, group);
     });
-
-    allSubjects.forEach(sub => {
-        const btn = document.createElement('button');
-        btn.className = 'subject-card';
-        if (myPriority.includes(sub)) {
-            btn.style.border = "2px solid #3498db";
-            btn.style.backgroundColor = "#fdfdfd";
-        }
-        btn.innerText = sub;
-        btn.onclick = () => startQuiz(sub);
-        subjectList.appendChild(btn);
-    });
-
-    allSubjects.forEach(sub => {
-        const btn = document.createElement('button');
-        btn.className = 'subject-card';
-        if (myPriority.includes(sub)) {
-            btn.style.border = "2px solid #3498db";
-            btn.style.backgroundColor = "#fdfdfd";
-        }
-        btn.innerText = sub;
-
-        btn.setAttribute('data-category', checkTab);
-
-        btn.onclick = () => startQuiz(sub);
-        subjectList.appendChild(btn);
-    });
-
 }
 
 // 3. 배열 섞기
@@ -89,93 +76,91 @@ function shuffleArray(array) {
     return array;
 }
 
-// 4. 퀴즈 시작
-function startQuiz(subjectName) {
-    const levelSelect = document.getElementById('level-select');
-    const selectedLevel = levelSelect ? levelSelect.value : 'all';
+// 보기 순서를 섞고 정답 번호를 맞춰줌
+function shuffleOptions(q) {
+    const order = shuffleArray(q.options.map((_, i) => i));
+    return { ...q, options: order.map(i => q.options[i]), answer: order.indexOf(q.answer) };
+}
 
-    const filtered = allQuestions.filter(q => {
-        const subjectMatch = (q.subject === subjectName);
-        const levelMatch = (selectedLevel === 'all') || (q.level === selectedLevel);
-        return subjectMatch && levelMatch;
-    });
-    
-    if (filtered.length === 0) {
-        alert(`선택하신 조건의 문제가 없습니다.`);
+// 4. 퀴즈 시작 (클릭한 과목 파일만 불러옴)
+async function startQuiz(s) {
+    try {
+        cache[s.file] ??= await fetch(encodeURI(s.file)).then(res => res.json());
+    } catch (error) {
+        console.error(error);
+        alert('문제를 불러오지 못했습니다.');
         return;
     }
 
-    const shuffled = shuffleArray([...filtered]);
-    const questionLimit = subjectName === '자료구조' ? 30 : 25;
-    currentQuestions = shuffled.slice(0, questionLimit);
-
-    // [초기화] 게임 시작할 때 점수 초기화
+    const questionLimit = s.subject === '자료구조' ? 30 : 25;
+    currentQuestions = shuffleArray([...cache[s.file]]).slice(0, questionLimit).map(shuffleOptions);
+    currentSubject = s;
     currentIdx = 0;
     correctCount = 0;
-    
-    document.getElementById('home-screen').style.display = 'none';
-    document.getElementById('score-screen').style.display = 'none'; // 결과 화면 숨김
-    document.getElementById('quiz-screen').style.display = 'block';
-    document.getElementById('current-subject-title').innerText = subjectName;
+
+    show('quiz-screen');
+    document.getElementById('current-subject-title').innerText = s.subject;
 
     showQuestion();
 }
 
-// 5. 문제 화면 뿌리기
+// 5. 문제 화면
 function showQuestion() {
-    // [수정] 마지막 문제까지 다 풀었으면 결과 화면으로 이동
     if (currentIdx >= currentQuestions.length) {
         showScoreScreen();
         return;
     }
 
     const q = currentQuestions[currentIdx];
-    
     document.getElementById('progress-text').innerText = `${currentIdx + 1} / ${currentQuestions.length}`;
+    document.getElementById('progress-bar').style.width = `${currentIdx / currentQuestions.length * 100}%`;
+    window.scrollTo(0, 0);
     document.getElementById('question-text').innerText = q.question;
 
     const optionsBox = document.getElementById('options-box');
     optionsBox.innerHTML = '';
-
     q.options.forEach((opt, idx) => {
         const btn = document.createElement('button');
         btn.className = 'option-btn';
-        btn.innerText = opt;
-        btn.onclick = () => checkAnswer(btn, idx, q.answer, q.explanation);
+        btn.innerHTML = '<span class="num"></span><span></span>';
+        btn.children[0].textContent = idx + 1;
+        btn.children[1].textContent = opt;
+        btn.onclick = () => checkAnswer(btn, idx, q);
         optionsBox.appendChild(btn);
     });
 
-    document.getElementById('next-btn').style.display = 'none';
-    const resultBox = document.getElementById('result-box');
-    resultBox.style.display = 'none';
-    resultBox.className = ''; 
+    document.getElementById('next-btn').hidden = true;
+    document.getElementById('result-box').hidden = true;
 }
 
-// 6. 정답 체크
-function checkAnswer(clickedBtn, selectedIndex, correctIndex, explanation) {
-    const resultBox = document.getElementById('result-box');
-    resultBox.style.display = 'block';
-
+// 6. 정답 체크 (해설은 textContent로 넣어서 <header> 같은 글자가 사라지지 않게)
+function checkAnswer(clickedBtn, selectedIndex, q) {
     const allButtons = document.querySelectorAll('.option-btn');
     allButtons.forEach(btn => btn.disabled = true);
 
-    if (selectedIndex === correctIndex) {
-        // [추가] 정답이면 카운트 증가
+    const isCorrect = selectedIndex === q.answer;
+    const resultBox = document.getElementById('result-box');
+    resultBox.className = isCorrect ? 'correct-box' : 'wrong-box';
+    resultBox.innerHTML = '<strong></strong><p class="answer"></p><p></p>';
+    const [title, answer, body] = resultBox.children;
+
+    if (isCorrect) {
         correctCount++;
-        
-        clickedBtn.classList.add('correct');
-        resultBox.className = 'correct-box';
-        resultBox.innerHTML = `<strong>🎉 정답입니다!</strong><br><br>${explanation}`;
+        title.textContent = '정답이에요';
+        answer.remove();
     } else {
         clickedBtn.classList.add('wrong');
-        resultBox.className = 'wrong-box';
-        const correctOptionText = currentQuestions[currentIdx].options[correctIndex];
-        resultBox.innerHTML = `<strong>❌ 틀렸습니다.</strong><br>정답: ${correctOptionText}<br><br>${explanation}`;
-        
-        allButtons[correctIndex].classList.add('correct');
+        title.textContent = '틀렸어요';
+        answer.textContent = `정답 ${q.answer + 1}번 · ${q.options[q.answer]}`;
     }
+    allButtons[q.answer].classList.add('correct');
+    body.textContent = q.explanation;
+    resultBox.hidden = false;
 
-    document.getElementById('next-btn').style.display = 'block';
+    const nextBtn = document.getElementById('next-btn');
+    nextBtn.textContent = currentIdx === currentQuestions.length - 1 ? '결과 보기' : '다음 문제';
+    nextBtn.hidden = false;
+    resultBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 }
 
 // 7. 다음 문제
@@ -184,17 +169,14 @@ function nextQuestion() {
     showQuestion();
 }
 
-// 8. [추가] 결과 화면 보여주기 (성적표)
+// 8. 결과 화면
 function showScoreScreen() {
-    document.getElementById('quiz-screen').style.display = 'none';
-    document.getElementById('score-screen').style.display = 'flex'; // Flex로 중앙 정렬
+    show('score-screen');
 
-    // 점수 계산
     const total = currentQuestions.length;
     const score = Math.round((correctCount / total) * 100);
-
-    // 화면에 뿌리기
     document.getElementById('final-score').innerText = score;
+    document.getElementById('score-ring').style.setProperty('--p', score);
     document.getElementById('total-count-display').innerText = total;
     document.getElementById('correct-count-display').innerText = correctCount;
     document.getElementById('wrong-count-display').innerText = total - correctCount;
@@ -202,7 +184,27 @@ function showScoreScreen() {
 
 // 9. 홈으로
 function goHome() {
-    document.getElementById('score-screen').style.display = 'none';
-    document.getElementById('quiz-screen').style.display = 'none';
-    document.getElementById('home-screen').style.display = 'block';
+    show('home-screen');
 }
+
+function retry() {
+    startQuiz(currentSubject);
+}
+
+function show(id) {
+    ['home-screen', 'quiz-screen', 'score-screen'].forEach(s => {
+        document.getElementById(s).hidden = s !== id;
+    });
+    window.scrollTo(0, 0);
+}
+
+// PC: 숫자키 1~4로 보기 선택, Enter로 다음 문제
+document.addEventListener('keydown', e => {
+    if (document.getElementById('quiz-screen').hidden) return;
+    const nextBtn = document.getElementById('next-btn');
+    if (e.key === 'Enter' && !nextBtn.hidden) nextQuestion();
+    const opt = document.querySelectorAll('.option-btn')[e.key - 1];
+    if (opt && !opt.disabled) opt.click();
+});
+
+window.addEventListener('DOMContentLoaded', () => filterTab('knou'));

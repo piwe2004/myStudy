@@ -1,0 +1,236 @@
+[
+  {
+    "id": 1,
+    "subject": "리눅스",
+    "question": "리눅스에서 현재 디렉터리의 파일 목록을 자세히(권한, 소유자 등 포함) 보는 명령어는?",
+    "options": [
+      "ls -a",
+      "ls -l",
+      "pwd",
+      "cd"
+    ],
+    "answer": 1,
+    "explanation": "ls(list) 명령어에 -l(long format) 옵션을 붙입니다."
+  },
+  {
+    "id": 2,
+    "subject": "리눅스",
+    "question": "파일의 권한(Permission)을 변경하는 명령어는?",
+    "options": [
+      "chown",
+      "chmod",
+      "chgrp",
+      "umask"
+    ],
+    "answer": 1,
+    "explanation": "chmod(change mode)는 읽기(r), 쓰기(w), 실행(x) 권한을 변경합니다."
+  },
+  {
+    "id": 3,
+    "subject": "리눅스",
+    "question": "파일 내용 중 특정 문자열을 검색하여 해당 라인을 출력하는 명령어는?",
+    "options": [
+      "find",
+      "grep",
+      "cat",
+      "awk"
+    ],
+    "answer": 1,
+    "explanation": "grep은 텍스트 검색에 가장 많이 쓰이는 강력한 필터 명령어입니다."
+  },
+  {
+    "id": 4,
+    "subject": "리눅스",
+    "question": "현재 실행 중인 프로세스 목록을 확인하는 명령어는?",
+    "options": [
+      "ps",
+      "kill",
+      "ls",
+      "cp"
+    ],
+    "answer": 0,
+    "explanation": "ps(process status) 또는 top 명령어를 사용하여 프로세스 상태를 확인합니다."
+  },
+  {
+    "id": 5,
+    "subject": "리눅스",
+    "question": "리눅스 파일 권한 'rwx r-x r-x'를 숫자로 표현하면?",
+    "options": [
+      "777",
+      "755",
+      "644",
+      "700"
+    ],
+    "answer": 1,
+    "explanation": "r(4)+w(2)+x(1)=7, r(4)+x(1)=5 이므로 755입니다."
+  },
+  {
+    "id": 6,
+    "subject": "리눅스",
+    "question": "명령어의 실행 결과(표준 출력)를 다른 명령어의 입력으로 전달하는 기호(파이프)는?",
+    "options": [
+      ">",
+      ">>",
+      "|",
+      "&"
+    ],
+    "answer": 2,
+    "explanation": "파이프(|)는 앞 명령어의 출력을 뒤 명령어의 입력으로 연결합니다. (예: ps -ef | grep java)"
+  },
+  {
+    "id": 7,
+    "subject": "리눅스",
+    "question": "현재 작업 중인 디렉터리의 절대 경로를 출력하는 명령어는?",
+    "options": [
+      "ls",
+      "cd",
+      "pwd",
+      "mkdir"
+    ],
+    "answer": 2,
+    "explanation": "pwd는 Print Working Directory의 약자입니다."
+  },
+  {
+    "id": 8,
+    "subject": "리눅스",
+    "question": "파일을 삭제하는 명령어는?",
+    "options": [
+      "rm",
+      "mv",
+      "cp",
+      "touch"
+    ],
+    "answer": 0,
+    "explanation": "rm(remove) 명령어를 사용합니다. (디렉터리 삭제는 rm -r)"
+  },
+  {
+    "id": 9,
+    "subject": "리눅스",
+    "question": "리눅스 커널의 버전을 확인하는 명령어는?",
+    "options": [
+      "uname -a",
+      "ver",
+      "ls -v",
+      "kernel"
+    ],
+    "answer": 0,
+    "explanation": "uname -a는 시스템의 모든 정보(커널 버전 포함)를 출력합니다."
+  },
+  {
+    "id": 10,
+    "subject": "리눅스",
+    "question": "파일의 소유자(Owner)를 변경하는 명령어는?",
+    "options": [
+      "chmod",
+      "chown",
+      "useradd",
+      "passwd"
+    ],
+    "answer": 1,
+    "explanation": "chown(change owner) 명령어를 사용합니다."
+  },
+  {
+    "id": 11,
+    "subject": "리눅스",
+    "question": "VI 에디터에서 입력 모드(Insert Mode)에서 명령 모드로 빠져나오는 키는?",
+    "options": [
+      "Enter",
+      "Shift",
+      "Ctrl",
+      "Esc"
+    ],
+    "answer": 3,
+    "explanation": "Esc 키를 누르면 입력 모드가 종료되고 명령 모드로 전환됩니다."
+  },
+  {
+    "id": 12,
+    "subject": "리눅스",
+    "question": "루트(Root) 디렉터리를 의미하는 기호는?",
+    "options": [
+      "/",
+      "~",
+      ".",
+      ".."
+    ],
+    "answer": 0,
+    "explanation": "/는 최상위 루트, ~는 홈 디렉터리, .은 현재, ..은 상위 디렉터리를 의미합니다."
+  },
+  {
+    "id": 13,
+    "subject": "리눅스",
+    "question": "특정 파일의 뒷부분 10줄을 실시간으로 확인하고 싶을 때 사용하는 명령어는?",
+    "options": [
+      "head",
+      "tail -f",
+      "cat",
+      "more"
+    ],
+    "answer": 1,
+    "explanation": "tail -f (follow)는 로그 파일 등이 실시간으로 쌓이는 것을 확인할 때 유용합니다."
+  },
+  {
+    "id": 14,
+    "subject": "리눅스",
+    "question": "리눅스에서 패키지를 설치하거나 관리하는 도구(RedHat 계열)는?",
+    "options": [
+      "apt-get",
+      "yum / dnf",
+      "brew",
+      "npm"
+    ],
+    "answer": 1,
+    "explanation": "RedHat/CentOS 계열은 yum 또는 dnf, Debian/Ubuntu 계열은 apt-get을 사용합니다."
+  },
+  {
+    "id": 15,
+    "subject": "리눅스",
+    "question": "파일의 내용을 화면 단위로 끊어서 보여주는 명령어는?",
+    "options": [
+      "cat",
+      "grep",
+      "more (또는 less)",
+      "echo"
+    ],
+    "answer": 2,
+    "explanation": "파일이 길 때 more나 less를 사용하면 스페이스바로 페이지를 넘기며 볼 수 있습니다."
+  },
+  {
+    "id": 16,
+    "subject": "리눅스",
+    "question": "절대 경로와 상대 경로에 대한 설명으로 틀린 것은?",
+    "options": [
+      "절대 경로는 항상 최상위 루트(/)부터 시작한다.",
+      "상대 경로는 현재 디렉터리를 기준으로 한다.",
+      "../ 는 하위 디렉터리로 이동한다는 뜻이다.",
+      "./ 는 현재 디렉터리를 의미한다."
+    ],
+    "answer": 2,
+    "explanation": ".. (점 두 개)는 상위(부모) 디렉터리를 의미합니다."
+  },
+  {
+    "id": 17,
+    "subject": "리눅스",
+    "question": "특정 프로세스를 강제로 종료시키기 위해 사용하는 시그널 번호(Kill -9)의 의미는?",
+    "options": [
+      "SIGINT (Interrupt)",
+      "SIGKILL (강제 종료)",
+      "SIGTERM (정상 종료)",
+      "SIGHUP (재시작)"
+    ],
+    "answer": 1,
+    "explanation": "kill -9 PID 명령은 SIGKILL 시그널을 보내 프로세스를 즉시 강제 종료합니다."
+  },
+  {
+    "id": 18,
+    "subject": "리눅스",
+    "question": "빈 파일을 생성하거나 파일의 타임스탬프(수정 시간)를 갱신하는 명령어는?",
+    "options": [
+      "make",
+      "touch",
+      "new",
+      "add"
+    ],
+    "answer": 1,
+    "explanation": "touch filename 명령어는 파일이 없으면 0바이트 파일을 생성하고, 있으면 시간을 갱신합니다."
+  }
+]
