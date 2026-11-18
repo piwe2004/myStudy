@@ -129,6 +129,11 @@
       "subject": "경영전략론",
       "file": "data/knou/경영전략론.json",
       "count": 100
+    },
+    {
+      "subject": "컴파일러구성",
+      "file": "data/knou/컴파일러구성.json",
+      "count": 100
     }
   ],
   "engineer": [
