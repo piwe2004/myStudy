@@ -116,7 +116,15 @@ function showQuestion() {
     document.getElementById('progress-text').innerText = `${currentIdx + 1} / ${currentQuestions.length}`;
     document.getElementById('progress-bar').style.width = `${currentIdx / currentQuestions.length * 100}%`;
     window.scrollTo(0, 0);
-    document.getElementById('question-text').innerText = q.question;
+    // ``` 로 감싼 부분은 코드/그림 블록으로 표시
+    const questionEl = document.getElementById('question-text');
+    questionEl.innerHTML = '';
+    q.question.split(/```\w*\n?/).forEach((part, i) => {
+        if (!part.trim()) return;
+        const el = document.createElement(i % 2 ? 'pre' : 'p');
+        el.textContent = i % 2 ? part.replace(/\s+$/, '') : part.trim();
+        questionEl.appendChild(el);
+    });
 
     const optionsBox = document.getElementById('options-box');
     optionsBox.innerHTML = '';

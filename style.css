@@ -144,6 +144,18 @@ button { font: inherit; color: inherit; cursor: pointer; border: none; backgroun
 
 .quiz-content { flex: 1; padding: 28px 20px 24px; }
 
+#question-text pre {
+    margin: 14px 0 0;
+    padding: 14px;
+    overflow-x: auto;
+    background: var(--surface-2);
+    border-radius: 12px;
+    font: 500 0.78rem/1.5 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    white-space: pre;
+}
+
+#question-text pre + p { margin-top: 14px; }
+
 #question-text {
     font-size: 1.2rem;
     font-weight: 700;
